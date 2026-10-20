@@ -1,0 +1,97 @@
+{
+  "run_at": "2026-10-19T10:08:08.328979+00:00",
+  "checks": [
+    {
+      "name": "pre-restart main report clean",
+      "passed": true,
+      "detail": {
+        "id": "2",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-19T10:08:08.535708Z",
+        "finishedAt": "2026-10-19T10:08:08.695912Z",
+        "scannedCount": 2529,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 192,
+          "erp_stock_record": 362,
+          "ful_order": 213,
+          "ful_order_item": 223,
+          "ful_reservation": 151,
+          "ful_stock_ledger": 343,
+          "ful_shipment": 27,
+          "ful_shipment_item": 27,
+          "ful_cancellation": 17,
+          "ful_return": 2,
+          "ful_return_item": 2,
+          "erp_sale_order": 338,
+          "erp_sale_order_items": 355,
+          "erp_sale_out": 122,
+          "erp_sale_out_items": 129,
+          "erp_sale_return": 13,
+          "erp_sale_return_items": 13
+        }
+      }
+    },
+    {
+      "name": "full dependency restart exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full snapshots including reports equal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same run key survives complete dependency restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay creates no extra report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved get still exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new key scans current main clean facts",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "idempotency_key": "restart-reconcile-804b2649513242e2a2639fe14b1dd5b9",
+  "report": {
+    "id": "2",
+    "ruleVersion": "M4.3-v1",
+    "scope": "TENANT",
+    "snapshotAt": "2026-10-19T10:08:08.535708Z",
+    "finishedAt": "2026-10-19T10:08:08.695912Z",
+    "scannedCount": 2529,
+    "differenceCount": 0,
+    "tableCounts": {
+      "erp_stock": 192,
+      "erp_stock_record": 362,
+      "ful_order": 213,
+      "ful_order_item": 223,
+      "ful_reservation": 151,
+      "ful_stock_ledger": 343,
+      "ful_shipment": 27,
+      "ful_shipment_item": 27,
+      "ful_cancellation": 17,
+      "ful_return": 2,
+      "ful_return_item": 2,
+      "erp_sale_order": 338,
+      "erp_sale_order_items": 355,
+      "erp_sale_out": 122,
+      "erp_sale_out_items": 129,
+      "erp_sale_return": 13,
+      "erp_sale_return_items": 13
+    }
+  },
+  "result": "passed"
+}

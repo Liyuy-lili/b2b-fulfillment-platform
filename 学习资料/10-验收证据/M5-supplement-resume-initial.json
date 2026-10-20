@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-10-19T15:19:54.036128+00:00",
+  "database": "fulfillment_m5_20261019_201046",
+  "checks": [
+    {
+      "name": "passed isolated core and exact artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retained final-artifact regression M5-M1-regression.json",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [],
+  "processes": [],
+  "result": "failed",
+  "error": "'database'",
+  "all_owned_processes_stopped": true
+}

@@ -1,0 +1,9 @@
+PASS core passed exact final artifact
+PASS isolated mixed-worker vhost created
+PASS isolated vhost permissions assigned
+PASS final legacy regression m1_acceptance.py
+PASS final legacy regression m0_smoke.py
+PASS M5 publication and Inbox converge while file worker succeeds
+PASS mixed background work does not change stock or fulfillment facts
+PASS all execution read models current
+M6 supplement passed 8 checks

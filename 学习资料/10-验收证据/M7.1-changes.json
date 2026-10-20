@@ -1,0 +1,90 @@
+{
+  "scope": "Explicit M7.1 source inventory, not Git diff. No backend business changes. M7.2-M7.4 remain pending.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8fb975a4b0aeeddf50498e76b62bcf074ec82b5cd877eaac1b9bf8bb6806ff21"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "fb3f0bf7f65d5387ebc3871a0f9fb3c7039bc9177716afeda78157162760d0d5"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "de0348520cfcd4ef26090436a1a93062b761314c707060a4f68b79e1ebd2c138"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "a9b900fcec7943e8683e656417c0526a0c02f5e58ad73f16d1bcad9a50538a53"
+    },
+    {
+      "path": "docs/RELEASE_RUNBOOK.md",
+      "sha256": "ee5e6b59b852704226f0a0a45e3c84ceff25b4462152f2ef7999485203cb3622"
+    },
+    {
+      "path": "docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "sha256": "f8bdfa4dd635c59b5699a50d66d1422282271eafebc05219e6db231785af13be"
+    },
+    {
+      "path": "docs/lessons/M7.1-独立交付与固定演示.md",
+      "sha256": "4e5a9d5fb3bb6b2f7dd1e30864c85ace5df1bc6252e130d10e3344d09ee89f49"
+    },
+    {
+      "path": "docs/evidence/M7.1-验收报告.md",
+      "sha256": "8f29884ea3f54efad42c7974ae83566b1d5a8d176d57fd6031a164fdeea3b16e"
+    },
+    {
+      "path": "scripts/Build-Release.ps1",
+      "sha256": "2d146d8d950c69873275af8da6b0762a6520d940ee35a22b1f6e8ea71b74b46a"
+    },
+    {
+      "path": "frontend/.env.release",
+      "sha256": "de8610322a848ac650ab6fa5cf296f8c9ced7fb6940a92c139dfc163929f093e"
+    },
+    {
+      "path": "deploy/release/config.example.json",
+      "sha256": "eb45d93a56115922475f240e8413d510a3b158b90330da7a9c94a988f88959c7"
+    },
+    {
+      "path": "deploy/release/Install-Release.ps1",
+      "sha256": "b2eea82c4f2ddc04cd40098d8bb3dcef35c68a6ab9808f2982d6e1ad7251d7b4"
+    },
+    {
+      "path": "deploy/release/Release-Environment.ps1",
+      "sha256": "505ee2621fc7782e1b896cf027eaedbed0488786c03fb58299b61a35fceb136b"
+    },
+    {
+      "path": "deploy/release/Seed-Demo.cjs",
+      "sha256": "868d91374cb74101701428b51b5e3e13cb63098a476fd1ddeae81fdd877451dc"
+    },
+    {
+      "path": "deploy/release/serve.cjs",
+      "sha256": "b7259108c59c9ef05a111555c2417436a9836d03d4dc981b84dc5a83bb741e98"
+    },
+    {
+      "path": "deploy/release/Start-Release.ps1",
+      "sha256": "9666d50ba8bb38ffa281c103fb525a9bd8c8d958fda1728f068a5629bc349467"
+    },
+    {
+      "path": "deploy/release/Stop-Release.ps1",
+      "sha256": "2eed0dc05e95b789d15e8325e53ab422d2e137091e8620224369c8307fdc7b85"
+    },
+    {
+      "path": "tests/m7_release.py",
+      "sha256": "6927300de314fa15a63e6a44de182eca88acc3a66bb6982d0c4bdac74040e658"
+    },
+    {
+      "path": "tests/m7_release_closeout.py",
+      "sha256": "49b00f6a570fae400ce546d766613d057bd40afc4f37c3b0020485c81abb72de"
+    },
+    {
+      "path": "tests/m7_release_qa.py",
+      "sha256": "45ec1e662adb9fd717fce8c9cb9b54206980a65df673edf8f2a52ba56b9a8ed7"
+    },
+    {
+      "path": "tests/m7_release_runtime.ps1",
+      "sha256": "fd36756b05374ddfca9d6adb0140b9a3744d3ff2ce3571c9988ea15635d47b72"
+    }
+  ],
+  "count": 21
+}

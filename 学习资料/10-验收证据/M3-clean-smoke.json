@@ -1,0 +1,61 @@
+{
+  "run_at": "2026-10-18T15:52:29.474659+00:00",
+  "database": "fulfillment_m3_clean_20261018",
+  "checks": [
+    {
+      "name": "fresh install preview succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install allocates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install partial shipment succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install shipment replay exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install partial close succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install H R A exact after ship and cancel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install signed simulator succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install shipment and callback persist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install all versions recorded",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "order": "8",
+    "shipment": {
+      "shipmentId": "1",
+      "shipmentNo": "SHP-e8d016ae-8801-4627-977d-30bfda1f94f1",
+      "erpSaleOutId": "11",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    }
+  },
+  "result": "passed"
+}

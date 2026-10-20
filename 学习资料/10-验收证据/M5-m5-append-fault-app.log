@@ -1,0 +1,524 @@
+2026-10-19 20:05:36.733 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-19 20:05:36.833 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:53 - Starting YudaoServerApplication using Java 17.0.17 with PID 14404 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m5-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-19 20:05:36.834 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:658 - The following 2 profiles are active: "fulfillment", "fulfillment-message-test"
+2026-10-19 20:05:41.765 [main] INFO  c.g.y.a.MybatisPlusJoinAutoConfiguration:141 - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-19 20:05:43.320 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:05:43.350 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:05:43.379 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:05:43.445 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:05:43.452 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:05:43.454 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429 - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-19 20:05:45.177 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 48083 (http)
+2026-10-19 20:05:45.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-127.0.0.1-48083"]
+2026-10-19 20:05:45.263 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-10-19 20:05:45.264 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-19 20:05:45.478 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-10-19 20:05:45.479 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 8586 ms
+2026-10-19 20:05:47.293 [main] INFO  com.alibaba.druid.pool.DruidDataSource:865 - {dataSource-1,master} inited
+2026-10-19 20:05:47.296 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-10-19 20:05:47.297 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-19 20:05:48.942 [main] INFO  org.flywaydb.core.FlywayExecutor:41 - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m5_20261019_200422?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-19 20:05:49.002 [main] WARN  org.flywaydb.core.internal.database.base.Database:45 - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-19 20:05:49.145 [main] INFO  org.flywaydb.core.internal.command.DbValidate:41 - Successfully validated 7 migrations (execution time 00:00.107s)
+2026-10-19 20:05:49.221 [main] INFO  org.flywaydb.core.internal.command.DbMigrate:41 - Current version of schema `fulfillment_m5_20261019_200422`: 6
+2026-10-19 20:05:49.226 [main] INFO  org.flywaydb.core.internal.command.DbMigrate:41 - Schema `fulfillment_m5_20261019_200422` is up to date. No migration necessary.
+2026-10-19 20:05:50.790 [main] INFO  org.redisson.Version:43 - Redisson 4.7.0
+2026-10-19 20:05:52.202 [redisson-netty-1-4] INFO  org.redisson.connection.ConnectionsHolder:152 - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-19 20:05:52.460 [redisson-netty-1-19] INFO  org.redisson.connection.ConnectionsHolder:152 - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-19 20:05:56.757 [main] INFO  o.s.boot.web.servlet.RegistrationBean:49 - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-19 20:06:00.573 [main] INFO  c.a.c.config.AjCaptchaServiceAutoConfiguration:33 - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-19 20:06:00.608 [main] INFO  com.anji.captcha.util.ImageUtils:71 - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@212d8133, ORIGINAL=[Ljava.lang.String;@2eb3e308, PIC_CLICK=[Ljava.lang.String;@3551aa2e]
+2026-10-19 20:06:00.615 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory:52 - supported-captchaCache-service:[redis, local]
+2026-10-19 20:06:00.632 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory:57 - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-19 20:06:00.633 [main] INFO  c.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80 - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-19 20:06:04.175 [main] INFO  c.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23 - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-19 20:06:12.187 [main] INFO  c.i.yudao.framework.dict.core.DictFrameworkUtils:44 - [init][初始化 DictFrameworkUtils 成功]
+2026-10-19 20:06:12.388 [main] INFO  org.dromara.common.spring.SpringContextUtil:37 - ------SpringContextUtil setApplicationContext-------
+2026-10-19 20:06:12.497 [main] INFO  c.b.m.spring.MybatisPlusApplicationContextAware:43 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73aff8f1
+2026-10-19 20:06:13.521 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:41 - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-19 20:06:13.547 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:45 - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-19 20:06:13.608 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-127.0.0.1-48083"]
+2026-10-19 20:06:13.647 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 48083 (http) with context path '/'
+2026-10-19 20:06:13.688 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:59 - Started YudaoServerApplication in 37.966 seconds (process running for 38.725)
+2026-10-19 20:06:14.078 [http-nio-127.0.0.1-48083-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-19 20:06:14.079 [http-nio-127.0.0.1-48083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-10-19 20:06:14.081 [http-nio-127.0.0.1-48083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 2 ms
+2026-10-19 20:06:14.522 [http-nio-127.0.0.1-48083-exec-1] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:06:14.715 [pool-8-thread-1] INFO  c.i.y.f.banner.core.BannerApplicationRunner:23 - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+2026-10-19 20:06:15.584 [http-nio-127.0.0.1-48083-exec-1] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(1060 ms)]
+2026-10-19 20:06:27.605 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:06:27.607 [http-nio-127.0.0.1-48083-exec-4] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:06:27.614 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:06:27.780 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(165 ms)]
+2026-10-19 20:06:27.780 [http-nio-127.0.0.1-48083-exec-4] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(172 ms)]
+2026-10-19 20:06:27.782 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(176 ms)]
+2026-10-19 20:06:27.862 [http-nio-127.0.0.1-48083-exec-6] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:06:27.862 [http-nio-127.0.0.1-48083-exec-8] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:06:27.862 [http-nio-127.0.0.1-48083-exec-7] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:06:29.150 [http-nio-127.0.0.1-48083-exec-7] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1286 ms)]
+2026-10-19 20:06:29.176 [http-nio-127.0.0.1-48083-exec-8] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1313 ms)]
+2026-10-19 20:06:29.203 [http-nio-127.0.0.1-48083-exec-6] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1340 ms)]
+2026-10-19 20:06:31.320 [http-nio-127.0.0.1-48083-exec-2] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:06:31.509 [http-nio-127.0.0.1-48083-exec-2] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(187 ms)]
+2026-10-19 20:06:31.562 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "2", "warehouseId": "1", "items": [{"id": "2", "quantity": "1"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-2"})]
+2026-10-19 20:06:32.922 [http-nio-127.0.0.1-48083-exec-5] ERROR c.i.y.f.web.core.handler.GlobalExceptionHandler:342 - [defaultExceptionHandler]
+java.lang.IllegalStateException: M5_FAILURE_AFTER_OUTBOX
+	at cn.iocoder.yudao.module.fulfillment.framework.MessageFaultTestConfiguration$1.afterAppend(MessageFaultTestConfiguration.java:28)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService.lambda$append$0(FulOutboxService.java:26)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService.append(FulOutboxService.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService$$SpringCGLIB$$0.append(<generated>)
+	at cn.iocoder.yudao.module.fulfillment.service.FulExecutionService.ship(FulExecutionService.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.service.FulExecutionService$$SpringCGLIB$$0.ship(<generated>)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController.lambda$ship$0(FulExecutionController.java:26)
+	at cn.iocoder.yudao.module.erp.service.stock.DatabaseCommandRetry.run(DatabaseCommandRetry.java:20)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController.ship(FulExecutionController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController$$SpringCGLIB$$0.ship(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.security.TenantSecurityWebFilter.doFilterInternal(TenantSecurityWebFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at cn.iocoder.yudao.framework.security.core.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.apilog.core.filter.ApiAccessLogFilter.doFilterInternal(ApiAccessLogFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.web.TenantContextWebFilter.doFilterInternal(TenantContextWebFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.web.core.filter.CacheRequestBodyFilter.doFilterInternal(CacheRequestBodyFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tracer.core.filter.TraceFilter.doFilterInternal(TraceFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-19 20:06:32.936 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(1372 ms)]
+2026-10-19 20:06:37.045 [ful-expiry-1] INFO  c.i.y.m.fulfillment.framework.FulExpiryScanner:39 - Expiry command tenant=1 reservation=2 outcome=EXPIRED quantity=1.000000
+2026-10-19 20:12:00.571 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:21 - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-19 20:12:00.653 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:53 - Starting YudaoServerApplication using Java 17.0.17 with PID 3172 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m5-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-19 20:12:00.654 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:658 - The following 2 profiles are active: "fulfillment", "fulfillment-message-test"
+2026-10-19 20:12:05.255 [main] INFO  c.g.y.a.MybatisPlusJoinAutoConfiguration:141 - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-19 20:12:06.966 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:12:06.986 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:12:07.007 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:12:07.069 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:12:07.076 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437 - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-19 20:12:07.077 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429 - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-19 20:12:08.708 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 48083 (http)
+2026-10-19 20:12:08.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-127.0.0.1-48083"]
+2026-10-19 20:12:08.801 [main] INFO  org.apache.catalina.core.StandardService:168 - Starting service [Tomcat]
+2026-10-19 20:12:08.802 [main] INFO  org.apache.catalina.core.StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-19 20:12:09.061 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring embedded WebApplicationContext
+2026-10-19 20:12:09.062 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 8356 ms
+2026-10-19 20:12:10.798 [main] INFO  com.alibaba.druid.pool.DruidDataSource:865 - {dataSource-1,master} inited
+2026-10-19 20:12:10.800 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:158 - dynamic-datasource - add a datasource named [master] success
+2026-10-19 20:12:10.800 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:241 - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-19 20:12:12.657 [main] INFO  org.flywaydb.core.FlywayExecutor:41 - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m5_20261019_201046?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-19 20:12:12.711 [main] WARN  org.flywaydb.core.internal.database.base.Database:45 - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-19 20:12:12.875 [main] INFO  org.flywaydb.core.internal.command.DbValidate:41 - Successfully validated 7 migrations (execution time 00:00.117s)
+2026-10-19 20:12:12.949 [main] INFO  org.flywaydb.core.internal.command.DbMigrate:41 - Current version of schema `fulfillment_m5_20261019_201046`: 6
+2026-10-19 20:12:12.958 [main] INFO  org.flywaydb.core.internal.command.DbMigrate:41 - Schema `fulfillment_m5_20261019_201046` is up to date. No migration necessary.
+2026-10-19 20:12:14.558 [main] INFO  org.redisson.Version:43 - Redisson 4.7.0
+2026-10-19 20:12:16.047 [redisson-netty-1-5] INFO  org.redisson.connection.ConnectionsHolder:152 - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-19 20:12:16.372 [redisson-netty-1-19] INFO  org.redisson.connection.ConnectionsHolder:152 - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-19 20:12:20.593 [main] INFO  o.s.boot.web.servlet.RegistrationBean:49 - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-19 20:12:24.005 [main] INFO  c.a.c.config.AjCaptchaServiceAutoConfiguration:33 - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-19 20:12:24.028 [main] INFO  com.anji.captcha.util.ImageUtils:71 - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@1c5f6c2, ORIGINAL=[Ljava.lang.String;@7099f498, PIC_CLICK=[Ljava.lang.String;@7d8e1c87]
+2026-10-19 20:12:24.034 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory:52 - supported-captchaCache-service:[redis, local]
+2026-10-19 20:12:24.046 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory:57 - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-19 20:12:24.046 [main] INFO  c.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80 - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-19 20:12:27.435 [main] INFO  c.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23 - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-19 20:12:35.207 [main] INFO  c.i.yudao.framework.dict.core.DictFrameworkUtils:44 - [init][初始化 DictFrameworkUtils 成功]
+2026-10-19 20:12:35.492 [main] INFO  org.dromara.common.spring.SpringContextUtil:37 - ------SpringContextUtil setApplicationContext-------
+2026-10-19 20:12:35.599 [main] INFO  c.b.m.spring.MybatisPlusApplicationContextAware:43 - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ea94d6a
+2026-10-19 20:12:36.727 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:41 - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-19 20:12:36.778 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:45 - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-19 20:12:36.824 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-127.0.0.1-48083"]
+2026-10-19 20:12:36.855 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 48083 (http) with context path '/'
+2026-10-19 20:12:36.894 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:59 - Started YudaoServerApplication in 37.31 seconds (process running for 38.065)
+2026-10-19 20:12:37.462 [http-nio-127.0.0.1-48083-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-19 20:12:37.462 [http-nio-127.0.0.1-48083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-10-19 20:12:37.466 [http-nio-127.0.0.1-48083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 4 ms
+2026-10-19 20:12:37.918 [pool-8-thread-1] INFO  c.i.y.f.banner.core.BannerApplicationRunner:23 - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+2026-10-19 20:12:37.985 [http-nio-127.0.0.1-48083-exec-1] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:12:39.028 [http-nio-127.0.0.1-48083-exec-1] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(1040 ms)]
+2026-10-19 20:12:49.528 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:12:49.531 [http-nio-127.0.0.1-48083-exec-4] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:12:49.536 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:12:49.705 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(176 ms)]
+2026-10-19 20:12:49.705 [http-nio-127.0.0.1-48083-exec-4] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(173 ms)]
+2026-10-19 20:12:49.706 [http-nio-127.0.0.1-48083-exec-5] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(169 ms)]
+2026-10-19 20:12:49.774 [http-nio-127.0.0.1-48083-exec-6] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:12:49.774 [http-nio-127.0.0.1-48083-exec-8] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:12:49.774 [http-nio-127.0.0.1-48083-exec-7] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "2"})]
+2026-10-19 20:12:51.116 [http-nio-127.0.0.1-48083-exec-8] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1340 ms)]
+2026-10-19 20:12:51.131 [http-nio-127.0.0.1-48083-exec-6] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1356 ms)]
+2026-10-19 20:12:51.154 [http-nio-127.0.0.1-48083-exec-7] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(1379 ms)]
+2026-10-19 20:12:52.902 [http-nio-127.0.0.1-48083-exec-2] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-19 20:12:53.059 [http-nio-127.0.0.1-48083-exec-2] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(154 ms)]
+2026-10-19 20:12:53.108 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51 - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "2", "warehouseId": "1", "items": [{"id": "2", "quantity": "1"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-2"})]
+2026-10-19 20:12:54.391 [http-nio-127.0.0.1-48083-exec-3] ERROR c.i.y.f.web.core.handler.GlobalExceptionHandler:342 - [defaultExceptionHandler]
+java.lang.IllegalStateException: M5_FAILURE_AFTER_OUTBOX
+	at cn.iocoder.yudao.module.fulfillment.framework.MessageFaultTestConfiguration$1.afterAppend(MessageFaultTestConfiguration.java:28)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService.lambda$append$0(FulOutboxService.java:26)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService.append(FulOutboxService.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.service.FulOutboxService$$SpringCGLIB$$0.append(<generated>)
+	at cn.iocoder.yudao.module.fulfillment.service.FulExecutionService.ship(FulExecutionService.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.service.FulExecutionService$$SpringCGLIB$$0.ship(<generated>)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController.lambda$ship$0(FulExecutionController.java:26)
+	at cn.iocoder.yudao.module.erp.service.stock.DatabaseCommandRetry.run(DatabaseCommandRetry.java:20)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController.ship(FulExecutionController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulExecutionController$$SpringCGLIB$$0.ship(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.security.TenantSecurityWebFilter.doFilterInternal(TenantSecurityWebFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at cn.iocoder.yudao.framework.security.core.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.apilog.core.filter.ApiAccessLogFilter.doFilterInternal(ApiAccessLogFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.web.TenantContextWebFilter.doFilterInternal(TenantContextWebFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.web.core.filter.CacheRequestBodyFilter.doFilterInternal(CacheRequestBodyFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tracer.core.filter.TraceFilter.doFilterInternal(TraceFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-19 20:12:54.402 [http-nio-127.0.0.1-48083-exec-3] INFO  c.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70 - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(1292 ms)]
+2026-10-19 20:12:58.231 [ful-expiry-1] INFO  c.i.y.m.fulfillment.framework.FulExpiryScanner:39 - Expiry command tenant=1 reservation=2 outcome=EXPIRED quantity=1.000000

@@ -1,0 +1,226 @@
+{
+  "note": "Explicit M5 source inventory, not Git diff. Upstream pins/MIT unchanged. Historical learning packs retained.",
+  "count": 55,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "3da0dbebfc5d4b924a9d7d35c3bdb4e068ebf722391451c1a7ab56f9eaa212a3"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "460bcf5dd6900e4aee743c0cfe5f213a140301c2ae2ae3c7cc515aab961831d8"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "5b127147bb60e412315da368ce135869a28c3fe384f550f699806dcd5d0ff267"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "52f60856975c5a3988c631416d416a957c92c9b86cc1e396e225321c257f2692"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "d22d21707015a3008b6d41587954dd002fd4031a0750cb95ec9870e57e52494c"
+    },
+    {
+      "path": "docs/decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "sha256": "6cc0f03e946a4a8d5dedded242d7f845822440cd5d91562d0d516f98de64ce7f"
+    },
+    {
+      "path": "docs/lessons/M5-可靠消息与故障恢复.md",
+      "sha256": "464e1a47fcf4f0c7333a57bef331f753bbf43eaefb47187de5e2356101116faa"
+    },
+    {
+      "path": "docs/evidence/M5-验收报告.md",
+      "sha256": "a4a7efe1599be8a385b0e918decd51c7dfc29eb4368e830352533d57f5f71940"
+    },
+    {
+      "path": "docs/学习资料/README.md",
+      "sha256": "363fc0e8b01c1122035f4c06838354684af479ed4e88e56cc51e2a353ce11102"
+    },
+    {
+      "path": "docs/面试问答/README.md",
+      "sha256": "e1138f21f97519343a86a80e1b3f50f04db61b17a2cbb5036ac062d83ef73e01"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEvent.java",
+      "sha256": "d0c7f6390a43c7c7f4aa55f3f7bbf3c4e5e9b002ec1f48a3499ebfa6b27be715"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageSnapshots.java",
+      "sha256": "340286f8e11271e5d88f45e23eae6b42214a962208db83c7dea18fcebd82418b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageFault.java",
+      "sha256": "1f9c514f3ad0cb891da72259e09ba3ffefa7bf49c9b57f64f4c152bb3101c7ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOutboxService.java",
+      "sha256": "6e4b49194e7fdbe1fe8b6bb06f136021e9e1abb212730ede2f1ac93cc5faabd6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageProperties.java",
+      "sha256": "f2e88af3a3b46be71b00960e7c17a6491f1f69a826bf6acf6a8dbe3cd451cd5a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageStore.java",
+      "sha256": "6589ed2825798d0990414d5500a1e5cdd1d33554a3978e51edf2e556f081ed49"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageConsumerService.java",
+      "sha256": "33e272ca8eac1214f5ecf94bfb27974cad9215e8597b6413578b3e1bda736e27"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulRabbitTransport.java",
+      "sha256": "5a31dc77f49225b65dddde97bdf6969529c1457fc36162602287b044cff5e819"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageWorker.java",
+      "sha256": "cb1f813d098d70225d556d2e682cd0fe76d7e2484f163f94a2cd5b44f376eecb"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessagingConfiguration.java",
+      "sha256": "525744787de954f532eb56bf16bf03b194b5328031537d47171e784b06456a9c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageFaultTestConfiguration.java",
+      "sha256": "d099c29d3208981b9d23ca1a25edb540ec8347f6bbc92de3d1638f8d709f2448"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/MessageContracts.java",
+      "sha256": "8d24d229d2e2434155f4389df50e297b7667fe1a1d809c8eddb8b7acddc81598"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageAdminService.java",
+      "sha256": "9afd1e7be1736601d936d6ecafd7db33d38f3ba79157937b9ddf86f9aacd3f8d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulMessageController.java",
+      "sha256": "446d19b243f583a806ac117466cf36c8b90cb1cb99ab25dc089ad52fe30b96b3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "33db2c7db961f4d2d566b9dee863e5b0b3ec27f15c95b5eb313f11c775516d7b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "sha256": "d8c251441cbeca31f206f930bd9e6f14e8e80732437d6de5350fd1a7ff061eff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "bb638f1a50095503d5dee16e5dc7e9ae721fa1ef5ba7a0911183e968ffd37739"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "sha256": "6696a66413151c3c355537a7732275b69a73d1f81e584143886b930efdc5cd86"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "sha256": "b75b795c746955ce535869f6efffaef07542b14ea6909ada159fea0874ae9ab2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "sha256": "ae42bbb9a967f43e9ff8a86a2f60f52d3de537d2e04ea1fcb4807e5230add6e0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/pom.xml",
+      "sha256": "f69b6fe4d48c18b8a734b271e4f88d119a4e559995982f7b2e4190d80bb7e89a"
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "019b72e46d57edf8f4096119bc6b5beb66c92592b275f5ffb50a88bacaa5647d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V6__reliable_messages.sql",
+      "sha256": "5904018e931355e766f42346fe2b4b68dec6b9f3416562d37ac3008b775dc5da"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEventTest.java",
+      "sha256": "8316a68f5aff07afcb0fc2894dce7823192e8912fd3cea49b72b6de47e6378d1"
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/messages.ts",
+      "sha256": "4f7b12a65de29d13d5996085ffbc8e3cb13f63a19c332378b6d0c2bb707808b4"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentMessages.vue",
+      "sha256": "9f243eb652c06dc46ce5b1d9d61cfbc06ab19c65efd27fb2c6622e1b92af641d"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "sha256": "68946c16cead4b753eb3e9258e19658df7491694fead5b6e83d52b52e89b6ca6"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "b09c42fc1e8477899fa9a2746158ce101efb05b30dfb2be83f0f4266a2d5c188"
+    },
+    {
+      "path": "tests/requirements.txt",
+      "sha256": "d4608023a345f19b1932c70d5d5d695c68eddc7b0002b685030152a757ef7322"
+    },
+    {
+      "path": "tests/m5_acceptance.py",
+      "sha256": "72e68c0d9352f40bb0acbad853d9e85a363594517132ebd0c3991a0e1da61f55"
+    },
+    {
+      "path": "tests/m5_constraints.py",
+      "sha256": "44b7281f1d31fb1c4f4e9cd2f230a2cf36c2af9fc2d8013f5c23c300493616d0"
+    },
+    {
+      "path": "tests/m5_demo.py",
+      "sha256": "89f6f0931b11f3794e558d956c0b6affb95705421a8e1fd5957b8f9e412a1c7a"
+    },
+    {
+      "path": "tests/m5_frontend.ps1",
+      "sha256": "9c8f60b60307507defe80c150ae62e1c920c5006e27a4f7c9cbd683f21c65876"
+    },
+    {
+      "path": "tests/m5_qa.py",
+      "sha256": "0fed1f75b6587daa8075fc919032ca68ce3e2202056a28e7fd76015331b69975"
+    },
+    {
+      "path": "tests/m5_restart.py",
+      "sha256": "dde3a053f3b4e55caacc0b2b08d80dfd6fde3df32122413dfb19b74c1d4bfd1e"
+    },
+    {
+      "path": "tests/m5_supplement.py",
+      "sha256": "1037521a80236ee6cca5e78af40fb313c794cde039f23fa21dea24a66404a2a4"
+    },
+    {
+      "path": "tests/m5_ui_assert.py",
+      "sha256": "2a85af4790a8439e07d40ef8b59b0ae33fc3d76450e1abd87b2565c28265e26d"
+    },
+    {
+      "path": "tests/m5_upgrade.py",
+      "sha256": "4cb1e9f7a53fffb27a680ee5b8e97612bf7c68327b20cad6d18d3510b1544550"
+    },
+    {
+      "path": "scripts/Bootstrap-Messaging.ps1",
+      "sha256": "4378630a726434b8bf7cedd18d4dcae50f7cb408df1b191a44735e84479babc0"
+    },
+    {
+      "path": "scripts/Messaging-Environment.ps1",
+      "sha256": "5bac1887b9bc38fbe0a55aa68efecd5e3f58db9a9ed8c4520e2693b100064460"
+    },
+    {
+      "path": "scripts/Run-Messaging.ps1",
+      "sha256": "c20b70ee1afa49fcfa93c79df8d0170901255ccc1d56ac7f82a7bb43bc202ce6"
+    },
+    {
+      "path": "scripts/Start-Messaging.ps1",
+      "sha256": "0cb8a60ec54d7fe82170d4a0ea323b62196226ce0dbc75fa73f01b57a3a5166c"
+    },
+    {
+      "path": "scripts/Stop-Messaging.ps1",
+      "sha256": "9df8c05058386e67f7bed2436ee0f416a1b9190dd0f812a5364cc1ee4df1b309"
+    },
+    {
+      "path": "scripts/Start-Local.ps1",
+      "sha256": "8d1edb98c6a131772845a81c44be9a9ec6a4baa3d8b698184ab2ab1f93158807"
+    },
+    {
+      "path": "scripts/Stop-Local.ps1",
+      "sha256": "59370d57d2265df95644f03616847a7b3b661664768f6091a9bbf3b92b76a354"
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "run_at": "2026-10-19T07:43:46.714775+00:00",
+  "scope": "仅学习和面试资料的静态核对与教学算术；没有运行Java业务测试、HTTP/SQL验收、服务、迁移或压测",
+  "result": "passed",
+  "metrics": {
+    "study_markdown": 26,
+    "interview_markdown": 17,
+    "markdown_total": 43,
+    "characters": 194974,
+    "question_count": 128,
+    "future_questions": 8,
+    "local_links": 828,
+    "source_line_links": 260,
+    "json_examples": 2,
+    "source_snapshot_files": 211,
+    "actual_routes": 22,
+    "ddl_tables": 12,
+    "archived_junit_tests": 37
+  },
+  "checks": [
+    {
+      "name": "UTF8与结构 docs/学习资料/00-完成度与事实边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/01-学习路线与每日任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/02-业务与数量全流程.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/03-架构与技术栈.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/04-数据库与迁移.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/05-订单绑定与托管冻结.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/06-分仓预占与释放.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/07-旧ERP库存入口保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/08-发货取消与ERP事务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/09-物流回调与验签.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/10-自动到期与任务恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/11-退货额度与实际收货.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/12-事务锁与幂等专题.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/13-权限接口与前端精度.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/14-测试方法与证据阅读.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/15-运行复现与排障.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/16-Java后端知识映射.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/17-练习与参考答案.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/18-后续能力与设计边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/19-真实代码导航.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/20-迁移与数据库字典.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/21-实际接口与请求契约.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/22-术语速查与易错说法.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/23-验收证据索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/24-关键源码逐段精读.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/01-项目介绍与个人贡献.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/02-业务建模与数量状态.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/03-MySQL表设计与隔离锁.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/04-Spring事务与工程边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/05-并发幂等与有限重试.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/06-旧ERP库存兼容.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/07-发货取消与物流回调.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/08-自动到期与任务恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/09-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/10-权限接口与前端协作.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/11-测试证据与排障.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/12-现场推演与代码设计.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/13-项目口述与简历模板.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/14-未完成能力与演进问答.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/15-模拟面试与掌握检查.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/16-题目总索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8与结构 docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "本地链接和锚点",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "128题编号唯一与五部分完整",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "未来题8道独立编号F",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "总索引包含全部问答",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "提取依据的源文件快照一致",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "实际Controller路由22项提取",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "12张履约CREATE表字典",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "归档JUnit数值转录37项且无失败错误跳过",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 绑定",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 预占",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 发4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 释放2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 到期4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 取消6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学双仓数量推演 收货2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学精度预占7.000001拆分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学退货额度1且百万分之一超额",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "教学部分取消6的等式",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "资料明确未来与验证边界",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "document_sha256": [
+    {
+      "path": "docs/学习资料/00-完成度与事实边界.md",
+      "sha256": "5f7e7722547c608b8298a4ff0f25f9f0dbc80576e92886befbdc0db50dc76414"
+    },
+    {
+      "path": "docs/学习资料/01-学习路线与每日任务.md",
+      "sha256": "69d5b869ed6d95cba4ff184ac617bbb34e27f6c5ed63636a72d7734c5e5468cd"
+    },
+    {
+      "path": "docs/学习资料/02-业务与数量全流程.md",
+      "sha256": "165278625dd2faff1296b0fcdde01890396395cd833628dd3346caa939497dc2"
+    },
+    {
+      "path": "docs/学习资料/03-架构与技术栈.md",
+      "sha256": "c0b18a55657336c27a336a667ec41f6a3b73101d1cd143aca5527070097b2672"
+    },
+    {
+      "path": "docs/学习资料/04-数据库与迁移.md",
+      "sha256": "ef25d19036be72e829fec569cd094559df05e78fc7be65eb8f23a73cc7558ad5"
+    },
+    {
+      "path": "docs/学习资料/05-订单绑定与托管冻结.md",
+      "sha256": "405f26ff73cd26daa19e603bf48b75747fe325b456e45a1e2aefb8d694900fa0"
+    },
+    {
+      "path": "docs/学习资料/06-分仓预占与释放.md",
+      "sha256": "c1ee4b26aef4f057ddde4d7792f1f397639da2289032ea84d7f8b94a25ef64d7"
+    },
+    {
+      "path": "docs/学习资料/07-旧ERP库存入口保护.md",
+      "sha256": "0819bc67f562d76e5cb2f19bb27920e4d066a9e201f092bb2513a0e9a59a6722"
+    },
+    {
+      "path": "docs/学习资料/08-发货取消与ERP事务.md",
+      "sha256": "95d73bce2f2fd6e2fd36660a220c4acf5072d76b6ca06f0c11cd0829e097656e"
+    },
+    {
+      "path": "docs/学习资料/09-物流回调与验签.md",
+      "sha256": "7f5813e325d107fb72f9cd023e891560bb656b412818dee1138384bdece4d501"
+    },
+    {
+      "path": "docs/学习资料/10-自动到期与任务恢复.md",
+      "sha256": "af111ace349a072593e9f13bceccab6fd5d0566887f2e8d3767191a43c1a4bf6"
+    },
+    {
+      "path": "docs/学习资料/11-退货额度与实际收货.md",
+      "sha256": "b93c75444f8c349f4cdf1209c5f150d1519a43f7e2caa4b37f41c65aed0cd227"
+    },
+    {
+      "path": "docs/学习资料/12-事务锁与幂等专题.md",
+      "sha256": "f170c0fca2603a1f439397e9574da6aca568ddaac4c0a82052101e10934a02a1"
+    },
+    {
+      "path": "docs/学习资料/13-权限接口与前端精度.md",
+      "sha256": "06add356f909752b5016cd1631347a78599f9bcdd16e134454d23d3bfcec59b6"
+    },
+    {
+      "path": "docs/学习资料/14-测试方法与证据阅读.md",
+      "sha256": "ab02a80b91c4a25e9e1df9ef0119922294998374151e733aa58758352b9abff0"
+    },
+    {
+      "path": "docs/学习资料/15-运行复现与排障.md",
+      "sha256": "36af5e6025cb69ef587932dc9eb0ea715ce41c65a4db2b9a90f9860ffe4737cb"
+    },
+    {
+      "path": "docs/学习资料/16-Java后端知识映射.md",
+      "sha256": "7ca674b504818327c961fd6bbfd25721922ac1209cc8172c6a3ec2a434bdde66"
+    },
+    {
+      "path": "docs/学习资料/17-练习与参考答案.md",
+      "sha256": "8d468814148335a50c8abd5fdb808ed4d2317c1d80907d46da54ac1807afcb9e"
+    },
+    {
+      "path": "docs/学习资料/18-后续能力与设计边界.md",
+      "sha256": "ef6b57e10b20bbbb4866861a6731ed477d5dedc4d561b63102d436b2fe0f97fc"
+    },
+    {
+      "path": "docs/学习资料/19-真实代码导航.md",
+      "sha256": "8f654d178647cd8c38f2e0adf627404cbec28962c33738ac17b4721a8ddf9595"
+    },
+    {
+      "path": "docs/学习资料/20-迁移与数据库字典.md",
+      "sha256": "df1d56e6ab536ff2eeab0d72ae4e76e45b7ca836240fd97a4e840452d5bae24f"
+    },
+    {
+      "path": "docs/学习资料/21-实际接口与请求契约.md",
+      "sha256": "74bf12e56634423e145f01d5832f6700bdee6535fc8c3ea7d58bfddbf18010ae"
+    },
+    {
+      "path": "docs/学习资料/22-术语速查与易错说法.md",
+      "sha256": "b9ee152e1c85a284bf19918e028b066da25a36c2db54b29d5c89751a0a3c1097"
+    },
+    {
+      "path": "docs/学习资料/23-验收证据索引.md",
+      "sha256": "a6829a4f39accab9aacd77217c04650f6e963154d0d484031e5432a8101586f2"
+    },
+    {
+      "path": "docs/学习资料/24-关键源码逐段精读.md",
+      "sha256": "debd1b55e06500ac9dcbf737c667607f6fcadd57e3589e4c2ed5df7c539dc7b3"
+    },
+    {
+      "path": "docs/学习资料/README.md",
+      "sha256": "b2ee16f8d32bd173431f5551acc9ae3aa4f7540d41662bfe07efa28b79a2db18"
+    },
+    {
+      "path": "docs/面试问答/01-项目介绍与个人贡献.md",
+      "sha256": "23e1cda688de9885a6eb3c41ed0babad483f36fcd29747786746980b6773b6f8"
+    },
+    {
+      "path": "docs/面试问答/02-业务建模与数量状态.md",
+      "sha256": "ef7e9ef5305ed62f9cacbf722d15398c2ece6a43219d488670448fb00fecb12a"
+    },
+    {
+      "path": "docs/面试问答/03-MySQL表设计与隔离锁.md",
+      "sha256": "6886685df8c30851b2b243487eb71f8003822c6e501044d62dff0f051235a3cc"
+    },
+    {
+      "path": "docs/面试问答/04-Spring事务与工程边界.md",
+      "sha256": "8ecbeae2c1d957894344541c5d605ee459be8f6e1523b78da920266bf16d5974"
+    },
+    {
+      "path": "docs/面试问答/05-并发幂等与有限重试.md",
+      "sha256": "25f2f370543b3ca60ac5a73a87e5e97371ddd6285f4a4c6423e5af386ff3a8e5"
+    },
+    {
+      "path": "docs/面试问答/06-旧ERP库存兼容.md",
+      "sha256": "8f64d23f6541989b4ff2940a28ee932f3b458f679c7a371ff26bcf6a6f1ed1c7"
+    },
+    {
+      "path": "docs/面试问答/07-发货取消与物流回调.md",
+      "sha256": "33b5ceeae16f41ec1f5f8ac256371468f45df0697c91bf1dc7167c27e7d2fc7e"
+    },
+    {
+      "path": "docs/面试问答/08-自动到期与任务恢复.md",
+      "sha256": "8093688c1ef0aa60bbba9479bb9381063269f10a4a4d74c9b7dc183fb609d855"
+    },
+    {
+      "path": "docs/面试问答/09-退货额度与ERP入库.md",
+      "sha256": "daafae137940b127e32d6aaf459d609f4ab07c56a393479d3b7c9d5e0130b8c2"
+    },
+    {
+      "path": "docs/面试问答/10-权限接口与前端协作.md",
+      "sha256": "f270fc1842ef6911b82cd11544136c108e4128188a1a6c2e8b27616fb482b283"
+    },
+    {
+      "path": "docs/面试问答/11-测试证据与排障.md",
+      "sha256": "39ba6dde4fc544496fe3633a91e1fcca04e75e53a2bde695a1d3493114d67605"
+    },
+    {
+      "path": "docs/面试问答/12-现场推演与代码设计.md",
+      "sha256": "a243205c38dfbc2ff73b5a1ca6d4ca95ece72783c1a1d383735833b0a1cf8c4e"
+    },
+    {
+      "path": "docs/面试问答/13-项目口述与简历模板.md",
+      "sha256": "5734743007087d514ca4dfa2d2f477c5a5ea68fe2dcf94402fb8428e6dfc0fbe"
+    },
+    {
+      "path": "docs/面试问答/14-未完成能力与演进问答.md",
+      "sha256": "7dc1a0ff53fc0858048fed046c0b6bd21ce6f7597a196a999eaf594e138375b9"
+    },
+    {
+      "path": "docs/面试问答/15-模拟面试与掌握检查.md",
+      "sha256": "1ef38e8ca5154eddbfbfb8ca7175d943e1a7ba65746ec73a7557cb63ddd0ba8d"
+    },
+    {
+      "path": "docs/面试问答/16-题目总索引.md",
+      "sha256": "8d5bc8b83596834dad73c89a2a4ff0b87a5609c8b926b030f264be78b60e6105"
+    },
+    {
+      "path": "docs/面试问答/README.md",
+      "sha256": "5381dee4a7aa0f73baf520ecd2dd5c7e9ac5dc3e63efdbe3075a8a63d23de812"
+    }
+  ]
+}

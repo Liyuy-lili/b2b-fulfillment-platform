@@ -1,0 +1,65 @@
+{
+  "run_at": "2026-10-19T03:14:22.396147+00:00",
+  "database": "fulfillment_m4_return_20261019_105244",
+  "checks": [
+    {
+      "name": "same original shipment item identity enforced",
+      "passed": true,
+      "mysql_error": 1452,
+      "expected": 1452
+    },
+    {
+      "name": "original warehouse enforced",
+      "passed": true,
+      "mysql_error": 1452,
+      "expected": 1452
+    },
+    {
+      "name": "same tenant association enforced",
+      "passed": true,
+      "mysql_error": 1452,
+      "expected": 1452
+    },
+    {
+      "name": "received state requires its timestamp",
+      "passed": true,
+      "mysql_error": 3819,
+      "expected": 3819
+    },
+    {
+      "name": "rejected reason cannot be null",
+      "passed": true,
+      "mysql_error": 3819,
+      "expected": 3819
+    },
+    {
+      "name": "fact quantity must be positive",
+      "passed": true,
+      "mysql_error": 3819,
+      "expected": 3819
+    },
+    {
+      "name": "return facts cannot be soft deleted",
+      "passed": true,
+      "mysql_error": 3819,
+      "expected": 3819
+    },
+    {
+      "name": "ERP receipt header mapping unique",
+      "passed": true,
+      "mysql_error": 1062,
+      "expected": 1062
+    },
+    {
+      "name": "physical record mapping unique",
+      "passed": true,
+      "mysql_error": 1062,
+      "expected": 1062
+    },
+    {
+      "name": "all probes rolled back with facts unchanged",
+      "passed": true
+    }
+  ],
+  "result": "passed"
+}

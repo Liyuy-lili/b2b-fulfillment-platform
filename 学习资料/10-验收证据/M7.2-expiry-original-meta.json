@@ -1,0 +1,30 @@
+{
+  "run_at": "2026-10-20T01:55:19.928439+00:00",
+  "case": "expiry",
+  "database": "fulfillment_m7_reg_expiry_20261020_095519",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "sources": [
+    {
+      "path": "tests\\m4_expiry_acceptance.py",
+      "sha256": "94e237269da4497564b00a1cc6d5c2dab103953f284f81754ee1278cce36ba76",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    }
+  ],
+  "adaptations": [
+    "Separate M7 schema/Redis DB12/ports; historical evidence files are never replaced."
+  ],
+  "results": [
+    {
+      "evidence": "M7.2-expiry.json",
+      "checks": 42
+    }
+  ],
+  "result": "passed",
+  "all_owned_stopped": true
+}

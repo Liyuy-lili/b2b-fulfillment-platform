@@ -1,0 +1,2113 @@
+[
+  {
+    "table": "erp_account",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/finance/ErpAccountDO.java",
+    "source_sha256": "d032369b8d142c9f4472060679cf0e8061e119cd589c05564565139366bb425b",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "sort",
+        "column": "sort",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "defaultStatus",
+        "column": "default_status",
+        "type": "BIT(1) NOT NULL DEFAULT b'0'"
+      }
+    ]
+  },
+  {
+    "table": "erp_finance_payment",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/finance/ErpFinancePaymentDO.java",
+    "source_sha256": "003776a896664d3c4e3812781aa2f885b7abeab775878ac20549d70d6ae0659a",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "paymentTime",
+        "column": "payment_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "financeUserId",
+        "column": "finance_user_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "supplierId",
+        "column": "supplier_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "paymentPrice",
+        "column": "payment_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_finance_payment_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/finance/ErpFinancePaymentItemDO.java",
+    "source_sha256": "0ebcd61363a3dedf5e0bd1e929f400e4a9259618ddcf52a51a07d4a1b0ca8504",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "paymentId",
+        "column": "payment_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizType",
+        "column": "biz_type",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "bizId",
+        "column": "biz_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizNo",
+        "column": "biz_no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "paidPrice",
+        "column": "paid_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "paymentPrice",
+        "column": "payment_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_finance_receipt",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/finance/ErpFinanceReceiptDO.java",
+    "source_sha256": "a80e5298cc4300060c61f57cc6d284c078cb2c7ca53036fa9ec85266bdc565e9",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "receiptTime",
+        "column": "receipt_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "financeUserId",
+        "column": "finance_user_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "customerId",
+        "column": "customer_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "receiptPrice",
+        "column": "receipt_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_finance_receipt_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/finance/ErpFinanceReceiptItemDO.java",
+    "source_sha256": "ffca2f1bcade3b966f96f73aa9983a23fad52d98a997d56e6900e19969a78324",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "receiptId",
+        "column": "receipt_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizType",
+        "column": "biz_type",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "bizId",
+        "column": "biz_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizNo",
+        "column": "biz_no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "receiptedPrice",
+        "column": "receipted_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "receiptPrice",
+        "column": "receipt_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_product_category",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/product/ErpProductCategoryDO.java",
+    "source_sha256": "334b08725c81b57e22e8f9cbee75a2fbe555b93d058845c42aae3620b3e6994e",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "parentId",
+        "column": "parent_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "code",
+        "column": "code",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "sort",
+        "column": "sort",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_product",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/product/ErpProductDO.java",
+    "source_sha256": "d7298f807f8e358f2207ccab82699a6e62597db13a667a5f78ef5e75983efc05",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "barCode",
+        "column": "bar_code",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "categoryId",
+        "column": "category_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "unitId",
+        "column": "unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "standard",
+        "column": "standard",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "expiryDay",
+        "column": "expiry_day",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "weight",
+        "column": "weight",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "purchasePrice",
+        "column": "purchase_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "salePrice",
+        "column": "sale_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "minPrice",
+        "column": "min_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_product_unit",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/product/ErpProductUnitDO.java",
+    "source_sha256": "db85a0ea9f9f2f190cd77921e3620e6ff013a8360ca33ff6ebaf1651feb5f1c3",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_in",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseInDO.java",
+    "source_sha256": "bb56fbd6d42a4999a687655819fe8db01dad9ca4640a7c09e9ce98395f7d1c37",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "supplierId",
+        "column": "supplier_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "inTime",
+        "column": "in_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderNo",
+        "column": "order_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "paymentPrice",
+        "column": "payment_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "otherPrice",
+        "column": "other_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_in_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseInItemDO.java",
+    "source_sha256": "77583dbb17e18402705c7480a3a51203077c3583c0549ac3260a06cdbc27fd68",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "inId",
+        "column": "in_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderItemId",
+        "column": "order_item_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_order",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseOrderDO.java",
+    "source_sha256": "bcd384dc22219fdc7c03a2e08b9fbd1f11d57ae0849307c0af9069119e7b3fb8",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "supplierId",
+        "column": "supplier_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderTime",
+        "column": "order_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "depositPrice",
+        "column": "deposit_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "inCount",
+        "column": "in_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "returnCount",
+        "column": "return_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_order_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseOrderItemDO.java",
+    "source_sha256": "04a9d3dd1134c270040be5f9f163fd5bd7c3ad9e36c7f2f6654e3c0fdc97c4fc",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "inCount",
+        "column": "in_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "returnCount",
+        "column": "return_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_return",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseReturnDO.java",
+    "source_sha256": "1ac4a397b8f2fa418972848c395a8ef426db7babad3dbd10d62e6944ed6e417d",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "supplierId",
+        "column": "supplier_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "returnTime",
+        "column": "return_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderNo",
+        "column": "order_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "refundPrice",
+        "column": "refund_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "otherPrice",
+        "column": "other_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_purchase_return_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpPurchaseReturnItemDO.java",
+    "source_sha256": "8044898e1312d6af99d8b6eda70cecdfcadd656552c5f43e1c3738500895e5a0",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "returnId",
+        "column": "return_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderItemId",
+        "column": "order_item_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_supplier",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/purchase/ErpSupplierDO.java",
+    "source_sha256": "92fd54b6030cc42553ee66a6a387d4e0eaa9d406bc2f09024dfb8769481a50ce",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "contact",
+        "column": "contact",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "mobile",
+        "column": "mobile",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "telephone",
+        "column": "telephone",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "email",
+        "column": "email",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "fax",
+        "column": "fax",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "sort",
+        "column": "sort",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "taxNo",
+        "column": "tax_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "bankName",
+        "column": "bank_name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "bankAccount",
+        "column": "bank_account",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "bankAddress",
+        "column": "bank_address",
+        "type": "VARCHAR(255) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_customer",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpCustomerDO.java",
+    "source_sha256": "45828ba4175c1cdaf97f48046e7fe8bbfb8f58c07720e837017c38cd949bdc9a",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "contact",
+        "column": "contact",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "mobile",
+        "column": "mobile",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "telephone",
+        "column": "telephone",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "email",
+        "column": "email",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "fax",
+        "column": "fax",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "sort",
+        "column": "sort",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "taxNo",
+        "column": "tax_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "bankName",
+        "column": "bank_name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "bankAccount",
+        "column": "bank_account",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "bankAddress",
+        "column": "bank_address",
+        "type": "VARCHAR(255) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_order",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleOrderDO.java",
+    "source_sha256": "67db0526884147c056749a0efe49a8558e2d0851c1b9c591cbffa830d1ba85ca",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "customerId",
+        "column": "customer_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "saleUserId",
+        "column": "sale_user_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderTime",
+        "column": "order_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "depositPrice",
+        "column": "deposit_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "outCount",
+        "column": "out_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "returnCount",
+        "column": "return_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_order_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleOrderItemDO.java",
+    "source_sha256": "9ab4cb4dd091138f7dfdee4860431db24060f99db82376eb167dac0278e3175f",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "outCount",
+        "column": "out_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "returnCount",
+        "column": "return_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_out",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleOutDO.java",
+    "source_sha256": "279dfb3b17946ca3cb26346762092a0d5f91397dbde179314cf58e16d3b989b3",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "customerId",
+        "column": "customer_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "saleUserId",
+        "column": "sale_user_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "outTime",
+        "column": "out_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderNo",
+        "column": "order_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "receiptPrice",
+        "column": "receipt_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "otherPrice",
+        "column": "other_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_out_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleOutItemDO.java",
+    "source_sha256": "f3f3bc62982e7289182eb96bbaf43f42136e32b6aed9d2d921db98ccca2a2908",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "outId",
+        "column": "out_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderItemId",
+        "column": "order_item_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_return",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleReturnDO.java",
+    "source_sha256": "735de52da76768d97ea1771ea20e97eec5abece75a252c2d3fc23bcab59bb54e",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "customerId",
+        "column": "customer_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "accountId",
+        "column": "account_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "saleUserId",
+        "column": "sale_user_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "returnTime",
+        "column": "return_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "orderId",
+        "column": "order_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderNo",
+        "column": "order_no",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "refundPrice",
+        "column": "refund_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalProductPrice",
+        "column": "total_product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalTaxPrice",
+        "column": "total_tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPercent",
+        "column": "discount_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "discountPrice",
+        "column": "discount_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "otherPrice",
+        "column": "other_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_sale_return_items",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/sale/ErpSaleReturnItemDO.java",
+    "source_sha256": "3638f1e2bbd19a73268935beb1b1ee8b7ae81f578aca89d4a6b2e817405e9c3e",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "returnId",
+        "column": "return_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "orderItemId",
+        "column": "order_item_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPercent",
+        "column": "tax_percent",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "taxPrice",
+        "column": "tax_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_check",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockCheckDO.java",
+    "source_sha256": "6037dc28a917bc752b34614a45412e7cd38cffa46f5022ee0e96caffe4071dc3",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "checkTime",
+        "column": "check_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_check_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockCheckItemDO.java",
+    "source_sha256": "24184efe5dbcb569845b622004f3c5daa5cf7847998878af46cf7a64bf302b2b",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "checkId",
+        "column": "check_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "stockCount",
+        "column": "stock_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "actualCount",
+        "column": "actual_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockDO.java",
+    "source_sha256": "256a1539221650c0facb6fa6f1d2366fdceb5bde549ad05ef49bc5ada3d1f831",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NOT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NOT NULL"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NOT NULL DEFAULT 0"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_in",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockInDO.java",
+    "source_sha256": "34ce4411cc110aa3c0e02e1890fa66dcad1b4856907f5287b7687b8bc94e02d8",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "supplierId",
+        "column": "supplier_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "inTime",
+        "column": "in_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_in_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockInItemDO.java",
+    "source_sha256": "f53851724415de2beedbf0a1b8c0ebea6ebd3a04fe4e7fd913a043a9f4cc6dc5",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "inId",
+        "column": "in_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_move",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockMoveDO.java",
+    "source_sha256": "281003de7e9311ee4d2d019bb4a88e23f3d4b8f2ef4175fb8be09c655db782a2",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "moveTime",
+        "column": "move_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_move_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockMoveItemDO.java",
+    "source_sha256": "19f67d7d351a4f2e8490bab691bb73219b45d703515b4f66fc6b9317bb62ddb9",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "moveId",
+        "column": "move_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "fromWarehouseId",
+        "column": "from_warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "toWarehouseId",
+        "column": "to_warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_out",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockOutDO.java",
+    "source_sha256": "9b198d4333ec34dbc61525d309206ff745bc51f19eb8725729004854aff3f20b",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "no",
+        "column": "no",
+        "type": "VARCHAR(64) NULL"
+      },
+      {
+        "java": "customerId",
+        "column": "customer_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "outTime",
+        "column": "out_time",
+        "type": "DATETIME NULL"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "fileUrl",
+        "column": "file_url",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_out_item",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockOutItemDO.java",
+    "source_sha256": "e58b422092d3c44ef59c37ad537d93581a41273eb0e63cd371de4ea155fb2681",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "outId",
+        "column": "out_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productUnitId",
+        "column": "product_unit_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "productPrice",
+        "column": "product_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalPrice",
+        "column": "total_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_stock_record",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpStockRecordDO.java",
+    "source_sha256": "894e32f8c4dff1ed43186c7b09c2d1a2c37c3806121fbf1474f0ddf38992deae",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "productId",
+        "column": "product_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "warehouseId",
+        "column": "warehouse_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "count",
+        "column": "count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "totalCount",
+        "column": "total_count",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "bizType",
+        "column": "biz_type",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "bizId",
+        "column": "biz_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizItemId",
+        "column": "biz_item_id",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "bizNo",
+        "column": "biz_no",
+        "type": "VARCHAR(64) NULL"
+      }
+    ]
+  },
+  {
+    "table": "erp_warehouse",
+    "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/dataobject/stock/ErpWarehouseDO.java",
+    "source_sha256": "588ce9fa72a4055c3c79284af339f1cf6d93464db5addaef95b4de0960d6a728",
+    "fields": [
+      {
+        "java": "id",
+        "column": "id",
+        "type": "BIGINT NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "java": "name",
+        "column": "name",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "address",
+        "column": "address",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "sort",
+        "column": "sort",
+        "type": "BIGINT NULL DEFAULT NULL"
+      },
+      {
+        "java": "remark",
+        "column": "remark",
+        "type": "VARCHAR(1024) NULL"
+      },
+      {
+        "java": "principal",
+        "column": "principal",
+        "type": "VARCHAR(255) NULL"
+      },
+      {
+        "java": "warehousePrice",
+        "column": "warehouse_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "truckagePrice",
+        "column": "truckage_price",
+        "type": "DECIMAL(24,6) NULL DEFAULT 0"
+      },
+      {
+        "java": "status",
+        "column": "status",
+        "type": "INT NULL DEFAULT 0"
+      },
+      {
+        "java": "defaultStatus",
+        "column": "default_status",
+        "type": "BIT(1) NOT NULL DEFAULT b'0'"
+      }
+    ]
+  }
+]

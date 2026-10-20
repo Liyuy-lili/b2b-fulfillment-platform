@@ -1,0 +1,80 @@
+{
+  "run_at": "2026-10-19T10:13:47.032266+00:00",
+  "status": "passed",
+  "modules": [
+    "yudao",
+    "yudao-framework",
+    "yudao-common",
+    "yudao-spring-boot-starter-web",
+    "yudao-spring-boot-starter-security",
+    "yudao-spring-boot-starter-mybatis",
+    "yudao-spring-boot-starter-redis",
+    "yudao-spring-boot-starter-mq",
+    "yudao-spring-boot-starter-job",
+    "yudao-spring-boot-starter-test",
+    "yudao-spring-boot-starter-biz-tenant",
+    "yudao-spring-boot-starter-websocket",
+    "yudao-spring-boot-starter-monitor",
+    "yudao-spring-boot-starter-protection",
+    "yudao-spring-boot-starter-biz-ip",
+    "yudao-spring-boot-starter-excel",
+    "yudao-spring-boot-starter-biz-data-permission",
+    "yudao-module-infra",
+    "yudao-module-system",
+    "yudao-module-erp",
+    "yudao-module-fulfillment",
+    "yudao-server"
+  ],
+  "suites": [
+    {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.OrderStatusCalculatorTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.AllocationPlannerTest"
+    },
+    {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.DatabaseCommandRetryTest"
+    },
+    {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.LogisticsSignatureTest"
+    },
+    {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.framework.FulExpiryScannerTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.ReconcileEngineTest"
+    }
+  ],
+  "tests": 44,
+  "artifacts": {
+    "backend/yudao-server/target/yudao-server.jar": "ceffca3f59b0c93f765922b7dcf36bd354bd82e296ab99642b2772de6cc0015f",
+    ".local/backend-run.jar": "ceffca3f59b0c93f765922b7dcf36bd354bd82e296ab99642b2772de6cc0015f",
+    ".local/m4-reconcile-run.jar": "ceffca3f59b0c93f765922b7dcf36bd354bd82e296ab99642b2772de6cc0015f",
+    ".local/m4-reconcile-ui.jar": "ceffca3f59b0c93f765922b7dcf36bd354bd82e296ab99642b2772de6cc0015f"
+  },
+  "log_sha256": "058307e103e18acf84fde860580007bbd521330f9962b992c76640b6f124e5fb"
+}

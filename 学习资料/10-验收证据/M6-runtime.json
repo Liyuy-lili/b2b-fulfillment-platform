@@ -1,0 +1,67 @@
+{
+  "run_at": "2026-10-20T08:45:12.5186101+08:00",
+  "listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 5996
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 15173,
+      "OwningProcess": 27872
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 33306,
+      "OwningProcess": 23240
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35672,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35673,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35674,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "::1",
+      "LocalPort": 35675,
+      "OwningProcess": 35952
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 36379,
+      "OwningProcess": 30228
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 48080,
+      "OwningProcess": 940
+    }
+  ],
+  "test_ports_free": true,
+  "backend_login_code": 0,
+  "backend_runtime": {
+    "code": 0,
+    "msg": "",
+    "data": {
+      "enabled": true,
+      "instance": {
+        "workers": 2,
+        "active": 0,
+        "queued": 0,
+        "queueCapacity": 4
+      }
+    }
+  },
+  "frontend_status": 200,
+  "probe_note": "Authenticated real job runtime; Actuator health is not registered in this baseline."
+}

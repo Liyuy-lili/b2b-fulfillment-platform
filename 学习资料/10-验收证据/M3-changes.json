@@ -1,0 +1,342 @@
+{
+  "run_at": "2026-10-18T16:30:38.104971+00:00",
+  "note": "Current fulfillment module plus M3-adapted ERP, UI and scripts inventory; not a Git diff. Includes unchanged M1/M2 module files. See baseline.lock.json for upstream pins.",
+  "files": [
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/ErpSaleOrderController.java",
+      "sha256": "34b025febf7e37ba7b7526e8d0e64e5421d77160b7813a1e0b3ee719acc4232b"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/vo/order/ErpSaleOrderRespVO.java",
+      "sha256": "af99eeb7147bacee17f16fc554ace26d1e2b3530bba647d6ea1b381cc5f33f54"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "sha256": "4b798c68212d494aac4600781bdd4132da360e5499cfd17b0259a1bc067bef39"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "sha256": "d68e4573987cf3787b16f65ee9431067479cc4e3944922daad7d8ea2b9f225d2"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "sha256": "62b2bacaba779f71e9c1262f22579faec84adbc4ef0207caabcc85b706000de6"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "sha256": "567b34938eb0477aafcabfde164af1f7f548048b16b8389da55b7d216ed9869a"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "sha256": "f14b3e7326b1df4f18f1f117a71e5e9f0810e06195554fb2caece5fb400243f9"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "sha256": "bce5a228c158e20c0487d57e43cbf276f82262238d12b076d7708b9f811a0328"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "sha256": "396e9c4e4d9edd40aea243c758575eae370b7c4491556a077a32545e012500ec"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "sha256": "530b7a6143ce914ba6eed9f0fd96bfcff9a33061b200ddcddde32e1747edb738"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "sha256": "d5b7a8c765073ba19b38fa459766fc870827dc93f3047a650c1a4a4d0d776e28"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "sha256": "0b5e1d70345d8f55726fa011afdfc1c668ac199b4dc0375254108ae8df8e329e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "sha256": "00a74d5b9744ee44ee274043c718eb19294d591ce8e6ce56342a828c7578d0d3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "sha256": "e5c8218351a6a18438330d0f43a048fad00f045df5f6abf556429977f5ca13f6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "sha256": "8019f413c394e285000348cc5e19c7ad442e48c0ed9825337d7f18fe2e9b7593"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "sha256": "1605dab9def48d6271530d6807aebedf735804e4fc73306ea337a45ba29da860"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCallbackEventDO.java",
+      "sha256": "9c90feaad46816da97e4882df00d4e996fa3302adadd8ab291d25585c995c98d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCancellationDO.java",
+      "sha256": "726f262a1081e1999f1001e1ae94231c655c1dbae7a5d4eb2ec7ebf0d0dc4dc6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "sha256": "cbf0018da803dfd07b10246278c2498b8ce0a4bd1debd2abfdc9dcba629058fa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "sha256": "8532a9545c4d7a2ff2e3f89903a045c525e389fbd98298e7fd82b00355082421"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "sha256": "d0b0920ff8d48ec5604e579604bafbd316423ea37afe44db31d0bb200f5d67e5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "sha256": "c3979f84b9d0ec0e8d810fdcff3ef05b39d2dcb18d7fe148ef85209cde5d4085"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentDO.java",
+      "sha256": "e4ecba4adb4c9626bd03ed748ccb89be622554b6d7b4aa4853127915059cae5d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentItemDO.java",
+      "sha256": "2baa32a21e9cc132c4b03924fd20bee251a415b104cc5db70c3c2731f479a1d5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "sha256": "b0dc945b5d811871475b18c1df71f7b7b51fdc785931b81bdfe83500efd08a73"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "sha256": "050b03fdc9168eec5feb3738a151911e0354ab9219b560bb266da127b1af1b4b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "sha256": "4882499a2532aa6e391539c0669a7626b5606ceb9f6b98bd1dca548c40eefacc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "sha256": "460ebd7878242cd2e1fe83d91dac91a9866944d4549e163d007507d7496ae2a3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "sha256": "656997786bbfd935f11be45ebb2bc4bafbbdc668d5f53485aadf5447748024e6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "sha256": "8c2f8b07b751d4b2623cba101bc2a58b931381d2e414b5524e2540f87aee89e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "sha256": "8460cdbc4be4c86f0073b34be716662e428557bd4528438074746dfbe5b75dfc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "sha256": "351c5fc2a2a42ff97724ab9de1f1cd4214ad22bc66dd63384d01bd034a1859e9"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "sha256": "2fece8e5e2f7baaea08be0c88caa402ed409ba537f91a3ec33eef4c20174741a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "sha256": "0e01a91b7ebb1ed01c6f68d1e7276d74cf52fd3ea357ae587e08b7515064b728"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "sha256": "142afa6f6d43f876f41796250eb29077d22daf984f208708f715c90fe2a79912"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "sha256": "95795ceb5ca9662c287bf092cfabb95a5a5f45ec5042b5cb6cbad245c04fea3c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "sha256": "a634d26a6aeb86045e90b4985f8406345e593493ddff7c558133bc04031bae41"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "sha256": "4ad68e78f5f1b2458efc6e980ed77586715d4dd2cd3368a315b10f2cfdee3bfa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "0fc326bc96296891b062fb924c5b98e468498352fc034c6fe812ae334c1d1043"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "sha256": "d32b68f9fad1007ca739fad307b7eb0f72c9545ae14c439e4088c51565da23b5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "sha256": "47a1081102131ac66b567174088c938c4f9e35197a372df2592b9e43d1052c46"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "sha256": "a40d21df7cd4ffbb8a3d5d6cb19da3656b8a1b168cd3f643e359f8c25a17f0d5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "sha256": "074e06461d4b8079a4aeaa04382fac932aa3130ca9693388ffd4bea35ecccfa0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "sha256": "60041c32afbacce5b45cda2db3a8f2307013cf3402d3cbbfd55f38af213545ad"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "sha256": "e90191304fe63ca41f0b7b72ae0f7571764f92b0dbd25ce2d3a5291d490c2ff8"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "296c246f81f5af9fdc854d27e5043f3fae09b4c43ba5159149bded1fb078abc4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "sha256": "3c75abbd095ecab8882bc99453093961888963a8425846328eab1377f322c96f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "sha256": "301259a9727084a6dd3fbc9de05ab7481a1595627a382e6830516c886495bb9c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "sha256": "b26b225a4e0e63058604e8e7302f9dbd0303a756cd62e549312885337964c2d4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "sha256": "7f271116885f82f73877578232311ce0432af48dc0ca0cb4245c5f125edadcc4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "sha256": "3e5ca2defb804f548f94438cdd720c759e67eed5632913fd8979a0e613fcb375"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "sha256": "2303957cf0e5c7d02d4aa4e077e6e24f82b42839fef0d5722d8b77939678bc5a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "sha256": "311840c0db39f7cad01d574f5bcb305b5af45739bc64c3fe2c93af893d00b2e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "sha256": "f7c8072862dc47a5add734a251241b05cb82e2629fbee5833b9a3d6bb18bd6ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "sha256": "c0e574a187c39586bafdb33ba34634e216e057389076506fdd3e0d1afa8b0a8d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "sha256": "c27338d7562f974663932f5b199f44fa5ff619ec5062a876b4a1549d86726ffc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "sha256": "e1e3115977d439c1e3cc1a763654acebc1dec857b90570d96f6260b462f015d4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "sha256": "1d964dc7d0002cbe9cb932f0199b9ef23136605ff18783d02d6e05a2bf7a5961"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "sha256": "f86777cad8a6b891c3e34847abffae9d6a94b696b0a38556fda03f9e6b14b3b4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "sha256": "4f3d9783b525878ef685e488270a9d58816d0c157c86462a488804ad21eb9bd8"
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "0fd49196028c17c70d75b7297c0fe8ca9cede31facc23bf159381e303b4cff81"
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/index.ts",
+      "sha256": "1bf609747536fea2e633745cbb7ec587855e93ee633814522909cbd11cb3d69b"
+    },
+    {
+      "path": "frontend/src/api/erp/sale/order/index.ts",
+      "sha256": "aa1651e84c0442da86069e0bf4eeba7c0deaba86071a69d49d07612d492bc6db"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "sha256": "0795c17be1ba8779c0f439bf92792ffddeb0ead4bbddd2b7ded7635d134d01a8"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/index.vue",
+      "sha256": "b9d6e12f343c7517e3732650e35e168d9537e25eae487bacc8bc5f5132b32094"
+    },
+    {
+      "path": "frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "sha256": "d5688477fd94e08faa6a4f9598604aebe7af15f81de983628980086ea969a1fe"
+    },
+    {
+      "path": "frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "sha256": "49107842c2219b7a5521df47818447737d8d18ead7da3b1a0770e77d62ff76c2"
+    },
+    {
+      "path": "frontend/src/views/erp/sale/order/index.vue",
+      "sha256": "f149931e90e7fff2ee52b7c7ba3f2d403dd3360a17a0e6e6e449e3d37b722bc9"
+    },
+    {
+      "path": "frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "sha256": "3b57bdb9995308f3753a73640fafd9ff0f9197119f8604bc631920f30ca22fa2"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "61f1cb588b0ade3c91cddf72ab9d63a8f6ec5823e390627aaa9e9521c7bbcc0c"
+    },
+    {
+      "path": "tests/m1_clean_install.ps1",
+      "sha256": "dacca47a52992a70035700ae9170733abed5b497e423564b8dc3693fe3f29c40"
+    },
+    {
+      "path": "tests/m2_acceptance.py",
+      "sha256": "d14db884fc53b2e8fe90c7241e78446dfa8d4bf61439914f5b4e7049b3a8614b"
+    },
+    {
+      "path": "tests/m2_legacy_inventory.py",
+      "sha256": "06efb709cd0d2c45494d638b7a9fca99388275c7e06fd3ade4f1ac6ea7bb8e50"
+    },
+    {
+      "path": "tests/m2_permissions.py",
+      "sha256": "79430ab0e2324552a396f2ee55a26b8a8e0dd65f4aadef351c75c2cf3b44a995"
+    },
+    {
+      "path": "tests/m3_acceptance.py",
+      "sha256": "054ab35745ac175b183d32ec95a14e45af5217881f537bcfc2fc49e41b9a86af"
+    },
+    {
+      "path": "tests/m3_clean_smoke.py",
+      "sha256": "4677fb7599cdf5e8f3c0101461c6d3a66c89a12ae522fd3e77a13c40bee383eb"
+    },
+    {
+      "path": "tests/m3_erp_failure.py",
+      "sha256": "8f68b358bc6fef75b04c96607af9867cc183ccbb8212d3e91b6bde21c14b831e"
+    },
+    {
+      "path": "tests/m3_instances.ps1",
+      "sha256": "474c5b5a9406ec362d7d087e4f6ea19cd194e7428d58cd76169d16601e7ef8ed"
+    },
+    {
+      "path": "tests/m3_migration.py",
+      "sha256": "d199a63ad5b5f1d2940acbbbb064ff70622c15edb18c6f7b18d5cfe45f25c800"
+    },
+    {
+      "path": "tests/m3_permissions.py",
+      "sha256": "d1cd92b8810fa256ffd514cdf1691a2c068b9cec87870f06136216525635bf05"
+    },
+    {
+      "path": "tests/m3_previous_inventory.py",
+      "sha256": "4306f82cccff995d87f5d7cc9cf1452a3b67a765b6c914e75f46353a38d80068"
+    },
+    {
+      "path": "tests/m3_restart.py",
+      "sha256": "426151a89f952a719d9352830c326facb4842e5ca13fcb8280ab0884a8594991"
+    },
+    {
+      "path": "tests/m3_ui_fixture.py",
+      "sha256": "747435c9276833326f43807e4a8d4dcf759b0e787ebda733e8155a479ab60a13"
+    },
+    {
+      "path": "tests/m3_ui_result.py",
+      "sha256": "3547946ed39cd195a34fb0c2b4d697aea93daf5dde55598ca175faf2b4e63016"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "modules": [
+    "yudao",
+    "yudao-framework",
+    "yudao-common",
+    "yudao-spring-boot-starter-web",
+    "yudao-spring-boot-starter-security",
+    "yudao-spring-boot-starter-mybatis",
+    "yudao-spring-boot-starter-redis",
+    "yudao-spring-boot-starter-mq",
+    "yudao-spring-boot-starter-job",
+    "yudao-spring-boot-starter-test",
+    "yudao-spring-boot-starter-biz-tenant",
+    "yudao-spring-boot-starter-websocket",
+    "yudao-spring-boot-starter-monitor",
+    "yudao-spring-boot-starter-protection",
+    "yudao-spring-boot-starter-biz-ip",
+    "yudao-spring-boot-starter-excel",
+    "yudao-spring-boot-starter-biz-data-permission",
+    "yudao-module-infra",
+    "yudao-module-system",
+    "yudao-module-erp",
+    "yudao-module-fulfillment",
+    "yudao-server"
+  ],
+  "tests": 60,
+  "suites": [
+    {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.OrderStatusCalculatorTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.AllocationPlannerTest"
+    },
+    {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.DatabaseCommandRetryTest"
+    },
+    {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.LogisticsSignatureTest"
+    },
+    {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.framework.FulExpiryScannerTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.ReconcileEngineTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.FulfillmentEventTest"
+    },
+    {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.ImportCsvTest"
+    }
+  ],
+  "artifacts": {
+    "backend/yudao-server/target/yudao-server.jar": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b",
+    ".local/m6-test.jar": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b",
+    ".local/backend-run.jar": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b"
+  }
+}

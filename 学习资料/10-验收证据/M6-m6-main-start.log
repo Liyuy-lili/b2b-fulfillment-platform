@@ -1,0 +1,6 @@
+mysql already listening on 33306
+redis already listening on 36379
+Project RabbitMQ already listening on 35672
+backend listening on 48080
+frontend listening on 15173
+Open http://127.0.0.1:15173 ; tenant: 芋道源码 ; admin / admin123 (local demo only)

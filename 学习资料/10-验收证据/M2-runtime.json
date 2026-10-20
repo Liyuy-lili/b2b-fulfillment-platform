@@ -1,0 +1,77 @@
+{
+  "run_at": "2026-10-18T20:00:21.4810130+08:00",
+  "listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 6016
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 48080,
+      "OwningProcess": 32104
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 36379,
+      "OwningProcess": 20500
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 33306,
+      "OwningProcess": 37912
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 15173,
+      "OwningProcess": 39148
+    }
+  ],
+  "startup": [
+    "2026-10-18 19:54:08.883 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:41 - Fulfillment business datasource isolation verified: READ_COMMITTED",
+    "2026-10-18 19:54:08.905 [main] INFO  c.i.y.m.f.framework.FulfillmentFlywayConfiguration:45 - Fulfillment lock wait timeout verified: 3 seconds",
+    "2026-10-18 19:54:08.983 [main] INFO  cn.iocoder.yudao.server.YudaoServerApplication:59 - Started YudaoServerApplication in 23.013 seconds (process running for 23.784)"
+  ],
+  "powershell_syntax": [
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Bootstrap-Local.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Build.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Initialize-Database.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Migrate-Database.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Start-Local.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\scripts\\Stop-Local.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\tests\\m1_clean_install.ps1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "file": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\tests\\m2_two_instance.ps1",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

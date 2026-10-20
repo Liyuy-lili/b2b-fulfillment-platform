@@ -1,0 +1,50 @@
+{
+  "run_at": "2026-10-19T16:57:56.861687+00:00",
+  "checks": [
+    {
+      "name": "main history includes V7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two real draft rows and one localized error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real scoped inventory workbook generated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import creates exactly two unapproved drafts",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "source": "MAIN_M6_6236388c",
+  "file": {
+    "fileId": "b8451cdf-5971-43fb-b4b8-c1ab372d90ff",
+    "sha256": "ffcfec2fa19d424f49533b15a4574d40dbb774df90622895c117706d66c43f61",
+    "byteSize": 261,
+    "templateVersion": "1"
+  },
+  "import_key": "demo-import-MAIN_M6_6236388c",
+  "import_result": {
+    "jobId": "1",
+    "outcome": "IMPORT_QUEUED"
+  },
+  "export_key": "demo-export-MAIN_M6_6236388c",
+  "export_result": {
+    "jobId": "2",
+    "outcome": "EXPORT_QUEUED"
+  },
+  "warehouse_id": "61",
+  "warehouse_name": "M4R93a9ea23MainDemo原发货仓",
+  "warehouse_user_id": "293",
+  "warehouse_username": "M6WH0893a961",
+  "before_browser_digest": "13d5143633f63b322c274d47d54dfc627007e3432434badc7fd559b381928e29",
+  "before_job_count": 2,
+  "before_download_count": 0,
+  "result": "passed"
+}

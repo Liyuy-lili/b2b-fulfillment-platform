@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-17",
+  "base_pins": "../baseline.lock.json",
+  "note": "M1 implementation inventory, not a Git diff or upstream capability claim",
+  "files": [
+    {
+      "path": "backend/pom.xml",
+      "sha256": "8d5b8fb17801715da6fbd767f2ae0145fd2d9c9a96c55812fe6f7597e3c938c9"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOrderMapper.java",
+      "sha256": "005445a0701984ee8727bfad544998dfb9ae8991e694a0e6ac7202f02afc1ed7"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOutMapper.java",
+      "sha256": "29584bdb33e36d89e19389a8e72b4ab923969894c1f0fa2f6693e9d1d8bab320"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleReturnMapper.java",
+      "sha256": "bf6d4bead9a36dfdb868f4734966268459549a9dd06df851cc87d7103053eab0"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "sha256": "4d3214a2f6f305d60259c4802a5e27d143b3eab820048a8bcc8e945b9b728d22"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "sha256": "7bc6b010e0413f07d63c0c70596985823516a5199995e0ef99d962330ed93a45"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "sha256": "bf06a87cbf4db4accfcdeec7fb039113bb324115ed758303693c786178f3dc0b"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "sha256": "7fb6ca3a14d3a63e9ea2f54c09844b03b1f6435f1c54b3d424cba5a9b47c7364"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "sha256": "bc8b755f902d48489bc9f4754a7e3686a1bcbb5c6cb04e95295c3b397cc044ef"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/pom.xml",
+      "sha256": "55c3e6eafc1815e643abf78431eec2425d3121363d99e5103a75acdd8fe3ccb3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "sha256": "58400205444654bca94208605f4ef941f69a4161b270576f8ef887c033e74aae"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "sha256": "8019f413c394e285000348cc5e19c7ad442e48c0ed9825337d7f18fe2e9b7593"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "sha256": "cbf0018da803dfd07b10246278c2498b8ce0a4bd1debd2abfdc9dcba629058fa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "sha256": "8532a9545c4d7a2ff2e3f89903a045c525e389fbd98298e7fd82b00355082421"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "sha256": "d0b0920ff8d48ec5604e579604bafbd316423ea37afe44db31d0bb200f5d67e5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "sha256": "d83e152b09a7fac6faca2ad9e58d9eb7167571475a21a554a8570f10c234eae1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "sha256": "5c5eda43ab4b20a69194a590c56679cfd1cd6a91daa506b1b18dd99fbca9123e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "sha256": "0b056ddb21de84410f8918da9e9d2895dbf7b35a183371a0521c2c2a67ac459e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "sha256": "95795ceb5ca9662c287bf092cfabb95a5a5f45ec5042b5cb6cbad245c04fea3c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "sha256": "a634d26a6aeb86045e90b4985f8406345e593493ddff7c558133bc04031bae41"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "sha256": "4ad68e78f5f1b2458efc6e980ed77586715d4dd2cd3368a315b10f2cfdee3bfa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "d708e059cb35341b67a2de775c2ae9b5d621dc4b193aea2471bf75f6d62d2fec"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "sha256": "1a12fab94f62d62166498f2575602fec8b339937d6307d1367493b493c853e8b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "sha256": "47a1081102131ac66b567174088c938c4f9e35197a372df2592b9e43d1052c46"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "sha256": "2ec8ead15a987bbde00b916a6aa4c36a4aded6282b904cab964594a4ca4988b1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "sha256": "1e119fab488f6fe130cd5eaa3d9b6c6956e6b3bea909e7226fd49f87fecc966f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "sha256": "311840c0db39f7cad01d574f5bcb305b5af45739bc64c3fe2c93af893d00b2e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "sha256": "c27338d7562f974663932f5b199f44fa5ff619ec5062a876b4a1549d86726ffc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "sha256": "4f3d9783b525878ef685e488270a9d58816d0c157c86462a488804ad21eb9bd8"
+    },
+    {
+      "path": "backend/yudao-server/pom.xml",
+      "sha256": "c0fe911d3680296ed91b2b252815e1fdb823f08499be847f647fc23a24f5af9c"
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "c8639f08193b574b567fe115bba2258e8fea3f68f5fff57f65afb66ecfbde4fd"
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/index.ts",
+      "sha256": "989e21fbc9a1695539659810b921058957bd42a5e898f501571dece23daae70a"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/index.vue",
+      "sha256": "93f15ae62dbf942d1f141913b0072fee51d41c6600f3e820e714ea308080296a"
+    },
+    {
+      "path": "scripts/Migrate-Database.ps1",
+      "sha256": "f09c0a7de85270785d256a45323b4390700870fbd7793ca43517d8a71ff2a7c1"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "bb7da082057e4a1239d01a1fcc91e7d8d4c83c77c3227d4ad92e7cae0db39268"
+    },
+    {
+      "path": "tests/m1_acceptance.py",
+      "sha256": "85b7fe30405e35259cffea8fd609a2a1f6fe28cdd90c13ed3a7edd438d850eb6"
+    },
+    {
+      "path": "tests/m1_clean_install.ps1",
+      "sha256": "d18561d600555587582e7af47134805a6a4b42cf55ae35dbd5a3e29598cf4c29"
+    },
+    {
+      "path": "tests/m1_locking.py",
+      "sha256": "18ac32923c5c6444882c4547f2332531850a9b06b85e755d92759a212fd48e5b"
+    },
+    {
+      "path": "tests/m1_migration.py",
+      "sha256": "d0b4dfabaf6093f378d920f5a3f66f3a711b5e5cc6c1bb42c04b388e45c76914"
+    },
+    {
+      "path": "tests/m1_ui_verify.py",
+      "sha256": "006fa588a624e0d176d2627d2558ece0ea199b637ac051bb8167132fe7a7568a"
+    }
+  ]
+}

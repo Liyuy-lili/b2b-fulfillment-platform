@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-10-19T15:15:05.443980+00:00",
+  "database": "fulfillment_m5_20261019_201046",
+  "checks": [
+    {
+      "name": "only passed isolated M5 schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database rejects Outbox same-tenant FK",
+      "passed": false,
+      "detail": {
+        "actual": 1451,
+        "expected": 1452
+      }
+    }
+  ],
+  "result": "failed",
+  "error": "database rejects Outbox same-tenant FK: {'actual': 1451, 'expected': 1452}"
+}

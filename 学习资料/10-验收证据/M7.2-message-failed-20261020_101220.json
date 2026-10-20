@@ -1,0 +1,36 @@
+{
+  "run_at": "2026-10-20T02:12:20.810404+00:00",
+  "case": "message",
+  "database": "fulfillment_m7_reg_message_20261020_101220",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "sources": [
+    {
+      "path": "tests\\m5_acceptance.py",
+      "sha256": "72e68c0d9352f40bb0acbad853d9e85a363594517132ebd0c3991a0e1da61f55",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        "M4.2-clean-binding.json": "M7.2-returns-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    }
+  ],
+  "adaptations": [
+    "Separate M7 schema/Redis DB12/ports; historical evidence files are never replaced.",
+    {
+      "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+    },
+    {
+      "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+    },
+    {
+      "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+    }
+  ],
+  "results": [],
+  "result": "failed",
+  "error": "POST /fulfillment/order/allocate: {'code': 1080000075, 'msg': 'WAREHOUSE_SCOPE_DENIED: 请求仓库不在当前授权范围内', 'data': None}",
+  "all_owned_stopped": true
+}

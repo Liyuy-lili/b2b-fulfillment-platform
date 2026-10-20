@@ -1,0 +1,121 @@
+{
+  "run_at": "2026-10-18T17:02:29.105115+00:00",
+  "note": "Explicit M4.1 file inventory, not a Git diff; root repository has no commits. Immutable V1-V3 and upstream pins verified separately.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5e9a5088db757b1554d961d5db58d7633d952b3a1e540410da01c86b5f3cde0a",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "f98439656cff5683083a73f4dfde2a9df8390716e1da5b69875eacf2cfc66729",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "ec71fed3c81649ab841982968e3fb4a303e694ce7707d0839292945ab689176e",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "ca35cc1d88b55ee359f2e05bd6933dca1e4c92361e95f030101b1d4242fe03d8",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "sha256": "ebca12f8d5325076b514d601b6514863a4abfc9856840b6339998565931da71d",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/lessons/M4.1-自动到期与重复任务.md",
+      "sha256": "5f3b1b6294a2b4e45a6e4341f7b4743e2999bd24860bc7405060fe891c4f6c9e",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "docs/evidence/M4.1-验收报告.md",
+      "sha256": "02dde27b1bfbf5ddda6343022b8111dc31c0eeadf4a4fff5f23f6d2484c80fc7",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/pom.xml",
+      "sha256": "f1c573893a720133fd60bbbf832e3c9d47cc30f0d123eb97558059a18ea51a0a",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "0af6c57a073726780f8dfe2d2f461a11a0c8bb7bd16ef314afcd8e25b6b6b86e",
+      "previous_M3_sha256": "296c246f81f5af9fdc854d27e5043f3fae09b4c43ba5159149bded1fb078abc4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "sha256": "96f0140355ecb9f086646585797fdf14708a234cd6f2dfe60ff8c27039a94b2c",
+      "previous_M3_sha256": "3c75abbd095ecab8882bc99453093961888963a8425846328eab1377f322c96f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "sha256": "59b647a332e8103efbbfef8bb99e66d5813dd3507afa79155b8b81112488449e",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "sha256": "c462c299d760c1ebc07bfa8b4c27f982646f65f526c6a2e2a970b7ec282f2787",
+      "previous_M3_sha256": "8460cdbc4be4c86f0073b34be716662e428557bd4528438074746dfbe5b75dfc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "sha256": "572e6777d1b0983a58e2366af14382fe380ef6c2f55f68e3798906e914efc13a",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "sha256": "405593039d9ddbdbcd0e5c714019cc1dbb7894b46980b4811acbc534e1cf6d64",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "sha256": "6db7e2802640424a1c2550357b3243516077146ae32c8ecffe21f7fdb1b1b80f",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "sha256": "a85cacd384a636f4fef6050cd751907550741c969a47bfe2271d6af9193c02af",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "sha256": "56fd7c168b1a6bfe6a993d99e7276b13cbec5da5ce6e3c2c9cac8b457083866b",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "435ab75a00fcb10317fec183ba7c846484a235059d249008c2702993c3b2b1f9",
+      "previous_M3_sha256": "0fd49196028c17c70d75b7297c0fe8ca9cede31facc23bf159381e303b4cff81"
+    },
+    {
+      "path": "tests/m4_expiry_acceptance.py",
+      "sha256": "94e237269da4497564b00a1cc6d5c2dab103953f284f81754ee1278cce36ba76",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "tests/m4_expiry_main.py",
+      "sha256": "9bd66d3375a922129fdb77c0dacf6061b80465cd985443d447ff8324000305a8",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "tests/m4_expiry_qa.py",
+      "sha256": "949e35564e34787f7a4f924869ddf9ed739f8198b8e5600bfa43e1266126477d",
+      "previous_M3_sha256": null
+    },
+    {
+      "path": "tests/m3_acceptance.py",
+      "sha256": "2ca7233412923571b88ad86b6cd8e77781261be45c3d4698d960514d6bc34dae",
+      "previous_M3_sha256": "054ab35745ac175b183d32ec95a14e45af5217881f537bcfc2fc49e41b9a86af"
+    },
+    {
+      "path": "tests/m3_instances.ps1",
+      "sha256": "5107c0d9d24834a0c710eb7295d1c0b3dfc5fe54bd6f0a182f7a386d97ec6c33",
+      "previous_M3_sha256": "474c5b5a9406ec362d7d087e4f6ea19cd194e7428d58cd76169d16601e7ef8ed"
+    }
+  ]
+}

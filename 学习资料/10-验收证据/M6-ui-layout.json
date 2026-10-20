@@ -1,0 +1,38 @@
+{
+  "result": "passed",
+  "rounds": 1,
+  "jobs": {
+    "desktop": {
+      "contentWidth": 1025,
+      "drawerWidth": 1080,
+      "pageWidth": 1280,
+      "viewportWidth": 1280
+    },
+    "mobile": {
+      "contentWidth": 335,
+      "drawerWidth": 390,
+      "pageWidth": 390,
+      "viewportWidth": 390
+    }
+  },
+  "warehouse": {
+    "desktop": {
+      "contentWidth": 1018,
+      "pageWidth": 1280,
+      "viewportWidth": 1280
+    },
+    "mobile": {
+      "contentWidth": 328,
+      "pageWidth": 390,
+      "paginationWidth": 328,
+      "tableWidth": 328,
+      "viewportWidth": 390
+    }
+  },
+  "downloads": {
+    "error": "E:/涓嬭浇/fulfillment-3-error.csv",
+    "result": "E:\\涓嬭浇\\fulfillment-4-result.xlsx"
+  },
+  "viewport_restored": true,
+  "note": "One bounded inspection round across desktop/mobile; no visual source changes after inspection. Warehouse desktop content width is underlying workbench; screenshot records audit drawer."
+}

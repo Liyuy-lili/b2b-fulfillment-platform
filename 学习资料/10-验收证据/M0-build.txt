@@ -1,0 +1,27 @@
+[INFO] yudao .............................................. SUCCESS [  0.388 s]
+[INFO] yudao-framework .................................... SUCCESS [  0.146 s]
+[INFO] yudao-common ....................................... SUCCESS [  1.512 s]
+[INFO] yudao-spring-boot-starter-web ...................... SUCCESS [  0.406 s]
+[INFO] yudao-spring-boot-starter-security ................. SUCCESS [  0.295 s]
+[INFO] yudao-spring-boot-starter-mybatis .................. SUCCESS [  0.950 s]
+[INFO] yudao-spring-boot-starter-redis .................... SUCCESS [  0.213 s]
+[INFO] yudao-spring-boot-starter-mq ....................... SUCCESS [  0.425 s]
+[INFO] yudao-spring-boot-starter-job ...................... SUCCESS [  0.196 s]
+[INFO] yudao-spring-boot-starter-test ..................... SUCCESS [  0.255 s]
+[INFO] yudao-spring-boot-starter-biz-tenant ............... SUCCESS [  0.372 s]
+[INFO] yudao-spring-boot-starter-websocket ................ SUCCESS [  0.365 s]
+[INFO] yudao-spring-boot-starter-monitor .................. SUCCESS [  0.176 s]
+[INFO] yudao-spring-boot-starter-protection ............... SUCCESS [  0.359 s]
+[INFO] yudao-spring-boot-starter-biz-ip ................... SUCCESS [  0.244 s]
+[INFO] yudao-spring-boot-starter-excel .................... SUCCESS [  0.317 s]
+[INFO] yudao-spring-boot-starter-biz-data-permission ...... SUCCESS [  0.233 s]
+[INFO] yudao-module-infra ................................. SUCCESS [  1.369 s]
+[INFO] yudao-module-system ................................ SUCCESS [  0.957 s]
+[INFO] yudao-module-erp ................................... SUCCESS [  0.536 s]
+[INFO] yudao-server ....................................... SUCCESS [  1.112 s]
+[INFO] BUILD SUCCESS
+[INFO] Total time:  11.275 s
+[INFO] Finished at: 2026-10-16T16:16:48+08:00
+Done in 1.1s using pnpm v9.15.9
+✓ built in 7.34s
+Build complete. This command skips upstream unit tests; run tests/m0_smoke.py separately for real M0 acceptance.

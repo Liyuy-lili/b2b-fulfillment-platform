@@ -1,0 +1,3644 @@
+{
+  "run_at": "2026-10-20T05:54:07.937871+00:00",
+  "checks": [
+    {
+      "name": "passed M7-build.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.2-matrix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.3-query.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.3-stock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-main-upgrade.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-replay-after-restart.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-closeout.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-browser.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-source-diff.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all T01-T30 individually mapped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup core",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup expiry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup returns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup filefoundation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current performance SHA query",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current performance SHA stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual pinned source patch hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/.mvn/wrapper/maven-wrapper.properties",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnw",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnw.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnwDebug",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnwDebug.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/ErpSaleOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/vo/order/ErpSaleOrderRespVO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOutMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/ErpStockMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockBalance.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockKey.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/enums/ErrorCodeConstants.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/product/ErpProductServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleReturnPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/DatabaseCommandRetry.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockCheckServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockMoveServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpTransactionRetryAspect.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulMessageController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReconcileController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReturnController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/MessageContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReconcileContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReturnContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCallbackEventDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCancellationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEvent.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngine.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessagingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReconcileTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReturnFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulFileJobAdmin.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageAdminService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageConsumerService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageSnapshots.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageWorker.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOutboxService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulRabbitTransport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileSnapshotReader.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileAdmission.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileSnapshotObserver.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V4__return_receipt.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V5__reconciliation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V6__reliable_messages.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEventTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngineTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-server/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/.env.fulfillment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/.env.release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/package.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/pnpm-lock.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/messages.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/reconciliation/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/sale/order/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/router/modules/remaining.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/utils/routerHelper.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentMessages.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentReturns.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/reconciliation/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical child evidence exception explicitly disclosed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main target independent copy and package share final artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent test applications closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manifest hash matches closeout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged runbook exact current source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all manifest files exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive SHA exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive CRC and exact membership",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive no private config data or dependency folder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact config.example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Install-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Release-Environment.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Start-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Stop-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual JPEG browser proof",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correct final independent order quantities and messages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed lock exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MIT backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MIT frontend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48081",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48084",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48085",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48086",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 15174",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 3306",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 33306",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 36379",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35672",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35673",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35674",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35675",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 15173",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 48080",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real authorized runtime",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main migrations V0-V8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main physical inventory remains clean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7-final-qa.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> AGENTS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/面试问答/16-题目总索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/学习资料/19-真实代码导航.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/学习资料/00-完成度与事实边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/学习资料/02-业务与数量全流程.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/学习资料/01-学习路线与每日任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M0-import.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M6-demo-input.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> .local/releases/fulfillment-20261020-092017.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7.1-demo.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Install-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Release-Environment.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Start-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Stop-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/config.example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> 学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> 面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-019-M7-订单查询索引与实测规则.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M7-集成性能与交付.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/00-完成度与事实边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/01-学习路线与每日任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/24-关键源码逐段精读.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 面试问答/16-题目总索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M7-集成性能与交付.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> final/04-综合面试追问.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M0-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M7-final-qa.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M7.3-性能报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M7-集成性能与交付.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/decisions/ADR-018-M7-交付与性能证据边界.md -> ../evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/decisions/ADR-019-M7-订单查询索引与实测规则.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/decisions/ADR-019-M7-订单查询索引与实测规则.md -> ../evidence/M7.3-性能报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-final-qa.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7.3-性能报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> ../final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> ../final/06-实际源码差异.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-main-upgrade.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-build.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-final-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-final-browser.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-final-closeout.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-final-demo.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-restart.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-replay-after-restart.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-source-diff.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7.2-sequence-repair.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> M7-evidence-exception.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7-验收报告.md -> ../final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/evidence/M7.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-filefoundation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7-final-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-ERP.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-erp-fault.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-expiry.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-legacy.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m3-permissions.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-returns.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-message.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-message.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-message.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-message.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-m2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-reconcile.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-returns-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7-evidence-exception.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-sequence-repair.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-core-failed-20261020_093955.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-file-failed-20261020_104201.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.2-验收报告.md -> M7.2-message-failed-20261020_101220.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/evidence/M7.3-性能报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.3-性能报告.md -> M7.3-query.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.3-性能报告.md -> M7.3-stock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M7.3-性能报告.md -> M7.3-summary.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/01-架构与贡献边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/01-架构与贡献边界.md -> 06-实际源码差异.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/02-演示与排障.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/02-演示与排障.md -> ../evidence/M7-final-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/02-演示与排障.md -> ../evidence/M7-final-demo.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/02-演示与排障.md -> ../evidence/M7.2-sequence-repair.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/02-演示与排障.md -> ../RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/03-简历与项目口述.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/03-简历与项目口述.md -> ../evidence/M7.3-性能报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/04-综合面试追问.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/05-两周学习与自测.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/06-实际源码差异.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../evidence/M7-source-diff.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../evidence/M7-upstream-to-current.patch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/.mvn/wrapper/maven-wrapper.properties",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/mvnw",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/mvnw.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/mvnwDebug",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/mvnwDebug.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/ErpSaleOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/vo/order/ErpSaleOrderRespVO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOutMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/ErpStockMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockBalance.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockKey.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/enums/ErrorCodeConstants.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/product/ErpProductServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleReturnPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/DatabaseCommandRetry.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockCheckServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockMoveServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpTransactionRetryAspect.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulMessageController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReconcileController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReturnController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/MessageContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReconcileContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReturnContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCallbackEventDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCancellationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEvent.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngine.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessagingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReconcileTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReturnFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulFileJobAdmin.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageAdminService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageConsumerService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageSnapshots.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageWorker.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOutboxService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulRabbitTransport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileSnapshotReader.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileAdmission.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileSnapshotObserver.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V4__return_receipt.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V5__reconciliation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V6__reliable_messages.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEventTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngineTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-server/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/.env.fulfillment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/.env.release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/package.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/pnpm-lock.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/api/erp/fulfillment/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/api/erp/fulfillment/messages.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/api/erp/reconciliation/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/api/erp/sale/order/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/router/modules/remaining.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/utils/routerHelper.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment/FulfillmentMessages.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment/FulfillmentReturns.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/fulfillment/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/reconciliation/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/sale/order/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/06-实际源码差异.md -> ../../frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> ../PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> ../evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 01-架构与贡献边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 02-演示与排障.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 03-简历与项目口述.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 04-综合面试追问.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 05-两周学习与自测.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> ../lessons/M7-集成性能与交付.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/final/README.md -> 06-实际源码差异.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/lessons/M7-集成性能与交付.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M7-集成性能与交付.md -> ../evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M7-集成性能与交付.md -> ../evidence/M7.2-sequence-repair.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M7-集成性能与交付.md -> ../final/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists frontend/.env.release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists scripts/Build-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_build_evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_evidence_correction.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_final_qa.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_finalize_docs.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_main_restart.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_main_upgrade.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_perf_tools.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_query_benchmark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_query_prepare.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_query_seed.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_regression.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_closeout.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_qa.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_runtime.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_reports.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_restore_test_sequences.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_run_all.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_runtime_pipeline.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_source_diff.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_stock_benchmark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_support.py",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "backend_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "archive": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\releases\\fulfillment-final-20261020-095456.zip",
+  "archive_sha256": "49a14f5a5c9667cd196ffa545c952248da11802c9e922127881f2e0ee19a71b1",
+  "result": "passed"
+}

@@ -1,0 +1,65 @@
+{
+  "run_at": "2026-10-19T10:02:20.211653+00:00",
+  "database": "fulfillment_m4_reconcile_20261019_175618",
+  "checks": [
+    {
+      "name": "only passed isolated schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database rejects tenant FK",
+      "passed": true,
+      "detail": {
+        "actual": 1452,
+        "expected": 1452
+      }
+    },
+    {
+      "name": "database rejects review same-run FK",
+      "passed": true,
+      "detail": {
+        "actual": 1452,
+        "expected": 1452
+      }
+    },
+    {
+      "name": "database rejects confirmation status CHECK",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects empty note CHECK",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects difference limit CHECK",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects scope CHECK",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "all report and review facts unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "result": "passed"
+}

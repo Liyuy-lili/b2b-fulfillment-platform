@@ -1,0 +1,24 @@
+{
+  "run_at": "2026-10-19T15:29:17.827922+00:00",
+  "result": "passed",
+  "rounds": 2,
+  "detector_runs": 1,
+  "note": "Two layout inspection rounds; initial cached viewport captures had wrong dimensions, then frontend restart produced a loading capture. Original captures retained. A transient inherited hover menu was dismissed; final mobile captured after DOM confirmed no visible popper. No UI source edits during inspection; no native touch gesture claim.",
+  "desktop": {
+    "viewportWidth": 1280,
+    "pageWidth": 1280,
+    "drawerWidth": 1080,
+    "messageWidth": 1025,
+    "primary": "#2d6fb3",
+    "placeholder": "#606266"
+  },
+  "mobile": {
+    "viewportWidth": 390,
+    "pageWidth": 390,
+    "drawerWidth": 390,
+    "messageWidth": 335,
+    "primary": "#2d6fb3",
+    "placeholder": "#606266"
+  },
+  "viewport_reset": true
+}

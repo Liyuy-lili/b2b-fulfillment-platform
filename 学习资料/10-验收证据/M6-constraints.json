@@ -1,0 +1,81 @@
+{
+  "run_at": "2026-10-19T16:56:42.913120+00:00",
+  "database": "fulfillment_m6_20261020_004428",
+  "checks": [
+    {
+      "name": "only passed isolated M6 schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database rejects job invalid state",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects job negative success",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects job malformed scope",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects row foreign tenant FK",
+      "passed": true,
+      "detail": {
+        "actual": 1452,
+        "expected": 1452
+      }
+    },
+    {
+      "name": "database rejects row invalid state",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects row malformed JSON",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects file negative byte size",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects warehouse permission CHECK",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "all M6 facts unchanged after constraint probes",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "result": "passed"
+}

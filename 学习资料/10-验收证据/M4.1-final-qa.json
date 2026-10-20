@@ -1,0 +1,774 @@
+{
+  "run_at": "2026-10-18T17:02:29.105115+00:00",
+  "checks": [
+    {
+      "name": "backend 22 module build success",
+      "passed": true,
+      "detail": [
+        "yudao",
+        "yudao-framework",
+        "yudao-common",
+        "yudao-spring-boot-starter-web",
+        "yudao-spring-boot-starter-security",
+        "yudao-spring-boot-starter-mybatis",
+        "yudao-spring-boot-starter-redis",
+        "yudao-spring-boot-starter-mq",
+        "yudao-spring-boot-starter-job",
+        "yudao-spring-boot-starter-test",
+        "yudao-spring-boot-starter-biz-tenant",
+        "yudao-spring-boot-starter-websocket",
+        "yudao-spring-boot-starter-monitor",
+        "yudao-spring-boot-starter-protection",
+        "yudao-spring-boot-starter-biz-ip",
+        "yudao-spring-boot-starter-excel",
+        "yudao-spring-boot-starter-biz-data-permission",
+        "yudao-module-infra",
+        "yudao-module-system",
+        "yudao-module-erp",
+        "yudao-module-fulfillment",
+        "yudao-server"
+      ]
+    },
+    {
+      "name": "one actual selected JUnit report OrderStatusCalculatorTest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected JUnit passed OrderStatusCalculatorTest",
+      "passed": true,
+      "detail": {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "cn.iocoder.yudao.module.fulfillment.domain.OrderStatusCalculatorTest"
+      }
+    },
+    {
+      "name": "one actual selected JUnit report AllocationPlannerTest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected JUnit passed AllocationPlannerTest",
+      "passed": true,
+      "detail": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "cn.iocoder.yudao.module.fulfillment.domain.AllocationPlannerTest"
+      }
+    },
+    {
+      "name": "one actual selected JUnit report DatabaseCommandRetryTest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected JUnit passed DatabaseCommandRetryTest",
+      "passed": true,
+      "detail": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "cn.iocoder.yudao.module.fulfillment.domain.DatabaseCommandRetryTest"
+      }
+    },
+    {
+      "name": "one actual selected JUnit report LogisticsSignatureTest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected JUnit passed LogisticsSignatureTest",
+      "passed": true,
+      "detail": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "cn.iocoder.yudao.module.fulfillment.domain.LogisticsSignatureTest"
+      }
+    },
+    {
+      "name": "one actual selected JUnit report FulExpiryScannerTest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected JUnit passed FulExpiryScannerTest",
+      "passed": true,
+      "detail": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "cn.iocoder.yudao.module.fulfillment.framework.FulExpiryScannerTest"
+      }
+    },
+    {
+      "name": "37 selected actual unit tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed evidence passed M4.1-expiry-acceptance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed evidence passed M4.1-clean-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed evidence passed M4.1-main-activation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed evidence passed M4.1-M3-regression.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full dependency restart actual snapshots match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated processes stopped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "natural clock fixture was not injected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed V1 remains unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed V2 remains unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed V3 remains unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original MIT license backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original MIT license frontend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/api/erp/fulfillment/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/api/erp/sale/order/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/fulfillment/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/sale/order/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend unchanged frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> AGENTS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M0-import.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M0-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/PROJECT_STATUS.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/decisions/ADR-013-M4.1-到期任务与系统命令.md -> ../evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../evidence/M4.1-expiry-acceptance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../../backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/lessons/M4.1-自动到期与重复任务.md -> ../../tests/m4_expiry_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document encoding/fences docs/evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-expiry-acceptance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-clean-binding.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-expiry-acceptance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-main-activation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-restart.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-M3-regression.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> M4.1-M3-instances.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link docs/evidence/M4.1-验收报告.md -> ../lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists docs/evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists tests/m4_expiry_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists tests/m4_expiry_main.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists tests/m4_expiry_qa.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists tests/m3_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed source exists tests/m3_instances.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "running and test jars match verified build",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final actual listener inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final test listener inventory empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final main authentication works",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final main inventory facts after M3 regression",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final main order aggregates after M3 regression",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "status": "passed"
+}

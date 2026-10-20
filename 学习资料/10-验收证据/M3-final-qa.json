@@ -1,0 +1,705 @@
+{
+  "run_at": "2026-10-18T16:32:56.602125+00:00",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "balanced fences README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences AGENTS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\decisions\\ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\decisions\\ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\decisions\\ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\decisions\\ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M0-erp-schema.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M0-stock-write-paths.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M0-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M1-ui-review.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\evidence\\M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\lessons\\M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\lessons\\M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\lessons\\M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\lessons\\M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced fences docs\\PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local documentation links resolve",
+      "passed": true,
+      "detail": {
+        "checked": 202,
+        "missing": []
+      }
+    },
+    {
+      "name": "documentation JSON parses",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "AI spec JSON examples parse",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "M3-acceptance.json recorded checks passed",
+      "passed": true,
+      "detail": 97
+    },
+    {
+      "name": "M3-permissions.json recorded checks passed",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "M3-erp-approval-failure.json recorded checks passed",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "M3-migration.json recorded checks passed",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "M3-clean-M1-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "M3-clean-smoke.json recorded checks passed",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "M3-M2-core-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "name": "M3-M2-legacy-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 130
+    },
+    {
+      "name": "M3-M2-permissions-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "M3-M1-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "M3-M1-locking-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "M3-ERP-regression.json recorded checks passed",
+      "passed": true,
+      "detail": 110
+    },
+    {
+      "name": "M3-replay-after-restart.json recorded checks passed",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "M3-ui-result.json recorded checks passed",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "32 selected unit tests and both builds successful",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all targeted frontend checkers passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh install four commands passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restart preserved all original and M3 facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M3-instances.json distinct JVM proof",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M3-erp-failure-instances.json distinct JVM proof",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/ErpSaleOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/vo/order/ErpSaleOrderRespVO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCallbackEventDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCancellationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/api/erp/fulfillment/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/api/erp/sale/order/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/fulfillment/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/sale/order/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m0_restart.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m1_clean_install.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m2_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m2_legacy_inventory.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m2_permissions.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_clean_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_erp_failure.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_instances.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_migration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_permissions.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_previous_inventory.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_restart.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_ui_fixture.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current implementation hash tests/m3_ui_result.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed migration immutable V1__",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed migration immutable V2__",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original license backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original license frontend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "running copy matches tested backend artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed Python syntax passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main services running and isolated instances stopped",
+      "passed": true,
+      "detail": [
+        3306,
+        15173,
+        33306,
+        36379,
+        48080
+      ]
+    },
+    {
+      "name": "actual startup validates RC and three second lock wait",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PowerShell syntax passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M3-ui-desktop.jpg stable screenshot archived",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M3-ui-mobile.jpg stable screenshot archived",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

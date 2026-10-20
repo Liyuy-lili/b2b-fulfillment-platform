@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-17",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "code fences README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences AGENTS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\decisions\\ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\decisions\\ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\evidence\\M0-erp-schema.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\evidence\\M0-stock-write-paths.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\evidence\\M0-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\evidence\\M1-ui-review.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\evidence\\M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\lessons\\M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\lessons\\M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code fences docs\\PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local Markdown links resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "project documentation JSON parses",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "M1 Python syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "backend original license hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend original license hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M1-migration.json all recorded checks passed",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "M1-acceptance.json all recorded checks passed",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "M1-locking.json all recorded checks passed",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "M1-clean-acceptance.json all recorded checks passed",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "M1-ui-result.json all recorded checks passed",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "full restart covers M1 facts",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

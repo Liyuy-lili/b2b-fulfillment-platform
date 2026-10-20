@@ -1,0 +1,55 @@
+PASS test port free 48082
+PASS test port free 48083
+PASS setup ('-Database', 'fulfillment_m4_reconcile_20261019_175410')
+PASS setup ('-Action', 'baseline', '-Database', 'fulfillment_m4_reconcile_20261019_175410')
+PASS setup ('-Action', 'migrate', '-Database', 'fulfillment_m4_reconcile_20261019_175410')
+PASS setup ('-Action', 'validate', '-Database', 'fulfillment_m4_reconcile_20261019_175410')
+PASS healthy completed shipment return cancel snapshot is clean
+PASS 17 table counts match actual tenant rows
+PASS scan does not modify any business row
+PASS run replay is byte-equivalent semantic response
+PASS single persisted run per key
+PASS get reproduces persisted report
+PASS detect injected STOCK_H_LEDGER
+PASS report does not repair STOCK_H_LEDGER
+PASS detect injected STOCK_R_HELD
+PASS report does not repair STOCK_R_HELD
+PASS detect injected RESERVATION_LEDGER
+PASS report does not repair RESERVATION_LEDGER
+PASS detect injected STOCK_R_RUNNING
+PASS report does not repair STOCK_R_RUNNING
+PASS detect injected ORDER_RETURNED
+PASS report does not repair ORDER_RETURNED
+PASS detect injected SOURCE_OUT_COUNT
+PASS report does not repair SOURCE_OUT_COUNT
+PASS detect injected SHIPMENT_ERP_ITEM
+PASS report does not repair SHIPMENT_ERP_ITEM
+PASS detect injected RETURN_PHYSICAL
+PASS report does not repair RETURN_PHYSICAL
+PASS detect injected STOCK_H_RUNNING
+PASS report does not repair STOCK_H_RUNNING
+PASS missing stock row found from ledger and reservation union
+PASS missing row is not recreated by audit
+PASS all probes restored exact business rows
+PASS review same key creates one trail
+PASS review key different note conflicts
+PASS acknowledged filter retains original evidence
+PASS review is not inventory repair
+PASS new scan clean while old report stays dirty
+PASS history pagination bounded
+PASS item pagination bounded
+PASS invalid filter rejected
+PASS run requires idempotency key
+FAIL blank note rejected
+M4.3 acceptance failed 43 checks fulfillment_m4_reconcile_20261019_175410
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_reconcile_acceptance.py", line 174, in <module>
+    if __name__=='__main__':
+            ^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_reconcile_acceptance.py", line 104, in main
+    check('blank note rejected',c.review(item,'   ',ok=False)['code']==1080000011)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_reconcile_acceptance.py", line 18, in check
+    if not ok:raise AssertionError(name+': '+str(detail))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: blank note rejected: None

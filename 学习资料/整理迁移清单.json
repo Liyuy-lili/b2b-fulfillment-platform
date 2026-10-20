@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-20",
+  "archive": "项目学习资料/08-历史快照/20261020-整合前原始资料.zip",
+  "archive_sha256": "47dc8ed484a0f1b0055d04d0fcbe0be9f1612c43f74bbcc647e9e2da04bda91f",
+  "entries": [
+    {
+      "old": "docs/学习资料/00-完成度与事实边界.md",
+      "new": "项目学习资料/01-系统学习教程/00-完成度与事实边界.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "5f7e7722547c608b8298a4ff0f25f9f0dbc80576e92886befbdc0db50dc76414"
+    },
+    {
+      "old": "docs/学习资料/01-学习路线与每日任务.md",
+      "new": "项目学习资料/01-系统学习教程/01-学习路线与每日任务.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "69d5b869ed6d95cba4ff184ac617bbb34e27f6c5ed63636a72d7734c5e5468cd"
+    },
+    {
+      "old": "docs/学习资料/02-业务与数量全流程.md",
+      "new": "项目学习资料/01-系统学习教程/02-业务与数量全流程.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "165278625dd2faff1296b0fcdde01890396395cd833628dd3346caa939497dc2"
+    },
+    {
+      "old": "docs/学习资料/03-架构与技术栈.md",
+      "new": "项目学习资料/01-系统学习教程/03-架构与技术栈.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "c0b18a55657336c27a336a667ec41f6a3b73101d1cd143aca5527070097b2672"
+    },
+    {
+      "old": "docs/学习资料/04-数据库与迁移.md",
+      "new": "项目学习资料/01-系统学习教程/04-数据库与迁移.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "ef25d19036be72e829fec569cd094559df05e78fc7be65eb8f23a73cc7558ad5"
+    },
+    {
+      "old": "docs/学习资料/05-订单绑定与托管冻结.md",
+      "new": "项目学习资料/01-系统学习教程/05-订单绑定与托管冻结.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "405f26ff73cd26daa19e603bf48b75747fe325b456e45a1e2aefb8d694900fa0"
+    },
+    {
+      "old": "docs/学习资料/06-分仓预占与释放.md",
+      "new": "项目学习资料/01-系统学习教程/06-分仓预占与释放.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "c1ee4b26aef4f057ddde4d7792f1f397639da2289032ea84d7f8b94a25ef64d7"
+    },
+    {
+      "old": "docs/学习资料/07-旧ERP库存入口保护.md",
+      "new": "项目学习资料/01-系统学习教程/07-旧ERP库存入口保护.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "0819bc67f562d76e5cb2f19bb27920e4d066a9e201f092bb2513a0e9a59a6722"
+    },
+    {
+      "old": "docs/学习资料/08-发货取消与ERP事务.md",
+      "new": "项目学习资料/01-系统学习教程/08-发货取消与ERP事务.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "95d73bce2f2fd6e2fd36660a220c4acf5072d76b6ca06f0c11cd0829e097656e"
+    },
+    {
+      "old": "docs/学习资料/09-物流回调与验签.md",
+      "new": "项目学习资料/01-系统学习教程/09-物流回调与验签.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "7f5813e325d107fb72f9cd023e891560bb656b412818dee1138384bdece4d501"
+    },
+    {
+      "old": "docs/学习资料/10-自动到期与任务恢复.md",
+      "new": "项目学习资料/01-系统学习教程/10-自动到期与任务恢复.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "af111ace349a072593e9f13bceccab6fd5d0566887f2e8d3767191a43c1a4bf6"
+    },
+    {
+      "old": "docs/学习资料/11-退货额度与实际收货.md",
+      "new": "项目学习资料/01-系统学习教程/11-退货额度与实际收货.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "b93c75444f8c349f4cdf1209c5f150d1519a43f7e2caa4b37f41c65aed0cd227"
+    },
+    {
+      "old": "docs/学习资料/12-事务锁与幂等专题.md",
+      "new": "项目学习资料/01-系统学习教程/12-事务锁与幂等专题.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "f170c0fca2603a1f439397e9574da6aca568ddaac4c0a82052101e10934a02a1"
+    },
+    {
+      "old": "docs/学习资料/13-权限接口与前端精度.md",
+      "new": "项目学习资料/01-系统学习教程/13-权限接口与前端精度.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "06add356f909752b5016cd1631347a78599f9bcdd16e134454d23d3bfcec59b6"
+    },
+    {
+      "old": "docs/学习资料/14-测试方法与证据阅读.md",
+      "new": "项目学习资料/01-系统学习教程/14-测试方法与证据阅读.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "ab02a80b91c4a25e9e1df9ef0119922294998374151e733aa58758352b9abff0"
+    },
+    {
+      "old": "docs/学习资料/15-运行复现与排障.md",
+      "new": "项目学习资料/01-系统学习教程/15-运行复现与排障.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "36af5e6025cb69ef587932dc9eb0ea715ce41c65a4db2b9a90f9860ffe4737cb"
+    },
+    {
+      "old": "docs/学习资料/16-Java后端知识映射.md",
+      "new": "项目学习资料/01-系统学习教程/16-Java后端知识映射.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "7ca674b504818327c961fd6bbfd25721922ac1209cc8172c6a3ec2a434bdde66"
+    },
+    {
+      "old": "docs/学习资料/17-练习与参考答案.md",
+      "new": "项目学习资料/01-系统学习教程/17-练习与参考答案.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8d468814148335a50c8abd5fdb808ed4d2317c1d80907d46da54ac1807afcb9e"
+    },
+    {
+      "old": "docs/学习资料/18-后续能力与设计边界.md",
+      "new": "项目学习资料/01-系统学习教程/18-完成能力与扩展边界.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "ef6b57e10b20bbbb4866861a6731ed477d5dedc4d561b63102d436b2fe0f97fc"
+    },
+    {
+      "old": "docs/学习资料/19-真实代码导航.md",
+      "new": "项目学习资料/01-系统学习教程/19-真实代码导航.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8f654d178647cd8c38f2e0adf627404cbec28962c33738ac17b4721a8ddf9595"
+    },
+    {
+      "old": "docs/学习资料/20-迁移与数据库字典.md",
+      "new": "项目学习资料/01-系统学习教程/20-迁移与数据库字典.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "df1d56e6ab536ff2eeab0d72ae4e76e45b7ca836240fd97a4e840452d5bae24f"
+    },
+    {
+      "old": "docs/学习资料/21-实际接口与请求契约.md",
+      "new": "项目学习资料/01-系统学习教程/21-实际接口与请求契约.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "74bf12e56634423e145f01d5832f6700bdee6535fc8c3ea7d58bfddbf18010ae"
+    },
+    {
+      "old": "docs/学习资料/22-术语速查与易错说法.md",
+      "new": "项目学习资料/01-系统学习教程/22-术语速查与易错说法.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "b9ee152e1c85a284bf19918e028b066da25a36c2db54b29d5c89751a0a3c1097"
+    },
+    {
+      "old": "docs/学习资料/23-验收证据索引.md",
+      "new": "项目学习资料/01-系统学习教程/23-验收证据索引.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "a6829a4f39accab9aacd77217c04650f6e963154d0d484031e5432a8101586f2"
+    },
+    {
+      "old": "docs/学习资料/24-关键源码逐段精读.md",
+      "new": "项目学习资料/01-系统学习教程/24-关键源码逐段精读.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "debd1b55e06500ac9dcbf737c667607f6fcadd57e3589e4c2ed5df7c539dc7b3"
+    },
+    {
+      "old": "docs/学习资料/README.md",
+      "new": "项目学习资料/01-系统学习教程/README.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "99f8e2431ae2ee21fd39243d7ca2d8af70ca8bfa5c2b12ffff3c40253407726f"
+    },
+    {
+      "old": "docs/学习资料/资料快照.json",
+      "new": "项目学习资料/01-系统学习教程/资料快照.json",
+      "action": "move-with-compatibility",
+      "original_sha256": "af81d5c8d394d592c75fda5c412ab0bbc0123ab6c4bcce23d642613a90b388ed"
+    },
+    {
+      "old": "docs/面试问答/01-项目介绍与个人贡献.md",
+      "new": "项目学习资料/02-面试问答/01-项目介绍与个人贡献.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "23e1cda688de9885a6eb3c41ed0babad483f36fcd29747786746980b6773b6f8"
+    },
+    {
+      "old": "docs/面试问答/02-业务建模与数量状态.md",
+      "new": "项目学习资料/02-面试问答/02-业务建模与数量状态.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "ef7e9ef5305ed62f9cacbf722d15398c2ece6a43219d488670448fb00fecb12a"
+    },
+    {
+      "old": "docs/面试问答/03-MySQL表设计与隔离锁.md",
+      "new": "项目学习资料/02-面试问答/03-MySQL表设计与隔离锁.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "6886685df8c30851b2b243487eb71f8003822c6e501044d62dff0f051235a3cc"
+    },
+    {
+      "old": "docs/面试问答/04-Spring事务与工程边界.md",
+      "new": "项目学习资料/02-面试问答/04-Spring事务与工程边界.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8ecbeae2c1d957894344541c5d605ee459be8f6e1523b78da920266bf16d5974"
+    },
+    {
+      "old": "docs/面试问答/05-并发幂等与有限重试.md",
+      "new": "项目学习资料/02-面试问答/05-并发幂等与有限重试.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "25f2f370543b3ca60ac5a73a87e5e97371ddd6285f4a4c6423e5af386ff3a8e5"
+    },
+    {
+      "old": "docs/面试问答/06-旧ERP库存兼容.md",
+      "new": "项目学习资料/02-面试问答/06-旧ERP库存兼容.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8f64d23f6541989b4ff2940a28ee932f3b458f679c7a371ff26bcf6a6f1ed1c7"
+    },
+    {
+      "old": "docs/面试问答/07-发货取消与物流回调.md",
+      "new": "项目学习资料/02-面试问答/07-发货取消与物流回调.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "33b5ceeae16f41ec1f5f8ac256371468f45df0697c91bf1dc7167c27e7d2fc7e"
+    },
+    {
+      "old": "docs/面试问答/08-自动到期与任务恢复.md",
+      "new": "项目学习资料/02-面试问答/08-自动到期与任务恢复.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8093688c1ef0aa60bbba9479bb9381063269f10a4a4d74c9b7dc183fb609d855"
+    },
+    {
+      "old": "docs/面试问答/09-退货额度与ERP入库.md",
+      "new": "项目学习资料/02-面试问答/09-退货额度与ERP入库.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "daafae137940b127e32d6aaf459d609f4ab07c56a393479d3b7c9d5e0130b8c2"
+    },
+    {
+      "old": "docs/面试问答/10-权限接口与前端协作.md",
+      "new": "项目学习资料/02-面试问答/10-权限接口与前端协作.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "f270fc1842ef6911b82cd11544136c108e4128188a1a6c2e8b27616fb482b283"
+    },
+    {
+      "old": "docs/面试问答/11-测试证据与排障.md",
+      "new": "项目学习资料/02-面试问答/11-测试证据与排障.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "39ba6dde4fc544496fe3633a91e1fcca04e75e53a2bde695a1d3493114d67605"
+    },
+    {
+      "old": "docs/面试问答/12-现场推演与代码设计.md",
+      "new": "项目学习资料/02-面试问答/12-现场推演与代码设计.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "a243205c38dfbc2ff73b5a1ca6d4ca95ece72783c1a1d383735833b0a1cf8c4e"
+    },
+    {
+      "old": "docs/面试问答/13-项目口述与简历模板.md",
+      "new": "项目学习资料/02-面试问答/13-项目口述与简历模板.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "5734743007087d514ca4dfa2d2f477c5a5ea68fe2dcf94402fb8428e6dfc0fbe"
+    },
+    {
+      "old": "docs/面试问答/14-未完成能力与演进问答.md",
+      "new": "项目学习资料/02-面试问答/14-完成能力与扩展问答.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "7dc1a0ff53fc0858048fed046c0b6bd21ce6f7597a196a999eaf594e138375b9"
+    },
+    {
+      "old": "docs/面试问答/15-模拟面试与掌握检查.md",
+      "new": "项目学习资料/02-面试问答/15-模拟面试与掌握检查.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "1ef38e8ca5154eddbfbfb8ca7175d943e1a7ba65746ec73a7557cb63ddd0ba8d"
+    },
+    {
+      "old": "docs/面试问答/16-题目总索引.md",
+      "new": "项目学习资料/02-面试问答/16-题目总索引.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "8d5bc8b83596834dad73c89a2a4ff0b87a5609c8b926b030f264be78b60e6105"
+    },
+    {
+      "old": "docs/面试问答/README.md",
+      "new": "项目学习资料/02-面试问答/README.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "256e222fa45c40aab1049ddb5555c6814fbc70e4c8488a6851b94b70bed2bd9d"
+    },
+    {
+      "old": "docs/lessons/M0-基座与库存调用链.md",
+      "new": "项目学习资料/03-阶段原理讲解/M0-基座与库存调用链.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "706b844a66d29f12eda9a8a07627c7251e3c8392c72c62a52e1c0984240b9380"
+    },
+    {
+      "old": "docs/lessons/M1-订单接管与并发保护.md",
+      "new": "项目学习资料/03-阶段原理讲解/M1-订单接管与并发保护.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "401b61b242469d1fb61edbe9984c25c607a11805210cf687da74d47b8cd10b0f"
+    },
+    {
+      "old": "docs/lessons/M2-预占释放与统一库存保护.md",
+      "new": "项目学习资料/03-阶段原理讲解/M2-预占释放与统一库存保护.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "29edf75cd26d57745d2d5502297e34a089ad831a566c5a9271062cb1a0941fff"
+    },
+    {
+      "old": "docs/lessons/M3-部分发货取消与物流闭环.md",
+      "new": "项目学习资料/03-阶段原理讲解/M3-部分发货取消与物流闭环.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "7f340980820f0ffd1785f88e7b089433803dd9814a2acba1dcaa607fae370125"
+    },
+    {
+      "old": "docs/lessons/M4.1-自动到期与重复任务.md",
+      "new": "项目学习资料/03-阶段原理讲解/M4.1-自动到期与重复任务.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "5f3b1b6294a2b4e45a6e4341f7b4743e2999bd24860bc7405060fe891c4f6c9e"
+    },
+    {
+      "old": "docs/lessons/M4.2-退货额度与ERP入库.md",
+      "new": "项目学习资料/03-阶段原理讲解/M4.2-退货额度与ERP入库.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "910dbfb1ec2d8a603654860d17e508479641e61418a05e005eb50168dfe0e9e4"
+    },
+    {
+      "old": "docs/lessons/M4.3-一致性快照与差异核对.md",
+      "new": "项目学习资料/03-阶段原理讲解/M4.3-一致性快照与差异核对.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "db903efac446f944467ad6fc9bc5f69c36fb894d5ad0ee07cb8e388fa2066238"
+    },
+    {
+      "old": "docs/lessons/M5-可靠消息与故障恢复.md",
+      "new": "项目学习资料/03-阶段原理讲解/M5-可靠消息与故障恢复.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "464e1a47fcf4f0c7333a57bef331f753bbf43eaefb47187de5e2356101116faa"
+    },
+    {
+      "old": "docs/lessons/M6-可恢复文件任务与仓库授权.md",
+      "new": "项目学习资料/03-阶段原理讲解/M6-可恢复文件任务与仓库授权.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "0f56dd08e840849150468eee793244a1993b7c1a5f7b61301a710996c16f7bbf"
+    },
+    {
+      "old": "docs/lessons/M7-集成性能与交付.md",
+      "new": "项目学习资料/03-阶段原理讲解/M7-集成性能与交付.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "4cc095553a695598d6869c3b81a5e9ef5932f829a1391973181cb0ee1c2f275a"
+    },
+    {
+      "old": "docs/lessons/M7.1-独立交付与固定演示.md",
+      "new": "项目学习资料/03-阶段原理讲解/M7.1-独立交付与固定演示.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "4e5a9d5fb3bb6b2f7dd1e30864c85ace5df1bc6252e130d10e3344d09ee89f49"
+    },
+    {
+      "old": "docs/final/01-架构与贡献边界.md",
+      "new": "项目学习资料/04-演示简历与复习/01-架构与贡献边界.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "ca651ece04f97974a4bbed7f776e379db0a9634fabc5fc3b55caab53f6c53017"
+    },
+    {
+      "old": "docs/final/02-演示与排障.md",
+      "new": "项目学习资料/04-演示简历与复习/02-演示与排障.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "c7bb5b3c2aaebcf5d7a0c1626b8fc18befcd1f242bde74fa8b86e7164fbe71e9"
+    },
+    {
+      "old": "docs/final/03-简历与项目口述.md",
+      "new": "项目学习资料/04-演示简历与复习/03-简历与项目口述.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "6df2586edd807e283ab371273f003115aeadea7b0ba2c8a256b67b8c65e04a28"
+    },
+    {
+      "old": "docs/final/04-综合面试追问.md",
+      "new": "项目学习资料/04-演示简历与复习/04-综合面试追问.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "d67c8a09cc487f92684b7cd9b03b25ed579d448198a2619d7d110b61bf54db52"
+    },
+    {
+      "old": "docs/final/05-两周学习与自测.md",
+      "new": "项目学习资料/04-演示简历与复习/05-两周学习与自测.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "cf365662ae2612c703da8813399fa6abc1883d2643fcf3404a1e40da75df278c"
+    },
+    {
+      "old": "docs/final/06-实际源码差异.md",
+      "new": "项目学习资料/04-演示简历与复习/06-实际源码差异.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "aed74b6ef4ab6302eb014dbd74d6aca2bf76eba0c46e1b122f907bdcc1e8aded"
+    },
+    {
+      "old": "docs/final/README.md",
+      "new": "项目学习资料/04-演示简历与复习/README.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "c0432a5b818a7a74674de76fa94cf67dea57260953731695977827bcde833500"
+    },
+    {
+      "old": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "new": "项目学习资料/00-项目总学习手册.md",
+      "action": "move-with-compatibility",
+      "original_sha256": "2b4c854d4dcd6e6c90bee9f2347e552d0778999194a1b331eeed13335420fcb3"
+    },
+    {
+      "old": "docs/decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-009-M0-运行环境与基座收敛.md",
+      "action": "learning-copy",
+      "original_sha256": "b1252eb904b216c827f5c9bfa09b683f689f6c84997a2d13f8f37cd8336b5660"
+    },
+    {
+      "old": "docs/decisions/ADR-010-M1-绑定与迁移边界.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-010-M1-绑定与迁移边界.md",
+      "action": "learning-copy",
+      "original_sha256": "5ff661a5657ccb98ce7b0633fbc8077fd98f597a6a64a267b1ffef7e2b466970"
+    },
+    {
+      "old": "docs/decisions/ADR-011-M2-预占与统一库存写入.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-011-M2-预占与统一库存写入.md",
+      "action": "learning-copy",
+      "original_sha256": "ce4a7868b4e88c02f5e1c0b0159fc8e459db5513199eee071064f6ac2e04799b"
+    },
+    {
+      "old": "docs/decisions/ADR-012-M3-发货取消与物流集成.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-012-M3-发货取消与物流集成.md",
+      "action": "learning-copy",
+      "original_sha256": "d4d0c63b9d8f1bd390931886b55a2cf508edb34b74c1cb02d0425ca223f34a72"
+    },
+    {
+      "old": "docs/decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-013-M4.1-到期任务与系统命令.md",
+      "action": "learning-copy",
+      "original_sha256": "ebca12f8d5325076b514d601b6514863a4abfc9856840b6339998565931da71d"
+    },
+    {
+      "old": "docs/decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-014-M4.2-退货与ERP入库.md",
+      "action": "learning-copy",
+      "original_sha256": "d8bc1fc06026d6e57a80c14d16aa82bd78d01dc30b16784553648550287e77c7"
+    },
+    {
+      "old": "docs/decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-015-M4.3-快照核对与差异追溯.md",
+      "action": "learning-copy",
+      "original_sha256": "9b1f300808568868d94f5be4bd555ba422250d2f8aa5cbc57cf214fff0e8bd81"
+    },
+    {
+      "old": "docs/decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-016-M5-可靠事件与消息恢复.md",
+      "action": "learning-copy",
+      "original_sha256": "6cc0f03e946a4a8d5dedded242d7f845822440cd5d91562d0d516f98de64ce7f"
+    },
+    {
+      "old": "docs/decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-017-M6-持久化文件任务与数据授权.md",
+      "action": "learning-copy",
+      "original_sha256": "fe374cd95e615ab04ee8f4c1eb558cdd2156a3df8a6a68b4f58a0e57b029b5ad"
+    },
+    {
+      "old": "docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-018-M7-交付与性能证据边界.md",
+      "action": "learning-copy",
+      "original_sha256": "f8bdfa4dd635c59b5699a50d66d1422282271eafebc05219e6db231785af13be"
+    },
+    {
+      "old": "docs/decisions/ADR-019-M7-订单查询索引与实测规则.md",
+      "new": "项目学习资料/05-设计决策与复盘/ADR-019-M7-订单查询索引与实测规则.md",
+      "action": "learning-copy",
+      "original_sha256": "e013bd51554b0499063084af2736509b55980cde0097c809dcbb5989e97387b7"
+    },
+    {
+      "old": "docs/RELEASE_RUNBOOK.md",
+      "new": "项目学习资料/06-运行交付与证据/独立交付运行手册.md",
+      "action": "learning-copy",
+      "original_sha256": "b23c6650cad9ee4d3b35cb5cfe0b358524068f306eaf6ff1dd8efc9804fed56f"
+    }
+  ],
+  "scope": "Only learning documents moved/copied; historical evidence, code, migrations, release binaries, services and data untouched."
+}

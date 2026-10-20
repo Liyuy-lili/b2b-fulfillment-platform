@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-17",
+  "listeners": [
+    {
+      "LocalPort": 48080,
+      "OwningProcess": 39672
+    },
+    {
+      "LocalPort": 36379,
+      "OwningProcess": 5432
+    },
+    {
+      "LocalPort": 33306,
+      "OwningProcess": 33480
+    },
+    {
+      "LocalPort": 15173,
+      "OwningProcess": 29544
+    }
+  ],
+  "isolation_startup_evidence": [
+    "2026-10-17 09:55:25.755 [main] \u001b[34mINFO \u001b[0;39m \u001b[36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:40\u001b[0;39m - Fulfillment business datasource isolation verified: READ_COMMITTED"
+  ],
+  "clean_port_48081_running": false,
+  "schema_validate": "passed: scripts/Migrate-Database.ps1 -Action validate exit 0",
+  "powershell_syntax": "all project scripts and M1 clean runner parsed without errors"
+}

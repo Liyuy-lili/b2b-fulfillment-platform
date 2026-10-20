@@ -1,0 +1,5 @@
+Exception: C:\Users\Lenovo\fulfillment-delivery-tests\release 20261020_111051\bin\Release-Environment.ps1:25
+Line |
+  25 |  … ant() -ne $file.sha256){throw ('Release hash mismatch: '+$file.path)}
+     |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Release hash mismatch: bin/serve.cjs

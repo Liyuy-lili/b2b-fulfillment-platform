@@ -1,0 +1,55 @@
+{
+  "run_at": "2026-10-18T15:53:52.614782+00:00",
+  "run": "121291",
+  "source": 279,
+  "order": "181",
+  "orderNo": "XSDD20261018000189",
+  "product": 143,
+  "item": "189",
+  "warehouses": [
+    {
+      "id": "50",
+      "name": "M3演示华东仓-121291",
+      "initial": "6"
+    },
+    {
+      "id": "51",
+      "name": "M3演示华南仓-121291",
+      "initial": "8"
+    }
+  ],
+  "initial_order": {
+    "id": "181",
+    "erpOrderId": "279",
+    "orderNo": "XSDD20261018000189",
+    "customerId": "25",
+    "ownerUserId": "1",
+    "accountId": "20",
+    "saleUserId": null,
+    "status": "NEW",
+    "allocationAttempted": false,
+    "totalPrice": "111.870000",
+    "discountPercent": "0.000000",
+    "discountPrice": "0.000000",
+    "depositPrice": "0.000000",
+    "createTime": "2026-10-18T15:53:52.260414Z",
+    "items": [
+      {
+        "id": "189",
+        "erpOrderItemId": "293",
+        "productId": "143",
+        "unitId": "25",
+        "price": "9.900000",
+        "taxPercent": "13.000000",
+        "taxPrice": "12.870000",
+        "totalPrice": "99.000000",
+        "orderedQty": "10.000000",
+        "openQty": "10.000000",
+        "reservedQty": "0.000000",
+        "shippedQty": "0.000000",
+        "cancelledQty": "0.000000",
+        "returnedQty": "0.000000"
+      }
+    ]
+  }
+}

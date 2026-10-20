@@ -1,0 +1,137 @@
+<script lang="ts" setup>
+import type { FormRules } from 'element-plus';
+import type { StudentApi } from '#/api/infra/demo';
+
+import { nextTick, reactive, ref, watch } from 'vue';
+
+import { DICT_TYPE } from '@vben/constants';
+import { getDictOptions } from '@vben/hooks';
+
+import {
+  ElForm,
+  ElFormItem,
+  ElDatePicker,
+  ElInput,
+  ElOption,
+  ElRadio,
+  ElRadioGroup,
+  ElSelect,
+} from 'element-plus';
+
+import { Tinymce as RichTextarea } from '#/components/tinymce';
+import { getStudentTeacherByStudentId } from '#/api/infra/demo';
+import { $t } from '#/locales';
+
+const props = defineProps<{
+   studentId?: number // 学生编号（主表的关联字段）
+}>()
+
+const formRef = ref();
+const formData = ref<Partial<StudentApi.StudentTeacher>>({
+                    id: undefined,
+                    studentId: undefined,
+                    name: undefined,
+                    description: undefined,
+                    birthday: undefined,
+                    sex: undefined,
+                    enabled: undefined,
+                    avatar: undefined,
+                    video: undefined,
+                    memo: undefined,
+});
+const rules = reactive<FormRules>({
+                studentId: [{ required: true, message: '学生编号不能为空', trigger: 'blur' }],
+                name: [{ required: true, message: '名字不能为空', trigger: 'blur' }],
+                description: [{ required: true, message: '简介不能为空', trigger: 'blur' }],
+                birthday: [{ required: true, message: '出生日期不能为空', trigger: 'blur' }],
+                sex: [{ required: true, message: '性别不能为空', trigger: 'change' }],
+                enabled: [{ required: true, message: '是否有效不能为空', trigger: 'blur' }],
+                avatar: [{ required: true, message: '头像不能为空', trigger: 'blur' }],
+                memo: [{ required: true, message: '备注不能为空', trigger: 'blur' }],
+});
+/** 暴露出表单校验方法和表单值获取方法 */
+defineExpose({
+  validate: async () => await formRef.value?.validate(),
+  getValues: ()=> formData.value,
+});
+
+/** 监听主表的关联字段的变化，加载对应的子表数据 */
+watch(
+    () => props.studentId,
+    async (val) => {
+      formData.value = {
+        id: undefined,
+        studentId: undefined,
+        name: undefined,
+        description: undefined,
+        birthday: undefined,
+        sex: undefined,
+        enabled: undefined,
+        avatar: undefined,
+        video: undefined,
+        memo: undefined,
+      };
+      if (!val) {
+        return;
+      }
+      await nextTick();
+      formData.value = await getStudentTeacherByStudentId(props.studentId!);
+    },
+    { immediate: true },
+);
+</script>
+
+<template>
+  <ElForm
+      ref="formRef"
+      class="mx-4"
+      :model="formData"
+      :rules="rules"
+      label-width="120px"
+      label-position="right"
+  >
+                <ElFormItem label="名字" prop="name">
+                  <ElInput v-model="formData.name" placeholder="请输入名字" />
+                </ElFormItem>
+                <ElFormItem label="简介" prop="description">
+                  <ElInput v-model="formData.description" type="textarea" placeholder="请输入简介" />
+                </ElFormItem>
+                <ElFormItem label="出生日期" prop="birthday">
+                  <ElDatePicker
+                      v-model="formData.birthday"
+                      value-format="x"
+                      placeholder="选择出生日期"
+                  />
+                </ElFormItem>
+                <ElFormItem label="性别" prop="sex">
+                  <ElSelect v-model="formData.sex" placeholder="请选择性别">
+                        <ElOption
+                            v-for="dict in getDictOptions(DICT_TYPE.SYSTEM_USER_SEX, 'number')"
+                            :key="dict.value"
+                            :value="dict.value"
+                            :label="dict.label"
+                        />
+                  </ElSelect>
+                </ElFormItem>
+                <ElFormItem label="是否有效" prop="enabled">
+                  <ElRadioGroup v-model="formData.enabled">
+                        <ElRadio
+                            v-for="dict in getDictOptions(DICT_TYPE.INFRA_BOOLEAN_STRING, 'boolean')"
+                            :key="dict.value"
+                            :value="dict.value"
+                        >
+                          {{ dict.label }}
+                        </ElRadio>
+                  </ElRadioGroup>
+                </ElFormItem>
+                <ElFormItem label="头像" prop="avatar">
+                  <ImageUpload v-model="formData.avatar" />
+                </ElFormItem>
+                <ElFormItem label="附件" prop="video">
+                  <FileUpload v-model="formData.video" />
+                </ElFormItem>
+                <ElFormItem label="备注" prop="memo">
+                  <RichTextarea v-model="formData.memo" height="500px" />
+                </ElFormItem>
+  </ElForm>
+</template>

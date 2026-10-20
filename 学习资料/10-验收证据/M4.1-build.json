@@ -1,0 +1,67 @@
+{
+  "run_at": "2026-10-18T17:02:29.105115+00:00",
+  "status": "passed",
+  "modules": [
+    "yudao",
+    "yudao-framework",
+    "yudao-common",
+    "yudao-spring-boot-starter-web",
+    "yudao-spring-boot-starter-security",
+    "yudao-spring-boot-starter-mybatis",
+    "yudao-spring-boot-starter-redis",
+    "yudao-spring-boot-starter-mq",
+    "yudao-spring-boot-starter-job",
+    "yudao-spring-boot-starter-test",
+    "yudao-spring-boot-starter-biz-tenant",
+    "yudao-spring-boot-starter-websocket",
+    "yudao-spring-boot-starter-monitor",
+    "yudao-spring-boot-starter-protection",
+    "yudao-spring-boot-starter-biz-ip",
+    "yudao-spring-boot-starter-excel",
+    "yudao-spring-boot-starter-biz-data-permission",
+    "yudao-module-infra",
+    "yudao-module-system",
+    "yudao-module-erp",
+    "yudao-module-fulfillment",
+    "yudao-server"
+  ],
+  "suites": [
+    {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.OrderStatusCalculatorTest"
+    },
+    {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.AllocationPlannerTest"
+    },
+    {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.DatabaseCommandRetryTest"
+    },
+    {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.domain.LogisticsSignatureTest"
+    },
+    {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "cn.iocoder.yudao.module.fulfillment.framework.FulExpiryScannerTest"
+    }
+  ],
+  "tests": 37,
+  "log_sha256": "6ad488d6285b38b4e28d3244d972777a86354f387e5bb58657196c50779a4ebf"
+}

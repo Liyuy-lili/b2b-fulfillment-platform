@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-18",
+  "note": "Implementation inventory of current module and adapted source; not a Git diff. Base pins remain baseline.lock.json.",
+  "files": [
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/ErpStockMapper.java",
+      "sha256": "e20d2ab2a670587b06cb56e46f46bd9d6ff31ceaf10d41603d64391e25bf2102"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockBalance.java",
+      "sha256": "2cb08e1ad3c45f6d78d1899b7f59ed80f960f904cb4658d3ed8ad370cb1409db"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockKey.java",
+      "sha256": "af798bdc0844841978896875b2b82b4bc0f92db66eaa1ce9c6b1168cc11326a4"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/enums/ErrorCodeConstants.java",
+      "sha256": "3ab0d438987f514c970f3e83651c503285cda774291b224c23299b22aa78231e"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/product/ErpProductServiceImpl.java",
+      "sha256": "e2fbaa7907513c3a955c97e61d6647127a8e8a54b225cdd0ec218c7ba2f20446"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseInServiceImpl.java",
+      "sha256": "db639ec20e90810ba9abaa258f93a9fd786a0d32705f673ff0d1376beda636d6"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseReturnServiceImpl.java",
+      "sha256": "562d0a62470eaa8b11daa1a3c1575c7d7234d9c0cbffe7dc746cf5bd698c06e3"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "sha256": "c5d0f97a74e39da6ca34f1e7d507ee0a821135882ce08c3af86eaaaf52ccd6f1"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "sha256": "c4f7d2889fbe9d7036bb38bde3ec6cf952e07093fb5c9ff6537f0dfb0bac6a18"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/DatabaseCommandRetry.java",
+      "sha256": "31b92848a7ef2e9048d5d18bd26cb9aef2fa6655fcc384682f4960212cb2f048"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockCheckServiceImpl.java",
+      "sha256": "61cca57ac9167f21f9f19227f6341d30ba1c31ff2c607172aa354e69c9a4022e"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockInServiceImpl.java",
+      "sha256": "2bb36143eda5d94d9a4ed0a7661951aaba942d4a36987d5f27d2b1e4e50dd832"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockMoveServiceImpl.java",
+      "sha256": "8986f3b46678561b71df1115c5833431480461a2ffbf4fad62af69a83c65a97a"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockOutServiceImpl.java",
+      "sha256": "a6259cbb73f7000f57b2e1730ac43355fa54bdf52f09a94d0661c19b90a64ef3"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordService.java",
+      "sha256": "08e44bd038d0074b13b94282ddfbb83fc603464f5b665752d4a127b4a64c1c20"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordServiceImpl.java",
+      "sha256": "54e06468bdc932f534f74853b11c90a3a8f9bc7958555a29f1c60fcb7212348e"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockService.java",
+      "sha256": "ddee6d0d4a11ce589dd05d2c6dfd75676496e187a233dd80dff5f4c6f8afede9"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockServiceImpl.java",
+      "sha256": "e503cb7aeb795d970c3fab38227f9e3fe3833526bfcb41363d8a9a6744eea77d"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpTransactionRetryAspect.java",
+      "sha256": "26551651285179d43ed17282ad0514d2b379cef2957d5dc1b89ba0f6b2d6620c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "sha256": "396e9c4e4d9edd40aea243c758575eae370b7c4491556a077a32545e012500ec"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "sha256": "d5b7a8c765073ba19b38fa459766fc870827dc93f3047a650c1a4a4d0d776e28"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "sha256": "e5c8218351a6a18438330d0f43a048fad00f045df5f6abf556429977f5ca13f6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "sha256": "8019f413c394e285000348cc5e19c7ad442e48c0ed9825337d7f18fe2e9b7593"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "sha256": "cbf0018da803dfd07b10246278c2498b8ce0a4bd1debd2abfdc9dcba629058fa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "sha256": "8532a9545c4d7a2ff2e3f89903a045c525e389fbd98298e7fd82b00355082421"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "sha256": "d0b0920ff8d48ec5604e579604bafbd316423ea37afe44db31d0bb200f5d67e5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "sha256": "c3979f84b9d0ec0e8d810fdcff3ef05b39d2dcb18d7fe148ef85209cde5d4085"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "sha256": "b0dc945b5d811871475b18c1df71f7b7b51fdc785931b81bdfe83500efd08a73"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "sha256": "460ebd7878242cd2e1fe83d91dac91a9866944d4549e163d007507d7496ae2a3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "sha256": "656997786bbfd935f11be45ebb2bc4bafbbdc668d5f53485aadf5447748024e6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "sha256": "8c2f8b07b751d4b2623cba101bc2a58b931381d2e414b5524e2540f87aee89e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "sha256": "8460cdbc4be4c86f0073b34be716662e428557bd4528438074746dfbe5b75dfc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "sha256": "0e01a91b7ebb1ed01c6f68d1e7276d74cf52fd3ea357ae587e08b7515064b728"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "sha256": "142afa6f6d43f876f41796250eb29077d22daf984f208708f715c90fe2a79912"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "sha256": "95795ceb5ca9662c287bf092cfabb95a5a5f45ec5042b5cb6cbad245c04fea3c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "sha256": "a634d26a6aeb86045e90b4985f8406345e593493ddff7c558133bc04031bae41"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "sha256": "4ad68e78f5f1b2458efc6e980ed77586715d4dd2cd3368a315b10f2cfdee3bfa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "2047f432cb5ed0ec2aa996b59cb5bd0c0be732fdcbb011792257fbacc8b8f0ef"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "sha256": "d32b68f9fad1007ca739fad307b7eb0f72c9545ae14c439e4088c51565da23b5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "sha256": "47a1081102131ac66b567174088c938c4f9e35197a372df2592b9e43d1052c46"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "sha256": "074e06461d4b8079a4aeaa04382fac932aa3130ca9693388ffd4bea35ecccfa0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "24230a6e869a37405c27e9dd58883ad3ff9a1866fdfaecfdd8808098aedc6421"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "sha256": "3c75abbd095ecab8882bc99453093961888963a8425846328eab1377f322c96f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "sha256": "2ec8ead15a987bbde00b916a6aa4c36a4aded6282b904cab964594a4ca4988b1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "sha256": "3e5ca2defb804f548f94438cdd720c759e67eed5632913fd8979a0e613fcb375"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "sha256": "311840c0db39f7cad01d574f5bcb305b5af45739bc64c3fe2c93af893d00b2e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "sha256": "f7c8072862dc47a5add734a251241b05cb82e2629fbee5833b9a3d6bb18bd6ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "sha256": "c27338d7562f974663932f5b199f44fa5ff619ec5062a876b4a1549d86726ffc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "sha256": "e1e3115977d439c1e3cc1a763654acebc1dec857b90570d96f6260b462f015d4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "sha256": "1d964dc7d0002cbe9cb932f0199b9ef23136605ff18783d02d6e05a2bf7a5961"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "sha256": "4f3d9783b525878ef685e488270a9d58816d0c157c86462a488804ad21eb9bd8"
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "7f33433a72ff451a08a43791f381733a5fd55eca797d7c1bbfb305aec4dc276d"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "39e583ec3d3609fc1f64c6b2148aa2e7e5f8bbf29aff1258e1eb1b66e1c24aa6"
+    },
+    {
+      "path": "tests/m0_smoke.py",
+      "sha256": "46f3b7603135de20ebb807ebfc371a56e7161c71dcee3446d6590d772adc4e09"
+    },
+    {
+      "path": "tests/m1_clean_install.ps1",
+      "sha256": "d4133ad77ad3d8c1e37a1d1de0c19c8e48ed57df94543a6ab4a05d8c95079ddb"
+    },
+    {
+      "path": "tests/m1_locking.py",
+      "sha256": "5ed974a17425df55a1fb64dfc9b1c4d8227ce293c481e08f9708492f7ed90830"
+    },
+    {
+      "path": "tests/m2_acceptance.py",
+      "sha256": "ee79db1b755d06f97e7c74e338b35b15d2b35edf4b3fe3d2055f791515644f0f"
+    },
+    {
+      "path": "tests/m2_clean_smoke.py",
+      "sha256": "5b26184ae62e5640828bdcfd7c1ff41c755e4e668dbbb0739ad71522378fddee"
+    },
+    {
+      "path": "tests/m2_legacy_inventory.py",
+      "sha256": "e060e0d5e56e9a2ffa88ae79be5e5d6fd9c3c91d1a4f89497e7b7d615b7c529f"
+    },
+    {
+      "path": "tests/m2_migration.py",
+      "sha256": "7eb28cc49f325b509bb110c636545123df2b779a99b0a5d63ef0c22010608474"
+    },
+    {
+      "path": "tests/m2_permissions.py",
+      "sha256": "7b01d558b78e237129ba1a3768015f38277348b4a730c74f2db7af572d8dc23b"
+    },
+    {
+      "path": "tests/m2_restart.py",
+      "sha256": "ce590c0a184d91037bb5b7a6d270ed4373dc7b2455c1b7b8ef0478480191189c"
+    },
+    {
+      "path": "tests/m2_two_instance.ps1",
+      "sha256": "b5ebbf9d3dc4edca8a0af679c2f89dfa0a1bd7edb7667cebe1bc7d4c08ad98e4"
+    }
+  ]
+}

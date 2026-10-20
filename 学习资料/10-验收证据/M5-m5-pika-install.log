@@ -1,0 +1,5 @@
+Collecting pika==1.3.2
+  Downloading pika-1.3.2-py3-none-any.whl.metadata (13 kB)
+Downloading pika-1.3.2-py3-none-any.whl (155 kB)
+Installing collected packages: pika
+Successfully installed pika-1.3.2

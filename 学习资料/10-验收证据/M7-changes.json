@@ -1,0 +1,206 @@
+{
+  "note": "Explicit file hash inventory, not Git diff; no commits/push/PR. M4.2 historical study packages retained.",
+  "count": 50,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f354afdc803f5a941b341971c4641755c118d05049cd1136b5a0f9ebf67f77c5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "sha256": "21cf9cc3204e7a1d5a5aacdd27d52a2b62da6dda32a736fa3f049b5e1c4d670a"
+    },
+    {
+      "path": "deploy/release/Install-Release.ps1",
+      "sha256": "b2eea82c4f2ddc04cd40098d8bb3dcef35c68a6ab9808f2982d6e1ad7251d7b4"
+    },
+    {
+      "path": "deploy/release/Release-Environment.ps1",
+      "sha256": "505ee2621fc7782e1b896cf027eaedbed0488786c03fb58299b61a35fceb136b"
+    },
+    {
+      "path": "deploy/release/Seed-Demo.cjs",
+      "sha256": "868d91374cb74101701428b51b5e3e13cb63098a476fd1ddeae81fdd877451dc"
+    },
+    {
+      "path": "deploy/release/Start-Release.ps1",
+      "sha256": "9666d50ba8bb38ffa281c103fb525a9bd8c8d958fda1728f068a5629bc349467"
+    },
+    {
+      "path": "deploy/release/Stop-Release.ps1",
+      "sha256": "2eed0dc05e95b789d15e8325e53ab422d2e137091e8620224369c8307fdc7b85"
+    },
+    {
+      "path": "deploy/release/config.example.json",
+      "sha256": "eb45d93a56115922475f240e8413d510a3b158b90330da7a9c94a988f88959c7"
+    },
+    {
+      "path": "deploy/release/serve.cjs",
+      "sha256": "b7259108c59c9ef05a111555c2417436a9836d03d4dc981b84dc5a83bb741e98"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "8e97ea93d07930e153795fd05489466388d5c881f6b45a3903f142e33cf776f9"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "2b4c854d4dcd6e6c90bee9f2347e552d0778999194a1b331eeed13335420fcb3"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "3dba6478b5719cb06d9d349120aaa80db10d20f7b1dabd713ab3e613c1035087"
+    },
+    {
+      "path": "docs/RELEASE_RUNBOOK.md",
+      "sha256": "b23c6650cad9ee4d3b35cb5cfe0b358524068f306eaf6ff1dd8efc9804fed56f"
+    },
+    {
+      "path": "docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "sha256": "f8bdfa4dd635c59b5699a50d66d1422282271eafebc05219e6db231785af13be"
+    },
+    {
+      "path": "docs/decisions/ADR-019-M7-订单查询索引与实测规则.md",
+      "sha256": "e013bd51554b0499063084af2736509b55980cde0097c809dcbb5989e97387b7"
+    },
+    {
+      "path": "docs/evidence/M7-验收报告.md",
+      "sha256": "60e53a14dbc2f4394145c36cc2cf0f2d1c97fa24c7faa4ecdaaeb2b826064657"
+    },
+    {
+      "path": "docs/evidence/M7.2-验收报告.md",
+      "sha256": "18636dfe5a418018326e55c0b862369b5f3d41afff4397fcf731a391957e2782"
+    },
+    {
+      "path": "docs/evidence/M7.3-性能报告.md",
+      "sha256": "0d2171b8661ae3ed8b5abcfe704ed87617cc82c2ac309440953fa29a27373809"
+    },
+    {
+      "path": "docs/final/01-架构与贡献边界.md",
+      "sha256": "ca651ece04f97974a4bbed7f776e379db0a9634fabc5fc3b55caab53f6c53017"
+    },
+    {
+      "path": "docs/final/02-演示与排障.md",
+      "sha256": "c7bb5b3c2aaebcf5d7a0c1626b8fc18befcd1f242bde74fa8b86e7164fbe71e9"
+    },
+    {
+      "path": "docs/final/03-简历与项目口述.md",
+      "sha256": "6df2586edd807e283ab371273f003115aeadea7b0ba2c8a256b67b8c65e04a28"
+    },
+    {
+      "path": "docs/final/04-综合面试追问.md",
+      "sha256": "d67c8a09cc487f92684b7cd9b03b25ed579d448198a2619d7d110b61bf54db52"
+    },
+    {
+      "path": "docs/final/05-两周学习与自测.md",
+      "sha256": "cf365662ae2612c703da8813399fa6abc1883d2643fcf3404a1e40da75df278c"
+    },
+    {
+      "path": "docs/final/06-实际源码差异.md",
+      "sha256": "aed74b6ef4ab6302eb014dbd74d6aca2bf76eba0c46e1b122f907bdcc1e8aded"
+    },
+    {
+      "path": "docs/final/README.md",
+      "sha256": "c0432a5b818a7a74674de76fa94cf67dea57260953731695977827bcde833500"
+    },
+    {
+      "path": "docs/lessons/M7-集成性能与交付.md",
+      "sha256": "4cc095553a695598d6869c3b81a5e9ef5932f829a1391973181cb0ee1c2f275a"
+    },
+    {
+      "path": "frontend/.env.release",
+      "sha256": "de8610322a848ac650ab6fa5cf296f8c9ced7fb6940a92c139dfc163929f093e"
+    },
+    {
+      "path": "scripts/Build-Release.ps1",
+      "sha256": "2d146d8d950c69873275af8da6b0762a6520d940ee35a22b1f6e8ea71b74b46a"
+    },
+    {
+      "path": "tests/m7_build_evidence.py",
+      "sha256": "96033e8ca3a8a57fc17a0cb0b1d24e35802e1691525d732bae4b33b2d2032a91"
+    },
+    {
+      "path": "tests/m7_evidence_correction.py",
+      "sha256": "406055b133ed74d981760bb0ecd5dfdb7df562af115f6f693736197e4e79c13a"
+    },
+    {
+      "path": "tests/m7_final_qa.py",
+      "sha256": "bdd2cee9b20894104feec73c2378cf755cbcc740f49442d858b8cba22f0c80b7"
+    },
+    {
+      "path": "tests/m7_finalize_docs.py",
+      "sha256": "21b2d60d64c9253a85c882a0a2e9de67dd6ba10be74b218978d50ed17ad8306c"
+    },
+    {
+      "path": "tests/m7_main_restart.py",
+      "sha256": "f9722e3e02c272f981efa3efc0c54eb61c4fe9a58c6c4d391bfd6be37516230a"
+    },
+    {
+      "path": "tests/m7_main_upgrade.py",
+      "sha256": "c2dd71eebb36430ba3155b27fe5ea00d19e093518a309898d748f09ec453622e"
+    },
+    {
+      "path": "tests/m7_perf_tools.py",
+      "sha256": "c6695dc7949ee1d8d2cf13bbd890cb7fab1ded8bf2c5e3b1459b6b8cf57692e9"
+    },
+    {
+      "path": "tests/m7_query_benchmark.py",
+      "sha256": "3b09dbd6dc4261df68056d5eebbac57e2e7921d3ead81889f61e33799bd5cbaf"
+    },
+    {
+      "path": "tests/m7_query_prepare.py",
+      "sha256": "e35659570e04d905d83fe7aea63a6919c0718345262a787fbb56801bd7db55a9"
+    },
+    {
+      "path": "tests/m7_query_seed.py",
+      "sha256": "240f4876cb239233064476fd78fdc4e7bb5b69795f0a8c983b4c9e961a041cf7"
+    },
+    {
+      "path": "tests/m7_regression.py",
+      "sha256": "566c605b240b7051f22a32d97931049bcf238a10c7abe38ccedd824834693c73"
+    },
+    {
+      "path": "tests/m7_release.py",
+      "sha256": "e51dd0ffa356b1617a91de4fcea8d20eb42c46e26999a356e23b99a9d0bc6635"
+    },
+    {
+      "path": "tests/m7_release_closeout.py",
+      "sha256": "9ffd9b3ed6bff66e98e791609dfd1a763cf30acda4ce57aee089ba7934c18a3f"
+    },
+    {
+      "path": "tests/m7_release_qa.py",
+      "sha256": "45ec1e662adb9fd717fce8c9cb9b54206980a65df673edf8f2a52ba56b9a8ed7"
+    },
+    {
+      "path": "tests/m7_release_runtime.ps1",
+      "sha256": "fd36756b05374ddfca9d6adb0140b9a3744d3ff2ce3571c9988ea15635d47b72"
+    },
+    {
+      "path": "tests/m7_reports.py",
+      "sha256": "884dc57aab25805bea74f78a012a0a5c3820777350ca3a20ad5cf4b32e75247e"
+    },
+    {
+      "path": "tests/m7_restore_test_sequences.py",
+      "sha256": "fae5d1e940edd8693bd903be1ed10523befe7f48d4e1ccf694621cb6a7132220"
+    },
+    {
+      "path": "tests/m7_run_all.ps1",
+      "sha256": "2ec7a9707d5b6a5bca15ac0ebb657e6a310e54939abdd0ef8bce47bab4100da2"
+    },
+    {
+      "path": "tests/m7_runtime_pipeline.py",
+      "sha256": "c87e4695c69f79fb2e8cc3e8389081e6b452348e4e4fdda3fdd77d0f13642cff"
+    },
+    {
+      "path": "tests/m7_source_diff.py",
+      "sha256": "c15ec8d23c4483b42677ba84378972867dbec7ddd3c52ee185abcdd4314e0db2"
+    },
+    {
+      "path": "tests/m7_stock_benchmark.py",
+      "sha256": "b5694c2eeadcd81421f370e27f7e9dbd0d9f671f85ca9d0dda4930d30507dbad"
+    },
+    {
+      "path": "tests/m7_support.py",
+      "sha256": "e11b7e3ce3f46292b4733fd4894f94a920d58430691f1958840f3452c942eeb6"
+    }
+  ]
+}

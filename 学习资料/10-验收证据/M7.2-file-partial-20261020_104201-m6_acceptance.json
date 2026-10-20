@@ -1,0 +1,28 @@
+{
+  "run_at": "2026-10-20T02:42:01.833919+00:00",
+  "database": "fulfillment_m7_reg_filefoundation_20261020_103859",
+  "redis_database": 12,
+  "checks": [
+    {
+      "name": "passed final-artifact foundation first",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [],
+  "processes": [
+    {
+      "label": "core-api",
+      "pid": 24248,
+      "port": 48082,
+      "worker": false,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    }
+  ],
+  "fixtures": {},
+  "injections": []
+}

@@ -1,0 +1,105 @@
+PASS passed final-artifact foundation first
+PASS task 6 reaches PARTIAL_FAILED
+PASS two successful drafts and four independent row failures
+PASS only valid rows create cross-task business identities
+PASS import drafts remain unapproved without automatic fulfillment
+PASS import draft cannot bind without explicit approval
+PASS decimal quantity and price exact
+PASS four real error rows and formula escaped
+PASS identical reupload same submission key returns original task
+PASS task 7 reaches PARTIAL_FAILED
+PASS new task same business rows reuses original drafts
+PASS task 8 reaches PARTIAL_FAILED
+PASS changed content same external identity rejected
+PASS task 9 reaches FAILED
+PASS ERP-after-write fault rolls back order identity and row result
+PASS task 9 reaches SUCCEEDED
+PASS healthy manual retry creates exactly three drafts
+PASS successful recovery request result immutable
+PASS real exit81 after first row commit
+PASS task 10 reaches SUCCEEDED
+PASS committed first row skipped after process restart
+PASS own after-row test barrier
+PASS one row durably committed before cancellation
+PASS running cancel is persistent request
+PASS task 11 reaches CANCELLED
+PASS cancel preserves one committed draft and two pending rows
+PASS cancel request key stable after worker completion
+PASS cancelled task cannot be retried as failed task
+PASS tamper fixture remains inside private test directory
+PASS task 12 reaches FAILED
+PASS input hash mismatch creates no draft
+PASS 10MiB plus one upload rejected
+PASS rejected upload leaves no file metadata
+PASS wrong input extension rejected
+PASS task 13 reaches FAILED
+PASS 10001 rows rejected before any ERP side effect
+PASS task 14 reaches FAILED
+PASS invalid header has no partial business effect
+PASS task 15 reaches FAILED
+PASS invalid UTF8 stops once without business effects
+PASS task 16 reaches SUCCEEDED
+PASS download is actual XLSX
+PASS no generated formula cells xl/worksheets/sheet1.xml
+PASS no generated formula cells xl/worksheets/sheet2.xml
+PASS export frozen max ID excludes newly created shipment
+PASS actual data exported in multiple cursor chunks
+PASS XLSX declares generation window and non-snapshot boundary
+PASS all export work leaves business facts unchanged
+PASS task 17 reaches FAILED
+PASS export limit never publishes partial workbook
+PASS own artifact publish barrier
+PASS task 18 reaches SUCCEEDED
+PASS second JVM publishes higher lease generation
+PASS old artifact cannot overwrite new file reference or progress
+PASS two actual lease owners in publication race
+PASS ordinary user begins with no default warehouse access
+PASS warehouse grant idempotent
+PASS warehouse read scope explicit and string identifiers
+PASS warehouse stock projection has no financial or customer fields
+PASS warehouse detail excludes prices customer and other warehouse items
+PASS warehouse-only role cannot request full priced order
+PASS warehouse-only role cannot request broad ERP customer data
+PASS unauthorized warehouse explicitly rejected
+PASS task 19 reaches SUCCEEDED
+PASS download is actual XLSX
+PASS no generated formula cells xl/worksheets/sheet1.xml
+PASS no generated formula cells xl/worksheets/sheet2.xml
+PASS warehouse export excludes prices and customer fields
+PASS new grant does not broaden old all-current submission key
+PASS frozen warehouse list stays original
+PASS download rechecks revoked warehouse range
+PASS old successful export key rechecks current scope
+PASS other actor task identity hidden
+PASS ordinary task page contains own actor only
+PASS page sizes bounded
+PASS revoked operation blocks original successful allocate key
+PASS revoked operation blocks original successful release key
+PASS revoked operation blocks original successful shipment key
+PASS revoked operation blocks original successful cancel key
+PASS revoked operation blocks original successful return receipt key
+PASS read grant still allows scoped inventory
+PASS legacy stock entry checks warehouse range
+PASS functional grant permission alone cannot self-escalate warehouse data
+PASS denied actions and successful old-key replays change no business facts
+PASS full sales function still cannot read other owners order
+PASS known file from another actor cannot be used for import
+PASS task 21 reaches SUCCEEDED
+PASS task 20 reaches SUCCEEDED
+PASS task 22 reaches FAILED
+PASS disabled original actor creates no draft
+PASS tenant-separated business identity and ERP creator preserved
+PASS one actual reused worker thread clears tenant and actor contexts
+PASS foreign tenant cannot get known task
+PASS tenant one cannot get foreign task
+PASS foreign input file cannot be imported by known ID
+PASS foreign warehouse ID denied even to tenant admin
+PASS foreign shipment ID hidden
+PASS grant cannot cross tenant user identity
+PASS administrator download also checks disabled originator
+PASS actual worker and queued counts remain bounded
+PASS import request key stable after JVM restart
+PASS export request key stable after JVM restart
+PASS saved request replay creates no new job
+PASS final inventory and fulfillment reconciliation clean
+M6 core passed 104 checks

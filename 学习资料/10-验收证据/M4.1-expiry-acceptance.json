@@ -1,0 +1,542 @@
+{
+  "run_at": "2026-10-18T16:48:16.945225+00:00",
+  "database": "fulfillment_m4_expiry_20261019_004816",
+  "redis_database": 4,
+  "checks": [
+    {
+      "name": "test ports initially free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command Initialize-Database ('-Database', 'fulfillment_m4_expiry_20261019_004816')",
+      "passed": true,
+      "detail": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-expiry-Initialize-Database-0.log"
+    },
+    {
+      "name": "command Migrate-Database ('-Action', 'baseline', '-Database', 'fulfillment_m4_expiry_20261019_004816')",
+      "passed": true,
+      "detail": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-expiry-Migrate-Database-1.log"
+    },
+    {
+      "name": "command Migrate-Database ('-Action', 'migrate', '-Database', 'fulfillment_m4_expiry_20261019_004816')",
+      "passed": true,
+      "detail": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-expiry-Migrate-Database-2.log"
+    },
+    {
+      "name": "command Migrate-Database ('-Action', 'validate', '-Database', 'fulfillment_m4_expiry_20261019_004816')",
+      "passed": true,
+      "detail": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-expiry-Migrate-Database-3.log"
+    },
+    {
+      "name": "fresh database M1 regression",
+      "passed": true,
+      "detail": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-expiry-m1-regression.log"
+    },
+    {
+      "name": "history remains immutable 0 through 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fault after all writes rolls back all quantity and version facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed expiry leaves no ledger or command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fault does not create physical ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "healthy restart retries rolled back same system key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one completed expiry command after recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two active workers are distinct real JVMs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partial ship and manual release leave precise held",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "both JVMs observe the saved result but release once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed first row cannot starve subsequent bounded pages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real database lock retry was exercised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed first row revisited after scan wraps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship rechecks clock after stock lock wait",
+      "passed": true,
+      "detail": {
+        "code": 1080000020,
+        "msg": "RESERVATION_EXPIRED: 预占已到期，请释放后重新分配",
+        "data": null
+      }
+    },
+    {
+      "name": "expired ship creates no ERP out and changes no physical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pre-deadline shipment wins and stays fulfilled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "consumed rows never enter expiry scan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel versus expiry closes quantity exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release versus expiry has only legal outcomes",
+      "passed": true,
+      "detail": {
+        "code": 1080000012,
+        "msg": "RESERVATION_NOT_ACCESSIBLE: 预占不存在、不属于此订单或释放量超过持有量",
+        "data": null
+      }
+    },
+    {
+      "name": "release race never duplicates released quantity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "interleaved tenants release their own exact quantity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "system commands retain each candidate tenant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expiry does not change HTTP ownership or tenant authorization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "natural expiry releases only remaining held",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "natural expiry records exact delta and no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "successful ship replay remains valid after later expiry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reallocation creates new identity for reopened quantity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical expiry command cannot consume new reservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stopped workers leave durable held for recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new JVMs recover overdue held without saved scan cursor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restart repeated scans have one durable effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all tenants H R reservations and ledgers agree",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all order aggregates agree with business facts",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reservation identities and active flags intact",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no reservation has duplicate expiry ledger effect",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "system audit uses actor0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only completed durable expiry commands",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "processes": [
+    {
+      "port": 48082,
+      "pid": 19812,
+      "name": "a-disabled",
+      "expiry": false,
+      "fault": false
+    },
+    {
+      "port": 48083,
+      "pid": 30228,
+      "name": "fault",
+      "expiry": true,
+      "fault": true
+    },
+    {
+      "port": 48083,
+      "pid": 39048,
+      "name": "b",
+      "expiry": true,
+      "fault": false
+    },
+    {
+      "port": 48082,
+      "pid": 7928,
+      "name": "a",
+      "expiry": true,
+      "fault": false
+    },
+    {
+      "port": 48082,
+      "pid": 25788,
+      "name": "a-restart",
+      "expiry": true,
+      "fault": false
+    },
+    {
+      "port": 48083,
+      "pid": 21388,
+      "name": "b-restart",
+      "expiry": true,
+      "fault": false
+    }
+  ],
+  "deadline_injections": [
+    {
+      "reservation": "1",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "3",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "4",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "5",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "6",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "7",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "8",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "9",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "10",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "11",
+      "seconds_from_sql_now": 1.2
+    },
+    {
+      "reservation": "12",
+      "seconds_from_sql_now": 4
+    },
+    {
+      "reservation": "13",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "14",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "15",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "16",
+      "seconds_from_sql_now": -1
+    },
+    {
+      "reservation": "18",
+      "seconds_from_sql_now": -1
+    }
+  ],
+  "ids": {
+    "M4E485ba9fcA故障": {
+      "source": 19,
+      "order": "10",
+      "item": "10",
+      "product": 3,
+      "warehouse": 2,
+      "reservation": "1",
+      "expireAt": "2026-10-18T17:04:11.213603600Z"
+    },
+    "M4E485ba9fcA自然到期": {
+      "source": 20,
+      "order": "11",
+      "item": "11",
+      "product": 4,
+      "warehouse": 2,
+      "reservation": "2",
+      "expireAt": "2026-10-18T16:51:39.022865400Z"
+    },
+    "M4E485ba9fcA重复扫描": {
+      "source": 21,
+      "order": "12",
+      "item": "12",
+      "product": 5,
+      "warehouse": 2,
+      "reservation": "3",
+      "expireAt": "2026-10-18T17:05:44.399165900Z"
+    },
+    "M4E485ba9fcA积压0": {
+      "source": 22,
+      "order": "13",
+      "item": "13",
+      "product": 6,
+      "warehouse": 2,
+      "reservation": "4",
+      "expireAt": "2026-10-18T17:05:50.483133Z"
+    },
+    "M4E485ba9fcA积压1": {
+      "source": 23,
+      "order": "14",
+      "item": "14",
+      "product": 7,
+      "warehouse": 2,
+      "reservation": "5",
+      "expireAt": "2026-10-18T17:05:54.012510600Z"
+    },
+    "M4E485ba9fcA积压2": {
+      "source": 24,
+      "order": "15",
+      "item": "15",
+      "product": 8,
+      "warehouse": 2,
+      "reservation": "6",
+      "expireAt": "2026-10-18T17:05:57.521121300Z"
+    },
+    "M4E485ba9fcA积压3": {
+      "source": 25,
+      "order": "16",
+      "item": "16",
+      "product": 9,
+      "warehouse": 2,
+      "reservation": "7",
+      "expireAt": "2026-10-18T17:06:01.058312100Z"
+    },
+    "M4E485ba9fcA积压4": {
+      "source": 26,
+      "order": "17",
+      "item": "17",
+      "product": 10,
+      "warehouse": 2,
+      "reservation": "8",
+      "expireAt": "2026-10-18T17:06:04.608448900Z"
+    },
+    "M4E485ba9fcA积压5": {
+      "source": 27,
+      "order": "18",
+      "item": "18",
+      "product": 11,
+      "warehouse": 2,
+      "reservation": "9",
+      "expireAt": "2026-10-18T17:06:08.120939600Z"
+    },
+    "M4E485ba9fcA积压6": {
+      "source": 28,
+      "order": "19",
+      "item": "19",
+      "product": 12,
+      "warehouse": 2,
+      "reservation": "10",
+      "expireAt": "2026-10-18T17:06:11.583493300Z"
+    },
+    "M4E485ba9fcA发货等锁": {
+      "source": 29,
+      "order": "20",
+      "item": "20",
+      "product": 13,
+      "warehouse": 2,
+      "reservation": "11",
+      "expireAt": "2026-10-18T17:06:30.249044100Z"
+    },
+    "M4E485ba9fcA先发完": {
+      "source": 30,
+      "order": "21",
+      "item": "21",
+      "product": 14,
+      "warehouse": 2,
+      "reservation": "12",
+      "expireAt": "2026-10-18T17:06:36.095393500Z"
+    },
+    "M4E485ba9fcA取消竞争": {
+      "source": 31,
+      "order": "22",
+      "item": "22",
+      "product": 15,
+      "warehouse": 2,
+      "reservation": "13",
+      "expireAt": "2026-10-18T17:06:45.528382200Z"
+    },
+    "M4E485ba9fcA释放竞争": {
+      "source": 32,
+      "order": "23",
+      "item": "23",
+      "product": 16,
+      "warehouse": 2,
+      "reservation": "14",
+      "expireAt": "2026-10-18T17:06:50.047783400Z"
+    },
+    "M4E485ba9fcB租户到期": {
+      "source": 33,
+      "order": "24",
+      "item": "24",
+      "product": 17,
+      "warehouse": 3,
+      "reservation": "15",
+      "expireAt": "2026-10-18T17:06:57.782402400Z"
+    },
+    "M4E485ba9fcA租户交错": {
+      "source": 34,
+      "order": "25",
+      "item": "25",
+      "product": 18,
+      "warehouse": 2,
+      "reservation": "16",
+      "expireAt": "2026-10-18T17:07:01.222446400Z"
+    },
+    "M4E485ba9fcA重启补扫": {
+      "source": 35,
+      "order": "26",
+      "item": "26",
+      "product": 19,
+      "warehouse": 2,
+      "reservation": "18",
+      "expireAt": "2026-10-18T17:07:07.854674900Z"
+    }
+  },
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "arguments": [
+        "-Database",
+        "fulfillment_m4_expiry_20261019_004816"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-expiry-Initialize-Database-0.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m4_expiry_20261019_004816"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-expiry-Migrate-Database-1.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m4_expiry_20261019_004816"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-expiry-Migrate-Database-2.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m4_expiry_20261019_004816"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-expiry-Migrate-Database-3.log"
+    }
+  ],
+  "natural_expiry": {
+    "reservation": "2",
+    "deadline": "2026-10-18T16:51:39.022865400Z",
+    "checked_at": "2026-10-18T16:53:04.190242+00:00",
+    "no_deadline_injection": true
+  },
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

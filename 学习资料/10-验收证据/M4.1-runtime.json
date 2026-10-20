@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-10-19T01:01:11.3241939+08:00",
+  "listeners": [
+    {
+      "LocalPort": 3306,
+      "OwningProcess": 6016
+    },
+    {
+      "LocalPort": 15173,
+      "OwningProcess": 41780
+    },
+    {
+      "LocalPort": 33306,
+      "OwningProcess": 28324
+    },
+    {
+      "LocalPort": 36379,
+      "OwningProcess": 39168
+    },
+    {
+      "LocalPort": 48080,
+      "OwningProcess": 29560
+    }
+  ],
+  "test_listeners": [],
+  "test_ports_free": true
+}

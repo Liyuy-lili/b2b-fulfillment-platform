@@ -1,0 +1,713 @@
+{
+  "run_at": "2026-10-20T02:24:47.557077+00:00",
+  "database": "fulfillment_m7_reg_message_20261020_102447",
+  "vhost": "fulfillment_m5_20261020_102447",
+  "redis_database": 12,
+  "checks": [
+    {
+      "name": "test port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated RabbitMQ vhost created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated vhost permission configured",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m7_reg_message_20261020_102447')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m7_reg_message_20261020_102447')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m7_reg_message_20261020_102447')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m7_reg_message_20261020_102447')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bound allocate shipment cancel emitted four events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "already received new key emits no duplicate event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six cross-JVM bind requests one event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after-Outbox fault rejects shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ERP H R facts and event all roll back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed shipment command not retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same-key healthy retry exactly one event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expiry event shares system actor command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all eight declared business event types exercised",
+      "passed": true,
+      "detail": [
+        "ALLOCATION_ATTEMPTED",
+        "ORDER_BOUND",
+        "ORDER_CANCELLED",
+        "RESERVATION_EXPIRED",
+        "RETURN_RECEIVED",
+        "SHIPMENT_CONFIRMED",
+        "STOCK_RELEASED",
+        "STOCK_RESERVED"
+      ]
+    },
+    {
+      "name": "event bodies and tenant version identity valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Broker offline business commits NEW outbox",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unroutable confirmed publication becomes DEAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every unroutable delivery is failed not ACKED",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual republish preserves event identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed reason same key conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual broker recovery reaches SENT with total attempts retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual process exits at after-confirm window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confirm crash leaves IN_FLIGHT without SENT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expired publisher lease reclaimed with higher version",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own m5claim: barrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own m5confirm: barrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active lease rejects manual replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old publisher cannot overwrite newer lease result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two actual JVM owners competed for event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all events processed with one Inbox each",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicates observed without duplicate local effects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "out of order events cannot overwrite newer read model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "older versions recorded as processed without applying",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "malformed incompatible and forged-tenant messages quarantined",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed projection is rolled back before persistent retry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "consumer retries bounded and Broker delivery ACKed after durable failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual consume retry response durable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "processed consume retry produces no second effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual process exits after consumer commit before ACK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Inbox committed before ACK crash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "redelivered ACK crash leaves projection and business facts unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "anonymous message query denied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no query permission denied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot query known order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot replay known event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot rebuild known order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary owner queries own event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked replay permission denies old successful key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rebuild requires independent permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "message page size bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known event from another order hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay requires idempotency header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant known order denied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trusted foreign event applies only its own tenant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant one cannot get foreign message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rebuild idempotent and repairs same-version projection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old delivery after rebuild cannot regress projection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final complete pipeline SENT and PROCESSED every event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all event projections converge to business version",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R and fulfillment facts remain consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual replay key survives JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rebuild key survives JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M7 enabled workers boot and shipping commit while transport connection refused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M7 restoring application connection drains persisted events with exact business facts",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "arguments": [
+        "-Database",
+        "fulfillment_m7_reg_message_20261020_102447"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-fulfillment_m7_reg_message_20261020_102447-34560-0.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m7_reg_message_20261020_102447"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-fulfillment_m7_reg_message_20261020_102447-34560-1.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m7_reg_message_20261020_102447"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-fulfillment_m7_reg_message_20261020_102447-34560-2.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m7_reg_message_20261020_102447"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-fulfillment_m7_reg_message_20261020_102447-34560-3.log"
+    }
+  ],
+  "processes": [
+    {
+      "label": "api",
+      "port": 48082,
+      "pid": 26948,
+      "publisher": false,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "append-fault",
+      "port": 48083,
+      "pid": 6676,
+      "publisher": false,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-append-failure=true"
+      ]
+    },
+    {
+      "label": "unroutable",
+      "port": 48083,
+      "pid": 3000,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.messages.routing-key=missing"
+      ]
+    },
+    {
+      "label": "publish-recovery",
+      "port": 48083,
+      "pid": 10280,
+      "publisher": true,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "confirm-crash",
+      "port": 48083,
+      "pid": 27712,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-crash=AFTER_CONFIRM"
+      ]
+    },
+    {
+      "label": "lease-recovery",
+      "port": 48083,
+      "pid": 33288,
+      "publisher": true,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "fence-a",
+      "port": 48082,
+      "pid": 23476,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-before-claim-barrier=true"
+      ]
+    },
+    {
+      "label": "fence-b",
+      "port": 48083,
+      "pid": 39232,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-confirm-barrier=true"
+      ]
+    },
+    {
+      "label": "api-again",
+      "port": 48082,
+      "pid": 24028,
+      "publisher": false,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "consume-normal",
+      "port": 48083,
+      "pid": 38092,
+      "publisher": false,
+      "consumer": true,
+      "test_options": []
+    },
+    {
+      "label": "consumer-fault",
+      "port": 48083,
+      "pid": 2748,
+      "publisher": false,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.test.message-consumer-failure=true"
+      ]
+    },
+    {
+      "label": "consumer-recovery",
+      "port": 48083,
+      "pid": 35060,
+      "publisher": false,
+      "consumer": true,
+      "test_options": []
+    },
+    {
+      "label": "ack-crash",
+      "port": 48083,
+      "pid": 25716,
+      "publisher": false,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.test.message-crash=BEFORE_ACK"
+      ]
+    },
+    {
+      "label": "final-consumer",
+      "port": 48083,
+      "pid": 38608,
+      "publisher": false,
+      "consumer": true,
+      "test_options": []
+    },
+    {
+      "label": "final-pipeline",
+      "port": 48083,
+      "pid": 35608,
+      "publisher": true,
+      "consumer": true,
+      "test_options": []
+    },
+    {
+      "label": "restart-api",
+      "port": 48082,
+      "pid": 35376,
+      "publisher": false,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "enabled-while-broker-down",
+      "port": 48082,
+      "pid": 31816,
+      "publisher": true,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.messages.max-attempts=10",
+        "--fulfillment.expiry.enabled=false",
+        "--fulfillment.messages.port=35676"
+      ]
+    },
+    {
+      "label": "enabled-transport-recovery",
+      "port": 48082,
+      "pid": 34076,
+      "publisher": true,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.messages.max-attempts=10",
+        "--fulfillment.expiry.enabled=false"
+      ]
+    }
+  ],
+  "fixtures": {
+    "flow": {
+      "product": 1,
+      "source": 1,
+      "order": "1",
+      "shipment": "1",
+      "lines": [
+        {
+          "id": "1",
+          "orderItemId": "1",
+          "reservationId": "1",
+          "quantity": "2.000001",
+          "erpSaleOutItemId": "1"
+        }
+      ],
+      "warehouse": 1
+    },
+    "publish_crash": {
+      "product": 2,
+      "source": 4,
+      "order": "4",
+      "shipment": "4",
+      "lines": [
+        {
+          "id": "4",
+          "orderItemId": "4",
+          "reservationId": "3",
+          "quantity": "2.000000",
+          "erpSaleOutItemId": "4"
+        }
+      ],
+      "warehouse": 1
+    },
+    "consume_failure": {
+      "product": 3,
+      "source": 5,
+      "order": "5",
+      "shipment": "5",
+      "lines": [
+        {
+          "id": "5",
+          "orderItemId": "5",
+          "reservationId": "4",
+          "quantity": "2.000000",
+          "erpSaleOutItemId": "5"
+        }
+      ],
+      "warehouse": 1
+    },
+    "ack_crash": {
+      "product": 4,
+      "source": 6,
+      "order": "6",
+      "shipment": "6",
+      "lines": [
+        {
+          "id": "6",
+          "orderItemId": "6",
+          "reservationId": "5",
+          "quantity": "2.000000",
+          "erpSaleOutItemId": "6"
+        }
+      ],
+      "warehouse": 1
+    },
+    "owner": {
+      "product": 5,
+      "source": 7,
+      "order": "7",
+      "shipment": "7",
+      "lines": [
+        {
+          "id": "7",
+          "orderItemId": "7",
+          "reservationId": "6",
+          "quantity": "1.000000",
+          "erpSaleOutItemId": "7"
+        }
+      ],
+      "warehouse": 1
+    },
+    "foreign": {
+      "product": 6,
+      "source": 8,
+      "order": "8",
+      "shipment": "8",
+      "lines": [
+        {
+          "id": "8",
+          "orderItemId": "8",
+          "reservationId": "7",
+          "quantity": "1.000000",
+          "erpSaleOutItemId": "8"
+        }
+      ],
+      "warehouse": 2
+    }
+  },
+  "injections": [
+    {
+      "kind": "expiry_deadline",
+      "reservation": "2"
+    },
+    {
+      "kind": "dispatch_due_fixture",
+      "only_event": "b9b4b09d-89fa-4484-a756-5b1864a251dc"
+    },
+    {
+      "kind": "dispatch_due_fixture",
+      "only_event": "6e77d7b1-9b6b-4a3b-94c3-0699b9e65601"
+    },
+    {
+      "kind": "dispatch_due_fixture",
+      "only_event": "6e77d7b1-9b6b-4a3b-94c3-0699b9e65601"
+    },
+    {
+      "kind": "read_model_corruption",
+      "order": "1"
+    }
+  ],
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "final_counts": {
+    "ful_outbox_event": 28,
+    "ful_outbox_delivery": 34,
+    "ful_inbox_event": 28,
+    "ful_order_read_model": 8,
+    "ful_message_action": 6
+  },
+  "result": "passed",
+  "unreachable_transport_fixture": {
+    "product": 7,
+    "source": 9,
+    "order": "9",
+    "shipment": "9",
+    "lines": [
+      {
+        "id": "9",
+        "orderItemId": "9",
+        "reservationId": "8",
+        "quantity": "1.000000",
+        "erpSaleOutItemId": "9"
+      }
+    ],
+    "warehouse": 3
+  },
+  "m7_case": "message",
+  "actual_application_ports": [
+    48082,
+    48083
+  ]
+}

@@ -75,3 +75,7 @@ M0—M7 主线及 V8 已完成。历史归档包括 60 个指定 JUnit 用例、
 - 保留上游 [后端 MIT](项目代码/backend/LICENSE) 和 [前端 MIT](项目代码/frontend/LICENSE)；各组件及第三方依赖继续遵守原许可证。
 
 本项目面向学习、代码审阅和面试展示，未接入真实物流、资金退款或生产业务数据。示例配置中的本地演示凭据和上游公开测试值不得用于生产部署。
+
+## 下载与公开配置
+
+[下载源码和学习资料](https://github.com/Liyuy-lili/b2b-fulfillment-platform/releases/latest)。上游示例的第三方凭据已替换为占位符，范围见[公开发布说明](PUBLICATION_NOTES.md)。

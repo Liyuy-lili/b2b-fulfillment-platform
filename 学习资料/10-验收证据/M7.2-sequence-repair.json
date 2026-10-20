@@ -1,0 +1,84 @@
+{
+  "run_at": "2026-10-20T02:44:07.988718+00:00",
+  "database": "fulfillment_m7_reg_filefoundation_20261020_103859",
+  "redis_database": 12,
+  "rows": [
+    {
+      "key": "erp:seq_no:QTRK20261020",
+      "before": "1",
+      "sql_max": 1,
+      "after": 1
+    },
+    {
+      "key": "erp:seq_no:QCKD20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:QCDB20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:QCPD20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:XSDD20261020",
+      "before": null,
+      "sql_max": 1,
+      "after": 1
+    },
+    {
+      "key": "erp:seq_no:XSCK20261020",
+      "before": null,
+      "sql_max": 1,
+      "after": 1
+    },
+    {
+      "key": "erp:seq_no:XSTH20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:CGDD20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:CGRK20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:CGTH20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:FKD20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    },
+    {
+      "key": "erp:seq_no:SKD20261020",
+      "before": null,
+      "sql_max": 0,
+      "after": 0
+    }
+  ],
+  "cause": "Initial orchestrator flushed DB12 between filefoundation and file although they share SQL data. ERP correctly rejected a duplicate stock-in number.",
+  "boundary": "No main DB0, no business SQL writes; raise test-only counters from all existing SQL numbers including deleted/all tenants.",
+  "before_fact_sha256": "379896ec2ec4d0b8b925b816df270843433a3e862e9e307a78da93783931b991",
+  "after_fact_sha256": "379896ec2ec4d0b8b925b816df270843433a3e862e9e307a78da93783931b991",
+  "result": "passed"
+}

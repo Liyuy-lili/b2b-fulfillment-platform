@@ -1,0 +1,1356 @@
+{
+  "run_at": "2026-10-19T16:47:07.330997+00:00",
+  "database": "fulfillment_m6_20261020_004428",
+  "redis_database": 8,
+  "checks": [
+    {
+      "name": "passed final-artifact foundation first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 6 reaches PARTIAL_FAILED",
+      "passed": true,
+      "detail": {
+        "id": "6",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "PARTIAL_FAILED",
+        "sourceSystem": "M6C0e76ea3e",
+        "totalRows": 6,
+        "successRows": 2,
+        "failedRows": 4,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": true,
+        "createdAt": "2026-10-19T16:48:10.946752Z",
+        "startedAt": "2026-10-19T16:48:11.144803Z",
+        "completedAt": "2026-10-19T16:48:28.817954Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "two successful drafts and four independent row failures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only valid rows create cross-task business identities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import drafts remain unapproved without automatic fulfillment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import draft cannot bind without explicit approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decimal quantity and price exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four real error rows and formula escaped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identical reupload same submission key returns original task",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 7 reaches PARTIAL_FAILED",
+      "passed": true,
+      "detail": {
+        "id": "7",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "PARTIAL_FAILED",
+        "sourceSystem": "M6C0e76ea3e",
+        "totalRows": 6,
+        "successRows": 2,
+        "failedRows": 4,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": true,
+        "createdAt": "2026-10-19T16:48:34.012656Z",
+        "startedAt": "2026-10-19T16:48:34.081690Z",
+        "completedAt": "2026-10-19T16:48:34.628456Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "new task same business rows reuses original drafts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 8 reaches PARTIAL_FAILED",
+      "passed": true,
+      "detail": {
+        "id": "8",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "PARTIAL_FAILED",
+        "sourceSystem": "M6C0e76ea3e",
+        "totalRows": 1,
+        "successRows": 0,
+        "failedRows": 1,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": true,
+        "createdAt": "2026-10-19T16:48:34.999595Z",
+        "startedAt": "2026-10-19T16:48:35.136817Z",
+        "completedAt": "2026-10-19T16:48:35.364309Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "changed content same external identity rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 9 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "9",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eFault",
+        "totalRows": 3,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 3,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "JOB_IllegalStateException",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:48:35.673332Z",
+        "startedAt": "2026-10-19T16:49:05.375384Z",
+        "completedAt": "2026-10-19T16:49:06.299875Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "ERP-after-write fault rolls back order identity and row result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 9 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "9",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "SUCCEEDED",
+        "sourceSystem": "M6C0e76ea3eFault",
+        "totalRows": 3,
+        "successRows": 3,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 2,
+        "sourceCursor": "0",
+        "leaseVersion": "3",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:48:35.673332Z",
+        "startedAt": "2026-10-19T16:49:36.751885Z",
+        "completedAt": "2026-10-19T16:49:37.769117Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "healthy manual retry creates exactly three drafts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "successful recovery request result immutable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real exit81 after first row commit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 10 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "10",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "SUCCEEDED",
+        "sourceSystem": "M6C0e76ea3eCrash",
+        "totalRows": 3,
+        "successRows": 3,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 2,
+        "totalAttempts": 2,
+        "sourceCursor": "0",
+        "leaseVersion": "2",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:49:38.215236Z",
+        "startedAt": "2026-10-19T16:50:35.330002Z",
+        "completedAt": "2026-10-19T16:50:36.489841Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "committed first row skipped after process restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own after-row test barrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one row durably committed before cancellation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "running cancel is persistent request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 11 reaches CANCELLED",
+      "passed": true,
+      "detail": {
+        "id": "11",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "CANCELLED",
+        "sourceSystem": "M6C0e76ea3eCancel",
+        "totalRows": 3,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 2,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:50:37.553916Z",
+        "startedAt": "2026-10-19T16:51:05.999273Z",
+        "completedAt": "2026-10-19T16:51:07.465057Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "cancel preserves one committed draft and two pending rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel request key stable after worker completion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled task cannot be retried as failed task",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tamper fixture remains inside private test directory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 12 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "12",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eTamper",
+        "totalRows": 0,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": false,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "FILE_CHANGED_OR_MISSING",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:51:08.211647Z",
+        "startedAt": "2026-10-19T16:51:34.418915Z",
+        "completedAt": "2026-10-19T16:51:34.805686Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "input hash mismatch creates no draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "10MiB plus one upload rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected upload leaves no file metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong input extension rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 13 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "13",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eBig",
+        "totalRows": 10000,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 10000,
+        "prepared": false,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "IMPORT_ROW_LIMIT",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:51:35.284531Z",
+        "startedAt": "2026-10-19T16:51:35.416077Z",
+        "completedAt": "2026-10-19T16:51:41.648738Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "10001 rows rejected before any ERP side effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 14 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "14",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eHeader",
+        "totalRows": 0,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": false,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "JOB_InvalidCsv",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:51:41.880369Z",
+        "startedAt": "2026-10-19T16:51:41.911660Z",
+        "completedAt": "2026-10-19T16:51:41.978333Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "invalid header has no partial business effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 15 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "15",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eUtf8",
+        "totalRows": 0,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": false,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "JOB_MalformedInputException",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:51:43.037638Z",
+        "startedAt": "2026-10-19T16:51:43.136011Z",
+        "completedAt": "2026-10-19T16:51:43.181808Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "invalid UTF8 stops once without business effects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 16 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "16",
+        "actorId": "1",
+        "type": "EXPORT",
+        "dataset": "SHIPMENT",
+        "status": "SUCCEEDED",
+        "sourceSystem": "",
+        "totalRows": 2,
+        "successRows": 2,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "3",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": false,
+        "hasResult": true,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:51:44.112108Z",
+        "startedAt": "2026-10-19T16:52:12.500798Z",
+        "completedAt": "2026-10-19T16:52:13.874114Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[2],\"ownerId\":null,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "download is actual XLSX",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no generated formula cells xl/worksheets/sheet1.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no generated formula cells xl/worksheets/sheet2.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export frozen max ID excludes newly created shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual data exported in multiple cursor chunks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "XLSX declares generation window and non-snapshot boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all export work leaves business facts unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 17 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "17",
+        "actorId": "1",
+        "type": "EXPORT",
+        "dataset": "SHIPMENT",
+        "status": "FAILED",
+        "sourceSystem": "",
+        "totalRows": 1,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "2",
+        "leaseVersion": "1",
+        "lastError": "EXPORT_ROW_LIMIT",
+        "hasInput": false,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:52:14.845254Z",
+        "startedAt": "2026-10-19T16:52:42.791034Z",
+        "completedAt": "2026-10-19T16:52:44.023564Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[2],\"ownerId\":null,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "export limit never publishes partial workbook",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own artifact publish barrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 18 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "18",
+        "actorId": "1",
+        "type": "EXPORT",
+        "dataset": "STOCK",
+        "status": "SUCCEEDED",
+        "sourceSystem": "",
+        "totalRows": 1,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 2,
+        "totalAttempts": 2,
+        "sourceCursor": "2",
+        "leaseVersion": "2",
+        "lastError": null,
+        "hasInput": false,
+        "hasResult": true,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:52:44.943195Z",
+        "startedAt": "2026-10-19T16:53:42.321867Z",
+        "completedAt": "2026-10-19T16:53:43.847692Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[2],\"ownerId\":null,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "second JVM publishes higher lease generation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old artifact cannot overwrite new file reference or progress",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two actual lease owners in publication race",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary user begins with no default warehouse access",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse grant idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse read scope explicit and string identifiers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse stock projection has no financial or customer fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse detail excludes prices customer and other warehouse items",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse-only role cannot request full priced order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse-only role cannot request broad ERP customer data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unauthorized warehouse explicitly rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 19 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "19",
+        "actorId": "249",
+        "type": "EXPORT",
+        "dataset": "STOCK",
+        "status": "SUCCEEDED",
+        "sourceSystem": "",
+        "totalRows": 1,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "2",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": false,
+        "hasResult": true,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:54:45.611929Z",
+        "startedAt": "2026-10-19T16:54:45.790728Z",
+        "completedAt": "2026-10-19T16:54:46.750084Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[2],\"ownerId\":null,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "download is actual XLSX",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no generated formula cells xl/worksheets/sheet1.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no generated formula cells xl/worksheets/sheet2.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse export excludes prices and customer fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new grant does not broaden old all-current submission key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen warehouse list stays original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "download rechecks revoked warehouse range",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old successful export key rechecks current scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other actor task identity hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary task page contains own actor only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "page sizes bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked operation blocks original successful allocate key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked operation blocks original successful release key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked operation blocks original successful shipment key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked operation blocks original successful cancel key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked operation blocks original successful return receipt key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "read grant still allows scoped inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy stock entry checks warehouse range",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "functional grant permission alone cannot self-escalate warehouse data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "denied actions and successful old-key replays change no business facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full sales function still cannot read other owners order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known file from another actor cannot be used for import",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task 21 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "21",
+        "actorId": "1",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "SUCCEEDED",
+        "sourceSystem": "M6C0e76ea3eCtx",
+        "totalRows": 1,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:54:53.392897Z",
+        "startedAt": "2026-10-19T16:55:23.815195Z",
+        "completedAt": "2026-10-19T16:55:24.069295Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":1,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "task 20 reaches SUCCEEDED",
+      "passed": true,
+      "detail": {
+        "id": "20",
+        "actorId": "251",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "SUCCEEDED",
+        "sourceSystem": "M6C0e76ea3eCtx",
+        "totalRows": 1,
+        "successRows": 1,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:54:53.305213Z",
+        "startedAt": "2026-10-19T16:55:22.573305Z",
+        "completedAt": "2026-10-19T16:55:23.800699Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":251,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "task 22 reaches FAILED",
+      "passed": true,
+      "detail": {
+        "id": "22",
+        "actorId": "250",
+        "type": "IMPORT",
+        "dataset": "DRAFT",
+        "status": "FAILED",
+        "sourceSystem": "M6C0e76ea3eDisabled",
+        "totalRows": 0,
+        "successRows": 0,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": false,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "0",
+        "leaseVersion": "1",
+        "lastError": "ACTOR_DISABLED",
+        "hasInput": true,
+        "hasResult": false,
+        "hasErrors": false,
+        "createdAt": "2026-10-19T16:54:53.463110Z",
+        "startedAt": "2026-10-19T16:55:24.084526Z",
+        "completedAt": "2026-10-19T16:55:24.099047Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":250,\"orderStatus\":null,\"allOrders\":false}"
+      }
+    },
+    {
+      "name": "disabled original actor creates no draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant-separated business identity and ERP creator preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one actual reused worker thread clears tenant and actor contexts",
+      "passed": true,
+      "detail": [
+        "ful-file-worker-eec2e2dc-dd6b-46a8-859d-5404949faf4a tenant=null actor=null",
+        "ful-file-worker-eec2e2dc-dd6b-46a8-859d-5404949faf4a tenant=null actor=null",
+        "ful-file-worker-eec2e2dc-dd6b-46a8-859d-5404949faf4a tenant=null actor=null"
+      ]
+    },
+    {
+      "name": "foreign tenant cannot get known task",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant one cannot get foreign task",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign input file cannot be imported by known ID",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign warehouse ID denied even to tenant admin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign shipment ID hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "grant cannot cross tenant user identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "administrator download also checks disabled originator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual worker and queued counts remain bounded",
+      "passed": true,
+      "detail": {
+        "workers": 1,
+        "active": 0,
+        "queued": 0,
+        "queueCapacity": 1
+      }
+    },
+    {
+      "name": "import request key stable after JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export request key stable after JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved request replay creates no new job",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final inventory and fulfillment reconciliation clean",
+      "passed": true,
+      "detail": {
+        "id": "1",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-19T16:55:53.000041Z",
+        "finishedAt": "2026-10-19T16:55:53.048258Z",
+        "scannedCount": 102,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 4,
+          "erp_stock_record": 10,
+          "ful_order": 6,
+          "ful_order_item": 6,
+          "ful_reservation": 6,
+          "ful_stock_ledger": 13,
+          "ful_shipment": 5,
+          "ful_shipment_item": 5,
+          "ful_cancellation": 1,
+          "ful_return": 1,
+          "ful_return_item": 1,
+          "erp_sale_order": 16,
+          "erp_sale_order_items": 16,
+          "erp_sale_out": 5,
+          "erp_sale_out_items": 5,
+          "erp_sale_return": 1,
+          "erp_sale_return_items": 1
+        }
+      }
+    }
+  ],
+  "commands": [],
+  "processes": [
+    {
+      "label": "core-api",
+      "pid": 37820,
+      "port": 48082,
+      "worker": false,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-normal",
+      "pid": 31324,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-row-failure",
+      "pid": 3804,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.test.job-business-failure=true",
+        "--fulfillment.test.job-target=9",
+        "--fulfillment.jobs.max-attempts=1"
+      ]
+    },
+    {
+      "label": "core-row-retry",
+      "pid": 28564,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-row-crash",
+      "pid": 28308,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.test.job-crash=AFTER_ROW",
+        "--fulfillment.test.job-target=10"
+      ]
+    },
+    {
+      "label": "core-row-recovery",
+      "pid": 4680,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-row-cancel",
+      "pid": 30788,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.test.job-row-barrier=true",
+        "--fulfillment.test.job-target=11"
+      ]
+    },
+    {
+      "label": "core-limits",
+      "pid": 28296,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-export-normal",
+      "pid": 21800,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.jobs.batch-size=1"
+      ]
+    },
+    {
+      "label": "core-export-limit",
+      "pid": 27252,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.jobs.export-max-rows=1",
+        "--fulfillment.jobs.batch-size=1"
+      ]
+    },
+    {
+      "label": "core-export-fence-old",
+      "pid": 22016,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100",
+        "--fulfillment.test.job-publish-barrier=true",
+        "--fulfillment.test.job-target=18"
+      ]
+    },
+    {
+      "label": "core-export-fence-new",
+      "pid": 33668,
+      "port": 48082,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-permission-api",
+      "pid": 35824,
+      "port": 48082,
+      "worker": false,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-permission-worker",
+      "pid": 21844,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-context-worker",
+      "pid": 36284,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    },
+    {
+      "label": "core-restart-api",
+      "pid": 33796,
+      "port": 48082,
+      "worker": false,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    }
+  ],
+  "fixtures": {
+    "core": {
+      "product": 2,
+      "source": 2,
+      "order": "2",
+      "shipment": "2",
+      "lines": [
+        {
+          "id": "2",
+          "orderItemId": "2",
+          "reservationId": "2",
+          "quantity": "1.000000",
+          "erpSaleOutItemId": "2"
+        }
+      ],
+      "warehouse": 2
+    },
+    "row_crash": {
+      "job": "10",
+      "source": "M6C0e76ea3eCrash"
+    },
+    "cancelled": {
+      "job": "11",
+      "source": "M6C0e76ea3eCancel"
+    },
+    "export_after_submission": {
+      "source": 14,
+      "order": "4",
+      "shipment": "4"
+    },
+    "fenced_export": "18",
+    "warehouse_user": 249,
+    "sales": {
+      "product": 3,
+      "source": 15,
+      "order": "5",
+      "shipment": "5",
+      "lines": [
+        {
+          "id": "5",
+          "orderItemId": "5",
+          "reservationId": "5",
+          "quantity": "1.000000",
+          "erpSaleOutItemId": "5"
+        }
+      ],
+      "warehouse": 4
+    },
+    "foreign": {
+      "tenant": 162,
+      "product": 4,
+      "source": 17,
+      "order": "7",
+      "shipment": "6",
+      "lines": [
+        {
+          "id": "6",
+          "orderItemId": "7",
+          "reservationId": "7",
+          "quantity": "1.000000",
+          "erpSaleOutItemId": "6"
+        }
+      ],
+      "warehouse": 5
+    },
+    "context": {
+      "root_job": "21",
+      "foreign_job": "20",
+      "disabled_job": "22"
+    }
+  },
+  "injections": [
+    {
+      "kind": "private_input_tamper",
+      "file_id": "2750903f-e19c-461d-80ed-1861091ad630",
+      "restored": true
+    }
+  ],
+  "product_code": "M4R0affd6deCore导入导出",
+  "imports": {
+    "file": {
+      "fileId": "05af1162-eb7b-409d-ba9a-4503a974e4b8",
+      "sha256": "5d9d8c0d29ad23fdb1df2e285af291be854e416ca63e0bdcd10ce63e1567be5c",
+      "byteSize": 388,
+      "templateVersion": "1"
+    },
+    "job": "6",
+    "source": "M6C0e76ea3e",
+    "rows": [
+      [
+        "M6C0e76ea3e-valid",
+        "2",
+        "M4R0affd6deCore导入导出",
+        "2.000001",
+        "3.000001"
+      ],
+      [
+        "M6C0e76ea3e-comma,quoted",
+        "2",
+        "M4R0affd6deCore导入导出",
+        "1",
+        "2"
+      ],
+      [
+        "M6C0e76ea3e-zero",
+        "2",
+        "M4R0affd6deCore导入导出",
+        "0",
+        "2"
+      ],
+      [
+        "M6C0e76ea3e-precision",
+        "2",
+        "M4R0affd6deCore导入导出",
+        "1.0000001",
+        "2"
+      ],
+      [
+        "M6C0e76ea3e-sku",
+        "2",
+        "NOT-A-PRODUCT",
+        "1",
+        "2"
+      ],
+      [
+        "=2+3",
+        "2",
+        "M4R0affd6deCore导入导出",
+        "-1",
+        "2"
+      ]
+    ]
+  },
+  "exports": {
+    "job": {
+      "jobId": "16",
+      "outcome": "EXPORT_QUEUED"
+    },
+    "key": "export-freeze-M6C0e76ea3e",
+    "maximum": 3
+  },
+  "final_counts": {
+    "ful_private_file": 21,
+    "ful_file_job": 22,
+    "ful_file_job_row": 10024,
+    "ful_import_identity": 11,
+    "ful_operation_audit": 80,
+    "ful_warehouse_grant": 4
+  },
+  "artifact_sha256": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b",
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

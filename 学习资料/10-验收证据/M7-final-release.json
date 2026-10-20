@@ -1,0 +1,465 @@
+{
+  "run_at": "2026-10-20T03:10:51.293333+00:00",
+  "database": "fulfillment_m7_release_20261020_111051",
+  "redis_database": 13,
+  "vhost": "fulfillment_m7_release_20261020_111051",
+  "release_directory": "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051",
+  "package_directory": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\releases\\fulfillment-final-20261020-095456",
+  "checks": [
+    {
+      "name": "source bundle matches selected verified backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test application ports free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dedicated Redis DB starts empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all source package hashes verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package carries no node_modules target or live config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preflight capacity for fresh copy and ZIP",
+      "passed": true,
+      "detail": {
+        "bytes": 184552445,
+        "files": 392,
+        "free_bytes": 325068984320
+      }
+    },
+    {
+      "name": "fresh clean-room destination outside source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "copied package byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated Broker vhost created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated vhost user permissions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start-Release.ps1 rejects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tampered package rejected before processes start",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Install-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clean install has current immutable migrations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new business schema initially empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "self-contained Node demo exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "demo completes from package only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual multi-warehouse final balances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gross shipped cancellation return aggregates exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shipment signed callback delivered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated file task has one real draft identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two imports each localize the bad row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same-origin messages and current projection complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real XLSX and localized error file saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "private registered files match bytes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse demo user sees only READ XiAn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse user cannot access other warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse user cannot request sales prices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "private storage and local config not served",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "app-api proxy reaches signed callback validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "production SPA deep link and module asset served",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Install-Release.ps1 rejects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing database refuses reinstall without fact changes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Stop-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal application restart preserves full fulfillment and business snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restart preserves every registered private file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "self-contained Node demo exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed fixed demo rerun only reads saved IDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original business key replay after restart immutable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main 17-table business digest untouched",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "Start-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051\\config.local.json"
+      ],
+      "exit_code": 1,
+      "log": ".local\\m7-release-20261020_111051-0.log"
+    },
+    {
+      "script": "Install-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051\\config.local.json",
+        "-MysqlClient",
+        "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\tools\\mysql-8.4.6-winx64\\bin\\mysql.exe"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-1.log"
+    },
+    {
+      "script": "Start-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051\\config.local.json"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-2.log"
+    },
+    {
+      "script": "Seed-Demo.cjs",
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-demo-3.log"
+    },
+    {
+      "script": "Install-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051\\config.local.json",
+        "-MysqlClient",
+        "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\tools\\mysql-8.4.6-winx64\\bin\\mysql.exe"
+      ],
+      "exit_code": 1,
+      "log": ".local\\m7-release-20261020_111051-4.log"
+    },
+    {
+      "script": "Stop-Release.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-5.log"
+    },
+    {
+      "script": "Start-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_111051\\config.local.json"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-6.log"
+    },
+    {
+      "script": "Seed-Demo.cjs",
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_111051-demo-7.log"
+    }
+  ],
+  "boundary": "Fresh application directory and schema on the same Windows host; existing Java/Node/MySQL/Redis/RabbitMQ services reused.",
+  "main_before_digest": "13d5143633f63b322c274d47d54dfc627007e3432434badc7fd559b381928e29",
+  "demo": {
+    "formatVersion": 1,
+    "source": "M7DEMO_1792465927534",
+    "ids": {
+      "unit": 1,
+      "category": 1,
+      "customer": 1,
+      "supplier": 1,
+      "account": 1,
+      "warehouseA": 1,
+      "warehouseB": 2,
+      "product": 1,
+      "inA": 1,
+      "inAApproved": true,
+      "inB": 2,
+      "inBApproved": true,
+      "sourceOrder": 1,
+      "sourceApproved": true,
+      "bound": {
+        "orderId": "1",
+        "status": "NEW"
+      },
+      "allocation": {
+        "orderId": "1",
+        "status": "RESERVED",
+        "outcome": "ALLOCATED",
+        "reservations": [
+          {
+            "id": "1",
+            "orderItemId": "1",
+            "productId": "1",
+            "warehouseId": "1",
+            "allocatedQty": "6.000000",
+            "heldQty": "6.000000",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-10-20T03:27:11.255288600Z"
+          },
+          {
+            "id": "2",
+            "orderItemId": "1",
+            "productId": "1",
+            "warehouseId": "2",
+            "allocatedQty": "4.000000",
+            "heldQty": "4.000000",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-10-20T03:27:11.255288600Z"
+          }
+        ]
+      },
+      "shipped": {
+        "shipmentId": "1",
+        "shipmentNo": "SHP-b3f309cc-f8bf-41e4-a979-c8a2980ac037",
+        "erpSaleOutId": "1",
+        "orderStatus": "PARTIALLY_SHIPPED"
+      },
+      "cancelled": {
+        "orderId": "1",
+        "orderStatus": "PARTIALLY_CLOSED",
+        "cancelled": [
+          {
+            "id": "1",
+            "quantity": "6.000000"
+          }
+        ]
+      },
+      "delivered": {
+        "eventId": "c4da8797-3fdb-49ea-b415-e85fc81cb01b",
+        "outcome": "DELIVERED"
+      },
+      "returned": {
+        "id": "1",
+        "returnNo": "RET-7f83fa3a-5d93-464d-9817-0a78ada3573e",
+        "status": "REQUESTED",
+        "erpSaleReturnId": null,
+        "orderStatus": "PARTIALLY_CLOSED"
+      },
+      "received": {
+        "id": "1",
+        "returnNo": "RET-7f83fa3a-5d93-464d-9817-0a78ada3573e",
+        "status": "RECEIVED",
+        "erpSaleReturnId": "1",
+        "orderStatus": "PARTIALLY_CLOSED"
+      },
+      "upload": {
+        "fileId": "4453bb7c-0b8f-4697-860a-23a5c7a5216c",
+        "sha256": "a1b51ec819610e8274b78fd4fd39adf8b86f7b0ea95d58c04e21e03568c4d3b6",
+        "byteSize": 182,
+        "templateVersion": "1"
+      },
+      "import": {
+        "jobId": "1",
+        "outcome": "IMPORT_QUEUED"
+      },
+      "duplicateImport": {
+        "jobId": "2",
+        "outcome": "IMPORT_QUEUED"
+      },
+      "export": {
+        "jobId": "3",
+        "outcome": "EXPORT_QUEUED"
+      },
+      "warehouseRole": 169,
+      "warehouseMenu": true,
+      "warehouseUser": 249,
+      "warehouseRoleAssigned": true,
+      "warehouseGrant": "UPDATED",
+      "reconciliation": {
+        "id": "1",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-20T03:12:20.095402Z",
+        "finishedAt": "2026-10-20T03:12:20.142011Z",
+        "scannedCount": 28,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 2,
+          "erp_stock_record": 4,
+          "ful_order": 1,
+          "ful_order_item": 1,
+          "ful_reservation": 2,
+          "ful_stock_ledger": 5,
+          "ful_shipment": 1,
+          "ful_shipment_item": 1,
+          "ful_cancellation": 1,
+          "ful_return": 1,
+          "ful_return_item": 1,
+          "erp_sale_order": 2,
+          "erp_sale_order_items": 2,
+          "erp_sale_out": 1,
+          "erp_sale_out_items": 1,
+          "erp_sale_return": 1,
+          "erp_sale_return_items": 1
+        }
+      }
+    },
+    "keys": {
+      "bind": "M7.demo:M7DEMO_1792465927534:bind",
+      "allocate": "M7.demo:M7DEMO_1792465927534:allocate",
+      "ship": "M7.demo:M7DEMO_1792465927534:ship",
+      "cancel": "M7.demo:M7DEMO_1792465927534:cancel",
+      "return": "M7.demo:M7DEMO_1792465927534:return",
+      "receive": "M7.demo:M7DEMO_1792465927534:receive",
+      "import": "M7.demo:M7DEMO_1792465927534:import",
+      "duplicateImport": "M7.demo:M7DEMO_1792465927534:duplicateImport",
+      "export": "M7.demo:M7DEMO_1792465927534:export",
+      "grant": "M7.demo:M7DEMO_1792465927534:grant",
+      "scan": "M7.demo:M7DEMO_1792465927534:scan"
+    },
+    "complete": true,
+    "downloads": {
+      "errorBytes": 93,
+      "xlsxBytes": 4629
+    },
+    "projection": {
+      "orderId": "1",
+      "businessVersion": "4",
+      "observedVersion": "4",
+      "sourceEventId": "beada748-4220-461b-b3eb-378c42c7d512",
+      "snapshotJson": "{\"orderId\":\"1\",\"orderNo\":\"XSDD20261020000001\",\"version\":\"4\",\"status\":\"PARTIALLY_CLOSED\",\"items\":[{\"id\":\"1\",\"productId\":\"1\",\"unitId\":\"1\",\"orderedQty\":\"10.000000\",\"openQty\":\"0.000000\",\"reservedQty\":\"0.000000\",\"shippedQty\":\"4.000000\",\"cancelledQty\":\"6.000000\",\"returnedQty\":\"2.000000\"}]}",
+      "updatedAt": "2026-10-20T03:12:14.321271Z"
+    },
+    "completedAt": "2026-10-20T03:12:20.163Z"
+  },
+  "main_after_digest": "13d5143633f63b322c274d47d54dfc627007e3432434badc7fd559b381928e29",
+  "backend_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "manifest_sha256": "3bc48660bff769aae7769426a209865fecc12e2e8b4e01057602d66b5b065605",
+  "result": "passed",
+  "browser_pending": false,
+  "release_processes_stopped": true,
+  "closed_at": "2026-10-20T05:50:58.570592+00:00"
+}

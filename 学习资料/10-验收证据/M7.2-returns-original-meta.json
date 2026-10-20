@@ -1,0 +1,38 @@
+{
+  "run_at": "2026-10-20T02:01:36.716816+00:00",
+  "case": "returns",
+  "database": "fulfillment_m7_reg_returns_20261020_100136",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "sources": [
+    {
+      "path": "tests\\m4_return_acceptance.py",
+      "sha256": "967ca102635ed93741c7112dfb66c0f42bb29d33c6947cf3f0c37a1c19988f4a",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    }
+  ],
+  "adaptations": [
+    "Separate M7 schema/Redis DB12/ports; historical evidence files are never replaced.",
+    {
+      "positive_fixture_scope": {
+        "user": 253,
+        "warehouse": 1
+      }
+    },
+    "Nested binding output collided with historical M4.2-clean-binding.json; current result copied to M7.2-returns-binding.json; historical raw unavailable, explicitly disclosed."
+  ],
+  "results": [
+    {
+      "evidence": "M7.2-returns.json",
+      "checks": 71
+    }
+  ],
+  "result": "passed",
+  "all_owned_stopped": true,
+  "evidence_exception": "M7-evidence-exception.json"
+}

@@ -1,0 +1,99 @@
+芋道源码 http://www.iocoder.cn
+Application Version: 1.0.0
+Spring Boot Version: 3.5.15
+
+.__   __.   ______      .______    __    __    _______
+|  \ |  |  /  __  \     |   _  \  |  |  |  |  /  _____|
+|   \|  | |  |  |  |    |  |_)  | |  |  |  | |  |  __
+|  . `  | |  |  |  |    |   _  <  |  |  |  | |  | |_ |
+|  |\   | |  `--'  |    |  |_)  | |  `--'  | |  |__| |
+|__| \__|  \______/     |______/   \______/   \______|
+
+███╗   ██╗ ██████╗     ██████╗ ██╗   ██╗ ██████╗
+████╗  ██║██╔═══██╗    ██╔══██╗██║   ██║██╔════╝
+██╔██╗ ██║██║   ██║    ██████╔╝██║   ██║██║  ███╗
+██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║   ██║
+██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝
+╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝
+
+2026-10-20 10:17:23.573 [background-preinit] [34mINFO [0;39m [36morg.hibernate.validator.internal.util.Version:21[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-20 10:17:23.704 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:53[0;39m - Starting YudaoServerApplication using Java 17.0.17 with PID 30232 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m5-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-20 10:17:23.706 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:658[0;39m - The following 2 profiles are active: "fulfillment", "fulfillment-message-test"
+2026-10-20 10:17:28.048 [main] [34mINFO [0;39m [36mc.g.y.a.MybatisPlusJoinAutoConfiguration:141[0;39m - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-20 10:17:29.557 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:17:29.575 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:17:29.592 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:17:29.654 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:17:29.662 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:17:29.664 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429[0;39m - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-20 10:17:31.167 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:111[0;39m - Tomcat initialized with port 48082 (http)
+2026-10-20 10:17:31.219 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:17:31.226 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardService:168[0;39m - Starting service [Tomcat]
+2026-10-20 10:17:31.226 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine:168[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-20 10:17:31.338 [main] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring embedded WebApplicationContext
+2026-10-20 10:17:31.339 [main] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext:301[0;39m - Root WebApplicationContext: initialization completed in 7554 ms
+2026-10-20 10:17:32.751 [main] [34mINFO [0;39m [36mcom.alibaba.druid.pool.DruidDataSource:865[0;39m - {dataSource-1,master} inited
+2026-10-20 10:17:32.751 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:158[0;39m - dynamic-datasource - add a datasource named [master] success
+2026-10-20 10:17:32.753 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:241[0;39m - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-20 10:17:34.015 [main] [34mINFO [0;39m [36morg.flywaydb.core.FlywayExecutor:41[0;39m - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_reg_message_20261020_101220?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-20 10:17:34.051 [main] [31mWARN [0;39m [36morg.flywaydb.core.internal.database.base.Database:45[0;39m - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-20 10:17:34.112 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbValidate:41[0;39m - Successfully validated 9 migrations (execution time 00:00.046s)
+2026-10-20 10:17:34.146 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Current version of schema `fulfillment_m7_reg_message_20261020_101220`: 8
+2026-10-20 10:17:34.149 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Schema `fulfillment_m7_reg_message_20261020_101220` is up to date. No migration necessary.
+2026-10-20 10:17:35.295 [main] [34mINFO [0;39m [36morg.redisson.Version:43[0;39m - Redisson 4.7.0
+2026-10-20 10:17:36.380 [redisson-netty-1-4] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:17:36.493 [redisson-netty-1-19] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:17:39.974 [main] [34mINFO [0;39m [36mo.s.boot.web.servlet.RegistrationBean:49[0;39m - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-20 10:17:41.756 [main] [34mINFO [0;39m [36mc.a.c.config.AjCaptchaServiceAutoConfiguration:33[0;39m - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-20 10:17:41.773 [main] [34mINFO [0;39m [36mcom.anji.captcha.util.ImageUtils:71[0;39m - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@5a025435, ORIGINAL=[Ljava.lang.String;@7ef4f2b0, PIC_CLICK=[Ljava.lang.String;@61938fae]
+2026-10-20 10:17:41.776 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:52[0;39m - supported-captchaCache-service:[redis, local]
+2026-10-20 10:17:41.785 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:57[0;39m - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-20 10:17:41.786 [main] [34mINFO [0;39m [36mc.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80[0;39m - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-20 10:17:43.481 [main] [34mINFO [0;39m [36mc.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23[0;39m - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-20 10:17:47.230 [main] [34mINFO [0;39m [36mc.i.yudao.framework.dict.core.DictFrameworkUtils:44[0;39m - [init][初始化 DictFrameworkUtils 成功]
+2026-10-20 10:17:47.357 [main] [34mINFO [0;39m [36morg.dromara.common.spring.SpringContextUtil:37[0;39m - ------SpringContextUtil setApplicationContext-------
+2026-10-20 10:17:47.416 [main] [34mINFO [0;39m [36mc.b.m.spring.MybatisPlusApplicationContextAware:43[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b8ee898
+2026-10-20 10:17:48.509 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:41[0;39m - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-20 10:17:48.551 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:45[0;39m - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-20 10:17:48.586 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:17:48.613 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:243[0;39m - Tomcat started on port 48082 (http) with context path '/'
+2026-10-20 10:17:48.639 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:59[0;39m - Started YudaoServerApplication in 26.266 seconds (process running for 27.186)
+2026-10-20 10:17:48.924 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-20 10:17:48.925 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+2026-10-20 10:17:48.931 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:554[0;39m - Completed initialization in 6 ms
+2026-10-20 10:17:49.293 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:17:49.656 [pool-8-thread-1] [34mINFO [0;39m [36mc.i.y.f.banner.core.BannerApplicationRunner:23[0;39m - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+[工作流模块 yudao-module-bpm - 已禁用][参考 https://doc.iocoder.cn/bpm/ 开启]
+[支付系统 yudao-module-pay - 已禁用][参考 https://doc.iocoder.cn/pay/build/ 开启]
+[报表模块 yudao-module-report - 已禁用][参考 https://doc.iocoder.cn/report/ 开启]
+[微信公众号 yudao-module-mp - 已禁用][参考 https://doc.iocoder.cn/mp/build/ 开启]
+[商城系统 yudao-module-mall - 已禁用][参考 https://doc.iocoder.cn/mall/build/ 开启]
+[WMS 仓库管理系统 yudao-module-wms - 已禁用][参考 https://doc.iocoder.cn/wms/build/ 开启]
+[CRM 系统 yudao-module-crm - 已禁用][参考 https://doc.iocoder.cn/crm/build/ 开启]
+[MES 系统 yudao-module-mes - 已禁用][参考 https://doc.iocoder.cn/mes/build/ 开启]
+[HRM 人力资源管理系统 yudao-module-hrm - 已禁用][参考 https://doc.iocoder.cn/hrm/build/ 开启]
+[FMS 财务管理系统 yudao-module-fms - 已禁用][参考 https://doc.iocoder.cn/fms/build/ 开启]
+[PMS 项目管理系统 yudao-module-pms - 已禁用][参考 https://doc.iocoder.cn/pms/build/ 开启]
+[OA 协同办公 yudao-module-oa - 已禁用][参考 https://doc.iocoder.cn/oa/build/ 开启]
+[AI 大模型 yudao-module-ai - 已禁用][参考 https://doc.iocoder.cn/ai/build/ 开启]
+[IoT 物联网 yudao-module-iot - 已禁用][参考 https://doc.iocoder.cn/iot/build/ 开启]
+[IM 即时通讯 yudao-module-im - 已禁用][参考 https://doc.iocoder.cn/im/build/ 开启]
+M5_BARRIER_CLAIM m5claim:fulfillment_m7_reg_message_20261020_101220
+2026-10-20 10:17:50.310 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(1015 ms)]
+2026-10-20 10:17:50.328 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.s.s.a.AnnotationAsyncExecutionInterceptor:254[0;39m - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [fulfillmentExpiryScheduler, fulfillmentMessagePublisherScheduler, fulfillmentMessageConsumerScheduler]
+2026-10-20 10:17:50.337 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:17:50.495 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(157 ms)]
+2026-10-20 10:17:50.541 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/message/replay) 参数({"orderId": "4", "eventId": "f13fe067-4dda-46fb-a1ce-db45ceaab2ce", "action": "REPUBLISH", "reason": "M5\u53d7\u63a7\u6062\u590d"})]
+2026-10-20 10:17:51.198 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/message/replay) 耗时(656 ms)]
+2026-10-20 10:18:31.262 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/message/replay) 参数({"orderId": "4", "eventId": "f13fe067-4dda-46fb-a1ce-db45ceaab2ce", "action": "REPUBLISH", "reason": "M5\u53d7\u63a7\u6062\u590d"})]
+2026-10-20 10:18:32.429 [http-nio-127.0.0.1-48082-exec-5] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulMessageAdminService.replay(FulMessageAdminService.java:68)
+2026-10-20 10:18:32.433 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/message/replay) 耗时(1170 ms)]
+2026-10-20 10:18:35.703 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=f13fe067-4dda-46fb-a1ce-db45ceaab2ce lease=5 accepted=true error=null

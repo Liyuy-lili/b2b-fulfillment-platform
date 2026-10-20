@@ -1,0 +1,70 @@
+{
+  "run_at": "2026-10-17T01:54:41.367843+00:00",
+  "fixture": {
+    "source": 90,
+    "source_no": "XSDD20261017000079",
+    "quantity": "4.125600",
+    "result": "awaiting browser binding"
+  },
+  "checks": [
+    {
+      "name": "one browser-bound source snapshot",
+      "passed": true
+    },
+    {
+      "name": "exact browser snapshot quantity",
+      "passed": true
+    },
+    {
+      "name": "no physical inventory record generated",
+      "passed": true
+    },
+    {
+      "name": "no physical inventory balance generated",
+      "passed": true
+    },
+    {
+      "name": "browser source freezes old unaudit",
+      "passed": true
+    },
+    {
+      "name": "source still approved",
+      "passed": true
+    }
+  ],
+  "detail": {
+    "id": "33",
+    "erpOrderId": "90",
+    "orderNo": "XSDD20261017000079",
+    "customerId": "15",
+    "ownerUserId": "1",
+    "accountId": "12",
+    "saleUserId": null,
+    "status": "NEW",
+    "allocationAttempted": false,
+    "totalPrice": "51.570000",
+    "discountPercent": "0.000000",
+    "discountPrice": "0.000000",
+    "depositPrice": "0.000000",
+    "createTime": "2026-10-17T01:51:53.754861Z",
+    "items": [
+      {
+        "id": "33",
+        "erpOrderItemId": "94",
+        "productId": "15",
+        "unitId": "14",
+        "price": "12.500000",
+        "taxPercent": "0.000000",
+        "taxPrice": "0.000000",
+        "totalPrice": "51.570000",
+        "orderedQty": "4.125600",
+        "openQty": "4.125600",
+        "reservedQty": "0.000000",
+        "shippedQty": "0.000000",
+        "cancelledQty": "0.000000",
+        "returnedQty": "0.000000"
+      }
+    ]
+  },
+  "result": "passed"
+}

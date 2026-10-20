@@ -1,0 +1,4 @@
+Applied backend/sql/mysql/ruoyi-vue-pro.sql
+Applied deploy/sql/010-erp.sql
+Applied deploy/sql/020-local-baseline.sql
+Initialized fulfillment_m6_20261020_002345. Existing databases were not changed.

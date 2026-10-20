@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-20T02:08:53.992141+00:00",
+  "affected_file": "M4.2-clean-binding.json",
+  "current_run_database": "fulfillment_m7_reg_returns_20261020_100136",
+  "current_result_copy": "M7.2-returns-binding.json",
+  "cause": "Historical return suite sets M1_EVIDENCE to a literal nested filename. Initial M7 AST replacement covered expiry but omitted this separate return filename.",
+  "historical_raw_restored": false,
+  "boundary": "Original nested M4.2 raw JSON is unavailable locally after overwrite. No reconstruction is represented as historical evidence. Original main M4.2 acceptance/upgrade/restart reports remain separate.",
+  "fix": "Controlled filename replacement added; current passed68 binding result copied to M7-specific file; historical-path JSON explicitly marked as current M7 evidence."
+}

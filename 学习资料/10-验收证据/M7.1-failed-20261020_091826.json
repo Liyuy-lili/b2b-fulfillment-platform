@@ -1,0 +1,135 @@
+{
+  "run_at": "2026-10-20T01:18:26.187361+00:00",
+  "database": "fulfillment_m7_release_20261020_091826",
+  "redis_database": 9,
+  "vhost": "fulfillment_m7_release_20261020_091826",
+  "release_directory": "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_091826",
+  "package_directory": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\releases\\fulfillment-20261020-091612",
+  "checks": [
+    {
+      "name": "source bundle is final M6 backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test application ports free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all source package hashes verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package carries no node_modules target or live config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preflight capacity for fresh copy and ZIP",
+      "passed": true,
+      "detail": {
+        "bytes": 184551770,
+        "files": 392,
+        "free_bytes": 328200548352
+      }
+    },
+    {
+      "name": "fresh clean-room destination outside source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "copied package byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated Broker vhost created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated vhost user permissions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start-Release.ps1 rejects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tampered package rejected before processes start",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Install-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clean install has full immutable V0-V7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new business schema initially empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start-Release.ps1 exits0",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "name": "Stop-Release.ps1 exits0",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "Start-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_091826\\config.local.json"
+      ],
+      "exit_code": 1,
+      "log": ".local\\m7-release-20261020_091826-0.log"
+    },
+    {
+      "script": "Install-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_091826\\config.local.json",
+        "-MysqlClient",
+        "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\tools\\mysql-8.4.6-winx64\\bin\\mysql.exe"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_091826-1.log"
+    },
+    {
+      "script": "Start-Release.ps1",
+      "arguments": [
+        "-Config",
+        "C:\\Users\\Lenovo\\fulfillment-delivery-tests\\release 20261020_091826\\config.local.json"
+      ],
+      "exit_code": 1,
+      "log": ".local\\m7-release-20261020_091826-2.log"
+    },
+    {
+      "script": "Stop-Release.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m7-release-20261020_091826-3.log"
+    }
+  ],
+  "boundary": "Fresh application directory and schema on the same Windows host; existing Java/Node/MySQL/Redis/RabbitMQ services reused.",
+  "main_before_digest": "13d5143633f63b322c274d47d54dfc627007e3432434badc7fd559b381928e29",
+  "result": "failed",
+  "error": "Start-Release.ps1 exits0: None"
+}

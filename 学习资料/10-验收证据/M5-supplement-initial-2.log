@@ -1,0 +1,20 @@
+PASS passed isolated core and exact artifact
+PASS legacy regression m1_acceptance.py
+PASS legacy regression m0_smoke.py
+PASS command scripts/Stop-Messaging.ps1 ()
+M5 supplement failed 4 checks
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_supplement.py", line 22, in <module>
+    api=m.start('offline-boot',48082,True,True,('--fulfillment.messages.max-attempts=10',))
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_acceptance.py", line 37, in start
+    if p.poll() is not None:
+    ^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_acceptance.py", line 21, in wait
+    def wait(fn,seconds=90):return b.wait_for(fn,seconds)
+                                   ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_return_acceptance.py", line 23, in wait_for
+    value=predicate()
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_acceptance.py", line 34, in ready
+    args=[x for x in args[:-len(test)] if x.split('=',1)[0] not in overrides]+list(test)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JVM exited before readiness offline-boot 1

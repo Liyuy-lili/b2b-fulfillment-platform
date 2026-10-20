@@ -1,0 +1,57 @@
+{
+  "run_at": "2026-10-19T15:15:06.385820+00:00",
+  "database": "fulfillment_m5_20261019_201046",
+  "checks": [
+    {
+      "name": "passed isolated core and exact artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy regression m1_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy regression m0_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Stop-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Stop-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-0.log"
+    }
+  ],
+  "processes": [
+    {
+      "label": "supplement-api",
+      "port": 48082,
+      "pid": 36100,
+      "publisher": false,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "offline-boot",
+      "port": 48082,
+      "pid": 30772,
+      "publisher": true,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.messages.max-attempts=20"
+      ]
+    }
+  ],
+  "result": "failed",
+  "error": "JVM exited before readiness offline-boot 1",
+  "all_owned_processes_stopped": true
+}

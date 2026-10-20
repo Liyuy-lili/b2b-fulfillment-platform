@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "url": "http://127.0.0.1:15174/erp/fulfillment",
+  "order_id": "1",
+  "visible_quantity_row": "1\n\t\n1\n\t\n10.000000\n\t\n0.000000\n\t\n0.000000\n\t\n4.000000\n\t\n6.000000\n\t\n2.000000",
+  "projection_line": "业务版本 4 · 读模型版本 4 · 版本已对齐。此视图用于异步查询，库存分配仍以业务数据库为准。",
+  "broker_confirmed_count": 5,
+  "viewport": {
+    "height": 900,
+    "pageWidth": 1280,
+    "width": 1280
+  },
+  "note": "Old session from a previous port-15174 test was rejected; logged into this isolated release through the UI with Remember Me unchecked."
+}

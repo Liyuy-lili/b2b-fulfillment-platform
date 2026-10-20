@@ -1,0 +1,144 @@
+{
+  "run_at": "2026-10-19T02:59:27.354373+00:00",
+  "database": "fulfillment_m4_return_20261019_105244",
+  "checks": [
+    {
+      "name": "core passed and its workers stopped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test port free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full received allowance excludes rejected applications",
+      "passed": true,
+      "detail": [
+        {
+          "shipmentItemId": "1",
+          "orderItemId": "9",
+          "shippedQty": "6.000001",
+          "committedQty": "6.000001",
+          "availableQty": "0.000000"
+        }
+      ]
+    },
+    {
+      "name": "allowance sums pending and received exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same SKU separate shipment items retain independent allowance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "allowance enforces owner boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "allowance requires its query permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "allowance requires authentication",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "allowance hides shipment from another order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant boundary applies to allowance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh allowance initially uncommitted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "application changes allowance but not physical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final artifact receipt uses ERP once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receipt moves requested to received without double counting allowance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior receipt key survives final artifact restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy ERP regression passes on final artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all H R reservations and both ledgers agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all received quantities match order returned aggregates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all live applications and receipts respect each original shipment item",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every received return links approved same-tenant ERP document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every receipt item matches positive ERP physical effect once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only received rows have ERP item mappings",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "core_artifact_sha256": "b6d0f2af039e20f26c3c5cf894d4aa21a5ec0a690059c37efacfc8f5192fb794",
+  "final_artifact_sha256": "eb99c19df88207e00e6645a677442361455e43fbd7c11cc0ef3425e8a54e3b58",
+  "latest_fixture": {
+    "product": 9,
+    "source": 25,
+    "order": "15",
+    "shipment": "7",
+    "lines": [
+      {
+        "id": "8",
+        "orderItemId": "16",
+        "reservationId": "8",
+        "quantity": "2.123456",
+        "erpSaleOutItemId": "17"
+      }
+    ],
+    "warehouse": 4
+  },
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

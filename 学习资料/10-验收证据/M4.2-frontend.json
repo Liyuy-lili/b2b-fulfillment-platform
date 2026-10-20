@@ -1,0 +1,55 @@
+{
+  "run_at": "2026-10-19T11:10:34.7431946+08:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "eslint",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "eslint",
+        "src/views/erp/fulfillment/FulfillmentReturns.vue",
+        "src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+        "src/api/erp/fulfillment/index.ts"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-return-frontend-eslint.log",
+      "passed": true
+    },
+    {
+      "name": "stylelint",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "stylelint",
+        "src/views/erp/fulfillment/FulfillmentReturns.vue",
+        "src/views/erp/fulfillment/FulfillmentWorkbench.vue"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-return-frontend-stylelint.log",
+      "passed": true
+    },
+    {
+      "name": "prettier",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "prettier",
+        "--check",
+        "src/views/erp/fulfillment/FulfillmentReturns.vue",
+        "src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+        "src/api/erp/fulfillment/index.ts"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-return-frontend-prettier.log",
+      "passed": true
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "arguments": [
+        "run",
+        "build:fulfillment"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-return-frontend-build.log",
+      "passed": true
+    }
+  ]
+}

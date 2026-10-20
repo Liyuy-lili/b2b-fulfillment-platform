@@ -1,0 +1,79 @@
+{
+  "run_at": "2026-10-20T07:44:36.335446+00:00",
+  "scope": "仅完整学习包静态审阅/结构/源文件哈希/历史数字转录；未运行应用/DB/HTTP/迁移/压测。",
+  "result": "passed",
+  "metrics": {
+    "markdown_files": 113,
+    "study_chapters": 32,
+    "interview_files": 22,
+    "topic_questions": 192,
+    "comprehensive_questions": 40,
+    "local_links": 2882,
+    "source_line_links": 566,
+    "json_examples": 10,
+    "read_source_and_evidence_files": 552,
+    "protected_files": 742,
+    "routes": 55,
+    "ddl_tables": 26
+  },
+  "checks": [
+    {
+      "name": "文档编码围栏JSON表格链接锚点",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "192专题题号唯一且五段完整",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "综合追问40道独立保留",
+      "passed": true,
+      "detail": 40
+    },
+    {
+      "name": "相对M7源码差异归档的175份业务源文件未改变",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "整理前ZIP摘要保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "整理前75份源资料逐字节可恢复",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "本轮原M阶段非Markdown证据与冻结迁移未改",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "最终归档JUnit转录60",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "性能来源1152查询512库存且每轮32成功32不足",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "生成字典含26表和全部路由",
+      "passed": true,
+      "detail": {
+        "tables": 26,
+        "routes": 55
+      }
+    },
+    {
+      "name": "现行教程问答无旧阶段未完成结论",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

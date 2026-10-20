@@ -1,0 +1,528 @@
+芋道源码 http://www.iocoder.cn
+Application Version: 1.0.0
+Spring Boot Version: 3.5.15
+
+.__   __.   ______      .______    __    __    _______
+|  \ |  |  /  __  \     |   _  \  |  |  |  |  /  _____|
+|   \|  | |  |  |  |    |  |_)  | |  |  |  | |  |  __
+|  . `  | |  |  |  |    |   _  <  |  |  |  | |  | |_ |
+|  |\   | |  `--'  |    |  |_)  | |  `--'  | |  |__| |
+|__| \__|  \______/     |______/   \______/   \______|
+
+███╗   ██╗ ██████╗     ██████╗ ██╗   ██╗ ██████╗
+████╗  ██║██╔═══██╗    ██╔══██╗██║   ██║██╔════╝
+██╔██╗ ██║██║   ██║    ██████╔╝██║   ██║██║  ███╗
+██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║   ██║
+██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝
+╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝
+
+2026-10-20 10:18:37.989 [background-preinit] [34mINFO [0;39m [36morg.hibernate.validator.internal.util.Version:21[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-20 10:18:38.100 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:53[0;39m - Starting YudaoServerApplication using Java 17.0.17 with PID 36428 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m5-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-20 10:18:38.101 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:658[0;39m - The following 1 profile is active: "fulfillment"
+2026-10-20 10:18:43.209 [main] [34mINFO [0;39m [36mc.g.y.a.MybatisPlusJoinAutoConfiguration:141[0;39m - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-20 10:18:45.335 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:18:45.371 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:18:45.394 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:18:45.462 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:18:45.470 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:18:45.471 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429[0;39m - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-20 10:18:47.030 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:111[0;39m - Tomcat initialized with port 48082 (http)
+2026-10-20 10:18:47.099 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:18:47.115 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardService:168[0;39m - Starting service [Tomcat]
+2026-10-20 10:18:47.117 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine:168[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-20 10:18:47.321 [main] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring embedded WebApplicationContext
+2026-10-20 10:18:47.321 [main] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext:301[0;39m - Root WebApplicationContext: initialization completed in 9149 ms
+2026-10-20 10:18:49.366 [main] [34mINFO [0;39m [36mcom.alibaba.druid.pool.DruidDataSource:865[0;39m - {dataSource-1,master} inited
+2026-10-20 10:18:49.369 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:158[0;39m - dynamic-datasource - add a datasource named [master] success
+2026-10-20 10:18:49.369 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:241[0;39m - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-20 10:18:51.176 [main] [34mINFO [0;39m [36morg.flywaydb.core.FlywayExecutor:41[0;39m - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_reg_message_20261020_101220?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-20 10:18:51.240 [main] [31mWARN [0;39m [36morg.flywaydb.core.internal.database.base.Database:45[0;39m - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-20 10:18:51.363 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbValidate:41[0;39m - Successfully validated 9 migrations (execution time 00:00.083s)
+2026-10-20 10:18:51.430 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Current version of schema `fulfillment_m7_reg_message_20261020_101220`: 8
+2026-10-20 10:18:51.435 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Schema `fulfillment_m7_reg_message_20261020_101220` is up to date. No migration necessary.
+2026-10-20 10:18:53.061 [main] [34mINFO [0;39m [36morg.redisson.Version:43[0;39m - Redisson 4.7.0
+2026-10-20 10:18:54.647 [redisson-netty-1-4] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:18:54.756 [redisson-netty-1-19] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:18:59.276 [main] [34mINFO [0;39m [36mo.s.boot.web.servlet.RegistrationBean:49[0;39m - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-20 10:19:02.829 [main] [34mINFO [0;39m [36mc.a.c.config.AjCaptchaServiceAutoConfiguration:33[0;39m - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-20 10:19:02.853 [main] [34mINFO [0;39m [36mcom.anji.captcha.util.ImageUtils:71[0;39m - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@46a7b47, ORIGINAL=[Ljava.lang.String;@6d340d36, PIC_CLICK=[Ljava.lang.String;@3cebe931]
+2026-10-20 10:19:02.863 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:52[0;39m - supported-captchaCache-service:[redis, local]
+2026-10-20 10:19:02.875 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:57[0;39m - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-20 10:19:02.876 [main] [34mINFO [0;39m [36mc.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80[0;39m - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-20 10:19:05.885 [main] [34mINFO [0;39m [36mc.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23[0;39m - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-20 10:19:13.000 [main] [34mINFO [0;39m [36mc.i.yudao.framework.dict.core.DictFrameworkUtils:44[0;39m - [init][初始化 DictFrameworkUtils 成功]
+2026-10-20 10:19:13.230 [main] [34mINFO [0;39m [36morg.dromara.common.spring.SpringContextUtil:37[0;39m - ------SpringContextUtil setApplicationContext-------
+2026-10-20 10:19:13.327 [main] [34mINFO [0;39m [36mc.b.m.spring.MybatisPlusApplicationContextAware:43[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b8ee898
+2026-10-20 10:19:14.371 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:41[0;39m - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-20 10:19:14.385 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:45[0;39m - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-20 10:19:14.432 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:19:14.466 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:243[0;39m - Tomcat started on port 48082 (http) with context path '/'
+2026-10-20 10:19:14.494 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:59[0;39m - Started YudaoServerApplication in 37.514 seconds (process running for 38.277)
+2026-10-20 10:19:14.815 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-20 10:19:14.816 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+2026-10-20 10:19:14.821 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:554[0;39m - Completed initialization in 5 ms
+2026-10-20 10:19:15.287 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:19:15.516 [pool-8-thread-1] [34mINFO [0;39m [36mc.i.y.f.banner.core.BannerApplicationRunner:23[0;39m - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+[工作流模块 yudao-module-bpm - 已禁用][参考 https://doc.iocoder.cn/bpm/ 开启]
+[支付系统 yudao-module-pay - 已禁用][参考 https://doc.iocoder.cn/pay/build/ 开启]
+[报表模块 yudao-module-report - 已禁用][参考 https://doc.iocoder.cn/report/ 开启]
+[微信公众号 yudao-module-mp - 已禁用][参考 https://doc.iocoder.cn/mp/build/ 开启]
+[商城系统 yudao-module-mall - 已禁用][参考 https://doc.iocoder.cn/mall/build/ 开启]
+[WMS 仓库管理系统 yudao-module-wms - 已禁用][参考 https://doc.iocoder.cn/wms/build/ 开启]
+[CRM 系统 yudao-module-crm - 已禁用][参考 https://doc.iocoder.cn/crm/build/ 开启]
+[MES 系统 yudao-module-mes - 已禁用][参考 https://doc.iocoder.cn/mes/build/ 开启]
+[HRM 人力资源管理系统 yudao-module-hrm - 已禁用][参考 https://doc.iocoder.cn/hrm/build/ 开启]
+[FMS 财务管理系统 yudao-module-fms - 已禁用][参考 https://doc.iocoder.cn/fms/build/ 开启]
+[PMS 项目管理系统 yudao-module-pms - 已禁用][参考 https://doc.iocoder.cn/pms/build/ 开启]
+[OA 协同办公 yudao-module-oa - 已禁用][参考 https://doc.iocoder.cn/oa/build/ 开启]
+[AI 大模型 yudao-module-ai - 已禁用][参考 https://doc.iocoder.cn/ai/build/ 开启]
+[IoT 物联网 yudao-module-iot - 已禁用][参考 https://doc.iocoder.cn/iot/build/ 开启]
+[IM 即时通讯 yudao-module-im - 已禁用][参考 https://doc.iocoder.cn/im/build/ 开启]
+2026-10-20 10:19:16.390 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(1099 ms)]
+2026-10-20 10:19:16.430 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:19:16.619 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(187 ms)]
+2026-10-20 10:19:58.550 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product/create) 参数({"name": "M4Rf803d0c8All\u6d88\u8d39\u5931\u8d25", "barCode": "M4Rf803d0c8All\u6d88\u8d39\u5931\u8d25", "categoryId": 1, "unitId": 1, "status": 0, "salePrice": "2.345678", "purchasePrice": "0"})]
+2026-10-20 10:19:58.638 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product/create) 耗时(87 ms)]
+2026-10-20 10:19:58.652 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 1, "inTime": "2026-10-20T10:12:21", "items": [{"productId": 3, "warehouseId": 1, "count": "20", "productPrice": "0"}]})]
+2026-10-20 10:19:58.887 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(233 ms)]
+2026-10-20 10:19:58.901 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=3, status=20})]
+2026-10-20 10:19:59.048 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(145 ms)]
+2026-10-20 10:19:59.056 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 1, "accountId": 1, "orderTime": "2026-10-20T10:12:21", "discountPercent": "5", "items": [{"productId": 3, "count": "2", "productPrice": "2.345678", "taxPercent": "13"}]})]
+2026-10-20 10:19:59.202 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(145 ms)]
+2026-10-20 10:19:59.212 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=5, status=20})]
+2026-10-20 10:19:59.287 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(74 ms)]
+2026-10-20 10:19:59.296 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "5"})]
+2026-10-20 10:20:00.118 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(821 ms)]
+2026-10-20 10:20:00.129 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "5", "warehouseIds": ["1"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:20:00.405 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(275 ms)]
+2026-10-20 10:20:00.414 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "5", "warehouseId": "1", "items": [{"id": "4", "quantity": "2"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-5"})]
+2026-10-20 10:20:00.873 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(456 ms)]
+2026-10-20 10:20:00.881 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=5})]
+2026-10-20 10:20:00.951 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(70 ms)]
+2026-10-20 10:20:00.964 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/get) 参数({id=5})]
+2026-10-20 10:20:01.082 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/get) 耗时(117 ms)]
+2026-10-20 10:21:27.573 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/message/replay) 参数({"orderId": "5", "eventId": "3508fc2f-4a30-4e70-a2ce-10c6f65d5f3d", "action": "RETRY_CONSUME", "reason": "M5\u53d7\u63a7\u6062\u590d"})]
+2026-10-20 10:21:28.780 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/message/replay) 耗时(1206 ms)]
+2026-10-20 10:21:29.600 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/message/replay) 参数({"orderId": "5", "eventId": "3508fc2f-4a30-4e70-a2ce-10c6f65d5f3d", "action": "RETRY_CONSUME", "reason": "M5\u53d7\u63a7\u6062\u590d"})]
+2026-10-20 10:21:30.755 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/message/replay) 耗时(1153 ms)]
+2026-10-20 10:21:30.807 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/message/replay) 参数({"orderId": "5", "eventId": "3508fc2f-4a30-4e70-a2ce-10c6f65d5f3d", "action": "RETRY_CONSUME", "reason": "M5\u53d7\u63a7\u6062\u590d"})]
+2026-10-20 10:21:31.973 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/message/replay) 耗时(1165 ms)]
+2026-10-20 10:21:32.071 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product/create) 参数({"name": "M4Rf803d0c8All\u786e\u8ba4\u524d\u5d29\u6e83", "barCode": "M4Rf803d0c8All\u786e\u8ba4\u524d\u5d29\u6e83", "categoryId": 1, "unitId": 1, "status": 0, "salePrice": "2.345678", "purchasePrice": "0"})]
+2026-10-20 10:21:32.112 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product/create) 耗时(40 ms)]
+2026-10-20 10:21:32.120 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 1, "inTime": "2026-10-20T10:12:21", "items": [{"productId": 4, "warehouseId": 1, "count": "20", "productPrice": "0"}]})]
+2026-10-20 10:21:32.202 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(82 ms)]
+2026-10-20 10:21:32.213 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=4, status=20})]
+2026-10-20 10:21:32.275 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(61 ms)]
+2026-10-20 10:21:32.282 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 1, "accountId": 1, "orderTime": "2026-10-20T10:12:21", "discountPercent": "5", "items": [{"productId": 4, "count": "2", "productPrice": "2.345678", "taxPercent": "13"}]})]
+2026-10-20 10:21:32.352 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(68 ms)]
+2026-10-20 10:21:32.359 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=6, status=20})]
+2026-10-20 10:21:32.402 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(42 ms)]
+2026-10-20 10:21:32.409 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "6"})]
+2026-10-20 10:21:32.507 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(97 ms)]
+2026-10-20 10:21:32.514 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "6", "warehouseIds": ["1"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:21:32.622 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(107 ms)]
+2026-10-20 10:21:32.630 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "6", "warehouseId": "1", "items": [{"id": "5", "quantity": "2"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-6"})]
+2026-10-20 10:21:32.937 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(307 ms)]
+2026-10-20 10:21:32.945 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=6})]
+2026-10-20 10:21:32.991 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(45 ms)]
+2026-10-20 10:21:32.995 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/get) 参数({id=6})]
+2026-10-20 10:21:33.060 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/get) 耗时(64 ms)]
+2026-10-20 10:22:59.988 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/role/create) 参数({"name": "M5b646c3ce", "code": "M5b646c3ce", "status": 0, "sort": 1})]
+2026-10-20 10:23:00.453 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/role/create) 耗时(464 ms)]
+2026-10-20 10:23:00.463 [ful-expiry-1] [1;31mERROR[0;39m [36mo.s.a.i.SimpleAsyncUncaughtExceptionHandler:39[0;39m - Unexpected exception occurred invoking async method: public default void cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO)
+org.mybatis.spring.MyBatisSystemException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:101)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:81)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:156)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy195.insert(Unknown Source)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl.createOperateLog(OperateLogServiceImpl.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl$$SpringCGLIB$$0.createOperateLog(<generated>)
+	at cn.iocoder.yudao.module.system.api.logger.OperateLogApiImpl.createOperateLog(OperateLogApiImpl.java:29)
+	at cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(OperateLogCommonApi.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at org.springframework.scheduling.concurrent.DelegatingErrorHandlingCallable.call(DelegatingErrorHandlingCallable.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder.getRequiredTenantId(TenantContextHolder.java:41)
+	at cn.iocoder.yudao.framework.tenant.core.db.TenantDatabaseInterceptor.getTenantId(TenantDatabaseInterceptor.java:42)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.processInsert(TenantLineInnerInterceptor.java:110)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.processParser(JsqlParserSupport.java:91)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.parserMulti(JsqlParserSupport.java:71)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.beforePrepare(TenantLineInnerInterceptor.java:79)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:102)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy305.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:61)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 43 common frames omitted
+2026-10-20 10:23:00.470 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-role-menu) 参数({"roleId": 169, "menuIds": [597, 600, 601, 602, 603, 604, 606, 607, 608, 609, 610, 612, 613, 614, 615, 616, 619, 620, 621, 622, 623, 625, 626, 628, 629, 631, 632, 633, 634, 635, 638, 639, 640, 641, 642, 643, 645, 646, 647, 648, 649, 650, 653, 654, 655, 656, 657, 659, 660, 661, 662, 663, 664, 666, 667, 668, 669, 670, 671, 673, 674, 675, 676, 677, 678, 681, 682, 683, 684, 685, 687, 688, 689, 690, 691, 692, 694, 695, 696, 697, 698, 699, 701, 702, 703, 704, 705, 706, 708, 709, 710, 711, 712, 713, 715, 716, 717, 718, 719, 720, 722, 723, 724, 725, 726, 727, 729, 730, 731, 732, 733, 734, 736, 50000, 50001, 50002, 50003, 50004, 50005, 50006, 50007, 50008, 50009, 50010, 50011, 50012, 50013, 50014, 50015, 50016, 50017, 50018, 50019, 50020, 50021, 50022, 50023, 50024, 50025, 50026]})]
+2026-10-20 10:23:01.375 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-role-menu) 耗时(903 ms)]
+2026-10-20 10:23:01.420 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/create) 参数({"username": "M5b646c3ceOwner", "nickname": "M5b646c3ceOwner", "password": "admin123"})]
+2026-10-20 10:23:01.988 [ful-expiry-1] [1;31mERROR[0;39m [36mo.s.a.i.SimpleAsyncUncaughtExceptionHandler:39[0;39m - Unexpected exception occurred invoking async method: public default void cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO)
+org.mybatis.spring.MyBatisSystemException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:101)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:81)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:156)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy195.insert(Unknown Source)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl.createOperateLog(OperateLogServiceImpl.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl$$SpringCGLIB$$0.createOperateLog(<generated>)
+	at cn.iocoder.yudao.module.system.api.logger.OperateLogApiImpl.createOperateLog(OperateLogApiImpl.java:29)
+	at cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(OperateLogCommonApi.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at org.springframework.scheduling.concurrent.DelegatingErrorHandlingCallable.call(DelegatingErrorHandlingCallable.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder.getRequiredTenantId(TenantContextHolder.java:41)
+	at cn.iocoder.yudao.framework.tenant.core.db.TenantDatabaseInterceptor.getTenantId(TenantDatabaseInterceptor.java:42)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.processInsert(TenantLineInnerInterceptor.java:110)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.processParser(JsqlParserSupport.java:91)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.parserMulti(JsqlParserSupport.java:71)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.beforePrepare(TenantLineInnerInterceptor.java:79)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:102)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy305.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:61)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 43 common frames omitted
+2026-10-20 10:23:01.997 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/create) 耗时(576 ms)]
+2026-10-20 10:23:02.029 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-user-role) 参数({"userId": 249, "roleIds": [169]})]
+2026-10-20 10:23:02.449 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-user-role) 耗时(420 ms)]
+2026-10-20 10:23:02.480 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M5b646c3ceOwner", "password": "admin123"})]
+2026-10-20 10:23:02.646 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(166 ms)]
+2026-10-20 10:23:02.700 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/create) 参数({"username": "M5b646c3ceOther", "nickname": "M5b646c3ceOther", "password": "admin123"})]
+2026-10-20 10:23:03.109 [ful-expiry-1] [1;31mERROR[0;39m [36mo.s.a.i.SimpleAsyncUncaughtExceptionHandler:39[0;39m - Unexpected exception occurred invoking async method: public default void cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO)
+org.mybatis.spring.MyBatisSystemException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:101)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:81)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:156)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy195.insert(Unknown Source)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl.createOperateLog(OperateLogServiceImpl.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl$$SpringCGLIB$$0.createOperateLog(<generated>)
+	at cn.iocoder.yudao.module.system.api.logger.OperateLogApiImpl.createOperateLog(OperateLogApiImpl.java:29)
+	at cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(OperateLogCommonApi.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at org.springframework.scheduling.concurrent.DelegatingErrorHandlingCallable.call(DelegatingErrorHandlingCallable.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder.getRequiredTenantId(TenantContextHolder.java:41)
+	at cn.iocoder.yudao.framework.tenant.core.db.TenantDatabaseInterceptor.getTenantId(TenantDatabaseInterceptor.java:42)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.processInsert(TenantLineInnerInterceptor.java:110)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.processParser(JsqlParserSupport.java:91)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.parserMulti(JsqlParserSupport.java:71)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.beforePrepare(TenantLineInnerInterceptor.java:79)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:102)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy305.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:61)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 43 common frames omitted
+2026-10-20 10:23:03.119 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/create) 耗时(419 ms)]
+2026-10-20 10:23:03.169 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-user-role) 参数({"userId": 250, "roleIds": [169]})]
+2026-10-20 10:23:03.479 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-user-role) 耗时(310 ms)]
+2026-10-20 10:23:03.483 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M5b646c3ceOther", "password": "admin123"})]
+2026-10-20 10:23:03.629 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(145 ms)]
+2026-10-20 10:23:03.682 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/create) 参数({"username": "M5b646c3ceNone", "nickname": "M5b646c3ceNone", "password": "admin123"})]
+2026-10-20 10:23:04.067 [ful-expiry-1] [1;31mERROR[0;39m [36mo.s.a.i.SimpleAsyncUncaughtExceptionHandler:39[0;39m - Unexpected exception occurred invoking async method: public default void cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO)
+org.mybatis.spring.MyBatisSystemException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:101)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:81)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:156)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy195.insert(Unknown Source)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl.createOperateLog(OperateLogServiceImpl.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.system.service.logger.OperateLogServiceImpl$$SpringCGLIB$$0.createOperateLog(<generated>)
+	at cn.iocoder.yudao.module.system.api.logger.OperateLogApiImpl.createOperateLog(OperateLogApiImpl.java:29)
+	at cn.iocoder.yudao.framework.common.biz.system.logger.OperateLogCommonApi.createOperateLogAsync(OperateLogCommonApi.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at org.springframework.scheduling.concurrent.DelegatingErrorHandlingCallable.call(DelegatingErrorHandlingCallable.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/logger/OperateLogMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper.insert
+### The error occurred while executing an update
+### Cause: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 38 common frames omitted
+Caused by: java.lang.NullPointerException: TenantContextHolder 不存在租户编号！可参考文档：https://doc.iocoder.cn
+	at cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder.getRequiredTenantId(TenantContextHolder.java:41)
+	at cn.iocoder.yudao.framework.tenant.core.db.TenantDatabaseInterceptor.getTenantId(TenantDatabaseInterceptor.java:42)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.processInsert(TenantLineInnerInterceptor.java:110)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.processParser(JsqlParserSupport.java:91)
+	at com.baomidou.mybatisplus.extension.parser.JsqlParserSupport.parserMulti(JsqlParserSupport.java:71)
+	at com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor.beforePrepare(TenantLineInnerInterceptor.java:79)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:102)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy305.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:61)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy304.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 43 common frames omitted
+2026-10-20 10:23:04.076 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/create) 耗时(393 ms)]
+2026-10-20 10:23:04.103 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M5b646c3ceNone", "password": "admin123"})]
+2026-10-20 10:23:04.219 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(116 ms)]
+2026-10-20 10:23:04.259 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product/create) 参数({"name": "M4Rf803d0c8All\u5f52\u5c5e", "barCode": "M4Rf803d0c8All\u5f52\u5c5e", "categoryId": 1, "unitId": 1, "status": 0, "salePrice": "2.345678", "purchasePrice": "0"})]
+2026-10-20 10:23:04.670 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product/create) 耗时(410 ms)]
+2026-10-20 10:23:04.724 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 1, "inTime": "2026-10-20T10:12:21", "items": [{"productId": 5, "warehouseId": 1, "count": "20", "productPrice": "0"}]})]
+2026-10-20 10:23:05.145 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(420 ms)]
+2026-10-20 10:23:05.187 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=5, status=20})]
+2026-10-20 10:23:05.537 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(348 ms)]
+2026-10-20 10:23:05.578 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 1, "accountId": 1, "orderTime": "2026-10-20T10:12:21", "discountPercent": "5", "items": [{"productId": 5, "count": "1", "productPrice": "2.345678", "taxPercent": "13"}]})]
+2026-10-20 10:23:05.955 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(376 ms)]
+2026-10-20 10:23:06.001 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=7, status=20})]
+2026-10-20 10:23:06.360 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(358 ms)]
+2026-10-20 10:23:06.405 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "7"})]
+2026-10-20 10:23:06.981 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(576 ms)]
+2026-10-20 10:23:07.030 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "7", "warehouseIds": ["1"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:23:07.657 [http-nio-127.0.0.1-48082-exec-7] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:23:07.659 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(627 ms)]

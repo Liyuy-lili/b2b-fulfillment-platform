@@ -1,0 +1,53 @@
+{
+  "run_at": "2026-10-18T16:25:28.915182+00:00",
+  "checks": [
+    {
+      "name": "SHIP replays original result after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CANCEL replays original result after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "callback replay after restart returns saved delivery",
+      "passed": true,
+      "detail": {
+        "code": 0,
+        "msg": "",
+        "data": {
+          "eventId": "delivery-M31fb6441c",
+          "outcome": "DELIVERED"
+        }
+      }
+    },
+    {
+      "name": "replaying commands and callback changes no stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all tenants stock agrees with reservations and both ledgers",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all order aggregates agree with commitment shipment and cancellation facts",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all consumed quantities agree with shipment facts",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all shipments link an approved same-tenant ERP out",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "result": "passed"
+}

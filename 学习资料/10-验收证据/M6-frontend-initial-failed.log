@@ -1,0 +1,43 @@
+
+> yudao-ui-admin-vue3@2026.08-snapshot build:fulfillment C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend
+> node --max_old_space_size=8192 node_modules/vite/bin/vite.js build --mode fulfillment
+
+vite v8.1.4 building client environment for fulfillment...
+[2K
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+transforming...✓ 3663 modules transformed.
+✗ Build failed in 6.35s
+error during build:
+Build failed with 1 error:
+
+[plugin vite:vue] C:/Users/Lenovo/OneDrive/文档/ChatGPT/java后端项目/frontend/src/views/erp/fulfillment-warehouse/index.vue:171:23
+RolldownError: Error parsing JavaScript expression: Unexpected token, expected "," (3:16)
+SyntaxError: Error parsing JavaScript expression: Unexpected token, expected "," (3:16)
+    at createCompilerError (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:1374:17)
+    at emitError (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:2980:5)
+    at createExp (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:2973:7)
+    at Object.onattribend (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:2528:29)
+    at Tokenizer.handleInAttrValue (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:959:16)
+    at Tokenizer.stateInAttrValueDoubleQuotes (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:969:10)
+    at Tokenizer.parse (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:1113:16)
+    at Object.baseParse (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-core@3.5.34\node_modules\@vue\compiler-core\dist\compiler-core.cjs.prod.js:3012:13)
+    at Object.parse (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-dom@3.5.34\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.prod.js:665:23)
+    at Object.parse$1 [as parse] (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\frontend\node_modules\.pnpm\@vue+compiler-sfc@3.5.34\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+    at createDescriptor (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/@vitejs+plugin-vue@6.0.6_vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0__sg2c2qr7e3zvnmuvffxjczpbta/node_modules/@vitejs/plugin-vue/dist/index.mjs:50:42)
+    at transformMain (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/@vitejs+plugin-vue@6.0.6_vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0__sg2c2qr7e3zvnmuvffxjczpbta/node_modules/@vitejs/plugin-vue/dist/index.mjs:1303:33)
+    at TransformPluginContextImpl.handler (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/@vitejs+plugin-vue@6.0.6_vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0__sg2c2qr7e3zvnmuvffxjczpbta/node_modules/@vitejs/plugin-vue/dist/index.mjs:1714:27)
+    at TransformPluginContextImpl.handler (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0_terser@5.46.2_yaml@2.8.4/node_modules/vite/dist/node/chunks/node.js:33254:13)
+    at plugin (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/rolldown@1.1.5/node_modules/rolldown/dist/shared/bindingify-input-options-XPJLJOD0.mjs:1511:30)
+    at plugin.<computed> (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/rolldown@1.1.5/node_modules/rolldown/dist/shared/bindingify-input-options-XPJLJOD0.mjs:1959:18)
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/rolldown@1.1.5/node_modules/rolldown/dist/shared/error-BHRSI0R7.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/rolldown@1.1.5/node_modules/rolldown/dist/shared/error-BHRSI0R7.mjs:18:128)
+    at #build (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/rolldown@1.1.5/node_modules/rolldown/dist/shared/rolldown-build-CtPvmZgJ.mjs:3276:34)
+    at async buildEnvironment (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0_terser@5.46.2_yaml@2.8.4/node_modules/vite/dist/node/chunks/node.js:33011:66)
+    at async Object.build (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0_terser@5.46.2_yaml@2.8.4/node_modules/vite/dist/node/chunks/node.js:33433:19)
+    at async Object.buildApp (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0_terser@5.46.2_yaml@2.8.4/node_modules/vite/dist/node/chunks/node.js:33430:153)
+    at async CAC.<anonymous> (file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/java%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE/frontend/node_modules/.pnpm/vite@8.1.4_@types+node@25.6.0_esbuild@0.27.3_jiti@2.6.1_sass@1.99.0_terser@5.46.2_yaml@2.8.4/node_modules/vite/dist/node/cli.js:776:3) {
+  errors: [Getter/Setter]
+}
+ ELIFECYCLE  Command failed with exit code 1.

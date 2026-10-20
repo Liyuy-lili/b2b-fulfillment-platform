@@ -1,0 +1,122 @@
+{
+  "database": "fulfillment_m7_query_20261020_093518",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "run_at": "2026-10-20T01:44:05.585988+00:00",
+  "checks": [
+    {
+      "name": "valid same-tenant references ful_order.customer_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references ful_order.account_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references ful_order.owner_user_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references ful_order_item.product_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references ful_order_item.unit_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references erp_sale_order.customer_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid same-tenant references erp_sale_order_items.product_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all order items belong to same tenant order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quantity identity on every synthetic order item",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four actual warehouse stock rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current migrations V0-V8",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "origin": "SQL synthetic orders; actual tenant-specific masters and two warehouse inbounds per tenant via HTTP. Fixture preparation is outside timed windows.",
+  "migration": {
+    "script": "scripts/Migrate-Database.ps1",
+    "args": [
+      "-Action",
+      "migrate",
+      "-Database",
+      "fulfillment_m7_query_20261020_093518"
+    ],
+    "exit_code": 0,
+    "log": ".local\\m7-query-v8-1792460645586038800.log"
+  },
+  "tenants": {
+    "1": {
+      "user": 1,
+      "customer": 1,
+      "account": 1,
+      "product": 1,
+      "unit": 1,
+      "warehouses": [
+        1,
+        2
+      ]
+    },
+    "162": {
+      "user": 249,
+      "customer": 2,
+      "account": 2,
+      "product": 2,
+      "unit": 2,
+      "warehouses": [
+        3,
+        4
+      ]
+    }
+  },
+  "counts": [
+    [
+      1,
+      "NEW",
+      45001
+    ],
+    [
+      1,
+      "WAIT_STOCK",
+      5000
+    ],
+    [
+      162,
+      "NEW",
+      45000
+    ],
+    [
+      162,
+      "WAIT_STOCK",
+      5000
+    ]
+  ],
+  "result": "passed",
+  "owned_stopped": true
+}

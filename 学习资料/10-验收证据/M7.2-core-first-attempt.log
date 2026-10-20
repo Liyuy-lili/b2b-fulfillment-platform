@@ -1,0 +1,17 @@
+M7 regression core failed
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 104, in <module>
+    if CASE=='core':core()
+                    ~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 60, in core
+    three.callback=route_callback;three.main();record(three,'core-m3')
+                                  ~~~~~~~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m3_acceptance.py", line 157, in main
+    check('automatically expired held cannot ship',admin.ship(expiry,wa,[(expired['id'],'1')],ok=False)['code']==1080000012)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 42, in check
+    return original(name,ok,detail)
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m3_acceptance.py", line 18, in check
+    if not ok:raise AssertionError(name+': '+str(detail))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: automatically expired held cannot ship: None

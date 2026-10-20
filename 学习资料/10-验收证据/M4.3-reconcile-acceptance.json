@@ -1,0 +1,1203 @@
+{
+  "run_at": "2026-10-19T09:56:18.615159+00:00",
+  "database": "fulfillment_m4_reconcile_20261019_175618",
+  "checks": [
+    {
+      "name": "test port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup ('-Database', 'fulfillment_m4_reconcile_20261019_175618')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup ('-Action', 'baseline', '-Database', 'fulfillment_m4_reconcile_20261019_175618')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup ('-Action', 'migrate', '-Database', 'fulfillment_m4_reconcile_20261019_175618')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup ('-Action', 'validate', '-Database', 'fulfillment_m4_reconcile_20261019_175618')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "healthy completed shipment return cancel snapshot is clean",
+      "passed": true,
+      "detail": {
+        "id": "1",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-19T09:57:13.966871Z",
+        "finishedAt": "2026-10-19T09:57:14.006660Z",
+        "scannedCount": 23,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 1,
+          "erp_stock_record": 3,
+          "ful_order": 1,
+          "ful_order_item": 1,
+          "ful_reservation": 1,
+          "ful_stock_ledger": 3,
+          "ful_shipment": 1,
+          "ful_shipment_item": 1,
+          "ful_cancellation": 1,
+          "ful_return": 2,
+          "ful_return_item": 2,
+          "erp_sale_order": 1,
+          "erp_sale_order_items": 1,
+          "erp_sale_out": 1,
+          "erp_sale_out_items": 1,
+          "erp_sale_return": 1,
+          "erp_sale_return_items": 1
+        }
+      }
+    },
+    {
+      "name": "17 table counts match actual tenant rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scan does not modify any business row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run replay is byte-equivalent semantic response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single persisted run per key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "get reproduces persisted report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected STOCK_H_LEDGER",
+      "passed": true,
+      "detail": [
+        {
+          "id": "1",
+          "runId": "2",
+          "ruleCode": "STOCK_H_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "16.000000",
+          "actualValue": "17.000001",
+          "detail": "H应等于ERP全部正负实物流水之和，含撤销流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair STOCK_H_LEDGER",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected STOCK_R_HELD",
+      "passed": true,
+      "detail": [
+        {
+          "id": "2",
+          "runId": "3",
+          "ruleCode": "STOCK_R_HELD",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "1.000000",
+          "detail": "R应等于本商品本仓所有held之和",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "3",
+          "runId": "3",
+          "ruleCode": "STOCK_R_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "1.000000",
+          "detail": "预占流水仅核对R，不叠加ERP的H流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair STOCK_R_HELD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected RESERVATION_LEDGER",
+      "passed": true,
+      "detail": [
+        {
+          "id": "4",
+          "runId": "4",
+          "ruleCode": "STOCK_R_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000001",
+          "actualValue": "0.000000",
+          "detail": "预占流水仅核对R，不叠加ERP的H流水",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "5",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "10.000002",
+          "actualValue": "10.000001",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "6",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "2",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "4.000001",
+          "actualValue": "4.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "7",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "3",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000001",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "8",
+          "runId": "4",
+          "ruleCode": "RESERVATION_LEDGER",
+          "objectType": "ful_reservation",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "0.000001",
+          "detail": "该预占的全部增减流水应归结为held",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair RESERVATION_LEDGER",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected STOCK_R_RUNNING",
+      "passed": true,
+      "detail": [
+        {
+          "id": "9",
+          "runId": "5",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "10.000001",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair STOCK_R_RUNNING",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected ORDER_RETURNED",
+      "passed": true,
+      "detail": [
+        {
+          "id": "10",
+          "runId": "6",
+          "ruleCode": "ORDER_RETURNED",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "2.000001",
+          "actualValue": "0.000000",
+          "detail": "退货汇总仅计算RECEIVED",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "11",
+          "runId": "6",
+          "ruleCode": "SOURCE_RETURN_COUNT",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "0.000000",
+          "actualValue": "2.000001",
+          "detail": "托管源项returnCount=已收退货",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "12",
+          "runId": "6",
+          "ruleCode": "SOURCE_HEADER_RETURN",
+          "objectType": "ful_order",
+          "objectId": "1",
+          "orderId": null,
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "0.000000",
+          "actualValue": "2.000001",
+          "detail": "核对基座源单returnCount投影",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair ORDER_RETURNED",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected SOURCE_OUT_COUNT",
+      "passed": true,
+      "detail": [
+        {
+          "id": "13",
+          "runId": "7",
+          "ruleCode": "SOURCE_OUT_COUNT",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "6.000001",
+          "actualValue": "7.000001",
+          "detail": "托管源项outCount=履约gross shipped",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair SOURCE_OUT_COUNT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected SHIPMENT_ERP_ITEM",
+      "passed": true,
+      "detail": [
+        {
+          "id": "14",
+          "runId": "8",
+          "ruleCode": "SHIPMENT_ERP_ITEM",
+          "objectType": "ful_shipment_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "valid",
+          "actualValue": "missing/deleted/mismatched",
+          "detail": "ERP出库项的源项、商品、单位、原仓与数量应匹配",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair SHIPMENT_ERP_ITEM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected RETURN_PHYSICAL",
+      "passed": true,
+      "detail": [
+        {
+          "id": "15",
+          "runId": "9",
+          "ruleCode": "RETURN_PHYSICAL",
+          "objectType": "ful_return_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "valid",
+          "actualValue": "missing/deleted/mismatched",
+          "detail": "ERP唯一产生退货实物增加，必须映射同数量正流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair RETURN_PHYSICAL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detect injected STOCK_H_RUNNING",
+      "passed": true,
+      "detail": [
+        {
+          "id": "16",
+          "runId": "10",
+          "ruleCode": "STOCK_H_RUNNING",
+          "objectType": "erp_stock_record",
+          "objectId": "3",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "16.000000",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "name": "report does not repair STOCK_H_RUNNING",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing stock row found from ledger and reservation union",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing row is not recreated by audit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all probes restored exact business rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review same key creates one trail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review key different note conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "acknowledged filter retains original evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review is not inventory repair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new scan clean while old report stays dirty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "history pagination bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "item pagination bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid filter rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run requires idempotency key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "blank note rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "anonymous query denied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no function permission cannot scan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no function permission cannot query",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized audit scope ignores injected actor tenant filters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other audit actor cannot get known report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other audit actor cannot list known findings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other actor cannot review known difference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "audit page only own reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "revoked run permission blocks successful replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run also requires query permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restored permission returns original result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant sees empty tenant snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant cannot get known report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant cannot review known difference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six same-key two JVM scans persist one report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after-report fault returns failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report findings and command all rolled back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fault did not change business facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "healthy same-key retry creates complete report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "row overflow returns explicit limit error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "overflow creates no partial clean report or command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key can recover after server bound restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "snapshot barrier owned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "busy admission rejects before claiming a command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "writer committed while audit paused without business lock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RR snapshot does not mix old inventory with new shipment return",
+      "passed": true,
+      "detail": {
+        "id": "19",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-19T09:59:44.604559Z",
+        "finishedAt": "2026-10-19T09:59:57.667783Z",
+        "scannedCount": 23,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 1,
+          "erp_stock_record": 3,
+          "ful_order": 1,
+          "ful_order_item": 1,
+          "ful_reservation": 1,
+          "ful_stock_ledger": 3,
+          "ful_shipment": 1,
+          "ful_shipment_item": 1,
+          "ful_cancellation": 1,
+          "ful_return": 2,
+          "ful_return_item": 2,
+          "erp_sale_order": 1,
+          "erp_sale_order_items": 1,
+          "erp_sale_out": 1,
+          "erp_sale_out_items": 1,
+          "erp_sale_return": 1,
+          "erp_sale_return_items": 1
+        }
+      }
+    },
+    {
+      "name": "new run sees committed rows absent from prior snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run key persists after JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review key persists after JVM restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current clean report after concurrency restart",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "processes": [
+    {
+      "label": "a",
+      "pid": 6312,
+      "port": 48082,
+      "options": []
+    },
+    {
+      "label": "b",
+      "pid": 7128,
+      "port": 48083,
+      "options": []
+    },
+    {
+      "label": "fault",
+      "pid": 26780,
+      "port": 48083,
+      "options": [
+        "--fulfillment.test.reconcile-fail=true"
+      ]
+    },
+    {
+      "label": "limit",
+      "pid": 28504,
+      "port": 48083,
+      "options": [
+        "--fulfillment.reconcile.row-limit=1"
+      ]
+    },
+    {
+      "label": "snapshot",
+      "pid": 33656,
+      "port": 48083,
+      "options": [
+        "--fulfillment.test.reconcile-barrier=true"
+      ]
+    },
+    {
+      "label": "restart",
+      "pid": 36008,
+      "port": 48082,
+      "options": []
+    }
+  ],
+  "injections": [
+    {
+      "table": "erp_stock",
+      "id": 1,
+      "column": "`count`",
+      "before": "16.000000",
+      "injected": "17.000001",
+      "rule": "STOCK_H_LEDGER",
+      "report": "2",
+      "findings": [
+        {
+          "id": "1",
+          "runId": "2",
+          "ruleCode": "STOCK_H_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "16.000000",
+          "actualValue": "17.000001",
+          "detail": "H应等于ERP全部正负实物流水之和，含撤销流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_stock",
+      "id": 1,
+      "column": "ful_reserved_count",
+      "before": "0.000000",
+      "injected": "1",
+      "rule": "STOCK_R_HELD",
+      "report": "3",
+      "findings": [
+        {
+          "id": "2",
+          "runId": "3",
+          "ruleCode": "STOCK_R_HELD",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "1.000000",
+          "detail": "R应等于本商品本仓所有held之和",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "3",
+          "runId": "3",
+          "ruleCode": "STOCK_R_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "1.000000",
+          "detail": "预占流水仅核对R，不叠加ERP的H流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "ful_stock_ledger",
+      "id": 1,
+      "column": "held_delta",
+      "before": "10.000001",
+      "injected": "10.000002",
+      "rule": "RESERVATION_LEDGER",
+      "report": "4",
+      "findings": [
+        {
+          "id": "4",
+          "runId": "4",
+          "ruleCode": "STOCK_R_LEDGER",
+          "objectType": "erp_stock",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000001",
+          "actualValue": "0.000000",
+          "detail": "预占流水仅核对R，不叠加ERP的H流水",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "5",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "10.000002",
+          "actualValue": "10.000001",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "6",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "2",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "4.000001",
+          "actualValue": "4.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "7",
+          "runId": "4",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "3",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000001",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "8",
+          "runId": "4",
+          "ruleCode": "RESERVATION_LEDGER",
+          "objectType": "ful_reservation",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "0.000000",
+          "actualValue": "0.000001",
+          "detail": "该预占的全部增减流水应归结为held",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "ful_stock_ledger",
+      "id": 1,
+      "column": "reserved_after",
+      "before": "10.000001",
+      "injected": "0",
+      "rule": "STOCK_R_RUNNING",
+      "report": "5",
+      "findings": [
+        {
+          "id": "9",
+          "runId": "5",
+          "ruleCode": "STOCK_R_RUNNING",
+          "objectType": "ful_stock_ledger",
+          "objectId": "1",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "10.000001",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "ful_order_item",
+      "id": 1,
+      "column": "returned_qty",
+      "before": "2.000001",
+      "injected": "0",
+      "rule": "ORDER_RETURNED",
+      "report": "6",
+      "findings": [
+        {
+          "id": "10",
+          "runId": "6",
+          "ruleCode": "ORDER_RETURNED",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "2.000001",
+          "actualValue": "0.000000",
+          "detail": "退货汇总仅计算RECEIVED",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "11",
+          "runId": "6",
+          "ruleCode": "SOURCE_RETURN_COUNT",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "0.000000",
+          "actualValue": "2.000001",
+          "detail": "托管源项returnCount=已收退货",
+          "resolutionStatus": "OPEN"
+        },
+        {
+          "id": "12",
+          "runId": "6",
+          "ruleCode": "SOURCE_HEADER_RETURN",
+          "objectType": "ful_order",
+          "objectId": "1",
+          "orderId": null,
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "0.000000",
+          "actualValue": "2.000001",
+          "detail": "核对基座源单returnCount投影",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_sale_order_items",
+      "id": 1,
+      "column": "out_count",
+      "before": "6.000001",
+      "injected": "7.000001",
+      "rule": "SOURCE_OUT_COUNT",
+      "report": "7",
+      "findings": [
+        {
+          "id": "13",
+          "runId": "7",
+          "ruleCode": "SOURCE_OUT_COUNT",
+          "objectType": "ful_order_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": "1",
+          "warehouseId": null,
+          "expectedValue": "6.000001",
+          "actualValue": "7.000001",
+          "detail": "托管源项outCount=履约gross shipped",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_sale_out_items",
+      "id": 1,
+      "column": "`count`",
+      "before": "6.000001",
+      "injected": "6.000002",
+      "rule": "SHIPMENT_ERP_ITEM",
+      "report": "8",
+      "findings": [
+        {
+          "id": "14",
+          "runId": "8",
+          "ruleCode": "SHIPMENT_ERP_ITEM",
+          "objectType": "ful_shipment_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "valid",
+          "actualValue": "missing/deleted/mismatched",
+          "detail": "ERP出库项的源项、商品、单位、原仓与数量应匹配",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_stock_record",
+      "id": 3,
+      "column": "biz_item_id",
+      "before": "1",
+      "injected": "999999",
+      "rule": "RETURN_PHYSICAL",
+      "report": "9",
+      "findings": [
+        {
+          "id": "15",
+          "runId": "9",
+          "ruleCode": "RETURN_PHYSICAL",
+          "objectType": "ful_return_item",
+          "objectId": "1",
+          "orderId": "1",
+          "productId": null,
+          "warehouseId": null,
+          "expectedValue": "valid",
+          "actualValue": "missing/deleted/mismatched",
+          "detail": "ERP唯一产生退货实物增加，必须映射同数量正流水",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_stock_record",
+      "id": 3,
+      "column": "total_count",
+      "before": "16.000000",
+      "injected": "0",
+      "rule": "STOCK_H_RUNNING",
+      "report": "10",
+      "findings": [
+        {
+          "id": "16",
+          "runId": "10",
+          "ruleCode": "STOCK_H_RUNNING",
+          "objectType": "erp_stock_record",
+          "objectId": "3",
+          "orderId": null,
+          "productId": "1",
+          "warehouseId": "1",
+          "expectedValue": "16.000000",
+          "actualValue": "0.000000",
+          "detail": "按同商品同仓流水ID顺序重新计算逐笔余额",
+          "resolutionStatus": "OPEN"
+        }
+      ]
+    },
+    {
+      "table": "erp_stock",
+      "id": 1,
+      "operation": "DELETE",
+      "rule": "STOCK_MISSING",
+      "report": "11"
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m4_reconcile_20261019_175618"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-reconcile-setup-0.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m4_reconcile_20261019_175618"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-reconcile-setup-1.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m4_reconcile_20261019_175618"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-reconcile-setup-2.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m4_reconcile_20261019_175618"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-reconcile-setup-3.log"
+    }
+  ],
+  "fixture": {
+    "product": 1,
+    "source": 1,
+    "order": "1",
+    "shipment": "1",
+    "lines": [
+      {
+        "id": "1",
+        "orderItemId": "1",
+        "reservationId": "1",
+        "quantity": "6.000001",
+        "erpSaleOutItemId": "1"
+      }
+    ],
+    "warehouse": 1
+  },
+  "clean": {
+    "id": "1",
+    "ruleVersion": "M4.3-v1",
+    "scope": "TENANT",
+    "snapshotAt": "2026-10-19T09:57:13.966871Z",
+    "finishedAt": "2026-10-19T09:57:14.006660Z",
+    "scannedCount": 23,
+    "differenceCount": 0,
+    "tableCounts": {
+      "erp_stock": 1,
+      "erp_stock_record": 3,
+      "ful_order": 1,
+      "ful_order_item": 1,
+      "ful_reservation": 1,
+      "ful_stock_ledger": 3,
+      "ful_shipment": 1,
+      "ful_shipment_item": 1,
+      "ful_cancellation": 1,
+      "ful_return": 2,
+      "ful_return_item": 2,
+      "erp_sale_order": 1,
+      "erp_sale_order_items": 1,
+      "erp_sale_out": 1,
+      "erp_sale_out_items": 1,
+      "erp_sale_return": 1,
+      "erp_sale_return_items": 1
+    }
+  },
+  "dirty_report": {
+    "id": "3",
+    "ruleVersion": "M4.3-v1",
+    "scope": "TENANT",
+    "snapshotAt": "2026-10-19T09:57:18.200217Z",
+    "finishedAt": "2026-10-19T09:57:18.208966Z",
+    "scannedCount": 23,
+    "differenceCount": 2,
+    "tableCounts": {
+      "erp_stock": 1,
+      "erp_stock_record": 3,
+      "ful_order": 1,
+      "ful_order_item": 1,
+      "ful_reservation": 1,
+      "ful_stock_ledger": 3,
+      "ful_shipment": 1,
+      "ful_shipment_item": 1,
+      "ful_cancellation": 1,
+      "ful_return": 2,
+      "ful_return_item": 2,
+      "erp_sale_order": 1,
+      "erp_sale_order_items": 1,
+      "erp_sale_out": 1,
+      "erp_sale_out_items": 1,
+      "erp_sale_return": 1,
+      "erp_sale_return_items": 1
+    }
+  },
+  "review": {
+    "id": "1",
+    "itemId": "2",
+    "actorId": "1",
+    "note": "已核实为独立测试注入，保留报告原始差异",
+    "reviewedAt": "2026-10-19T09:57:33.174711Z"
+  },
+  "concurrent_fixture": {
+    "product": 2,
+    "source": 2,
+    "order": "2",
+    "shipment": "2",
+    "lines": [
+      {
+        "id": "2",
+        "orderItemId": "2",
+        "reservationId": "2",
+        "quantity": "2.000001",
+        "erpSaleOutItemId": "2"
+      }
+    ],
+    "warehouse": 1
+  },
+  "concurrent_snapshot": {
+    "id": "19",
+    "ruleVersion": "M4.3-v1",
+    "scope": "TENANT",
+    "snapshotAt": "2026-10-19T09:59:44.604559Z",
+    "finishedAt": "2026-10-19T09:59:57.667783Z",
+    "scannedCount": 23,
+    "differenceCount": 0,
+    "tableCounts": {
+      "erp_stock": 1,
+      "erp_stock_record": 3,
+      "ful_order": 1,
+      "ful_order_item": 1,
+      "ful_reservation": 1,
+      "ful_stock_ledger": 3,
+      "ful_shipment": 1,
+      "ful_shipment_item": 1,
+      "ful_cancellation": 1,
+      "ful_return": 2,
+      "ful_return_item": 2,
+      "erp_sale_order": 1,
+      "erp_sale_order_items": 1,
+      "erp_sale_out": 1,
+      "erp_sale_out_items": 1,
+      "erp_sale_return": 1,
+      "erp_sale_return_items": 1
+    }
+  },
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

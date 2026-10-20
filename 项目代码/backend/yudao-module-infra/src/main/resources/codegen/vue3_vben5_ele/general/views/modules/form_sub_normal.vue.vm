@@ -1,0 +1,418 @@
+#set ($subTable = $subTables.get($subIndex))##当前表
+#set ($subColumns = $subColumnsList.get($subIndex))##当前字段数组
+#set ($subJoinColumn = $subJoinColumns.get($subIndex))##当前 join 字段
+#set ($subSimpleClassName = $subSimpleClassNames.get($subIndex))
+#set ($subClassNameVar = $subClassNameVars.get($subIndex))
+#set ($SubJoinColumnName = $subJoinColumn.javaField.substring(0,1).toUpperCase() + ${subJoinColumn.javaField.substring(1)})##首字母大写
+<script lang="ts" setup>
+#if ($subTable.subJoinMany)
+import type { VxeTableInstance } from '#/adapter/vxe-table';
+#else
+import type { FormRules } from 'element-plus';
+#end
+import type { ${simpleClassName}Api } from '#/api/${table.moduleName}/${table.businessName}';
+
+#if ($subTable.subJoinMany)
+import { ref, watch } from 'vue';
+#else
+import { nextTick, reactive, ref, watch } from 'vue';
+#end
+
+import { DICT_TYPE } from '@vben/constants';
+import { getDictOptions } from '@vben/hooks';
+#if ($subTable.subJoinMany)
+import { Plus } from '@vben/icons';
+#end
+
+#set ($hasCheckbox = false)
+#foreach ($column in $subColumns)
+#if (($column.createOperation || $column.updateOperation) && $column.id != $subJoinColumn.id && $column.htmlType == "checkbox")
+#set ($hasCheckbox = true)
+#end
+#end
+import {
+#if ($subTable.subJoinMany)
+  ElButton,
+#else
+  ElForm,
+  ElFormItem,
+#end
+#if ($hasCheckbox)
+  ElCheckbox,
+  ElCheckboxGroup,
+#end
+  ElDatePicker,
+  ElInput,
+#if ($subTable.subJoinMany)
+  ElMessage,
+#end
+  ElOption,
+  ElRadio,
+  ElRadioGroup,
+  ElSelect,
+} from 'element-plus';
+
+#if ($subTable.subJoinMany) ## 一对多
+import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
+import { get${subSimpleClassName}ListBy${SubJoinColumnName} } from '#/api/${table.moduleName}/${table.businessName}';
+#else
+import { Tinymce as RichTextarea } from '#/components/tinymce';
+import { get${subSimpleClassName}By${SubJoinColumnName} } from '#/api/${table.moduleName}/${table.businessName}';
+#end
+import { $t } from '#/locales';
+
+const props = defineProps<{
+   ${subJoinColumn.javaField}?: number // ${subJoinColumn.columnComment}（主表的关联字段）
+}>()
+
+#if ($subTable.subJoinMany) ## 一对多
+const list = ref<${simpleClassName}Api.${subSimpleClassName}[]>([]) // 列表的数据
+const tableRef = ref<VxeTableInstance>();
+/** 添加${subTable.classComment} */
+async function handleAdd() {
+  await tableRef.value?.insertAt({} as ${simpleClassName}Api.${subSimpleClassName}, -1);
+}
+
+/** 删除${subTable.classComment} */
+async function onDelete(row: ${simpleClassName}Api.${subSimpleClassName}) {
+  await tableRef.value?.remove(row);
+}
+
+/** 获取当前子表数据，新增行不提交表格生成的临时编号 */
+function getData(): ${simpleClassName}Api.${subSimpleClassName}[] {
+  const table = tableRef.value;
+  if (!table) {
+    return [];
+  }
+  const { fullData } = table.getTableData();
+  const inserted = new Set(table.getInsertRecords());
+  return fullData.map((row) =>
+    inserted.has(row) ? { ...row, id: undefined } : { ...row },
+  );
+}
+
+#set ($hasRequiredColumn = false)
+#foreach ($column in $subColumns)
+#if (($column.createOperation || $column.updateOperation) && !$column.nullable && !$column.primaryKey && $column.id != $subJoinColumn.id)
+#set ($hasRequiredColumn = true)
+#end
+#end
+/** 校验子表必填字段 */
+function validate(): boolean {
+#if ($hasRequiredColumn)
+  for (const [index, row] of getData().entries()) {
+#foreach ($column in $subColumns)
+#if (($column.createOperation || $column.updateOperation) && !$column.nullable && !$column.primaryKey && $column.id != $subJoinColumn.id)
+    if (
+      row.${column.javaField} === null ||
+      row.${column.javaField} === undefined ||
+      (typeof row.${column.javaField} === 'string' && String(row.${column.javaField}).trim() === '') ||
+      (Array.isArray(row.${column.javaField}) && row.${column.javaField}.length === 0)
+    ) {
+      ElMessage.error(`第 #[[${index + 1}]]# 行：${column.columnComment}不能为空`);
+      return false;
+    }
+#end
+#end
+  }
+#end
+  return true;
+}
+
+defineExpose({ getData, validate });
+
+/** 监听主表的关联字段的变化，加载对应的子表数据 */
+watch(
+    () => props.${subJoinColumn.javaField},
+    async (val) => {
+      list.value = [];
+      if (!val) {
+        return;
+      }
+      list.value = await get${subSimpleClassName}ListBy${SubJoinColumnName}(props.${subJoinColumn.javaField}!);
+    },
+    { immediate: true },
+);
+#else
+const formRef = ref();
+const formData = ref<Partial<${simpleClassName}Api.${subSimpleClassName}>>({
+    #foreach ($column in $subColumns)
+        #if ($column.createOperation || $column.updateOperation)
+            #if ($column.htmlType == "checkbox")
+                    $column.javaField: [],
+            #else
+                    $column.javaField: undefined,
+            #end
+        #end
+    #end
+});
+const rules = reactive<FormRules>({
+    #foreach ($column in $subColumns)
+        #if (($column.createOperation || $column.updateOperation) && !$column.nullable && !${column.primaryKey})## 创建或者更新操作 && 要求非空 && 非主键
+            #set($comment=$column.columnComment)
+                $column.javaField: [{ required: true, message: '${comment}不能为空', trigger: #if($column.htmlType == 'select')'change'#else'blur'#end }],
+        #end
+    #end
+});
+/** 暴露出表单校验方法和表单值获取方法 */
+defineExpose({
+  validate: async () => await formRef.value?.validate(),
+  getValues: ()=> formData.value,
+});
+
+/** 监听主表的关联字段的变化，加载对应的子表数据 */
+watch(
+    () => props.${subJoinColumn.javaField},
+    async (val) => {
+      formData.value = {
+#foreach ($column in $subColumns)
+#if ($column.createOperation || $column.updateOperation)
+#if ($column.htmlType == "checkbox")
+        $column.javaField: [],
+#else
+        $column.javaField: undefined,
+#end
+#end
+#end
+      };
+      if (!val) {
+        return;
+      }
+      await nextTick();
+      formData.value = await get${subSimpleClassName}By${SubJoinColumnName}(props.${subJoinColumn.javaField}!);
+    },
+    { immediate: true },
+);
+#end
+</script>
+
+<template>
+#if ($subTable.subJoinMany) ## 一对多
+  <VxeTable ref="tableRef" :data="list" show-overflow class="mx-4">
+      #foreach($column in $subColumns)
+          #if ($column.createOperation || $column.updateOperation)
+              #set ($comment = $column.columnComment)
+              #set ($dictType = $column.dictType)
+              #set ($javaField = $column.javaField)
+              #set ($javaType = $column.javaType)
+              #if ($javaType == "Integer" || $javaType == "Long" || $javaType == "Byte" || $javaType == "Short")
+                  #set ($dictMethod = "number")
+              #elseif ($javaType == "String")
+                  #set ($dictMethod = "string")
+              #elseif ($javaType == "Boolean")
+                  #set ($dictMethod = "boolean")
+              #end
+              #if ( $column.id == $subJoinColumn.id) ## 特殊：忽略主子表的 join 字段，不用填写
+              #elseif ($column.htmlType == "input" && !$column.primaryKey)## 忽略主键，不用在表单里
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElInput v-model="row.${javaField}" />
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "imageUpload")## 图片上传
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ImageUpload v-model="row.${javaField}" />
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "fileUpload")## 文件上传
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <FileUpload v-model="row.${javaField}" />
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "select")## 下拉框
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElSelect v-model="row.${javaField}" placeholder="请选择${comment}">
+                        #if ("" != $dictType)## 有数据字典
+                          <ElOption
+                              v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                              :key="dict.value"
+                              :value="dict.value"
+                              :label="dict.label"
+                          />
+                        #else##没数据字典
+                          <ElOption label="请选择字典生成" value="" />
+                        #end
+                    </ElSelect>
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "checkbox")## 多选框
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElCheckboxGroup v-model="row.${javaField}">
+                        #if ("" != $dictType)## 有数据字典
+                          <ElCheckbox
+                              v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                              :key="dict.value"
+                              :value="dict.value"
+                          >
+                            {{ dict.label }}
+                          </ElCheckbox>
+                        #else##没数据字典
+                          <ElCheckbox label="请选择字典生成" />
+                        #end
+                    </ElCheckboxGroup>
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "radio")## 单选框
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElRadioGroup v-model="row.${javaField}">
+                        #if ("" != $dictType)## 有数据字典
+                          <ElRadio
+                              v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                              :key="dict.value"
+                              :value="dict.value"
+                          >
+                            {{ dict.label }}
+                          </ElRadio>
+                        #else##没数据字典
+                          <ElRadio :label="1">请选择字典生成</ElRadio>
+                        #end
+                    </ElRadioGroup>
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "datetime")## 时间框
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElDatePicker
+                        v-model="row.${javaField}"
+                        type="datetime"
+                        value-format="x"
+                        format="YYYY-MM-DD HH:mm:ss"
+                    />
+                  </template>
+                </VxeColumn>
+              #elseif($column.htmlType == "textarea" || $column.htmlType == "editor")## 文本框
+                <VxeColumn field="${javaField}" title="${comment}" align="center">
+                  <template #default="{row}">
+                    <ElInput v-model="row.${javaField}" type="textarea" />
+                  </template>
+                </VxeColumn>
+              #end
+          #end
+      #end
+    <VxeColumn field="operation" title="操作" align="center">
+      <template #default="{row}">
+        <ElButton
+            size="small"
+            type="danger"
+            link
+            @click="onDelete(row as any)"
+            v-access:code="['${permissionPrefix}:delete']"
+        >
+          {{ $t('ui.actionTitle.delete') }}
+        </ElButton>
+      </template>
+    </VxeColumn>
+  </VxeTable>
+  <div class="flex justify-center mt-4">
+    <ElButton :icon="Plus" type="primary" plain @click="handleAdd" v-access:code="['${permissionPrefix}:create']">
+      {{ $t('ui.actionTitle.create', ['${subTable.classComment}']) }}
+    </ElButton>
+  </div>
+#else
+  <ElForm
+      ref="formRef"
+      class="mx-4"
+      :model="formData"
+      :rules="rules"
+      label-width="120px"
+      label-position="right"
+  >
+      #foreach($column in $subColumns)
+          #if ($column.createOperation || $column.updateOperation)
+              #set ($dictType = $column.dictType)
+              #set ($javaField = $column.javaField)
+              #set ($javaType = $column.javaType)
+              #set ($comment = $column.columnComment)
+              #if ($javaType == "Integer" || $javaType == "Long" || $javaType == "Byte" || $javaType == "Short")
+                  #set ($dictMethod = "number")
+              #elseif ($javaType == "String")
+                  #set ($dictMethod = "string")
+              #elseif ($javaType == "Boolean")
+                  #set ($dictMethod = "boolean")
+              #end
+              #if ($column.htmlType == "input" && !$column.primaryKey)## 忽略主键，不用在表单里
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElInput v-model="formData.${javaField}" placeholder="请输入${comment}" />
+                </ElFormItem>
+              #elseif($column.htmlType == "imageUpload")## 图片上传
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ImageUpload v-model="formData.${javaField}" />
+                </ElFormItem>
+              #elseif($column.htmlType == "fileUpload")## 文件上传
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <FileUpload v-model="formData.${javaField}" />
+                </ElFormItem>
+              #elseif($column.htmlType == "editor")## 文本编辑器
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <RichTextarea v-model="formData.${javaField}" height="500px" />
+                </ElFormItem>
+              #elseif($column.htmlType == "select")## 下拉框
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElSelect v-model="formData.${javaField}" placeholder="请选择${comment}">
+                      #if ("" != $dictType)## 有数据字典
+                        <ElOption
+                            v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                            :key="dict.value"
+                            :value="dict.value"
+                            :label="dict.label"
+                        />
+                      #else##没数据字典
+                        <ElOption label="请选择字典生成" value="" />
+                      #end
+                  </ElSelect>
+                </ElFormItem>
+              #elseif($column.htmlType == "checkbox")## 多选框
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElCheckboxGroup v-model="formData.${javaField}">
+                      #if ("" != $dictType)## 有数据字典
+                        <ElCheckbox
+                            v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                            :key="dict.value"
+                            :value="dict.value"
+                        >
+                          {{ dict.label }}
+                        </ElCheckbox>
+                      #else##没数据字典
+                        <ElCheckbox label="请选择字典生成" />
+                      #end
+                  </ElCheckboxGroup>
+                </ElFormItem>
+              #elseif($column.htmlType == "radio")## 单选框
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElRadioGroup v-model="formData.${javaField}">
+                      #if ("" != $dictType)## 有数据字典
+                        <ElRadio
+                            v-for="dict in getDictOptions(DICT_TYPE.$dictType.toUpperCase(), '$dictMethod')"
+                            :key="dict.value"
+                            :value="dict.value"
+                        >
+                          {{ dict.label }}
+                        </ElRadio>
+                      #else##没数据字典
+                        <ElRadio :label="1">请选择字典生成</ElRadio>
+                      #end
+                  </ElRadioGroup>
+                </ElFormItem>
+              #elseif($column.htmlType == "datetime")## 时间框
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElDatePicker
+                      v-model="formData.${javaField}"
+                      value-format="x"
+                      placeholder="选择${comment}"
+                  />
+                </ElFormItem>
+              #elseif($column.htmlType == "textarea")## 文本框
+                <ElFormItem label="${comment}" prop="${javaField}">
+                  <ElInput v-model="formData.${javaField}" type="textarea" placeholder="请输入${comment}" />
+                </ElFormItem>
+              #end
+          #end
+      #end
+  </ElForm>
+#end
+</template>

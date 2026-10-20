@@ -1,0 +1,766 @@
+芋道源码 http://www.iocoder.cn
+Application Version: 1.0.0
+Spring Boot Version: 3.5.15
+
+.__   __.   ______      .______    __    __    _______
+|  \ |  |  /  __  \     |   _  \  |  |  |  |  /  _____|
+|   \|  | |  |  |  |    |  |_)  | |  |  |  | |  |  __
+|  . `  | |  |  |  |    |   _  <  |  |  |  | |  | |_ |
+|  |\   | |  `--'  |    |  |_)  | |  `--'  | |  |__| |
+|__| \__|  \______/     |______/   \______/   \______|
+
+███╗   ██╗ ██████╗     ██████╗ ██╗   ██╗ ██████╗
+████╗  ██║██╔═══██╗    ██╔══██╗██║   ██║██╔════╝
+██╔██╗ ██║██║   ██║    ██████╔╝██║   ██║██║  ███╗
+██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║   ██║
+██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝
+╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝
+
+2026-10-20 10:54:53.794 [background-preinit] [34mINFO [0;39m [36morg.hibernate.validator.internal.util.Version:21[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-20 10:54:53.869 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:53[0;39m - Starting YudaoServerApplication using Java 17.0.17 with PID 38776 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m6-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-20 10:54:53.870 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:658[0;39m - The following 2 profiles are active: "fulfillment", "fulfillment-file-test"
+2026-10-20 10:54:58.484 [main] [34mINFO [0;39m [36mc.g.y.a.MybatisPlusJoinAutoConfiguration:141[0;39m - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-20 10:55:00.536 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:55:00.566 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:55:00.592 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:55:00.664 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:55:00.675 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 10:55:00.678 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429[0;39m - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-20 10:55:02.260 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:111[0;39m - Tomcat initialized with port 48082 (http)
+2026-10-20 10:55:02.337 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:55:02.350 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardService:168[0;39m - Starting service [Tomcat]
+2026-10-20 10:55:02.351 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine:168[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-20 10:55:02.543 [main] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring embedded WebApplicationContext
+2026-10-20 10:55:02.544 [main] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext:301[0;39m - Root WebApplicationContext: initialization completed in 8621 ms
+2026-10-20 10:55:04.197 [main] [34mINFO [0;39m [36mcom.alibaba.druid.pool.DruidDataSource:865[0;39m - {dataSource-1,master} inited
+2026-10-20 10:55:04.198 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:158[0;39m - dynamic-datasource - add a datasource named [master] success
+2026-10-20 10:55:04.200 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:241[0;39m - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-20 10:55:05.873 [main] [34mINFO [0;39m [36morg.flywaydb.core.FlywayExecutor:41[0;39m - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_reg_filefoundation_20261020_103859?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-20 10:55:05.941 [main] [31mWARN [0;39m [36morg.flywaydb.core.internal.database.base.Database:45[0;39m - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-20 10:55:06.080 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbValidate:41[0;39m - Successfully validated 9 migrations (execution time 00:00.104s)
+2026-10-20 10:55:06.131 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Current version of schema `fulfillment_m7_reg_filefoundation_20261020_103859`: 8
+2026-10-20 10:55:06.135 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Schema `fulfillment_m7_reg_filefoundation_20261020_103859` is up to date. No migration necessary.
+2026-10-20 10:55:07.672 [main] [34mINFO [0;39m [36morg.redisson.Version:43[0;39m - Redisson 4.7.0
+2026-10-20 10:55:09.431 [redisson-netty-1-4] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:55:09.550 [redisson-netty-1-19] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 10:55:13.918 [main] [34mINFO [0;39m [36mo.s.boot.web.servlet.RegistrationBean:49[0;39m - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-20 10:55:17.360 [main] [34mINFO [0;39m [36mc.a.c.config.AjCaptchaServiceAutoConfiguration:33[0;39m - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-20 10:55:17.386 [main] [34mINFO [0;39m [36mcom.anji.captcha.util.ImageUtils:71[0;39m - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@70b5ea27, ORIGINAL=[Ljava.lang.String;@44d8e130, PIC_CLICK=[Ljava.lang.String;@3d9188de]
+2026-10-20 10:55:17.390 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:52[0;39m - supported-captchaCache-service:[redis, local]
+2026-10-20 10:55:17.405 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:57[0;39m - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-20 10:55:17.405 [main] [34mINFO [0;39m [36mc.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80[0;39m - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-20 10:55:20.788 [main] [34mINFO [0;39m [36mc.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23[0;39m - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-20 10:55:29.202 [main] [34mINFO [0;39m [36mc.i.yudao.framework.dict.core.DictFrameworkUtils:44[0;39m - [init][初始化 DictFrameworkUtils 成功]
+2026-10-20 10:55:29.478 [main] [34mINFO [0;39m [36morg.dromara.common.spring.SpringContextUtil:37[0;39m - ------SpringContextUtil setApplicationContext-------
+2026-10-20 10:55:29.561 [main] [34mINFO [0;39m [36mc.b.m.spring.MybatisPlusApplicationContextAware:43[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b8ee898
+2026-10-20 10:55:30.548 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:41[0;39m - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-20 10:55:30.578 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:45[0;39m - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-20 10:55:30.642 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 10:55:30.694 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:243[0;39m - Tomcat started on port 48082 (http) with context path '/'
+2026-10-20 10:55:30.733 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:59[0;39m - Started YudaoServerApplication in 37.884 seconds (process running for 38.608)
+2026-10-20 10:55:31.221 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-20 10:55:31.221 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+2026-10-20 10:55:31.224 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:554[0;39m - Completed initialization in 3 ms
+2026-10-20 10:55:31.651 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:55:31.755 [pool-8-thread-1] [34mINFO [0;39m [36mc.i.y.f.banner.core.BannerApplicationRunner:23[0;39m - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+[工作流模块 yudao-module-bpm - 已禁用][参考 https://doc.iocoder.cn/bpm/ 开启]
+[支付系统 yudao-module-pay - 已禁用][参考 https://doc.iocoder.cn/pay/build/ 开启]
+[报表模块 yudao-module-report - 已禁用][参考 https://doc.iocoder.cn/report/ 开启]
+[微信公众号 yudao-module-mp - 已禁用][参考 https://doc.iocoder.cn/mp/build/ 开启]
+[商城系统 yudao-module-mall - 已禁用][参考 https://doc.iocoder.cn/mall/build/ 开启]
+[WMS 仓库管理系统 yudao-module-wms - 已禁用][参考 https://doc.iocoder.cn/wms/build/ 开启]
+[CRM 系统 yudao-module-crm - 已禁用][参考 https://doc.iocoder.cn/crm/build/ 开启]
+[MES 系统 yudao-module-mes - 已禁用][参考 https://doc.iocoder.cn/mes/build/ 开启]
+[HRM 人力资源管理系统 yudao-module-hrm - 已禁用][参考 https://doc.iocoder.cn/hrm/build/ 开启]
+[FMS 财务管理系统 yudao-module-fms - 已禁用][参考 https://doc.iocoder.cn/fms/build/ 开启]
+[PMS 项目管理系统 yudao-module-pms - 已禁用][参考 https://doc.iocoder.cn/pms/build/ 开启]
+[OA 协同办公 yudao-module-oa - 已禁用][参考 https://doc.iocoder.cn/oa/build/ 开启]
+[AI 大模型 yudao-module-ai - 已禁用][参考 https://doc.iocoder.cn/ai/build/ 开启]
+[IoT 物联网 yudao-module-iot - 已禁用][参考 https://doc.iocoder.cn/iot/build/ 开启]
+[IM 即时通讯 yudao-module-im - 已禁用][参考 https://doc.iocoder.cn/im/build/ 开启]
+2026-10-20 10:55:32.641 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(979 ms)]
+2026-10-20 10:55:32.671 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 10:55:32.816 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(144 ms)]
+2026-10-20 10:56:13.518 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/role/create) 参数({"name": "M6C75d78b69Warehouse", "code": "M6C75d78b69Warehouse", "status": 0, "sort": 1})]
+2026-10-20 10:56:14.038 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/role/create) 耗时(518 ms)]
+2026-10-20 10:56:14.077 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-role-menu) 参数({"roleId": 169, "menuIds": [597, 50019, 50021, 50024]})]
+2026-10-20 10:56:15.025 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-role-menu) 耗时(947 ms)]
+2026-10-20 10:56:15.087 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/create) 参数({"username": "M6C75d78b69Warehouse", "nickname": "M6C75d78b69Warehouse", "password": "admin123"})]
+2026-10-20 10:56:15.784 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/create) 耗时(696 ms)]
+2026-10-20 10:56:15.803 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-user-role) 参数({"userId": 249, "roleIds": [169]})]
+2026-10-20 10:56:16.223 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-user-role) 耗时(419 ms)]
+2026-10-20 10:56:16.238 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M6C75d78b69Warehouse", "password": "admin123"})]
+2026-10-20 10:56:16.404 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(165 ms)]
+2026-10-20 10:56:16.456 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/scope) 无参数]
+2026-10-20 10:56:17.092 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/scope) 耗时(635 ms)]
+2026-10-20 10:56:17.144 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "249", "warehouseId": "3", "permission": "READ", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:18.685 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(1538 ms)]
+2026-10-20 10:56:18.730 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "249", "warehouseId": "3", "permission": "READ", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:19.471 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(740 ms)]
+2026-10-20 10:56:19.509 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/scope) 无参数]
+2026-10-20 10:56:19.865 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/scope) 耗时(354 ms)]
+2026-10-20 10:56:19.993 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/stock-page) 参数({warehouseId=3})]
+2026-10-20 10:56:20.300 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/stock-page) 耗时(307 ms)]
+2026-10-20 10:56:20.350 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/shipment-get) 参数({id=2})]
+2026-10-20 10:56:20.656 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/shipment-get) 耗时(305 ms)]
+2026-10-20 10:56:20.711 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=2})]
+2026-10-20 10:56:21.076 [http-nio-127.0.0.1-48082-exec-5] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:279[0;39m - [accessDeniedExceptionHandler][userId(249) 无法访问 url(http://127.0.0.1:48082/admin-api/fulfillment/order/get)]
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:108)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:287)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:260)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulOrderController$$SpringCGLIB$$0.get(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.security.TenantSecurityWebFilter.doFilterInternal(TenantSecurityWebFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at cn.iocoder.yudao.framework.security.core.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.apilog.core.filter.ApiAccessLogFilter.doFilterInternal(ApiAccessLogFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.web.TenantContextWebFilter.doFilterInternal(TenantContextWebFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tracer.core.filter.TraceFilter.doFilterInternal(TraceFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-20 10:56:21.081 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(369 ms)]
+2026-10-20 10:56:21.133 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/customer/get) 参数({id=3})]
+2026-10-20 10:56:21.476 [http-nio-127.0.0.1-48082-exec-6] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:279[0;39m - [accessDeniedExceptionHandler][userId(249) 无法访问 url(http://127.0.0.1:48082/admin-api/erp/customer/get)]
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:108)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:287)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:260)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.erp.controller.admin.sale.ErpCustomerController$$SpringCGLIB$$0.getCustomer(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.security.TenantSecurityWebFilter.doFilterInternal(TenantSecurityWebFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at cn.iocoder.yudao.framework.security.core.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.apilog.core.filter.ApiAccessLogFilter.doFilterInternal(ApiAccessLogFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.web.TenantContextWebFilter.doFilterInternal(TenantContextWebFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tracer.core.filter.TraceFilter.doFilterInternal(TraceFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-20 10:56:21.480 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/customer/get) 耗时(346 ms)]
+2026-10-20 10:56:21.524 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/warehouse/create) 参数({"name": "M6C75d78b69\u7b2c\u4e8c\u4ed3", "status": 0, "sort": 1, "warehousePrice": "0", "truckagePrice": "0"})]
+2026-10-20 10:56:21.977 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/warehouse/create) 耗时(453 ms)]
+2026-10-20 10:56:22.020 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 3, "inTime": "2026-10-20T10:44:18", "items": [{"productId": 3, "warehouseId": 4, "count": "5", "productPrice": "0"}]})]
+2026-10-20 10:56:22.619 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(598 ms)]
+2026-10-20 10:56:22.668 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=3, status=20})]
+2026-10-20 10:56:23.146 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(478 ms)]
+2026-10-20 10:56:23.200 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/stock-page) 参数({warehouseId=4})]
+2026-10-20 10:56:23.503 [http-nio-127.0.0.1-48082-exec-10] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:23.507 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/stock-page) 耗时(306 ms)]
+2026-10-20 10:56:23.557 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/export) 参数({"dataset": "STOCK", "warehouseIds": []})]
+2026-10-20 10:56:24.982 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/export) 耗时(1424 ms)]
+2026-10-20 10:56:29.005 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=19})]
+2026-10-20 10:56:29.730 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(723 ms)]
+2026-10-20 10:56:29.775 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/download) 参数({kind=RESULT, id=19})]
+2026-10-20 10:56:31.129 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/download) 耗时(1353 ms)]
+2026-10-20 10:56:31.176 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "249", "warehouseId": "4", "permission": "READ", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:31.928 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(750 ms)]
+2026-10-20 10:56:31.986 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/export) 参数({"dataset": "STOCK", "warehouseIds": []})]
+2026-10-20 10:56:33.242 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/export) 耗时(1256 ms)]
+2026-10-20 10:56:33.378 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "249", "warehouseId": "3", "permission": "READ", "enabled": false, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:34.136 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(756 ms)]
+2026-10-20 10:56:34.188 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/download) 参数({kind=RESULT, id=19})]
+2026-10-20 10:56:35.056 [http-nio-127.0.0.1-48082-exec-7] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulJobAuthorization.downloadCheck(FulJobAuthorization.java:66)
+2026-10-20 10:56:35.060 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/download) 耗时(870 ms)]
+2026-10-20 10:56:35.108 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/export) 参数({"dataset": "STOCK", "warehouseIds": []})]
+2026-10-20 10:56:36.363 [http-nio-127.0.0.1-48082-exec-8] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulJobAuthorization.downloadCheck(FulJobAuthorization.java:66)
+2026-10-20 10:56:36.365 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/export) 耗时(1257 ms)]
+2026-10-20 10:56:36.414 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=6})]
+2026-10-20 10:56:36.838 [http-nio-127.0.0.1-48082-exec-9] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulFileJobAdmin.owned(FulFileJobAdmin.java:26)
+2026-10-20 10:56:36.841 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(425 ms)]
+2026-10-20 10:56:36.884 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/page) 无参数]
+2026-10-20 10:56:37.363 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/page) 耗时(478 ms)]
+2026-10-20 10:56:37.416 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/page) 参数({pageSize=51})]
+2026-10-20 10:56:37.798 [http-nio-127.0.0.1-48082-exec-1] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:205[0;39m - [constraintViolationExceptionHandler]
+jakarta.validation.ConstraintViolationException: page.pageSize: 最大不能超过50
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:168)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at cn.iocoder.yudao.module.fulfillment.controller.admin.FulFileJobController$$SpringCGLIB$$0.page(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.security.TenantSecurityWebFilter.doFilterInternal(TenantSecurityWebFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at cn.iocoder.yudao.framework.security.core.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.apilog.core.filter.ApiAccessLogFilter.doFilterInternal(ApiAccessLogFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tenant.core.web.TenantContextWebFilter.doFilterInternal(TenantContextWebFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at cn.iocoder.yudao.framework.tracer.core.filter.TraceFilter.doFilterInternal(TraceFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-20 10:56:37.801 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/page) 耗时(384 ms)]
+2026-10-20 10:56:37.901 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/role/create) 参数({"name": "M6C75d78b69Sales", "code": "M6C75d78b69Sales", "status": 0, "sort": 1})]
+2026-10-20 10:56:38.311 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/role/create) 耗时(409 ms)]
+2026-10-20 10:56:38.357 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-role-menu) 参数({"roleId": 170, "menuIds": [597, 600, 601, 602, 603, 604, 606, 607, 608, 609, 610, 612, 613, 614, 615, 616, 619, 620, 621, 622, 623, 625, 626, 628, 629, 631, 632, 633, 634, 635, 638, 639, 640, 641, 642, 643, 645, 646, 647, 648, 649, 650, 653, 654, 655, 656, 657, 659, 660, 661, 662, 663, 664, 666, 667, 668, 669, 670, 671, 673, 674, 675, 676, 677, 678, 681, 682, 683, 684, 685, 687, 688, 689, 690, 691, 692, 694, 695, 696, 697, 698, 699, 701, 702, 703, 704, 705, 706, 708, 709, 710, 711, 712, 713, 715, 716, 717, 718, 719, 720, 722, 723, 724, 725, 726, 727, 729, 730, 731, 732, 733, 734, 736, 50000, 50001, 50002, 50003, 50004, 50005, 50006, 50007, 50008, 50009, 50010, 50011, 50012, 50013, 50014, 50015, 50016, 50017, 50018, 50019, 50020, 50021, 50022, 50023, 50024, 50025, 50026]})]
+2026-10-20 10:56:39.135 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-role-menu) 耗时(776 ms)]
+2026-10-20 10:56:39.181 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/create) 参数({"username": "M6C75d78b69Sales", "nickname": "M6C75d78b69Sales", "password": "admin123"})]
+2026-10-20 10:56:39.737 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/create) 耗时(554 ms)]
+2026-10-20 10:56:39.777 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/permission/assign-user-role) 参数({"userId": 250, "roleIds": [170]})]
+2026-10-20 10:56:40.184 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/permission/assign-user-role) 耗时(405 ms)]
+2026-10-20 10:56:40.189 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M6C75d78b69Sales", "password": "admin123"})]
+2026-10-20 10:56:40.346 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(156 ms)]
+2026-10-20 10:56:40.403 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product-unit/create) 参数({"name": "M4R0c83a6ecSales\u4ef6", "status": 0})]
+2026-10-20 10:56:40.829 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product-unit/create) 耗时(424 ms)]
+2026-10-20 10:56:40.870 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product-category/create) 参数({"name": "M4R0c83a6ecSales", "code": "M4R0c83a6ecSales", "parentId": 0, "sort": 1, "status": 0})]
+2026-10-20 10:56:41.199 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product-category/create) 耗时(328 ms)]
+2026-10-20 10:56:41.247 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/customer/create) 参数({"name": "M4R0c83a6ecSales\u5ba2\u6237", "status": 0, "sort": 1})]
+2026-10-20 10:56:41.590 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/customer/create) 耗时(342 ms)]
+2026-10-20 10:56:41.635 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/supplier/create) 参数({"name": "M4R0c83a6ecSales\u4f9b\u65b9", "status": 0, "sort": 1})]
+2026-10-20 10:56:41.963 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/supplier/create) 耗时(327 ms)]
+2026-10-20 10:56:42.008 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/account/create) 参数({"name": "M4R0c83a6ecSales\u8d26\u6237", "no": "M4R0c83a6ecSales", "status": 0, "sort": 1})]
+2026-10-20 10:56:42.357 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/account/create) 耗时(348 ms)]
+2026-10-20 10:56:42.400 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/warehouse/create) 参数({"name": "M4R0c83a6ecSales\u539f\u53d1\u8d27\u4ed3", "status": 0, "sort": 1, "warehousePrice": "0", "truckagePrice": "0"})]
+2026-10-20 10:56:42.751 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/warehouse/create) 耗时(351 ms)]
+2026-10-20 10:56:42.790 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "250", "warehouseId": "5", "permission": "OPERATE", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:43.650 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(859 ms)]
+2026-10-20 10:56:43.693 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product/create) 参数({"name": "M4R0c83a6ecSales\u6743\u9650\u95ed\u73af", "barCode": "M4R0c83a6ecSales\u6743\u9650\u95ed\u73af", "categoryId": 4, "unitId": 4, "status": 0, "salePrice": "2.345678", "purchasePrice": "0"})]
+2026-10-20 10:56:43.973 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product/create) 耗时(279 ms)]
+2026-10-20 10:56:44.020 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 4, "inTime": "2026-10-20T10:44:18", "items": [{"productId": 4, "warehouseId": 5, "count": "20", "productPrice": "0"}]})]
+2026-10-20 10:56:44.468 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(447 ms)]
+2026-10-20 10:56:44.519 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=4, status=20})]
+2026-10-20 10:56:44.872 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(352 ms)]
+2026-10-20 10:56:44.925 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 4, "accountId": 4, "orderTime": "2026-10-20T10:44:18", "discountPercent": "5", "items": [{"productId": 4, "count": "3", "productPrice": "2.345678", "taxPercent": "13"}]})]
+2026-10-20 10:56:45.429 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(504 ms)]
+2026-10-20 10:56:45.472 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=15, status=20})]
+2026-10-20 10:56:45.836 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(364 ms)]
+2026-10-20 10:56:45.880 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "15"})]
+2026-10-20 10:56:46.482 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(602 ms)]
+2026-10-20 10:56:46.535 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "5", "warehouseIds": ["5"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:56:47.227 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(692 ms)]
+2026-10-20 10:56:47.279 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "5", "warehouseId": "5", "items": [{"id": "5", "quantity": "1"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-5"})]
+2026-10-20 10:56:48.313 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(1032 ms)]
+2026-10-20 10:56:48.360 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=5})]
+2026-10-20 10:56:48.676 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(316 ms)]
+2026-10-20 10:56:48.731 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/cancel) 参数({"orderId": "5", "items": [{"id": "5", "quantity": "2"}], "reason": "M3 customer change"})]
+2026-10-20 10:56:49.409 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/cancel) 耗时(677 ms)]
+2026-10-20 10:56:49.452 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/get) 参数({id=5})]
+2026-10-20 10:56:49.904 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/get) 耗时(451 ms)]
+2026-10-20 10:56:49.949 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/return/create) 参数({"orderId": "5", "shipmentId": "5", "items": [{"id": "5", "quantity": "1"}], "reason": "\u5546\u54c1\u9000\u56deM4R0c83a6ec"})]
+2026-10-20 10:56:50.581 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/return/create) 耗时(631 ms)]
+2026-10-20 10:56:50.631 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/return/receive) 参数({"orderId": "5", "returnId": "1"})]
+2026-10-20 10:56:51.497 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/return/receive) 耗时(865 ms)]
+2026-10-20 10:56:51.536 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 4, "accountId": 4, "orderTime": "2026-10-20T10:44:18", "items": [{"productId": 4, "count": "1", "productPrice": "2", "taxPercent": "0"}]})]
+2026-10-20 10:56:51.889 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(353 ms)]
+2026-10-20 10:56:51.940 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=16, status=20})]
+2026-10-20 10:56:52.174 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(234 ms)]
+2026-10-20 10:56:52.222 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "16"})]
+2026-10-20 10:56:52.676 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(453 ms)]
+2026-10-20 10:56:52.704 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "6", "warehouseIds": ["5"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:56:53.280 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(575 ms)]
+2026-10-20 10:56:53.312 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/release) 参数({"orderId": "6", "items": [{"reservationId": "6", "quantity": "1"}], "reason": "M2 manual release"})]
+2026-10-20 10:56:53.942 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/release) 耗时(630 ms)]
+2026-10-20 10:56:54.171 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "250", "warehouseId": "5", "permission": "READ", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:54.917 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(744 ms)]
+2026-10-20 10:56:54.967 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "250", "warehouseId": "5", "permission": "OPERATE", "enabled": false, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:56:55.709 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(740 ms)]
+2026-10-20 10:56:56.760 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "6", "warehouseIds": ["5"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:56:57.254 [http-nio-127.0.0.1-48082-exec-4] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:57.256 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(496 ms)]
+2026-10-20 10:56:57.306 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/release) 参数({"orderId": "6", "items": [{"reservationId": "6", "quantity": "1"}], "reason": "M2 manual release"})]
+2026-10-20 10:56:57.784 [http-nio-127.0.0.1-48082-exec-5] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:57.787 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/release) 耗时(479 ms)]
+2026-10-20 10:56:57.836 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "5", "warehouseId": "5", "items": [{"id": "5", "quantity": "1"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-5"})]
+2026-10-20 10:56:58.340 [http-nio-127.0.0.1-48082-exec-6] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:58.343 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(507 ms)]
+2026-10-20 10:56:58.397 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=5})]
+2026-10-20 10:56:58.610 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(212 ms)]
+2026-10-20 10:56:58.662 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/cancel) 参数({"orderId": "5", "items": [{"id": "5", "quantity": "2"}], "reason": "M3 customer change"})]
+2026-10-20 10:56:59.139 [http-nio-127.0.0.1-48082-exec-8] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:59.142 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/cancel) 耗时(480 ms)]
+2026-10-20 10:56:59.197 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/return/receive) 参数({"orderId": "5", "returnId": "1"})]
+2026-10-20 10:56:59.691 [http-nio-127.0.0.1-48082-exec-9] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:56:59.693 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/return/receive) 耗时(495 ms)]
+2026-10-20 10:56:59.746 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/stock/get) 参数({productId=4, warehouseId=5})]
+2026-10-20 10:57:00.160 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/stock/get) 耗时(413 ms)]
+2026-10-20 10:57:00.202 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/stock/get) 参数({productId=4, warehouseId=4})]
+2026-10-20 10:57:00.518 [http-nio-127.0.0.1-48082-exec-1] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:57:00.520 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/stock/get) 耗时(317 ms)]
+2026-10-20 10:57:00.562 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "250", "warehouseId": "4", "permission": "OPERATE", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:57:00.860 [http-nio-127.0.0.1-48082-exec-2] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.grant(FulWarehouseAccess.java:64)
+2026-10-20 10:57:00.861 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(298 ms)]
+2026-10-20 10:57:01.842 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=2})]
+2026-10-20 10:57:02.139 [http-nio-127.0.0.1-48082-exec-3] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulOrderService.requireOwner(FulOrderService.java:126)
+2026-10-20 10:57:02.141 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(298 ms)]
+2026-10-20 10:57:02.187 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "3756802d-8966-4baa-b738-c231878584aa", "sourceSystem": "M6C75d78b69Steal"})]
+2026-10-20 10:57:03.079 [http-nio-127.0.0.1-48082-exec-4] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulFileJobAdmin.submitImport(FulFileJobAdmin.java:41)
+2026-10-20 10:57:03.080 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(892 ms)]
+2026-10-20 10:57:03.157 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/tenant-package/create) 参数({"name": "M6C75d78b69", "status": 0, "menuIds": [597, 600, 601, 602, 603, 604, 606, 607, 608, 609, 610, 612, 613, 614, 615, 616, 619, 620, 621, 622, 623, 625, 626, 628, 629, 631, 632, 633, 634, 635, 638, 639, 640, 641, 642, 643, 645, 646, 647, 648, 649, 650, 653, 654, 655, 656, 657, 659, 660, 661, 662, 663, 664, 666, 667, 668, 669, 670, 671, 673, 674, 675, 676, 677, 678, 681, 682, 683, 684, 685, 687, 688, 689, 690, 691, 692, 694, 695, 696, 697, 698, 699, 701, 702, 703, 704, 705, 706, 708, 709, 710, 711, 712, 713, 715, 716, 717, 718, 719, 720, 722, 723, 724, 725, 726, 727, 729, 730, 731, 732, 733, 734, 736, 50000, 50001, 50002, 50003, 50004, 50005, 50006, 50007, 50008, 50009, 50010, 50011, 50012, 50013, 50014, 50015, 50016, 50017, 50018, 50019, 50020, 50021, 50022, 50023, 50024, 50025, 50026]})]
+2026-10-20 10:57:03.231 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/tenant-package/create) 耗时(73 ms)]
+2026-10-20 10:57:03.237 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/tenant/create) 参数({"name": "M6C75d78b69\u79df\u6237", "contactName": "M6", "status": 0, "packageId": 114, "expireTime": "2035-12-31T23:59:59", "accountCount": 10, "username": "M6C75d78b69Tenant", "password": "admin123", "websites": []})]
+2026-10-20 10:57:03.393 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/tenant/create) 耗时(155 ms)]
+2026-10-20 10:57:03.417 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "M6C75d78b69Tenant", "password": "admin123"})]
+2026-10-20 10:57:03.487 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(68 ms)]
+2026-10-20 10:57:03.493 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product-unit/create) 参数({"name": "M4R0c83a6ecTenant\u4ef6", "status": 0})]
+2026-10-20 10:57:03.559 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product-unit/create) 耗时(65 ms)]
+2026-10-20 10:57:03.567 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product-category/create) 参数({"name": "M4R0c83a6ecTenant", "code": "M4R0c83a6ecTenant", "parentId": 0, "sort": 1, "status": 0})]
+2026-10-20 10:57:03.609 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product-category/create) 耗时(42 ms)]
+2026-10-20 10:57:03.616 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/customer/create) 参数({"name": "M4R0c83a6ecTenant\u5ba2\u6237", "status": 0, "sort": 1})]
+2026-10-20 10:57:03.660 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/customer/create) 耗时(43 ms)]
+2026-10-20 10:57:03.668 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/supplier/create) 参数({"name": "M4R0c83a6ecTenant\u4f9b\u65b9", "status": 0, "sort": 1})]
+2026-10-20 10:57:03.713 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/supplier/create) 耗时(44 ms)]
+2026-10-20 10:57:03.721 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/account/create) 参数({"name": "M4R0c83a6ecTenant\u8d26\u6237", "no": "M4R0c83a6ecTenant", "status": 0, "sort": 1})]
+2026-10-20 10:57:03.772 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/account/create) 耗时(50 ms)]
+2026-10-20 10:57:03.778 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/warehouse/create) 参数({"name": "M4R0c83a6ecTenant\u539f\u53d1\u8d27\u4ed3", "status": 0, "sort": 1, "warehousePrice": "0", "truckagePrice": "0"})]
+2026-10-20 10:57:03.824 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/warehouse/create) 耗时(45 ms)]
+2026-10-20 10:57:03.830 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/product/create) 参数({"name": "M4R0c83a6ecTenant\u7ebf\u7a0b\u9694\u79bb", "barCode": "M4R0c83a6ecTenant\u7ebf\u7a0b\u9694\u79bb", "categoryId": 5, "unitId": 5, "status": 0, "salePrice": "2.345678", "purchasePrice": "0"})]
+2026-10-20 10:57:03.888 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/product/create) 耗时(58 ms)]
+2026-10-20 10:57:03.896 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/create) 参数({"supplierId": 5, "inTime": "2026-10-20T10:44:18", "items": [{"productId": 5, "warehouseId": 6, "count": "20", "productPrice": "0"}]})]
+2026-10-20 10:57:03.992 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/create) 耗时(96 ms)]
+2026-10-20 10:57:03.998 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/stock-in/update-status) 参数({id=5, status=20})]
+2026-10-20 10:57:04.071 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/stock-in/update-status) 耗时(72 ms)]
+2026-10-20 10:57:04.078 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/create) 参数({"customerId": 5, "accountId": 5, "orderTime": "2026-10-20T10:44:18", "discountPercent": "5", "items": [{"productId": 5, "count": "1", "productPrice": "2.345678", "taxPercent": "13"}]})]
+2026-10-20 10:57:04.142 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/create) 耗时(62 ms)]
+2026-10-20 10:57:04.150 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/erp/sale-order/update-status) 参数({id=17, status=20})]
+2026-10-20 10:57:04.213 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/erp/sale-order/update-status) 耗时(63 ms)]
+2026-10-20 10:57:04.220 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/bind) 参数({"erpOrderId": "17"})]
+2026-10-20 10:57:04.311 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/bind) 耗时(90 ms)]
+2026-10-20 10:57:04.318 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/allocate) 参数({"orderId": "7", "warehouseIds": ["6"], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900})]
+2026-10-20 10:57:04.414 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/allocate) 耗时(96 ms)]
+2026-10-20 10:57:04.421 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/confirm) 参数({"orderId": "7", "warehouseId": "6", "items": [{"id": "7", "quantity": "1"}], "carrierCode": "SIMULATED", "trackingNo": "TRACK-7"})]
+2026-10-20 10:57:04.615 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/confirm) 耗时(192 ms)]
+2026-10-20 10:57:04.620 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/order/get) 参数({id=7})]
+2026-10-20 10:57:04.658 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/order/get) 耗时(37 ms)]
+2026-10-20 10:57:04.663 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/shipment/get) 参数({id=6})]
+2026-10-20 10:57:04.713 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/shipment/get) 耗时(49 ms)]
+2026-10-20 10:57:04.843 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/upload) 无参数]
+2026-10-20 10:57:04.912 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/upload) 耗时(69 ms)]
+2026-10-20 10:57:04.921 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "23ad6128-0f7f-4ef3-b4a7-8074b16019db", "sourceSystem": "M6C75d78b69Ctx"})]
+2026-10-20 10:57:04.986 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(64 ms)]
+2026-10-20 10:57:04.996 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/upload) 无参数]
+2026-10-20 10:57:05.067 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/upload) 耗时(69 ms)]
+2026-10-20 10:57:05.073 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "743560b7-1825-4495-8fd5-c048b971f2c5", "sourceSystem": "M6C75d78b69Ctx"})]
+2026-10-20 10:57:05.137 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(62 ms)]
+2026-10-20 10:57:05.148 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/upload) 无参数]
+2026-10-20 10:57:05.184 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/upload) 耗时(36 ms)]
+2026-10-20 10:57:05.189 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "a0294020-4883-45d6-a6ed-aaf34b56f3e5", "sourceSystem": "M6C75d78b69Disabled"})]
+2026-10-20 10:57:05.233 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(42 ms)]
+2026-10-20 10:57:05.237 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/user/update-status) 参数({"id": 250, "status": 1})]
+2026-10-20 10:57:05.354 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/user/update-status) 耗时(115 ms)]
+2026-10-20 10:57:57.962 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=21})]
+2026-10-20 10:57:58.541 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(577 ms)]
+2026-10-20 10:57:58.630 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=20})]
+2026-10-20 10:57:59.005 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(375 ms)]
+2026-10-20 10:57:59.145 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=22})]
+2026-10-20 10:57:59.850 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(704 ms)]
+2026-10-20 10:57:59.944 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=22})]
+2026-10-20 10:58:00.664 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(719 ms)]
+2026-10-20 10:58:00.758 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=21})]
+2026-10-20 10:58:01.152 [http-nio-127.0.0.1-48082-exec-6] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulFileJobAdmin.owned(FulFileJobAdmin.java:26)
+2026-10-20 10:58:01.154 [http-nio-127.0.0.1-48082-exec-6] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(395 ms)]
+2026-10-20 10:58:01.197 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=20})]
+2026-10-20 10:58:01.774 [http-nio-127.0.0.1-48082-exec-7] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulFileJobAdmin.owned(FulFileJobAdmin.java:26)
+2026-10-20 10:58:01.776 [http-nio-127.0.0.1-48082-exec-7] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(579 ms)]
+2026-10-20 10:58:01.821 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "23ad6128-0f7f-4ef3-b4a7-8074b16019db", "sourceSystem": "M6C75d78b69ForeignSteal"})]
+2026-10-20 10:58:02.907 [http-nio-127.0.0.1-48082-exec-8] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulPrivateFiles.metadata(FulPrivateFiles.java:47)
+2026-10-20 10:58:02.910 [http-nio-127.0.0.1-48082-exec-8] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(1087 ms)]
+2026-10-20 10:58:02.952 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/stock-page) 参数({warehouseId=3})]
+2026-10-20 10:58:03.360 [http-nio-127.0.0.1-48082-exec-9] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.require(FulWarehouseAccess.java:30)
+2026-10-20 10:58:03.361 [http-nio-127.0.0.1-48082-exec-9] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/stock-page) 耗时(408 ms)]
+2026-10-20 10:58:03.408 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/shipment-get) 参数({id=6})]
+2026-10-20 10:58:03.753 [http-nio-127.0.0.1-48082-exec-10] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.controller.admin.FulWarehouseController.shipment(FulWarehouseController.java:51)
+2026-10-20 10:58:03.754 [http-nio-127.0.0.1-48082-exec-10] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/shipment-get) 耗时(346 ms)]
+2026-10-20 10:58:03.909 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/warehouse/grant) 参数({"userId": "251", "warehouseId": "3", "permission": "READ", "enabled": true, "reason": "M6\u6743\u9650\u4e0e\u64a4\u9500\u9a8c\u8bc1"})]
+2026-10-20 10:58:04.675 [http-nio-127.0.0.1-48082-exec-1] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulWarehouseAccess.grant(FulWarehouseAccess.java:66)
+2026-10-20 10:58:04.677 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/warehouse/grant) 耗时(766 ms)]
+2026-10-20 10:58:04.720 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/download) 参数({kind=INPUT, id=22})]
+2026-10-20 10:58:05.380 [http-nio-127.0.0.1-48082-exec-2] [31mWARN [0;39m [36mc.i.y.f.web.core.handler.GlobalExceptionHandler:308[0;39m - [serviceExceptionHandler]
+	cn.iocoder.yudao.module.fulfillment.service.FulJobAuthorization.downloadCheck(FulJobAuthorization.java:66)
+2026-10-20 10:58:05.382 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/download) 耗时(660 ms)]

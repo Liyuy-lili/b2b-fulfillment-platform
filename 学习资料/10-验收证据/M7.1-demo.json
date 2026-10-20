@@ -1,0 +1,165 @@
+{
+  "formatVersion": 1,
+  "source": "M7DEMO_1792459287729",
+  "ids": {
+    "unit": 1,
+    "category": 1,
+    "customer": 1,
+    "supplier": 1,
+    "account": 1,
+    "warehouseA": 1,
+    "warehouseB": 2,
+    "product": 1,
+    "inA": 1,
+    "inAApproved": true,
+    "inB": 2,
+    "inBApproved": true,
+    "sourceOrder": 1,
+    "sourceApproved": true,
+    "bound": {
+      "orderId": "1",
+      "status": "NEW"
+    },
+    "allocation": {
+      "orderId": "1",
+      "status": "RESERVED",
+      "outcome": "ALLOCATED",
+      "reservations": [
+        {
+          "id": "1",
+          "orderItemId": "1",
+          "productId": "1",
+          "warehouseId": "1",
+          "allocatedQty": "6.000000",
+          "heldQty": "6.000000",
+          "consumedQty": "0.000000",
+          "releasedQty": "0.000000",
+          "expireAt": "2026-10-20T01:36:30.493480900Z"
+        },
+        {
+          "id": "2",
+          "orderItemId": "1",
+          "productId": "1",
+          "warehouseId": "2",
+          "allocatedQty": "4.000000",
+          "heldQty": "4.000000",
+          "consumedQty": "0.000000",
+          "releasedQty": "0.000000",
+          "expireAt": "2026-10-20T01:36:30.493480900Z"
+        }
+      ]
+    },
+    "shipped": {
+      "shipmentId": "1",
+      "shipmentNo": "SHP-a6c1f35a-eee8-4995-8566-bb3051a240fe",
+      "erpSaleOutId": "1",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    },
+    "cancelled": {
+      "orderId": "1",
+      "orderStatus": "PARTIALLY_CLOSED",
+      "cancelled": [
+        {
+          "id": "1",
+          "quantity": "6.000000"
+        }
+      ]
+    },
+    "delivered": {
+      "eventId": "03fbc32f-677c-4e3f-a4b1-43298799b700",
+      "outcome": "DELIVERED"
+    },
+    "returned": {
+      "id": "1",
+      "returnNo": "RET-550da58c-32da-4da1-bf82-dbd04eac4a0f",
+      "status": "REQUESTED",
+      "erpSaleReturnId": null,
+      "orderStatus": "PARTIALLY_CLOSED"
+    },
+    "received": {
+      "id": "1",
+      "returnNo": "RET-550da58c-32da-4da1-bf82-dbd04eac4a0f",
+      "status": "RECEIVED",
+      "erpSaleReturnId": "1",
+      "orderStatus": "PARTIALLY_CLOSED"
+    },
+    "upload": {
+      "fileId": "6b482f3e-96be-43f9-81a0-12b352c0a7f8",
+      "sha256": "b8201dbb9c05d93cc89ec3ad4466e435a79681e90476ddb3ca70c00e5555ccd6",
+      "byteSize": 182,
+      "templateVersion": "1"
+    },
+    "import": {
+      "jobId": "1",
+      "outcome": "IMPORT_QUEUED"
+    },
+    "duplicateImport": {
+      "jobId": "2",
+      "outcome": "IMPORT_QUEUED"
+    },
+    "export": {
+      "jobId": "3",
+      "outcome": "EXPORT_QUEUED"
+    },
+    "warehouseRole": 169,
+    "warehouseMenu": true,
+    "warehouseUser": 249,
+    "warehouseRoleAssigned": true,
+    "warehouseGrant": "UPDATED",
+    "reconciliation": {
+      "id": "1",
+      "ruleVersion": "M4.3-v1",
+      "scope": "TENANT",
+      "snapshotAt": "2026-10-20T01:21:36.917736Z",
+      "finishedAt": "2026-10-20T01:21:36.958534Z",
+      "scannedCount": 28,
+      "differenceCount": 0,
+      "tableCounts": {
+        "erp_stock": 2,
+        "erp_stock_record": 4,
+        "ful_order": 1,
+        "ful_order_item": 1,
+        "ful_reservation": 2,
+        "ful_stock_ledger": 5,
+        "ful_shipment": 1,
+        "ful_shipment_item": 1,
+        "ful_cancellation": 1,
+        "ful_return": 1,
+        "ful_return_item": 1,
+        "erp_sale_order": 2,
+        "erp_sale_order_items": 2,
+        "erp_sale_out": 1,
+        "erp_sale_out_items": 1,
+        "erp_sale_return": 1,
+        "erp_sale_return_items": 1
+      }
+    }
+  },
+  "keys": {
+    "bind": "M7.demo:M7DEMO_1792459287729:bind",
+    "allocate": "M7.demo:M7DEMO_1792459287729:allocate",
+    "ship": "M7.demo:M7DEMO_1792459287729:ship",
+    "cancel": "M7.demo:M7DEMO_1792459287729:cancel",
+    "return": "M7.demo:M7DEMO_1792459287729:return",
+    "receive": "M7.demo:M7DEMO_1792459287729:receive",
+    "import": "M7.demo:M7DEMO_1792459287729:import",
+    "duplicateImport": "M7.demo:M7DEMO_1792459287729:duplicateImport",
+    "export": "M7.demo:M7DEMO_1792459287729:export",
+    "grant": "M7.demo:M7DEMO_1792459287729:grant",
+    "scan": "M7.demo:M7DEMO_1792459287729:scan"
+  },
+  "complete": true,
+  "downloads": {
+    "errorBytes": 93,
+    "xlsxBytes": 4631
+  },
+  "projection": {
+    "orderId": "1",
+    "businessVersion": "4",
+    "observedVersion": "4",
+    "sourceEventId": "d99eee9b-e69b-484f-bab0-1d11abdfbc2d",
+    "snapshotJson": "{\"orderId\":\"1\",\"orderNo\":\"XSDD20261020000001\",\"version\":\"4\",\"status\":\"PARTIALLY_CLOSED\",\"items\":[{\"id\":\"1\",\"productId\":\"1\",\"unitId\":\"1\",\"orderedQty\":\"10.000000\",\"openQty\":\"0.000000\",\"reservedQty\":\"0.000000\",\"shippedQty\":\"4.000000\",\"cancelledQty\":\"6.000000\",\"returnedQty\":\"2.000000\"}]}",
+    "updatedAt": "2026-10-20T01:21:33.043965Z"
+  },
+  "completedAt": "2026-10-20T01:21:36.977Z"
+}

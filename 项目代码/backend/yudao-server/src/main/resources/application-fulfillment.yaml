@@ -1,0 +1,103 @@
+# Local interview project profile. Credentials are disposable demo defaults.
+server:
+  address: 127.0.0.1
+  port: ${APP_PORT:48080}
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.quartz.QuartzAutoConfiguration
+      - org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+      datasource:
+        master:
+          name: fulfillment
+          url: jdbc:mysql://${DB_HOST:127.0.0.1}:${DB_PORT:33306}/${DB_NAME:fulfillment}?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true
+          username: ${DB_USER:fulfillment}
+          password: ${DB_PASSWORD:fulfillment-dev}
+      druid:
+        # JDBC READ_COMMITTED; managed-order existence checks must not retain RR gap locks.
+        default-transaction-isolation: 2
+        init-connection-sqls: SET SESSION innodb_lock_wait_timeout=3
+        initial-size: 1
+        min-idle: 1
+        max-active: 12
+        max-wait: 10000
+        test-while-idle: true
+        validation-query: SELECT 1
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:36379}
+      database: 0
+  boot:
+    admin:
+      client:
+        enabled: false
+  quartz:
+    auto-startup: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+logging:
+  file:
+    name: ../.local/backend-app.log
+yudao:
+  captcha:
+    enable: false
+  security:
+    mock-enable: false
+  access-log:
+    enable: true
+  demo: false
+  web:
+    admin-ui:
+      url: http://127.0.0.1:15173
+  websocket:
+    sender-type: local
+  api-encrypt:
+    enable: false
+justauth:
+  enabled: false
+  cache:
+    type: REDIS
+    prefix: 'fulfillment:social:disabled:'
+    timeout: 24h
+# System's existing social service requires these SDK beans even when unused.
+# Placeholders satisfy bean construction; integrations remain disabled in DB.
+wx:
+  mp:
+    app-id: local-disabled
+    secret: local-disabled
+  miniapp:
+    appid: local-disabled
+    secret: local-disabled
+
+fulfillment:
+  jobs:
+    enabled: ${FULFILLMENT_JOBS_ENABLED:false}
+    storage-root: ${FULFILLMENT_FILE_ROOT:../.local/fulfillment-files/${DB_NAME:fulfillment}}
+  messages:
+    # Outbox writes are always active. Old isolated test apps must not use the main vhost.
+    enabled: ${FULFILLMENT_MESSAGES_ENABLED:false}
+    host: ${MQ_HOST:127.0.0.1}
+    port: ${MQ_PORT:35672}
+    virtual-host: ${MQ_VHOST:fulfillment}
+    username: ${MQ_USER:fulfillment}
+    password: ${MQ_PASSWORD:fulfillment-mq-dev}
+  expiry:
+    enabled: ${FULFILLMENT_EXPIRY_ENABLED:true}
+    delay-ms: 5000
+    initial-delay-ms: 5000
+    batch-size: 50
+    max-batches: 4
+  logistics:
+    integrations:
+      local-demo:
+        tenant-id: ${LOGISTICS_TENANT_ID:1}
+        provider: SIMULATED
+        secret: ${LOGISTICS_SECRET:local-logistics-demo-secret-change-before-sharing}

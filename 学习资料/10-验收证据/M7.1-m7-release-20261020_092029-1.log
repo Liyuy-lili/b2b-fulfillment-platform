@@ -1,0 +1,23 @@
+09:20:49.618 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_release_20261020_092029?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+09:20:49.670 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+09:20:49.706 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table `fulfillment_m7_release_20261020_092029`.`ful_flyway_schema_history` with baseline ...
+09:20:49.862 [main] INFO org.flywaydb.core.internal.command.DbBaseline -- Successfully baselined schema with version: 0
+FULFILLMENT_MIGRATION_OK fulfillment_m7_release_20261020_092029 baseline
+09:20:51.682 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_release_20261020_092029?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+09:20:51.727 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+09:20:51.805 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 8 migrations (execution time 00:00.060s)
+09:20:51.855 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment_m7_release_20261020_092029`: 0
+09:20:51.892 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "1 - fulfillment foundation"
+09:20:52.682 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "2 - reservation and stock safety"
+09:20:53.146 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "3 - shipment cancel and logistics"
+09:20:53.696 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "4 - return receipt"
+09:20:53.998 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "5 - reconciliation"
+09:20:54.557 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "6 - reliable messages"
+09:20:54.961 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m7_release_20261020_092029` to version "7 - file jobs and warehouse scope"
+09:20:55.508 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 7 migrations to schema `fulfillment_m7_release_20261020_092029`, now at version v7 (execution time 00:03.428s)
+FULFILLMENT_MIGRATION_OK fulfillment_m7_release_20261020_092029 migrate
+09:20:57.126 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m7_release_20261020_092029?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+09:20:57.171 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+09:20:57.262 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 8 migrations (execution time 00:00.073s)
+FULFILLMENT_MIGRATION_OK fulfillment_m7_release_20261020_092029 validate
+RELEASE_INSTALL_OK fulfillment_m7_release_20261020_092029

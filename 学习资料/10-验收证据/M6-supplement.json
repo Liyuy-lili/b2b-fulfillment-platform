@@ -1,0 +1,77 @@
+{
+  "run_at": "2026-10-19T16:56:44.409313+00:00",
+  "database": "fulfillment_m6_20261020_004428",
+  "checks": [
+    {
+      "name": "core passed exact final artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated mixed-worker vhost created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated vhost permissions assigned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final legacy regression m1_acceptance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final legacy regression m0_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M5 publication and Inbox converge while file worker succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mixed background work does not change stock or fulfillment facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all execution read models current",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [],
+  "processes": [
+    {
+      "label": "supplement-api",
+      "pid": 30740,
+      "port": 48082,
+      "worker": false,
+      "options": [
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100"
+      ]
+    },
+    {
+      "label": "mixed-workers",
+      "pid": 25656,
+      "port": 48082,
+      "worker": true,
+      "options": [
+        "--fulfillment.messages.enabled=true",
+        "--fulfillment.messages.virtual-host=fulfillment_m6_20261020_004428",
+        "--fulfillment.messages.delay-ms=200",
+        "--fulfillment.jobs.tenant-pending-limit=20",
+        "--fulfillment.jobs.global-pending-limit=100",
+        "--fulfillment.jobs.batch-size=100"
+      ]
+    }
+  ],
+  "artifact_sha256": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b",
+  "mixed_job": "23",
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

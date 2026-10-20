@@ -1,0 +1,15 @@
+PASS passed isolated core and exact artifact
+PASS retained legacy process provenance
+PASS retained final-artifact regression M5-M1-regression.json
+PASS retained final-artifact regression M5-ERP-regression.json
+PASS command scripts/Stop-Messaging.ps1 ()
+PASS enabled worker application authenticates while Broker down
+PASS business shipping succeeds while enabled transport offline
+PASS command scripts/Start-Messaging.ps1 ()
+PASS restored Broker drains all genuine Outbox events
+PASS confirmed persistent message queued without consumer
+PASS command scripts/Stop-Messaging.ps1 ()
+PASS command scripts/Start-Messaging.ps1 ()
+PASS durable queue survives actual Broker restart
+PASS restart redelivery deduplicated without business mutation
+M5 supplement passed 14 checks

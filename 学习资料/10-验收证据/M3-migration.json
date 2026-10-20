@@ -1,0 +1,72 @@
+{
+  "run_at": "2026-10-18T15:28:53.910978+00:00",
+  "checks": [
+    {
+      "name": "main database is V2 before upgrade",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "immutable V1__",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "immutable V2__",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "V3 recorded successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all H R stock facts preserved",
+      "passed": true,
+      "detail": 127
+    },
+    {
+      "name": "new cancellation facts table starts empty",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Stop-Local.ps1",
+      "args": [],
+      "exit": 0,
+      "output": "Stopped project listener on 15173\nStopped project listener on 48080\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "migrate"
+      ],
+      "exit": 0,
+      "output": "23:28:59.018 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\n23:28:59.069 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\n23:28:59.159 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.069s)\n23:28:59.215 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment`: 2\n23:28:59.248 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment` to version \"3 - shipment cancel and logistics\"\n23:29:00.112 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema `fulfillment`, now at version v3 (execution time 00:00.828s)\nFULFILLMENT_MIGRATION_OK fulfillment migrate\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "validate"
+      ],
+      "exit": 0,
+      "output": "23:29:02.388 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\n23:29:02.440 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\n23:29:02.528 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.068s)\nFULFILLMENT_MIGRATION_OK fulfillment validate\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Start-Local.ps1",
+      "args": [],
+      "exit": 0,
+      "output": "mysql already listening on 33306\nredis already listening on 36379\nbackend listening on 48080\nfrontend listening on 15173\nOpen http://127.0.0.1:15173 ; tenant: 芋道源码 ; admin / admin123 (local demo only)\n",
+      "error": ""
+    }
+  ],
+  "result": "passed"
+}

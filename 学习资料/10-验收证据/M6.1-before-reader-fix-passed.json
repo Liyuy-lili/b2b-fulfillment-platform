@@ -1,0 +1,221 @@
+{
+  "run_at": "2026-10-19T16:23:45.614581+00:00",
+  "database": "fulfillment_m6_20261020_002345",
+  "redis_database": 8,
+  "checks": [
+    {
+      "name": "isolated port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m6_20261020_002345')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m6_20261020_002345')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m6_20261020_002345')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m6_20261020_002345')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "history V0 through V7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same export key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database pending capacity rejects fourth",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected admission leaves no command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending job cancelled immediately",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel reason conflict same key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same formerly rejected key works after capacity freed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "worker generated private result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export changed no business facts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded executor actual capacities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized real XLSX download",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual process exit after claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "claimed task retained for lease recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reclaimed with higher fencing version",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recovery still changes no business facts",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "file": "scripts/Initialize-Database.ps1",
+      "arguments": [
+        "-Database",
+        "fulfillment_m6_20261020_002345"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m6-fulfillment_m6_20261020_002345-setup-0.log"
+    },
+    {
+      "file": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m6_20261020_002345"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m6-fulfillment_m6_20261020_002345-setup-1.log"
+    },
+    {
+      "file": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m6_20261020_002345"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m6-fulfillment_m6_20261020_002345-setup-2.log"
+    },
+    {
+      "file": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m6_20261020_002345"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m6-fulfillment_m6_20261020_002345-setup-3.log"
+    }
+  ],
+  "processes": [
+    {
+      "label": "foundation-api",
+      "pid": 13184,
+      "port": 48082,
+      "worker": false,
+      "options": []
+    },
+    {
+      "label": "foundation-worker",
+      "pid": 22848,
+      "port": 48083,
+      "worker": true,
+      "options": []
+    },
+    {
+      "label": "foundation-crash",
+      "pid": 8344,
+      "port": 48083,
+      "worker": true,
+      "options": [
+        "--fulfillment.test.job-crash=AFTER_CLAIM",
+        "--fulfillment.test.job-target=5"
+      ]
+    },
+    {
+      "label": "foundation-recovery",
+      "pid": 35508,
+      "port": 48083,
+      "worker": true,
+      "options": []
+    }
+  ],
+  "artifact_sha256": "a24b13b0e6a0166e9222ac29b41809a9d8def56724bb27f4dd1cd97713de81a1",
+  "fixture": {
+    "product": 1,
+    "source": 1,
+    "order": "1",
+    "shipment": "1",
+    "lines": [
+      {
+        "id": "1",
+        "orderItemId": "1",
+        "reservationId": "1",
+        "quantity": "1.000000",
+        "erpSaleOutItemId": "1"
+      }
+    ],
+    "warehouse": 1
+  },
+  "export": {
+    "jobId": "1",
+    "outcome": "EXPORT_QUEUED"
+  },
+  "crash_job": {
+    "jobId": "5",
+    "outcome": "EXPORT_QUEUED"
+  },
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

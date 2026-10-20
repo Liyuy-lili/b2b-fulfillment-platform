@@ -1,0 +1,1347 @@
+{
+  "run_at": "2026-10-20T05:52:27.768239+00:00",
+  "checks": [
+    {
+      "name": "passed M7-build.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.2-matrix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.3-query.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7.3-stock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-main-upgrade.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-replay-after-restart.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-closeout.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-final-browser.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passed M7-source-diff.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all T01-T30 individually mapped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup core",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup expiry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup returns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup filefoundation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current suite SHA and cleanup file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current performance SHA query",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current performance SHA stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual pinned source patch hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/.mvn/wrapper/maven-wrapper.properties",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnw",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnw.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnwDebug",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/mvnwDebug.cmd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/ErpSaleOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/controller/admin/sale/vo/order/ErpSaleOrderRespVO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleOutMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/sale/ErpSaleReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/ErpStockMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockBalance.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockKey.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/enums/ErrorCodeConstants.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/product/ErpProductServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleReturnPort.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/DatabaseCommandRetry.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockCheckServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockInServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockMoveServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockOutServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockServiceImpl.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpTransactionRetryAspect.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulMessageController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReconcileController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReturnController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/MessageContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReconcileContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReturnContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCallbackEventDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCancellationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulCommandRecordDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulOrderItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReservationDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulShipmentItemDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulStockLedgerDO.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEvent.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngine.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessagingConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReconcileTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReturnFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulFileJobAdmin.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageAdminService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageConsumerService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageSnapshots.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageWorker.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOutboxService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulRabbitTransport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileSnapshotReader.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileAdmission.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileSnapshotObserver.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V4__return_receipt.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V5__reconciliation.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V6__reliable_messages.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/main/resources/m0-baseline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEventTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngineTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-server/pom.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/.env.fulfillment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/.env.release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/package.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/pnpm-lock.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/fulfillment/messages.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/reconciliation/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/api/erp/sale/order/index.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/router/modules/remaining.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/utils/routerHelper.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentMessages.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentReturns.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/fulfillment/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/reconciliation/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/order/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current diff source hash frontend/src/views/erp/sale/out/SaleOutForm.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical child evidence exception explicitly disclosed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main target independent copy and package share final artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent test applications closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manifest hash matches closeout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged runbook exact current source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all manifest files exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive SHA exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive CRC and exact membership",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive no private config data or dependency folder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact config.example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Install-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Release-Environment.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Start-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "packaged script exact Stop-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual JPEG browser proof",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correct final independent order quantities and messages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved M6 business source frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed lock exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MIT backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "MIT frontend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48081",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48084",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48085",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 48086",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "temporary port free 15174",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 3306",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 33306",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 36379",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35672",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35673",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35674",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 35675",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 15173",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing service listening 48080",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real authorized runtime",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main migrations V0-V8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main physical inventory remains clean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local link README.md -> docs/evidence/M7-final-qa.json",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "result": "failed",
+  "error": "local link README.md -> docs/evidence/M7-final-qa.json"
+}

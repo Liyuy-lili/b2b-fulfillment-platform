@@ -1,0 +1,314 @@
+{
+  "run_at": "2026-10-19T12:04:22.452002+00:00",
+  "database": "fulfillment_m5_20261019_200422",
+  "vhost": "fulfillment_m5_20261019_200422",
+  "redis_database": 7,
+  "checks": [
+    {
+      "name": "test port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Start-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated RabbitMQ vhost created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated vhost permission configured",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m5_20261019_200422')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m5_20261019_200422')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m5_20261019_200422')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m5_20261019_200422')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bound allocate shipment cancel emitted four events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "already received new key emits no duplicate event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six cross-JVM bind requests one event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after-Outbox fault rejects shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ERP H R facts and event all roll back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed shipment command not retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same-key healthy retry exactly one event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expiry event shares system actor command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all eight declared business event types exercised",
+      "passed": true,
+      "detail": [
+        "ALLOCATION_ATTEMPTED",
+        "ORDER_BOUND",
+        "ORDER_CANCELLED",
+        "RESERVATION_EXPIRED",
+        "RETURN_RECEIVED",
+        "SHIPMENT_CONFIRMED",
+        "STOCK_RELEASED",
+        "STOCK_RESERVED"
+      ]
+    },
+    {
+      "name": "event bodies and tenant version identity valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Stop-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Broker offline business commits NEW outbox",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Start-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unroutable confirmed publication becomes DEAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every unroutable delivery is failed not ACKED",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual republish preserves event identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "changed reason same key conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manual broker recovery reaches SENT with total attempts retained",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Start-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-0.log"
+    },
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "arguments": [
+        "-Database",
+        "fulfillment_m5_20261019_200422"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-1.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m5_20261019_200422"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-2.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m5_20261019_200422"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-3.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m5_20261019_200422"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m5-command-4.log"
+    },
+    {
+      "script": "scripts/Stop-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-5.log"
+    },
+    {
+      "script": "scripts/Start-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-6.log"
+    }
+  ],
+  "processes": [
+    {
+      "label": "api",
+      "port": 48082,
+      "pid": 21720,
+      "publisher": false,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "append-fault",
+      "port": 48083,
+      "pid": 14404,
+      "publisher": false,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-append-failure=true"
+      ]
+    },
+    {
+      "label": "unroutable",
+      "port": 48083,
+      "pid": 33708,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.messages.routing-key=missing"
+      ]
+    },
+    {
+      "label": "publish-recovery",
+      "port": 48083,
+      "pid": 34712,
+      "publisher": true,
+      "consumer": false,
+      "test_options": []
+    },
+    {
+      "label": "confirm-crash",
+      "port": 48083,
+      "pid": 1784,
+      "publisher": true,
+      "consumer": false,
+      "test_options": [
+        "--fulfillment.test.message-crash=AFTER_CONFIRM"
+      ]
+    }
+  ],
+  "fixtures": {
+    "flow": {
+      "product": 1,
+      "source": 1,
+      "order": "1",
+      "shipment": "1",
+      "lines": [
+        {
+          "id": "1",
+          "orderItemId": "1",
+          "reservationId": "1",
+          "quantity": "2.000001",
+          "erpSaleOutItemId": "1"
+        }
+      ],
+      "warehouse": 1
+    },
+    "publish_crash": {
+      "product": 2,
+      "source": 4,
+      "order": "4",
+      "shipment": "4",
+      "lines": [
+        {
+          "id": "4",
+          "orderItemId": "4",
+          "reservationId": "3",
+          "quantity": "2.000000",
+          "erpSaleOutItemId": "4"
+        }
+      ],
+      "warehouse": 1
+    }
+  },
+  "injections": [
+    {
+      "kind": "expiry_deadline",
+      "reservation": "2"
+    },
+    {
+      "kind": "dispatch_due_fixture",
+      "only_event": "7d5ccc02-bb5c-498c-9787-3b425d356016"
+    },
+    {
+      "kind": "dispatch_due_fixture",
+      "only_event": "9a35a27b-dd38-405f-8973-00320d9d4e3d"
+    }
+  ],
+  "artifact_sha256": "436b98a91940cace3274af14d284844d69d579aeba79d85b68cc6f50a654a621",
+  "result": "failed",
+  "error": "JVM exited before readiness confirm-crash 71",
+  "all_owned_processes_stopped": true
+}

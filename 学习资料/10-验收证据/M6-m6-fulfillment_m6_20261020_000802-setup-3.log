@@ -1,0 +1,4 @@
+00:08:28.577 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m6_20261020_000802?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+00:08:28.631 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+00:08:28.727 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 8 migrations (execution time 00:00.074s)
+FULFILLMENT_MIGRATION_OK fulfillment_m6_20261020_000802 validate

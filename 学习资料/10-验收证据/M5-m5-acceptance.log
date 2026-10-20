@@ -1,0 +1,69 @@
+PASS test port free 48082
+PASS test port free 48083
+PASS command scripts/Start-Messaging.ps1 ()
+PASS isolated RabbitMQ vhost created
+PASS isolated vhost permission configured
+PASS command scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m5_20261019_201046')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m5_20261019_201046')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m5_20261019_201046')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m5_20261019_201046')
+PASS bound allocate shipment cancel emitted four events
+PASS already received new key emits no duplicate event
+PASS six cross-JVM bind requests one event
+PASS after-Outbox fault rejects shipment
+PASS ERP H R facts and event all roll back
+PASS failed shipment command not retained
+PASS same-key healthy retry exactly one event
+PASS expiry event shares system actor command
+PASS all eight declared business event types exercised
+PASS event bodies and tenant version identity valid
+PASS command scripts/Stop-Messaging.ps1 ()
+PASS Broker offline business commits NEW outbox
+PASS command scripts/Start-Messaging.ps1 ()
+PASS unroutable confirmed publication becomes DEAD
+PASS every unroutable delivery is failed not ACKED
+PASS manual republish preserves event identity
+PASS changed reason same key conflicts
+PASS manual broker recovery reaches SENT with total attempts retained
+PASS actual process exits at after-confirm window
+PASS confirm crash leaves IN_FLIGHT without SENT
+PASS expired publisher lease reclaimed with higher version
+PASS own m5claim: barrier
+PASS own m5confirm: barrier
+PASS active lease rejects manual replay
+PASS old publisher cannot overwrite newer lease result
+PASS two actual JVM owners competed for event
+PASS all events processed with one Inbox each
+PASS duplicates observed without duplicate local effects
+PASS out of order events cannot overwrite newer read model
+PASS older versions recorded as processed without applying
+PASS malformed incompatible and forged-tenant messages quarantined
+PASS failed projection is rolled back before persistent retry
+PASS consumer retries bounded and Broker delivery ACKed after durable failure
+PASS manual consume retry response durable
+PASS processed consume retry produces no second effect
+PASS actual process exits after consumer commit before ACK
+PASS Inbox committed before ACK crash
+PASS redelivered ACK crash leaves projection and business facts unchanged
+PASS anonymous message query denied
+PASS no query permission denied
+PASS other owner cannot query known order
+PASS other owner cannot replay known event
+PASS other owner cannot rebuild known order
+PASS ordinary owner queries own event
+PASS revoked replay permission denies old successful key
+PASS rebuild requires independent permission
+PASS message page size bounded
+PASS known event from another order hidden
+PASS replay requires idempotency header
+PASS foreign tenant known order denied
+PASS trusted foreign event applies only its own tenant
+PASS tenant one cannot get foreign message
+PASS rebuild idempotent and repairs same-version projection
+PASS old delivery after rebuild cannot regress projection
+PASS final complete pipeline SENT and PROCESSED every event
+PASS all event projections converge to business version
+PASS H R and fulfillment facts remain consistent
+PASS manual replay key survives JVM restart
+PASS rebuild key survives JVM restart
+M5 acceptance passed 68 checks fulfillment_m5_20261019_201046

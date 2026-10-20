@@ -1,0 +1,868 @@
+{
+  "date": "2026-10-18",
+  "run_at": "2026-10-20T01:51:39.613984+00:00",
+  "checks": [
+    {
+      "name": "fixture reservation succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-out reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-out failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-out failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-move reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-move failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-move failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-check reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-check failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-check failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-out reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "sale-out failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-out failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-in reversal rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-10.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-in failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-in failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary out can consume exactly available stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "out reversal increases physical only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "loss reversal restores H without changing R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixture reservation succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-return reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8采购减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "purchase-return failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-return failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-in reversal rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8采购减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-10.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "purchase-in failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-in failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase return reversal restores physical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixture reservation succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-return reversal rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8销售退货撤销)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "sale-return failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-return failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unmanaged sale out reversal adds physical only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixture reservation succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-check reversal rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8盘盈撤销)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-check failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-check failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixture reservation succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-move reversal rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8调拨撤销)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-10.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-move failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-move failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed move reversal keeps destination and source atomic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-out reduction rejects unavailable stock",
+      "passed": true,
+      "detail": {
+        "code": 1030404000,
+        "msg": "操作失败，产品(M2L11f4ba8普通减少)所在仓库(M26c2fa359优先仓)的库存：2.000000，小于变更数量：-3.000000",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-out failure rolls back all inventory and ledgers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-out failure restores document status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "later-line failure rolls back earlier product and ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite moves across two JVMs both finish consistently",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy whole transaction actually retried",
+      "passed": true,
+      "detail": [
+        "2026-10-20 09:52:22.212 [http-nio-127.0.0.1-48082-exec-8] \u001b[31mWARN \u001b[0;39m \u001b[36mc.i.y.m.erp.service.stock.DatabaseCommandRetry:23\u001b[0;39m - Retry entire database command after lock failure, next attempt=2"
+      ]
+    },
+    {
+      "name": "legacy retry commits one deduction and ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "allocate and legacy reduce serialize across JVMs 0",
+      "passed": true,
+      "detail": {
+        "allocation": "INSUFFICIENT_STOCK",
+        "legacy_code": 0
+      }
+    },
+    {
+      "name": "allocate and legacy reduce serialize across JVMs 1",
+      "passed": true,
+      "detail": {
+        "allocation": "INSUFFICIENT_STOCK",
+        "legacy_code": 0
+      }
+    },
+    {
+      "name": "allocate and legacy reduce serialize across JVMs 2",
+      "passed": true,
+      "detail": {
+        "allocation": "INSUFFICIENT_STOCK",
+        "legacy_code": 0
+      }
+    },
+    {
+      "name": "allocate and legacy reduce serialize across JVMs 3",
+      "passed": true,
+      "detail": {
+        "allocation": "INSUFFICIENT_STOCK",
+        "legacy_code": 0
+      }
+    },
+    {
+      "name": "stock-in invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-in invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-out invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-out invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-move invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-move invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock-check invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "stock-check invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-out invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "sale-out invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sale-return invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "sale-return invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-return invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 1030404002,
+        "msg": "STOCK_DOCUMENT_QUANTITY_INVALID: 出入库数量必须为正，盘点账实数量和差额必须一致",
+        "data": null
+      }
+    },
+    {
+      "name": "purchase-return invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "purchase-in invalid natural quantity or count delta rejected",
+      "passed": true,
+      "detail": {
+        "code": 400,
+        "msg": "请求参数不正确:产品数量必须大于 0",
+        "data": null
+      }
+    },
+    {
+      "name": "purchase-in invalid quantity creates no physical effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy paths preserve held commitment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy current-read running ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy physical total equals ledger",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "cases": [
+    {
+      "kind": "stock-out",
+      "id": 1,
+      "product": 16,
+      "reverse": false,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-move",
+      "id": 1,
+      "product": 16,
+      "reverse": false,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-check",
+      "id": 1,
+      "product": 16,
+      "reverse": false,
+      "code": 1030404000
+    },
+    {
+      "kind": "sale-out",
+      "id": 11,
+      "product": 16,
+      "reverse": false,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-in",
+      "id": 19,
+      "product": 16,
+      "reverse": true,
+      "code": 1030404000
+    },
+    {
+      "kind": "purchase-return",
+      "id": 1,
+      "product": 17,
+      "reverse": false,
+      "code": 1030404000
+    },
+    {
+      "kind": "purchase-in",
+      "id": 1,
+      "product": 17,
+      "reverse": true,
+      "code": 1030404000
+    },
+    {
+      "kind": "sale-return",
+      "id": 2,
+      "product": 18,
+      "reverse": true,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-check",
+      "id": 3,
+      "product": 19,
+      "reverse": true,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-move",
+      "id": 2,
+      "product": 20,
+      "reverse": true,
+      "code": 1030404000
+    },
+    {
+      "kind": "stock-out",
+      "id": 3,
+      "product": 16,
+      "reverse": false,
+      "code": 1030404000
+    }
+  ],
+  "database": "fulfillment_m7_reg_core_20261020_094744",
+  "forced_retry_evidence": [
+    "2026-10-20 09:52:22.212 [http-nio-127.0.0.1-48082-exec-8] \u001b[31mWARN \u001b[0;39m \u001b[36mc.i.y.m.erp.service.stock.DatabaseCommandRetry:23\u001b[0;39m - Retry entire database command after lock failure, next attempt=2"
+  ],
+  "allocation_legacy_races": [
+    {
+      "product": 24,
+      "allocation": "INSUFFICIENT_STOCK",
+      "legacy_code": 0
+    },
+    {
+      "product": 25,
+      "allocation": "INSUFFICIENT_STOCK",
+      "legacy_code": 0
+    },
+    {
+      "product": 26,
+      "allocation": "INSUFFICIENT_STOCK",
+      "legacy_code": 0
+    },
+    {
+      "product": 27,
+      "allocation": "INSUFFICIENT_STOCK",
+      "legacy_code": 0
+    }
+  ],
+  "products": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "result": "passed",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "m7_case": "core"
+}

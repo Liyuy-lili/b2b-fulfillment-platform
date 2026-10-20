@@ -1,0 +1,69 @@
+{
+  "run_at": "2026-10-20T05:50:44.254055+00:00",
+  "checks": [
+    {
+      "name": "release scenario passed before closeout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "production browser proof uses isolated port and correct order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual desktop JPEG proof",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owned release stop exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated frontend and backend ports free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original main services still listening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "manifest files unchanged before archive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive preflight free space",
+      "passed": true,
+      "detail": {
+        "file_count": 392,
+        "input_bytes": 184552445
+      }
+    },
+    {
+      "name": "archive output new and outside input directory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP CRC and exact manifest membership",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP excludes active config private files and dependency folders",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "archive": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\releases\\fulfillment-final-20261020-095456.zip",
+  "archive_sha256": "49a14f5a5c9667cd196ffa545c952248da11802c9e922127881f2e0ee19a71b1",
+  "archive_bytes": 160751168,
+  "manifest_sha256": "3bc48660bff769aae7769426a209865fecc12e2e8b4e01057602d66b5b065605",
+  "files": 392,
+  "result": "passed"
+}

@@ -1,0 +1,142 @@
+{
+  "run_at": "2026-10-18T15:52:20.651184+00:00",
+  "checks": [
+    {
+      "name": "preview requires function permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preview checks source owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship function permission independent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel function permission independent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship requires order owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel requires order owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner can ship",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot read known shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot list shipments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot simulate known shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot inspect cancellation history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shipment page size bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship replay rechecks current function permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shipment query requires its permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "simulation requires its permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay restored permission returns original result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel replay rechecks permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot ship known order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot cancel known item",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot query known shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed integration cannot route into body or header tenant",
+      "passed": true,
+      "detail": {
+        "code": 1080000032,
+        "msg": "CALLBACK_SHIPMENT_UNKNOWN: 尚未找到发货单，可稍后重试",
+        "data": null
+      }
+    },
+    {
+      "name": "foreign shipment remains SHIPPED",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "body tenant spoof stays in authenticated tenant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed unauthorized operations preserve expected quantities",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "owner": 281,
+    "tenant": 170,
+    "product": 141,
+    "order": "179",
+    "foreign_shipment": {
+      "shipmentId": "18",
+      "shipmentNo": "SHP-580dc6f5-4b3c-4f2e-a09a-264bb5e86a66",
+      "erpSaleOutId": "98",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    }
+  },
+  "result": "passed"
+}

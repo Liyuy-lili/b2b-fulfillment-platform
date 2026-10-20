@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-10-18T16:30:38.046424+00:00",
+  "backend_command": "mvnw.cmd -B -ntp -pl yudao-server -am package -Dtest=OrderStatusCalculatorTest,AllocationPlannerTest,DatabaseCommandRetryTest,LogisticsSignatureTest -Dsurefire.failIfNoSpecifiedTests=false",
+  "backend_exit": 0,
+  "modules": 22,
+  "unit_tests": 32,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_upstream_unit_tests_run": false,
+  "frontend_command": "pnpm --dir frontend run build:fulfillment",
+  "frontend_exit": 0,
+  "full_typescript_check_run": false,
+  "source_schema_check": "33 ERP entities checked with scripts/erp_schema.py --check"
+}

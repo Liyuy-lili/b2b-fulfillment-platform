@@ -1,0 +1,101 @@
+{
+  "run_at": "2026-10-19T23:27:31.4742681+08:00",
+  "listeners": [
+    {
+      "LocalAddress": "::1",
+      "LocalPort": 35675,
+      "OwningProcess": 26788
+    },
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 5996
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 48080,
+      "OwningProcess": 29776
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 36379,
+      "OwningProcess": 12836
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35675,
+      "OwningProcess": 26788
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35674,
+      "OwningProcess": 25072
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35673,
+      "OwningProcess": 25072
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35672,
+      "OwningProcess": 25072
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 33306,
+      "OwningProcess": 31320
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 15173,
+      "OwningProcess": 36464
+    }
+  ],
+  "test_listeners": [],
+  "test_ports_free": true,
+  "processes": [
+    {
+      "ProcessId": 5996,
+      "Name": "mysqld.exe",
+      "ExecutablePath": null,
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 12836,
+      "Name": "redis-server.exe",
+      "ExecutablePath": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\tools\\redis\\Redis-7.2.8-Windows-x64-msys2\\redis-server.exe",
+      "CommandLine": "\"C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\tools\\redis\\Redis-7.2.8-Windows-x64-msys2\\redis-server.exe\" --bind 127.0.0.1 --port 36379 --dir \"C:/Users/Lenovo/.cache/fulfillment-m0/redis-data\" --save \"60 1\" --appendonly yes --appendfsync everysec"
+    },
+    {
+      "ProcessId": 25072,
+      "Name": "erl.exe",
+      "ExecutablePath": "C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\erlang-27.3.4.17\\bin\\erl.exe",
+      "CommandLine": "\"C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\erlang-27.3.4.17\\bin\\erl.exe\"   -noinput -s \"rabbit\" boot -boot \"start_sasl\" +W w +MBas ageffcbf +MHas ageffcbf +MBlmbcs 512 +MHlmbcs 512 +MMmcs 30 +pc unicode +P 1048576 +t 5000000 +stbt db +zdbbl 128000 +sbwt none +sbwtdcpu none +sbwtdio none -setcookie fulfillment_m5_local_cookie +S 2:2 +SDcpu 1 +SDio 1  -syslog logger [] -syslog syslog_error_logger false -kernel prevent_overlapping_partitions false "
+    },
+    {
+      "ProcessId": 26788,
+      "Name": "epmd.exe",
+      "ExecutablePath": "c:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\erlang-27.3.4.17\\erts-15.2.7.13\\bin\\epmd.exe",
+      "CommandLine": "\"c:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\erlang-27.3.4.17\\erts-15.2.7.13\\bin\\epmd\" -daemon"
+    },
+    {
+      "ProcessId": 29776,
+      "Name": "java.exe",
+      "ExecutablePath": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin\\java.exe",
+      "CommandLine": "\"C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin\\java.exe\" -Xms256m -Xmx1024m -Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai -jar \"C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\backend-run.jar\" --spring.profiles.active=fulfillment --fulfillment.messages.enabled=true --spring.config.additional-location=\"file:C:/Users/Lenovo/OneDrive/文档/ChatGPT/java后端项目/backend/yudao-server/src/main/resources/application-fulfillment.yaml\""
+    },
+    {
+      "ProcessId": 31320,
+      "Name": "mysqld.exe",
+      "ExecutablePath": "C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\mysql-8.4.6-winx64\\bin\\mysqld.exe",
+      "CommandLine": "C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\tools\\mysql-8.4.6-winx64\\bin\\mysqld.exe --defaults-file=C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\mysql.ini"
+    },
+    {
+      "ProcessId": 36464,
+      "Name": "node.exe",
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" --max-old-space-size=4096 \"C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\frontend\\node_modules\\vite\\bin\\vite.js\" --mode fulfillment --host 127.0.0.1 --strictPort"
+    }
+  ]
+}

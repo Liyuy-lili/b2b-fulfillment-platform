@@ -1,0 +1,279 @@
+{
+  "order": "228",
+  "checks": [
+    {
+      "name": "requested: physical increases only on actual receipt",
+      "passed": true,
+      "detail": [
+        [
+          "14.000000",
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "requested: gross shipped and cancelled preserved, returned separate",
+      "passed": true,
+      "detail": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "requested: exact expected application states",
+      "passed": true,
+      "detail": [
+        [
+          1,
+          "REQUESTED",
+          null,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "requested: no automatic order reopening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "requested: one ERP physical receipt effect",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "received: physical increases only on actual receipt",
+      "passed": true,
+      "detail": [
+        [
+          "16.000000",
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "received: gross shipped and cancelled preserved, returned separate",
+      "passed": true,
+      "detail": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "2.000000"
+        ]
+      ]
+    },
+    {
+      "name": "received: exact expected application states",
+      "passed": true,
+      "detail": [
+        [
+          1,
+          "RECEIVED",
+          13,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "received: no automatic order reopening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "received: one ERP physical receipt effect",
+      "passed": true,
+      "detail": [
+        [
+          "2.000000"
+        ]
+      ]
+    },
+    {
+      "name": "received: ERP source out stays gross and return increases once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "received: ERP physical mapping in original warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "received: goods return does not create refund",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected: physical increases only on actual receipt",
+      "passed": true,
+      "detail": [
+        [
+          "16.000000",
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "rejected: gross shipped and cancelled preserved, returned separate",
+      "passed": true,
+      "detail": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "2.000000"
+        ]
+      ]
+    },
+    {
+      "name": "rejected: exact expected application states",
+      "passed": true,
+      "detail": [
+        [
+          1,
+          "RECEIVED",
+          13,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ],
+        [
+          2,
+          "REJECTED",
+          null,
+          "浏览器验收：申请退回1件，后续核验拒绝",
+          "浏览器验收：未提供退货凭证，本次不入库浏i"
+        ]
+      ]
+    },
+    {
+      "name": "rejected: no automatic order reopening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected: one ERP physical receipt effect",
+      "passed": true,
+      "detail": [
+        [
+          "2.000000"
+        ]
+      ]
+    },
+    {
+      "name": "rejected: ERP source out stays gross and return increases once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected: ERP physical mapping in original warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected: goods return does not create refund",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "stages": {
+    "requested": {
+      "run_at": "2026-10-19T03:03:55.393092+00:00",
+      "stock": [
+        [
+          "14.000000",
+          "0.000000"
+        ]
+      ],
+      "items": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "0.000000"
+        ]
+      ],
+      "heads": [
+        [
+          1,
+          "REQUESTED",
+          null,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ]
+      ]
+    },
+    "received": {
+      "run_at": "2026-10-19T03:04:19.099073+00:00",
+      "stock": [
+        [
+          "16.000000",
+          "0.000000"
+        ]
+      ],
+      "items": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "2.000000"
+        ]
+      ],
+      "heads": [
+        [
+          1,
+          "RECEIVED",
+          13,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ]
+      ]
+    },
+    "rejected": {
+      "run_at": "2026-10-19T03:04:49.402488+00:00",
+      "stock": [
+        [
+          "16.000000",
+          "0.000000"
+        ]
+      ],
+      "items": [
+        [
+          "0.000000",
+          "0.000000",
+          "6.000000",
+          "4.000000",
+          "2.000000"
+        ]
+      ],
+      "heads": [
+        [
+          1,
+          "RECEIVED",
+          13,
+          "浏览器验收：商品型号不符，退回2件",
+          null
+        ],
+        [
+          2,
+          "REJECTED",
+          null,
+          "浏览器验收：申请退回1件，后续核验拒绝",
+          "浏览器验收：未提供退货凭证，本次不入库浏i"
+        ]
+      ]
+    }
+  },
+  "result": "passed"
+}

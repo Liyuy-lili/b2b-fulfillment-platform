@@ -1,0 +1,10 @@
+{
+  "source": "tests/m6_restart.py",
+  "sha256": "af46b3b45424b78e2d3e05ff48d6ed23bd00d4cfc7d88decc64dc5c9efa62214",
+  "substitutions": {
+    "M6-restart.json": "M7-restart.json",
+    "M6-replay-after-restart.json": "M7-replay-after-restart.json",
+    ".local/m6-full-restart.log": ".local/m7-full-restart.log"
+  },
+  "intent": "Original main M6 browser keys and private files deliberately replayed under final V8 artifact; exact business assertions preserved."
+}

@@ -1,0 +1,49 @@
+{
+  "run_at": "2026-10-20T02:45:05.867630+00:00",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "first": "query",
+  "await_retry": true,
+  "stages": [
+    {
+      "stage": "query",
+      "script": "m7_query_benchmark.py",
+      "exit_code": 0,
+      "seconds": 432.04105400000117,
+      "log": ".local\\m7-query-run.log",
+      "log_sha256": "b65dd0ba01fae4517b9ee9cac00abf346e61459cd5f73947f437bfb1b74a1519"
+    },
+    {
+      "stage": "stock",
+      "script": "m7_stock_benchmark.py",
+      "exit_code": 0,
+      "seconds": 94.5989278999914,
+      "log": ".local\\m7-stock-run.log",
+      "log_sha256": "0c0c6e312381c5a6bb81392266907e988c8c18ba9b8a7b8b03c4e30c54192cfa"
+    },
+    {
+      "stage": "upgrade",
+      "script": "m7_main_upgrade.py",
+      "exit_code": 0,
+      "seconds": 82.68948420000379,
+      "log": ".local\\m7-upgrade-run.log",
+      "log_sha256": "a2c99139a12661d4e522f12e26defbd5e0592138b181ccb0153e815038748efe"
+    },
+    {
+      "stage": "restart",
+      "script": "m7_main_restart.py",
+      "exit_code": 0,
+      "seconds": 101.9242849000002,
+      "log": ".local\\m7-restart-run.log",
+      "log_sha256": "7b10d4bc06794469f15b3e7ac1e258647c4608a91c1349171774b7d50f52c398"
+    },
+    {
+      "stage": "release",
+      "script": "m7_release.py",
+      "exit_code": 0,
+      "seconds": 156.99669699999504,
+      "log": ".local\\m7-release-run.log",
+      "log_sha256": "88d772abc77a44fdf568ff969c31f3d43cbd8a64ddb85440d6cec519b3aa52d0"
+    }
+  ],
+  "result": "ready_for_browser"
+}

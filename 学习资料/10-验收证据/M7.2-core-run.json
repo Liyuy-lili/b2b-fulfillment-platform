@@ -1,0 +1,142 @@
+{
+  "run_at": "2026-10-20T01:47:44.473381+00:00",
+  "case": "core",
+  "database": "fulfillment_m7_reg_core_20261020_094744",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "sources": [
+    {
+      "path": "tests\\m2_legacy_inventory.py",
+      "sha256": "06efb709cd0d2c45494d638b7a9fca99388275c7e06fd3ade4f1ac6ea7bb8e50",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    },
+    {
+      "path": "tests\\m3_acceptance.py",
+      "sha256": "2ca7233412923571b88ad86b6cd8e77781261be45c3d4698d960514d6bc34dae",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    },
+    {
+      "path": "tests\\m3_permissions.py",
+      "sha256": "d1cd92b8810fa256ffd514cdf1691a2c068b9cec87870f06136216525635bf05",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    },
+    {
+      "path": "tests\\m3_erp_failure.py",
+      "sha256": "8f68b358bc6fef75b04c96607af9867cc183ccbb8212d3e91b6bde21c14b831e",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    }
+  ],
+  "adaptations": [
+    "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json.",
+    {
+      "positive_fixture_warehouse_grant": {
+        "user": 253,
+        "warehouse": 2
+      }
+    }
+  ],
+  "results": [
+    {
+      "evidence": "M7.2-core-binding.json",
+      "checks": 68
+    },
+    {
+      "evidence": "M7.2-core-m2.json",
+      "checks": 94
+    },
+    {
+      "evidence": "M7.2-core-legacy.json",
+      "checks": 130
+    },
+    {
+      "evidence": "M7.2-core-m3.json",
+      "checks": 97
+    },
+    {
+      "evidence": "M7.2-core-m3-permissions.json",
+      "checks": 24
+    },
+    {
+      "evidence": "M7.2-core-erp-fault.json",
+      "checks": 7
+    },
+    {
+      "evidence": "M7.2-core-ERP.json",
+      "checks": 110
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m7_reg_core_20261020_094744"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460864664024600.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m7_reg_core_20261020_094744"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460873476897400.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m7_reg_core_20261020_094744"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460876899894100.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m7_reg_core_20261020_094744"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460884841341500.log"
+    }
+  ],
+  "result": "passed",
+  "all_owned_stopped": true,
+  "metadata_description_correction": {
+    "original": "M7.2-core-original-meta.json",
+    "exception": "M7-evidence-exception.json",
+    "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+  }
+}

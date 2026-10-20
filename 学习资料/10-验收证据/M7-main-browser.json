@@ -1,0 +1,15 @@
+{
+  "result": "passed",
+  "run_at": "2026-10-20T05:54:40.278Z",
+  "url": "http://127.0.0.1:15173/erp/fulfillment",
+  "actual_rendered_text": "多仓订单履约\n首页\n系统管理\n基础设施\nERP 系统\nERP 首页\n履约订单\n库存与履约核对\n文件任务\n仓库作业\n采购管理\n销售管理\n库存管理\n产品管理\n财务管理\nERP 系统\n/\n履约订单\n请选择租户\n请输入菜单内容\n芋道源码\n首页\n履约订单\n履约订单\n\n将已审核的销售订单交给履约管理，管理库存分配、部分发货、取消与物流进度。\n\n销售单号\n履约状态\n全部状态\n查询\n重置\n绑定销售单\n销售单号\n\t\n履约编号\n\t\n履约状态\n\t\n客户编号\n\t\n订单金额（元）\n\t\n绑定时间\n\t\n操作\nXSDD20261019000011\n\t\n229\n\t\n部分关闭\n\t\n39\n\t\n7.560000\n\t\n2026/10/19 23:23:11\n\t\n详情\n\n\nXSDD20261019000010\n\t\n228\n\t\n部分关闭\n\t\n38\n\t\n25.180000\n\t\n2026/10/19 11:01:56\n\t\n详情\n\n\nXSDD20261019000009\n\t\n227\n\t\n已取消\n\t\n37\n\t\n5.030000\n\t\n2026/10/19 00:57:01\n\t\n详情\n\n\nXSDD20261019000008\n\t\n226\n\t\n已完成\n\t\n37\n\t\n2.830000\n\t\n2026/10/19 00:56:58\n\t\n详情\n\n\nXSDD20261019000007\n\t\n225\n\t\n部分发货\n\t\n37\n\t\n15.100000\n\t\n2026/10/19 00:56:55\n\t\n详情\n\n\nXSDD20261019000006\n\t\n224\n\t\n部分发货\n\t\n37\n\t\n15.100000\n\t\n2026/10/19 00:56:52\n\t\n详情\n\n\nXSDD20261019000005\n\t\n223\n\t\n部分发货\n\t\n37\n\t\n15.100000\n\t\n2026/10/19 00:56:49\n\t\n详情\n\n\nXSDD20261019000004\n\t\n222\n\t\n部分发货\n\t\n37\n\t\n15.100000\n\t\n2026/10/19 00:56:45\n\t\n详情\n\n\nXSDD20261019000003\n\t\n221\n\t\n部分发货\n\t\n37\n\t\n10.070000\n\t\n2026/10/19 00:56:39\n\t\n详情\n\n\nXSDD20261019000002\n\t\n220\n\t\n部分关闭\n\t\n37\n\t\n25.180000\n\t\n2026/10/19 00:56:27\n\t\n详情\n共 214 条\n10条/页\n1\n2\n3\n4\n5\n6\n22\n前往\n页\nCopyright ©2026 多仓订单履约",
+  "observations": [
+    "214 existing orders displayed",
+    "existing M5/M4.2 demo rows present",
+    "no relogin or bypass needed"
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}

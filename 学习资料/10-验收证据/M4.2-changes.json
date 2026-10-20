@@ -1,0 +1,182 @@
+{
+  "run_at": "2026-10-19T03:22:41.888512+00:00",
+  "note": "Explicit M4.2 inventory, not a Git diff. Source hashes describe current delivery; earlier stages and iterative build evidence are retained separately.",
+  "count": 35,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "944a9ca0db4407a855be96d3a98d42a274bb85bbf1d3341666e46199378f2869",
+      "previous_M4_1_sha256": "5e9a5088db757b1554d961d5db58d7633d952b3a1e540410da01c86b5f3cde0a"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "fa5b9a465a29d01067c478732dca009a39b63f1df07f868ab7f106ecf9c1abe0",
+      "previous_M4_1_sha256": "f98439656cff5683083a73f4dfde2a9df8390716e1da5b69875eacf2cfc66729"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "89f8351de67598e0767eddd8303886a874fd91935b5b8ccb53f78b9acaa93290",
+      "previous_M4_1_sha256": "ec71fed3c81649ab841982968e3fb4a303e694ce7707d0839292945ab689176e"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "56dcf42b8dd32f079551c4d06d7543980e1520cfe8991ba95f12ec496b0451b5",
+      "previous_M4_1_sha256": "ca35cc1d88b55ee359f2e05bd6933dca1e4c92361e95f030101b1d4242fe03d8"
+    },
+    {
+      "path": "docs/decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "sha256": "d8bc1fc06026d6e57a80c14d16aa82bd78d01dc30b16784553648550287e77c7",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "docs/lessons/M4.2-退货额度与ERP入库.md",
+      "sha256": "910dbfb1ec2d8a603654860d17e508479641e61418a05e005eb50168dfe0e9e4",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "docs/evidence/M4.2-验收报告.md",
+      "sha256": "308e62e9ef9484cc78174fb5cca0af4feca5225a09b73911b4b58a4021bd810b",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleReturnPort.java",
+      "sha256": "037b5dc13745934a7e023c4eed2418576c4ec45ce7563c43af848f25c50a6d28",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "sha256": "d6d51c24d05ed3183ca7856aae7631bb8bb53d76a8ac35f54884c74967594330",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderService.java",
+      "sha256": "ed5acbcda56fa72168d1ba39a85c7501137528ad0ceb99dfb5f33c4089e9261b",
+      "previous_M4_1_sha256": "4b798c68212d494aac4600781bdd4132da360e5499cfd17b0259a1bc067bef39"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "sha256": "46925e2696c49357627bb780914a04d96aa9c4add8ceb5d54803b7969bac26ab",
+      "previous_M4_1_sha256": "d68e4573987cf3787b16f65ee9431067479cc4e3944922daad7d8ea2b9f225d2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnDO.java",
+      "sha256": "4661eda75c54e65c2df96daadf93fbc7271005702bf65f49f9f812a39d632fb2",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/dataobject/FulReturnItemDO.java",
+      "sha256": "338b4a26ac275c4000d062d1b1728cb5f672ea48e2a6e69462ad6923fe3a07e7",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnMapper.java",
+      "sha256": "3d79fbd564805db410aef947903e247c5a7e096ebfd0d96116a016d33d067c82",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnItemMapper.java",
+      "sha256": "0e81fc4daab647cca2b6f7e88bdd994e2bd4009bdc85616eff45e915a71d94f6",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "sha256": "f7dc975855a1be679aa243aae0b7b9868e5434d00f63c66a5f0d645cd542d4ba",
+      "previous_M4_1_sha256": "351c5fc2a2a42ff97724ab9de1f1cd4214ad22bc66dd63384d01bd034a1859e9"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReturnContracts.java",
+      "sha256": "a9eeb64c66ecc6828edb32f16f190787a5ca0653cbdfa463653fd01cca55725f",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReturnController.java",
+      "sha256": "d71c87809147674ccdb610d82e1f7de47d8e49bf1cc89eb7d016a6e89b6f7821",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "sha256": "6dcbfadca5cae4dc2e13a401b5dfef769a35077ed9585564ea83151a89e28d5a",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReturnFaultTestConfiguration.java",
+      "sha256": "9e51fb184b1b4a3a6f86c3f2b21e95e704aca6faf99fc8629ebf8dcd0570b918",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "9b6d52002507059086d2c349f7ef2f185fabc6d6a07cceceb7b62062874147ac",
+      "previous_M4_1_sha256": "0fc326bc96296891b062fb924c5b98e468498352fc034c6fe812ae334c1d1043"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V4__return_receipt.sql",
+      "sha256": "57ebaab47ec633399a518dc8e6fafd5e832c0d87170606663a311be45950fa8f",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/index.ts",
+      "sha256": "376c2c72b85313f90f1b0038bbd1f846e5a8d9126a2da1ad8bc62cf6ab19085d",
+      "previous_M4_1_sha256": "1bf609747536fea2e633745cbb7ec587855e93ee633814522909cbd11cb3d69b"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentReturns.vue",
+      "sha256": "41b0404247109ecbe7116f8b0e469315ef7d6c19f58ade060cce8bd75e7d127f",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "sha256": "b016ecbbeeba414095d1477e00a724458db107eca03b82b769a461ea0f81af94",
+      "previous_M4_1_sha256": "0795c17be1ba8779c0f439bf92792ffddeb0ead4bbddd2b7ded7635d134d01a8"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "3440eea907f08fd92872a86f4835e5aa399f73ee167379596ada33ea8d18b3a7",
+      "previous_M4_1_sha256": "61f1cb588b0ade3c91cddf72ab9d63a8f6ec5823e390627aaa9e9521c7bbcc0c"
+    },
+    {
+      "path": "tests/m4_return_acceptance.py",
+      "sha256": "967ca102635ed93741c7112dfb66c0f42bb29d33c6947cf3f0c37a1c19988f4a",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_read_checks.py",
+      "sha256": "00d7d349c29fcbe6c2d95587991fac070d67f3b061253dc9736824d773acc87b",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_upgrade.py",
+      "sha256": "790e9c803377b338e8717807bc1d0d9179a2a9e6a46835a542d95c1bdd849692",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_ui_fixture.py",
+      "sha256": "63fea3e9c4abe10869e758c4cf952f930b78abf8175f5c5956b5d500328ba967",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_ui_assert.py",
+      "sha256": "66683b1545df01d6f178334e93da47a97b3acade462498899871f83a6e041a16",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_frontend.ps1",
+      "sha256": "7e1dffbba28ac36d3a70af38c1dc993c54636b743ed9238a04212569fdb6d851",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_constraints.py",
+      "sha256": "65326847a20b67e937bf511c769410b0eed9571847beea9b0e21faa88dbe9fd8",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_restart.py",
+      "sha256": "2902ea5c1d5572b62e1aa329f9306da3f42207511f48714f8ad456602199bd53",
+      "previous_M4_1_sha256": null
+    },
+    {
+      "path": "tests/m4_return_qa.py",
+      "sha256": "135e64cb1cf47195c92b4fac856558661eb1588744bc039bd6532211f9977352",
+      "previous_M4_1_sha256": null
+    }
+  ]
+}

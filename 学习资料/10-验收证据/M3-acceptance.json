@@ -1,0 +1,620 @@
+{
+  "run_at": "2026-10-18T15:51:10.797488+00:00",
+  "checks": [
+    {
+      "name": "cancel open quantity before allocating",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preview deterministic and versioned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preview makes no commitment or command record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preview stable priority plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel consumes open before releasing held",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel keeps physical and original ordered qty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero ship rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate reservation rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cross warehouse reservation rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partial shipment updates status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship deducts physical exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key decimal canonical replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key changed quantity conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one approved ERP out and one physical ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shipment links ERP item and physical ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy source shows pending excluding cancelled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partial close preserves cumulative shipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel replay stable after close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancel cannot undo shipped quantities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full closed pending is zero in old page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy list projects cancellation-aware pending quantities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-out/update-status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-out/delete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-order/update-status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "client bypass flag cannot create managed out",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancellation facts retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated after-ERP test fault reached",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure rolls back H R quantities and ERP document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure rolls back shipment and command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key succeeds after fault rollback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two JVM same-key shipment is one result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same-key one ERP out",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship versus cancel has one legal winner",
+      "passed": true,
+      "detail": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "shipmentId": "13",
+            "shipmentNo": "SHP-8e6a81a2-379a-4b86-aac2-39641bbc2534",
+            "erpSaleOutId": "93",
+            "orderStatus": "PARTIALLY_SHIPPED"
+          }
+        },
+        {
+          "code": 1080000021,
+          "msg": "CANNOT_CANCEL: 取消量超过尚未发货量",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "racing quantity identity remains intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship versus cancel has one legal winner",
+      "passed": true,
+      "detail": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "shipmentId": "14",
+            "shipmentNo": "SHP-f26e9c8c-4f33-4f5d-9cbc-d1201eb09b4c",
+            "erpSaleOutId": "94",
+            "orderStatus": "PARTIALLY_SHIPPED"
+          }
+        },
+        {
+          "code": 1080000021,
+          "msg": "CANNOT_CANCEL: 取消量超过尚未发货量",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "racing quantity identity remains intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ship versus cancel has one legal winner",
+      "passed": true,
+      "detail": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "shipmentId": "15",
+            "shipmentNo": "SHP-7bda89b2-769b-4195-9c1f-e9e00e630e2a",
+            "erpSaleOutId": "95",
+            "orderStatus": "PARTIALLY_SHIPPED"
+          }
+        },
+        {
+          "code": 1080000021,
+          "msg": "CANNOT_CANCEL: 取消量超过尚未发货量",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "racing quantity identity remains intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full decimal shipment fulfills",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full open cancellation closes without stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed anonymous callback uses integration tenant not header",
+      "passed": true,
+      "detail": {
+        "code": 0,
+        "msg": "",
+        "data": {
+          "eventId": "delivery-M31fb6441c",
+          "outcome": "DELIVERED"
+        }
+      }
+    },
+    {
+      "name": "duplicate callback returns original result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "late transit cannot reverse delivered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same event different payload conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "callback conflict diagnostic committed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid signature rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old signature rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong integration rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tampered raw body rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unknown shipment is retryable business failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "simulator sends actual signed HTTP callback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all logistics leaves physical and reserved unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shipment page includes mapped items and delivery events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expired held cannot ship",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expiry rejection changes no stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "expired reservation can be manually released",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 133,
+        "warehouse": 47,
+        "H": "2.000000",
+        "R": "0.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 134,
+        "warehouse": 47,
+        "H": "4.000000",
+        "R": "0.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 134,
+        "warehouse": 48,
+        "H": "8.000000",
+        "R": "0.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 135,
+        "warehouse": 47,
+        "H": "3.000000",
+        "R": "2.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 136,
+        "warehouse": 47,
+        "H": "8.000000",
+        "R": "4.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 137,
+        "warehouse": 47,
+        "H": "6.000000",
+        "R": "2.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 138,
+        "warehouse": 47,
+        "H": "6.000000",
+        "R": "2.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 139,
+        "warehouse": 47,
+        "H": "6.000000",
+        "R": "2.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R held and both ledgers match",
+      "passed": true,
+      "detail": {
+        "product": 140,
+        "warehouse": 47,
+        "H": "0.000000",
+        "R": "0.000000"
+      }
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation ledger balance is exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "order quantity identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all shipment quantities match physical ERP details",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "consumed reservations match shipment totals",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "order": "171",
+    "source": 269,
+    "item": "179",
+    "shipment": {
+      "shipmentId": "10",
+      "shipmentNo": "SHP-8813047f-f066-406f-aea2-d31127b3feb9",
+      "erpSaleOutId": "89",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    },
+    "recovery": {
+      "shipmentId": "11",
+      "shipmentNo": "SHP-05aafd11-b986-4d35-9d86-f6bba50327de",
+      "erpSaleOutId": "91",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    },
+    "warehouse_a": 47,
+    "warehouse_b": 48,
+    "products": [
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140
+    ]
+  },
+  "result": "passed"
+}

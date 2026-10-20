@@ -1,0 +1,14 @@
+项目代码/.local/
+**/target/
+**/node_modules/
+**/dist/
+**/dist-*/
+**/.idea/
+**/.DS_Store
+**/__pycache__/
+*.pyc
+*.log
+.env
+!项目代码/frontend/.env
+项目代码/deploy/.env
+**/application-personal.yaml

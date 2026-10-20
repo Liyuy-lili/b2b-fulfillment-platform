@@ -1,0 +1,24 @@
+[
+  {
+    "directory": "backend",
+    "upstream_files": 8924,
+    "modified": [
+      "pom.xml",
+      "yudao-server/pom.xml"
+    ],
+    "missing": [],
+    "nested_git": []
+  },
+  {
+    "directory": "frontend",
+    "upstream_files": 2904,
+    "modified": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "src/router/modules/remaining.ts",
+      "src/utils/routerHelper.ts"
+    ],
+    "missing": [],
+    "nested_git": []
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "run_at": "2026-10-18T15:57:09.259928+00:00",
+  "checks": [
+    {
+      "name": "changed parent writer is rejected",
+      "passed": true,
+      "detail": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": true
+        },
+        {
+          "code": 1030199001,
+          "msg": "SOURCE_ORDER_CHANGED: 关联销售单已改变，请重新读取后重试",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "exactly one target owns document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old parent count restored and only one new parent incremented",
+      "passed": true,
+      "detail": [
+        [
+          330,
+          "0.000000"
+        ],
+        [
+          331,
+          "1.000000"
+        ],
+        [
+          332,
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "binding wins committed source lock",
+      "passed": true,
+      "detail": {
+        "code": 0,
+        "msg": "",
+        "data": {
+          "orderId": "218",
+          "status": "NEW"
+        }
+      }
+    },
+    {
+      "name": "waiting legacy transaction sees newly managed row",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "rejected document move remains on original source",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "interleavings": [
+    {
+      "expected_waiters": 2,
+      "observed_waiters": [
+        [
+          669,
+          "statistics",
+          "SELECT * FROM erp_sale_order WHERE tenant_id = 1 AND id = 330 AND deleted = 0 AND tenant_id = 1 FOR UPDATE"
+        ],
+        [
+          672,
+          "statistics",
+          "SELECT * FROM erp_sale_order WHERE tenant_id = 1 AND id = 330 AND deleted = 0 AND tenant_id = 1 FOR UPDATE"
+        ]
+      ]
+    },
+    {
+      "expected_waiters": 1,
+      "observed_waiters": [
+        [
+          669,
+          "statistics",
+          "SELECT * FROM erp_sale_order WHERE tenant_id = 1 AND id = 334 AND deleted = 0 AND tenant_id = 1 FOR UPDATE"
+        ]
+      ]
+    },
+    {
+      "expected_waiters": 2,
+      "observed_waiters": [
+        [
+          669,
+          "statistics",
+          "SELECT * FROM erp_sale_order WHERE tenant_id = 1 AND id = 334 AND deleted = 0 AND tenant_id = 1 FOR UPDATE"
+        ],
+        [
+          672,
+          "statistics",
+          "SELECT * FROM erp_sale_order WHERE tenant_id = 1 AND id = 334 AND deleted = 0 AND tenant_id = 1 FOR UPDATE"
+        ]
+      ]
+    }
+  ],
+  "result": "passed"
+}

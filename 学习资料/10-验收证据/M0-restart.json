@@ -1,0 +1,1892 @@
+{
+  "run_at": "2026-10-17T01:54:42.180535+00:00",
+  "before": {
+    "row_counts": {
+      "erp_account": 13,
+      "erp_finance_payment": 0,
+      "erp_finance_payment_item": 0,
+      "erp_finance_receipt": 0,
+      "erp_finance_receipt_item": 0,
+      "erp_product_category": 16,
+      "erp_product": 17,
+      "erp_product_unit": 16,
+      "erp_purchase_in": 8,
+      "erp_purchase_in_items": 8,
+      "erp_purchase_order": 8,
+      "erp_purchase_order_items": 8,
+      "erp_purchase_return": 0,
+      "erp_purchase_return_items": 0,
+      "erp_supplier": 8,
+      "erp_customer": 17,
+      "erp_sale_order": 90,
+      "erp_sale_order_items": 94,
+      "erp_sale_out": 43,
+      "erp_sale_out_items": 47,
+      "erp_sale_return": 2,
+      "erp_sale_return_items": 2,
+      "erp_stock_check": 7,
+      "erp_stock_check_item": 7,
+      "erp_stock": 8,
+      "erp_stock_in": 0,
+      "erp_stock_in_item": 0,
+      "erp_stock_move": 0,
+      "erp_stock_move_item": 0,
+      "erp_stock_out": 0,
+      "erp_stock_out_item": 0,
+      "erp_stock_record": 37,
+      "erp_warehouse": 22
+    },
+    "stock": [
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "69.003456"
+      ],
+      [
+        "2",
+        "1",
+        "2",
+        "3",
+        "69.003456"
+      ],
+      [
+        "3",
+        "1",
+        "3",
+        "5",
+        "69.003456"
+      ],
+      [
+        "4",
+        "1",
+        "4",
+        "7",
+        "8.000000"
+      ],
+      [
+        "5",
+        "1",
+        "6",
+        "10",
+        "69.003456"
+      ],
+      [
+        "6",
+        "1",
+        "7",
+        "12",
+        "69.003456"
+      ],
+      [
+        "7",
+        "1",
+        "14",
+        "18",
+        "69.003456"
+      ],
+      [
+        "8",
+        "1",
+        "17",
+        "21",
+        "69.003456"
+      ]
+    ],
+    "sequences": {
+      "erp:seq_no:QTRK20261017": null,
+      "erp:seq_no:QCKD20261017": null,
+      "erp:seq_no:QCDB20261017": null,
+      "erp:seq_no:QCPD20261017": "2",
+      "erp:seq_no:XSDD20261017": "79",
+      "erp:seq_no:XSCK20261017": "34",
+      "erp:seq_no:XSTH20261017": "2",
+      "erp:seq_no:CGDD20261017": "2",
+      "erp:seq_no:CGRK20261017": "2",
+      "erp:seq_no:CGTH20261017": null,
+      "erp:seq_no:FKD20261017": null,
+      "erp:seq_no:SKD20261017": null
+    },
+    "fulfillment_counts": {
+      "ful_callback_event": 0,
+      "ful_command_record": 55,
+      "ful_flyway_schema_history": 2,
+      "ful_order": 29,
+      "ful_order_item": 29,
+      "ful_reservation": 0,
+      "ful_shipment": 0,
+      "ful_shipment_item": 0,
+      "ful_stock_ledger": 0,
+      "ful_warehouse_grant": 0
+    },
+    "command_results": [
+      [
+        "1",
+        "1",
+        "BIND",
+        "190ae18148be404a89336a84764830b2",
+        "760c150ca92bda3f4fa8b3de2cdc8372565e3fab0701562c47d47c8fadf80aa3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"1\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "b6fe693d3faa425ba49f93743d00272e",
+        "760c150ca92bda3f4fa8b3de2cdc8372565e3fab0701562c47d47c8fadf80aa3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"1\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "3e4c587cb8ad4b27989bb3dd8c7f4ff9",
+        "bfb77320e70b65060ee7e92c19aa13cc6d059b28ec09488ed76890dc8350c4a3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"2\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "1b5ddd848fd9417898ea35ca9295338e",
+        "bfb77320e70b65060ee7e92c19aa13cc6d059b28ec09488ed76890dc8350c4a3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"2\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "7dbd02e5bbc944ee8a020361efd7addf",
+        "8c7808501a5a3bb01b4ac9192adf9e5c20052e7bea089abce78ce5bda4af9f59",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"3\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "db67f85207634cffb94df4fb73e7e764",
+        "eb064998a31606074a63562de83818fb339599167d32a78607535a12df6df766",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"5\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "9cdc257f8bcd40d59656581336c55e43",
+        "eb064998a31606074a63562de83818fb339599167d32a78607535a12df6df766",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"5\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "16fe07ff349c4872a68f6d7dcd140bb0",
+        "c0bdf5ce1f89cc0a21c172c8655fe62c22d132b4e7af4a5d376bd5538cd3068d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"6\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a1",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a6",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a0",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a4",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a5",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a3",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a2",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a7",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM181612e5a",
+        "bfc6fd755091fa9f495711c18cceb1540eefc09981f081ddc361071ec558bf65",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"9\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "3e6a74bf2f7e4c1bb12a9ea6cd73f858",
+        "6941f1a2266fe8e0a1d6d64a9c23ab7fbef88680a612c0941f05d68e79105a21",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"10\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "e76a439363d34241acbd6acc8ed62ffd",
+        "43d0c773c829f65e801bbb309c2d760aa6be0be49c58976264b5120aee964526",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"11\"}"
+      ],
+      [
+        "1",
+        "249",
+        "BIND",
+        "ownerM181612e5a",
+        "0b5bcdcf147084ec5497a862848525732fd97bb31b3cb2ddea9f5ee2e628be7d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"12\"}"
+      ],
+      [
+        "162",
+        "252",
+        "BIND",
+        "31c8db671fcd48c0a66b9b61f8ee5e0b",
+        "d7053b08f9c3d635161c9bcf4e3254707e334dca9062a50e85018e4e9a22df40",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"13\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "9a76eab941a141d3bf8d24cfad704038",
+        "a850527ca13e90d6a457e09f3c399f22554c27fed3618a0a843bbab0e637a02b",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"14\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "c85b343e28c0493baba62f938590bb83",
+        "a850527ca13e90d6a457e09f3c399f22554c27fed3618a0a843bbab0e637a02b",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"14\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "959b64fa5f3a48138d722a14ab9dc534",
+        "8039ef794d15f81b382a8394bc6749d9b0737a16d785ea7635e5e29cd6207d87",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"15\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27980",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27984",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27987",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27986",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27982",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27985",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27983",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27981",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM18b1c2798",
+        "be851c913b75927d5aaf04eda7280b33e54bd53d8ada8f67616bc47a2de84e4c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"18\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "afef0937ba5c47bf82240dcc45a71c04",
+        "6ea25843a552ea07bfd5d771954877bb89ef77c87c7cbd367766ac840dbc3a3a",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"19\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "62837ef068914acd96df2222c3c45ec9",
+        "71166746aca5ff0f3eee5512621b6db088e37122448363b814db20d777f5af00",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"20\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "d279d66f07ad44859484b423276b5310",
+        "43c0f8309bd95f32d29b518e57dfe4327a4a7d34079b2ef91bfb7adb6b64222f",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"21\"}"
+      ],
+      [
+        "1",
+        "253",
+        "BIND",
+        "ownerM18b1c2798",
+        "b293733cb5c8a10e59b8f9dac6542f0984da4317713c00685226f2a8ae37cafe",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"22\"}"
+      ],
+      [
+        "163",
+        "256",
+        "BIND",
+        "92239c510d5c4bafa06e0c673d1bd713",
+        "2af6afec7baffa22a2459725db64e32231f7da6f5e6f525a4586d2604fb3f66a",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"23\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "lockinge39e6bf1072043f5bf24ddbc82a8bf17",
+        "2d6a6ac6eaecc0cf81949ad2506b0f80063e842200579a2597bc5a1b760668c0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"24\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "f244042b26394559a4f4e3f5358c6e8f",
+        "70ab7479e4f1f5ce524234ce5c06409ee573c42af14111efbf22d919aec6f51c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"25\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "df3e7230b6d447e6a7072d522478cca5",
+        "70ab7479e4f1f5ce524234ce5c06409ee573c42af14111efbf22d919aec6f51c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"25\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "15f2d530ed954d868b36352271505fa9",
+        "4c0c97b4b304f71dc167e243cb281463cd33cbda0806300da00ed1c54ea56489",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"26\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c980",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c984",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c982",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c981",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c987",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c985",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c983",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c986",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM1f1452c98",
+        "81eb91c797fc00a2d6970f43906a4e375e35a088839774cb0710002d247539c2",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"29\"}"
+      ],
+      [
+        "1",
+        "257",
+        "BIND",
+        "ownerM1f1452c98",
+        "cec937a6f105f6d8c31a78b0f24ba5596b38325c69914db01305fdc090f8e9df",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"30\"}"
+      ],
+      [
+        "164",
+        "260",
+        "BIND",
+        "1413a1a449e64fc6896581932bd57bee",
+        "ee9b8897651d825ccf1eefdfa0bbb1eba0671477dd018a20dbbafa551281612e",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"31\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "locking9655bb6f7cbd46cfaaccedb1b001657b",
+        "1bdde7b005ed5122b5e32ab3e0f34f6195b5cec2faf5ca369c5a3e51017dcc60",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"32\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "c065a179-0f53-4adf-8b57-1a01cde53ab2",
+        "6845e3a7c1c5ed4ac53e5843417b8630173acf021b9d3616650c2e341a7b6a7e",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"33\"}"
+      ]
+    ],
+    "quantity_snapshots": [
+      [
+        "1",
+        "1",
+        "12",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "2",
+        "13",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "3",
+        "15",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "5",
+        "18",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "6",
+        "20",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "8",
+        "24",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "9",
+        "25",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "10",
+        "31",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "11",
+        "33",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "12",
+        "34",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "162",
+        "13",
+        "35",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "14",
+        "36",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "15",
+        "38",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "17",
+        "43",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "18",
+        "44",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "19",
+        "46",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "20",
+        "48",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "21",
+        "49",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "22",
+        "53",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "163",
+        "23",
+        "54",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "24",
+        "67",
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "25",
+        "68",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "26",
+        "70",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "28",
+        "75",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "29",
+        "76",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "30",
+        "85",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "164",
+        "31",
+        "86",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "32",
+        "91",
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "33",
+        "94",
+        "4.125600",
+        "4.125600",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ]
+    ]
+  },
+  "Stop-Local.ps1": {
+    "exit_code": 0,
+    "stdout": "Stopped project listener on 15173\nStopped project listener on 48080\nStopped project listener on 36379\nStopped project listener on 33306\n",
+    "stderr": ""
+  },
+  "Start-Local.ps1": {
+    "exit_code": 0,
+    "stdout": "mysql listening on 33306\nredis listening on 36379\nbackend listening on 48080\nfrontend listening on 15173\nOpen http://127.0.0.1:15173 ; tenant: 芋道源码 ; admin / admin123 (local demo only)\n",
+    "stderr": ""
+  },
+  "after": {
+    "row_counts": {
+      "erp_account": 13,
+      "erp_finance_payment": 0,
+      "erp_finance_payment_item": 0,
+      "erp_finance_receipt": 0,
+      "erp_finance_receipt_item": 0,
+      "erp_product_category": 16,
+      "erp_product": 17,
+      "erp_product_unit": 16,
+      "erp_purchase_in": 8,
+      "erp_purchase_in_items": 8,
+      "erp_purchase_order": 8,
+      "erp_purchase_order_items": 8,
+      "erp_purchase_return": 0,
+      "erp_purchase_return_items": 0,
+      "erp_supplier": 8,
+      "erp_customer": 17,
+      "erp_sale_order": 90,
+      "erp_sale_order_items": 94,
+      "erp_sale_out": 43,
+      "erp_sale_out_items": 47,
+      "erp_sale_return": 2,
+      "erp_sale_return_items": 2,
+      "erp_stock_check": 7,
+      "erp_stock_check_item": 7,
+      "erp_stock": 8,
+      "erp_stock_in": 0,
+      "erp_stock_in_item": 0,
+      "erp_stock_move": 0,
+      "erp_stock_move_item": 0,
+      "erp_stock_out": 0,
+      "erp_stock_out_item": 0,
+      "erp_stock_record": 37,
+      "erp_warehouse": 22
+    },
+    "stock": [
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "69.003456"
+      ],
+      [
+        "2",
+        "1",
+        "2",
+        "3",
+        "69.003456"
+      ],
+      [
+        "3",
+        "1",
+        "3",
+        "5",
+        "69.003456"
+      ],
+      [
+        "4",
+        "1",
+        "4",
+        "7",
+        "8.000000"
+      ],
+      [
+        "5",
+        "1",
+        "6",
+        "10",
+        "69.003456"
+      ],
+      [
+        "6",
+        "1",
+        "7",
+        "12",
+        "69.003456"
+      ],
+      [
+        "7",
+        "1",
+        "14",
+        "18",
+        "69.003456"
+      ],
+      [
+        "8",
+        "1",
+        "17",
+        "21",
+        "69.003456"
+      ]
+    ],
+    "sequences": {
+      "erp:seq_no:QTRK20261017": null,
+      "erp:seq_no:QCKD20261017": null,
+      "erp:seq_no:QCDB20261017": null,
+      "erp:seq_no:QCPD20261017": "2",
+      "erp:seq_no:XSDD20261017": "79",
+      "erp:seq_no:XSCK20261017": "34",
+      "erp:seq_no:XSTH20261017": "2",
+      "erp:seq_no:CGDD20261017": "2",
+      "erp:seq_no:CGRK20261017": "2",
+      "erp:seq_no:CGTH20261017": null,
+      "erp:seq_no:FKD20261017": null,
+      "erp:seq_no:SKD20261017": null
+    },
+    "fulfillment_counts": {
+      "ful_callback_event": 0,
+      "ful_command_record": 55,
+      "ful_flyway_schema_history": 2,
+      "ful_order": 29,
+      "ful_order_item": 29,
+      "ful_reservation": 0,
+      "ful_shipment": 0,
+      "ful_shipment_item": 0,
+      "ful_stock_ledger": 0,
+      "ful_warehouse_grant": 0
+    },
+    "command_results": [
+      [
+        "1",
+        "1",
+        "BIND",
+        "190ae18148be404a89336a84764830b2",
+        "760c150ca92bda3f4fa8b3de2cdc8372565e3fab0701562c47d47c8fadf80aa3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"1\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "b6fe693d3faa425ba49f93743d00272e",
+        "760c150ca92bda3f4fa8b3de2cdc8372565e3fab0701562c47d47c8fadf80aa3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"1\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "3e4c587cb8ad4b27989bb3dd8c7f4ff9",
+        "bfb77320e70b65060ee7e92c19aa13cc6d059b28ec09488ed76890dc8350c4a3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"2\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "1b5ddd848fd9417898ea35ca9295338e",
+        "bfb77320e70b65060ee7e92c19aa13cc6d059b28ec09488ed76890dc8350c4a3",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"2\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "7dbd02e5bbc944ee8a020361efd7addf",
+        "8c7808501a5a3bb01b4ac9192adf9e5c20052e7bea089abce78ce5bda4af9f59",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"3\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "db67f85207634cffb94df4fb73e7e764",
+        "eb064998a31606074a63562de83818fb339599167d32a78607535a12df6df766",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"5\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "9cdc257f8bcd40d59656581336c55e43",
+        "eb064998a31606074a63562de83818fb339599167d32a78607535a12df6df766",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"5\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "16fe07ff349c4872a68f6d7dcd140bb0",
+        "c0bdf5ce1f89cc0a21c172c8655fe62c22d132b4e7af4a5d376bd5538cd3068d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"6\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a1",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a6",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a0",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a4",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a5",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a3",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a2",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM181612e5a7",
+        "721a267a1c754d46fa031634302870f220d31907f01778fcf76d6d7713cd8072",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"8\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM181612e5a",
+        "bfc6fd755091fa9f495711c18cceb1540eefc09981f081ddc361071ec558bf65",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"9\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "3e6a74bf2f7e4c1bb12a9ea6cd73f858",
+        "6941f1a2266fe8e0a1d6d64a9c23ab7fbef88680a612c0941f05d68e79105a21",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"10\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "e76a439363d34241acbd6acc8ed62ffd",
+        "43d0c773c829f65e801bbb309c2d760aa6be0be49c58976264b5120aee964526",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"11\"}"
+      ],
+      [
+        "1",
+        "249",
+        "BIND",
+        "ownerM181612e5a",
+        "0b5bcdcf147084ec5497a862848525732fd97bb31b3cb2ddea9f5ee2e628be7d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"12\"}"
+      ],
+      [
+        "162",
+        "252",
+        "BIND",
+        "31c8db671fcd48c0a66b9b61f8ee5e0b",
+        "d7053b08f9c3d635161c9bcf4e3254707e334dca9062a50e85018e4e9a22df40",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"13\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "9a76eab941a141d3bf8d24cfad704038",
+        "a850527ca13e90d6a457e09f3c399f22554c27fed3618a0a843bbab0e637a02b",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"14\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "c85b343e28c0493baba62f938590bb83",
+        "a850527ca13e90d6a457e09f3c399f22554c27fed3618a0a843bbab0e637a02b",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"14\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "959b64fa5f3a48138d722a14ab9dc534",
+        "8039ef794d15f81b382a8394bc6749d9b0737a16d785ea7635e5e29cd6207d87",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"15\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27980",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27984",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27987",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27986",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27982",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27985",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27983",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM18b1c27981",
+        "f3106a2c728bde23016b0f4d455d9f852e86d8935d640c668e90bb555596e3f0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"17\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM18b1c2798",
+        "be851c913b75927d5aaf04eda7280b33e54bd53d8ada8f67616bc47a2de84e4c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"18\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "afef0937ba5c47bf82240dcc45a71c04",
+        "6ea25843a552ea07bfd5d771954877bb89ef77c87c7cbd367766ac840dbc3a3a",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"19\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "62837ef068914acd96df2222c3c45ec9",
+        "71166746aca5ff0f3eee5512621b6db088e37122448363b814db20d777f5af00",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"20\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "d279d66f07ad44859484b423276b5310",
+        "43c0f8309bd95f32d29b518e57dfe4327a4a7d34079b2ef91bfb7adb6b64222f",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"21\"}"
+      ],
+      [
+        "1",
+        "253",
+        "BIND",
+        "ownerM18b1c2798",
+        "b293733cb5c8a10e59b8f9dac6542f0984da4317713c00685226f2a8ae37cafe",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"22\"}"
+      ],
+      [
+        "163",
+        "256",
+        "BIND",
+        "92239c510d5c4bafa06e0c673d1bd713",
+        "2af6afec7baffa22a2459725db64e32231f7da6f5e6f525a4586d2604fb3f66a",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"23\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "lockinge39e6bf1072043f5bf24ddbc82a8bf17",
+        "2d6a6ac6eaecc0cf81949ad2506b0f80063e842200579a2597bc5a1b760668c0",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"24\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "f244042b26394559a4f4e3f5358c6e8f",
+        "70ab7479e4f1f5ce524234ce5c06409ee573c42af14111efbf22d919aec6f51c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"25\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "df3e7230b6d447e6a7072d522478cca5",
+        "70ab7479e4f1f5ce524234ce5c06409ee573c42af14111efbf22d919aec6f51c",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"25\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "15f2d530ed954d868b36352271505fa9",
+        "4c0c97b4b304f71dc167e243cb281463cd33cbda0806300da00ed1c54ea56489",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"26\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c980",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c984",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c982",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c981",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c987",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c985",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c983",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "raceM1f1452c986",
+        "bb39e1106ea7986e171d889e53f9dd561b3da70aa4478d20aa98ceba410ef64d",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"28\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "sameM1f1452c98",
+        "81eb91c797fc00a2d6970f43906a4e375e35a088839774cb0710002d247539c2",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"29\"}"
+      ],
+      [
+        "1",
+        "257",
+        "BIND",
+        "ownerM1f1452c98",
+        "cec937a6f105f6d8c31a78b0f24ba5596b38325c69914db01305fdc090f8e9df",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"30\"}"
+      ],
+      [
+        "164",
+        "260",
+        "BIND",
+        "1413a1a449e64fc6896581932bd57bee",
+        "ee9b8897651d825ccf1eefdfa0bbb1eba0671477dd018a20dbbafa551281612e",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"31\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "locking9655bb6f7cbd46cfaaccedb1b001657b",
+        "1bdde7b005ed5122b5e32ab3e0f34f6195b5cec2faf5ca369c5a3e51017dcc60",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"32\"}"
+      ],
+      [
+        "1",
+        "1",
+        "BIND",
+        "c065a179-0f53-4adf-8b57-1a01cde53ab2",
+        "6845e3a7c1c5ed4ac53e5843417b8630173acf021b9d3616650c2e341a7b6a7e",
+        "0",
+        "{\"status\": \"NEW\", \"orderId\": \"33\"}"
+      ]
+    ],
+    "quantity_snapshots": [
+      [
+        "1",
+        "1",
+        "12",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "2",
+        "13",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "3",
+        "15",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "5",
+        "18",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "6",
+        "20",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "8",
+        "24",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "9",
+        "25",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "10",
+        "31",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "11",
+        "33",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "12",
+        "34",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "162",
+        "13",
+        "35",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "14",
+        "36",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "15",
+        "38",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "17",
+        "43",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "18",
+        "44",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "19",
+        "46",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "20",
+        "48",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "21",
+        "49",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "22",
+        "53",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "163",
+        "23",
+        "54",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "24",
+        "67",
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "25",
+        "68",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "26",
+        "70",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "28",
+        "75",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "29",
+        "76",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "30",
+        "85",
+        "10.123456",
+        "10.123456",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "164",
+        "31",
+        "86",
+        "2.000000",
+        "2.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "32",
+        "91",
+        "1.000000",
+        "1.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      [
+        "1",
+        "33",
+        "94",
+        "4.125600",
+        "4.125600",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ]
+    ]
+  },
+  "status": "passed"
+}

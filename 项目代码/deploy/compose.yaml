@@ -1,0 +1,37 @@
+name: fulfillment
+services:
+  mysql:
+    image: mysql:8.4.6@sha256:869218921e61d6c3c89820955d63cca42971f0e3e6c1e2792247bbd944ebc6e9
+    ports:
+      - "127.0.0.1:33306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-local-root-dev}
+      MYSQL_DATABASE: fulfillment
+      MYSQL_USER: fulfillment
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-fulfillment-dev}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ../backend/sql/mysql/ruoyi-vue-pro.sql:/docker-entrypoint-initdb.d/001-base.sql:ro
+      - ./sql/010-erp.sql:/docker-entrypoint-initdb.d/010-erp.sql:ro
+      - ./sql/020-local-baseline.sql:/docker-entrypoint-initdb.d/020-local-baseline.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h127.0.0.1 -uroot --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+  redis:
+    image: redis:7.2.8@sha256:bb1b66279bfacf671eda2cc593258aa1cbc675c532ea243e74033c17f1fb4de2
+    ports:
+      - "127.0.0.1:36379:6379"
+    command: ["redis-server", "--save", "60 1", "--appendonly", "yes", "--appendfsync", "everysec"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+volumes:
+  mysql-data:
+  redis-data:

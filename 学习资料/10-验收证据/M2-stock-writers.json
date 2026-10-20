@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-18",
+  "scope": "Enabled ERP module, stock effects and reversals. Not an audit of disabled upstream modules.",
+  "shared_path": [
+    "ErpStockRecordService.createStockRecords",
+    "ErpStockService.lockStocks(product,warehouse sorted)",
+    "ErpStockRecordService.createStockRecord",
+    "ErpStockService.updateStockCountIncrement",
+    "ErpStockMapper.changePhysical"
+  ],
+  "writers": [
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseInServiceImpl.java",
+      "sha256": "db639ec20e90810ba9abaa258f93a9fd786a0d32705f673ff0d1376beda636d6",
+      "event_types": [
+        "PURCHASE_IN",
+        "PURCHASE_IN_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/purchase/ErpPurchaseReturnServiceImpl.java",
+      "sha256": "562d0a62470eaa8b11daa1a3c1575c7d7234d9c0cbffe7dc746cf5bd698c06e3",
+      "event_types": [
+        "PURCHASE_RETURN",
+        "PURCHASE_RETURN_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "sha256": "c5d0f97a74e39da6ca34f1e7d507ee0a821135882ce08c3af86eaaaf52ccd6f1",
+      "event_types": [
+        "SALE_OUT",
+        "SALE_OUT_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "sha256": "c4f7d2889fbe9d7036bb38bde3ec6cf952e07093fb5c9ff6537f0dfb0bac6a18",
+      "event_types": [
+        "SALE_RETURN",
+        "SALE_RETURN_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockCheckServiceImpl.java",
+      "sha256": "61cca57ac9167f21f9f19227f6341d30ba1c31ff2c607172aa354e69c9a4022e",
+      "event_types": [
+        "CHECK_LESS_OUT",
+        "CHECK_LESS_OUT_CANCEL",
+        "CHECK_MORE_IN",
+        "CHECK_MORE_IN_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockInServiceImpl.java",
+      "sha256": "2bb36143eda5d94d9a4ed0a7661951aaba942d4a36987d5f27d2b1e4e50dd832",
+      "event_types": [
+        "OTHER_IN",
+        "OTHER_IN_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockMoveServiceImpl.java",
+      "sha256": "8986f3b46678561b71df1115c5833431480461a2ffbf4fad62af69a83c65a97a",
+      "event_types": [
+        "MOVE_IN",
+        "MOVE_IN_CANCEL",
+        "MOVE_OUT",
+        "MOVE_OUT_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    },
+    {
+      "source": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockOutServiceImpl.java",
+      "sha256": "a6259cbb73f7000f57b2e1730ac43355fa54bdf52f09a94d0661c19b90a64ef3",
+      "event_types": [
+        "OTHER_OUT",
+        "OTHER_OUT_CANCEL"
+      ],
+      "batch_lock_before_physical_changes": true,
+      "natural_quantity_guard": true
+    }
+  ],
+  "stock_delete_api": false,
+  "notes": [
+    "Old source/document status locks remain before shared stock locks; see ADR-011.",
+    "Fulfillment allocate/release change only R. Physical H changes remain in ERP.",
+    "Stock logical delete rejected by CHECK; administrator raw SQL/hard delete is outside the application protocol."
+  ]
+}

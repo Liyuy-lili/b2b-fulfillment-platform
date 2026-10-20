@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-18",
+  "checks": [
+    {
+      "name": "no allocate function permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot allocate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner can allocate authorized tenant warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key is scoped to actor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot list reservations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other owner cannot release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign order reservation rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay checks current allocate permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release permission independently enforced",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owner can release after permission restored using same key in different command type",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot allocate known order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot release known reservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant cannot inspect H R A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "body tenant spoof does not change ownership",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock row remains tenant one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base unit immutable beneath stock commitments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source and stock unit identity unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "owner": 285,
+    "tenant": 171,
+    "product": 170,
+    "order": "210"
+  },
+  "result": "passed"
+}

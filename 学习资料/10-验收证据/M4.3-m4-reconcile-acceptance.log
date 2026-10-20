@@ -1,0 +1,74 @@
+PASS test port free 48082
+PASS test port free 48083
+PASS setup ('-Database', 'fulfillment_m4_reconcile_20261019_175618')
+PASS setup ('-Action', 'baseline', '-Database', 'fulfillment_m4_reconcile_20261019_175618')
+PASS setup ('-Action', 'migrate', '-Database', 'fulfillment_m4_reconcile_20261019_175618')
+PASS setup ('-Action', 'validate', '-Database', 'fulfillment_m4_reconcile_20261019_175618')
+PASS healthy completed shipment return cancel snapshot is clean
+PASS 17 table counts match actual tenant rows
+PASS scan does not modify any business row
+PASS run replay is byte-equivalent semantic response
+PASS single persisted run per key
+PASS get reproduces persisted report
+PASS detect injected STOCK_H_LEDGER
+PASS report does not repair STOCK_H_LEDGER
+PASS detect injected STOCK_R_HELD
+PASS report does not repair STOCK_R_HELD
+PASS detect injected RESERVATION_LEDGER
+PASS report does not repair RESERVATION_LEDGER
+PASS detect injected STOCK_R_RUNNING
+PASS report does not repair STOCK_R_RUNNING
+PASS detect injected ORDER_RETURNED
+PASS report does not repair ORDER_RETURNED
+PASS detect injected SOURCE_OUT_COUNT
+PASS report does not repair SOURCE_OUT_COUNT
+PASS detect injected SHIPMENT_ERP_ITEM
+PASS report does not repair SHIPMENT_ERP_ITEM
+PASS detect injected RETURN_PHYSICAL
+PASS report does not repair RETURN_PHYSICAL
+PASS detect injected STOCK_H_RUNNING
+PASS report does not repair STOCK_H_RUNNING
+PASS missing stock row found from ledger and reservation union
+PASS missing row is not recreated by audit
+PASS all probes restored exact business rows
+PASS review same key creates one trail
+PASS review key different note conflicts
+PASS acknowledged filter retains original evidence
+PASS review is not inventory repair
+PASS new scan clean while old report stays dirty
+PASS history pagination bounded
+PASS item pagination bounded
+PASS invalid filter rejected
+PASS run requires idempotency key
+PASS blank note rejected
+PASS anonymous query denied
+PASS no function permission cannot scan
+PASS no function permission cannot query
+PASS authorized audit scope ignores injected actor tenant filters
+PASS other audit actor cannot get known report
+PASS other audit actor cannot list known findings
+PASS other actor cannot review known difference
+PASS audit page only own reports
+PASS revoked run permission blocks successful replay
+PASS run also requires query permission
+PASS restored permission returns original result
+PASS foreign tenant sees empty tenant snapshot
+PASS foreign tenant cannot get known report
+PASS foreign tenant cannot review known difference
+PASS six same-key two JVM scans persist one report
+PASS after-report fault returns failure
+PASS report findings and command all rolled back
+PASS fault did not change business facts
+PASS healthy same-key retry creates complete report
+PASS row overflow returns explicit limit error
+PASS overflow creates no partial clean report or command
+PASS same key can recover after server bound restored
+PASS snapshot barrier owned
+PASS busy admission rejects before claiming a command
+PASS writer committed while audit paused without business lock
+PASS RR snapshot does not mix old inventory with new shipment return
+PASS new run sees committed rows absent from prior snapshot
+PASS run key persists after JVM restart
+PASS review key persists after JVM restart
+PASS current clean report after concurrency restart
+M4.3 acceptance passed 73 checks fulfillment_m4_reconcile_20261019_175618

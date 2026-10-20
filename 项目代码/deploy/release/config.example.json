@@ -1,0 +1,19 @@
+{
+  "database": "fulfillment_demo",
+  "dbHost": "127.0.0.1",
+  "dbPort": 33306,
+  "dbUser": "fulfillment",
+  "dbPassword": "fulfillment-dev",
+  "redisHost": "127.0.0.1",
+  "redisPort": 36379,
+  "redisDatabase": 9,
+  "redisPassword": "",
+  "rabbitHost": "127.0.0.1",
+  "rabbitPort": 35672,
+  "rabbitVhost": "fulfillment_demo",
+  "rabbitUser": "fulfillment",
+  "rabbitPassword": "fulfillment-mq-dev",
+  "backendPort": 48082,
+  "frontendPort": 15174,
+  "javaHeapMb": 768
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><groupId>cn.iocoder.boot</groupId><artifactId>yudao</artifactId><version>${revision}</version></parent>
+  <artifactId>yudao-module-fulfillment</artifactId>
+  <description>Project-authored order fulfillment extension</description>
+  <dependencies>
+    <dependency><groupId>com.rabbitmq</groupId><artifactId>amqp-client</artifactId></dependency>
+    <dependency><groupId>cn.iocoder.boot</groupId><artifactId>yudao-module-erp</artifactId><version>${revision}</version></dependency>
+    <dependency><groupId>org.flywaydb</groupId><artifactId>flyway-core</artifactId></dependency>
+    <dependency><groupId>org.flywaydb</groupId><artifactId>flyway-mysql</artifactId></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-test</artifactId><scope>test</scope></dependency>
+    <dependency><groupId>org.mockito</groupId><artifactId>mockito-inline</artifactId><scope>test</scope></dependency>
+  </dependencies>
+</project>

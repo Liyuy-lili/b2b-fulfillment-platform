@@ -1,0 +1,32 @@
+{
+  "test_ports_free": true,
+  "run_at": "2026-10-19T03:21:25.8268266Z",
+  "listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 5996
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 48080,
+      "OwningProcess": 27180
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 36379,
+      "OwningProcess": 1948
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 33306,
+      "OwningProcess": 32132
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 15173,
+      "OwningProcess": 2720
+    }
+  ],
+  "test_listeners": []
+}

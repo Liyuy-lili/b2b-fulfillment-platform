@@ -1,0 +1,66 @@
+{
+  "performed_at": "2026-10-16T20:33:55.052843",
+  "database": "fulfillment",
+  "results": [
+    {
+      "prefix": "QTRK20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "QCKD20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "QCDB20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "QCPD20261016",
+      "database_max": 4,
+      "counter_after": 4
+    },
+    {
+      "prefix": "XSDD20261016",
+      "database_max": 8,
+      "counter_after": 8
+    },
+    {
+      "prefix": "XSCK20261016",
+      "database_max": 6,
+      "counter_after": 6
+    },
+    {
+      "prefix": "XSTH20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "CGDD20261016",
+      "database_max": 6,
+      "counter_after": 6
+    },
+    {
+      "prefix": "CGRK20261016",
+      "database_max": 6,
+      "counter_after": 6
+    },
+    {
+      "prefix": "CGTH20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "FKD20261016",
+      "database_max": 0,
+      "counter_after": 0
+    },
+    {
+      "prefix": "SKD20261016",
+      "database_max": 0,
+      "counter_after": 0
+    }
+  ]
+}

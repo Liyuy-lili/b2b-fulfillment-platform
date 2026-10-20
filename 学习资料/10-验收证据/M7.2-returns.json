@@ -1,0 +1,622 @@
+{
+  "run_at": "2026-10-20T02:01:36.905965+00:00",
+  "database": "fulfillment_m7_reg_returns_20261020_100136",
+  "redis_database": 12,
+  "checks": [
+    {
+      "name": "test port free 48082",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test port free 48083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup command scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m7_reg_returns_20261020_100136')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup command scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m7_reg_returns_20261020_100136')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup command scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m7_reg_returns_20261020_100136')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "setup command scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m7_reg_returns_20261020_100136')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new database M1 source auth and binding regression",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new database history 0 through 4 [M7 expected V0-V8]",
+      "passed": true,
+      "detail": {
+        "current": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      }
+    },
+    {
+      "name": "request is pending and changes no H R or order quantities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create decimal and reason normalized replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same create key changed content conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending requests consume return allowance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero quantity rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate shipment item rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unowned shipment item rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sub-micro precision rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejection releases allowance without changing inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejection replay remains stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rejected application cannot be received",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after ERP test fault actually reached",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after fault rolls back H R aggregate ERP document and mappings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after failed receive command rolled back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "during ERP test fault actually reached",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "during fault rolls back H R aggregate ERP document and mappings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "during failed receive command rolled back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "healthy retry after both failures receives exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gross shipped cancelled open and terminal status preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same receive key replay stable across JVMs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new receive key on received return has no new effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "received return cannot be rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create replay returns original pending response after receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one micro over remaining allowance rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "origin warehouse ignores forged body and receipt mappings present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ERP source returnCount updated without reducing outCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original price tax and warehouse reused; refund remains zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-return/update-status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-return/delete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legacy managed mutation frozen /erp/sale-return/create",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two JVM same-key applications create one fact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending plus received cap serialized across JVMs",
+      "passed": true,
+      "detail": [
+        {
+          "code": 1080000041,
+          "msg": "RETURN_QUANTITY_EXCEEDED: 申请中和已收货数量之和超过原发货量",
+          "data": null
+        },
+        {
+          "code": 1080000041,
+          "msg": "RETURN_QUANTITY_EXCEEDED: 申请中和已收货数量之和超过原发货量",
+          "data": null
+        },
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "id": "5",
+            "returnNo": "RET-07d34a0f-12ce-4a6e-9324-bded07afdeaf",
+            "status": "REQUESTED",
+            "erpSaleReturnId": null,
+            "orderStatus": "FULFILLED"
+          }
+        },
+        {
+          "code": 1080000041,
+          "msg": "RETURN_QUANTITY_EXCEEDED: 申请中和已收货数量之和超过原发货量",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "T17 two JVM repeated receipts yield one ERP effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receive versus reject admits one terminal transition",
+      "passed": true,
+      "detail": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "id": "6",
+            "returnNo": "RET-2aa109c5-c8e6-430c-a4ae-08623f7728dd",
+            "status": "RECEIVED",
+            "erpSaleReturnId": "6",
+            "orderStatus": "FULFILLED"
+          }
+        },
+        {
+          "code": 1080000042,
+          "msg": "RETURN_STATE_CONFLICT: 已收货和已拒绝是互斥终态",
+          "data": null
+        }
+      ]
+    },
+    {
+      "name": "duplicate SKU lines preserve item identity and exact stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full return restores physical gross shipped stays and order stays closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full returned order has no automatically reopened allocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return page is paginated with string quantities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return page limit enforced",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary owner receives own return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create no permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receive no permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject no permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "get no permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create wrong owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receive wrong owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject wrong owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "get wrong owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receipt replay rechecks revoked function permission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restored permission permits original replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant cannot read known return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant cannot receive known order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant cannot list known order returns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign tenant can receive own goods in original warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant one cannot mutate foreign receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "DB rejects received state without receipt links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all H R reservations and both ledgers agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all received quantities match order returned aggregates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all live applications and receipts respect each original shipment item",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every received return links approved same-tenant ERP document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every receipt item matches positive ERP physical effect once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only received rows have ERP item mappings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "receipt key survives JVM restart unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "arguments": [
+        "-Database",
+        "fulfillment_m7_reg_returns_20261020_100136"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-return-0.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m7_reg_returns_20261020_100136"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-return-1.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m7_reg_returns_20261020_100136"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-return-2.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "arguments": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m7_reg_returns_20261020_100136"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m4-return-3.log"
+    }
+  ],
+  "processes": [
+    {
+      "name": "a",
+      "port": 48082,
+      "pid": 11400,
+      "profiles": "",
+      "during_erp": false
+    },
+    {
+      "name": "after",
+      "port": 48083,
+      "pid": 16044,
+      "profiles": "fulfillment-return-fault-test",
+      "during_erp": false
+    },
+    {
+      "name": "during",
+      "port": 48083,
+      "pid": 31420,
+      "profiles": "fulfillment-return-fault-test",
+      "during_erp": true
+    },
+    {
+      "name": "b",
+      "port": 48083,
+      "pid": 38120,
+      "profiles": "",
+      "during_erp": false
+    },
+    {
+      "name": "restart",
+      "port": 48082,
+      "pid": 7448,
+      "profiles": "",
+      "during_erp": false
+    }
+  ],
+  "ids": {
+    "精度闭环": {
+      "product": 3,
+      "source": 19,
+      "order": "9",
+      "shipment": "1",
+      "lines": [
+        {
+          "id": "1",
+          "orderItemId": "9",
+          "reservationId": "1",
+          "quantity": "6.000001",
+          "erpSaleOutItemId": "10"
+        }
+      ],
+      "warehouse": 1
+    },
+    "并发申请": {
+      "product": 4,
+      "source": 20,
+      "order": "10",
+      "shipment": "2",
+      "lines": [
+        {
+          "id": "2",
+          "orderItemId": "10",
+          "reservationId": "2",
+          "quantity": "5.000000",
+          "erpSaleOutItemId": "11"
+        }
+      ],
+      "warehouse": 1
+    },
+    "收货拒绝竞争": {
+      "product": 5,
+      "source": 21,
+      "order": "11",
+      "shipment": "3",
+      "lines": [
+        {
+          "id": "3",
+          "orderItemId": "11",
+          "reservationId": "3",
+          "quantity": "3.000000",
+          "erpSaleOutItemId": "12"
+        }
+      ],
+      "warehouse": 1
+    },
+    "重复商品两行": {
+      "product": 6,
+      "source": 22,
+      "order": "12",
+      "shipment": "4",
+      "lines": [
+        {
+          "id": "4",
+          "orderItemId": "12",
+          "reservationId": "4",
+          "quantity": "3.000000",
+          "erpSaleOutItemId": "13"
+        },
+        {
+          "id": "5",
+          "orderItemId": "13",
+          "reservationId": "5",
+          "quantity": "4.000000",
+          "erpSaleOutItemId": "14"
+        }
+      ],
+      "warehouse": 1
+    },
+    "归属权限": {
+      "product": 7,
+      "source": 23,
+      "order": "13",
+      "shipment": "5",
+      "lines": [
+        {
+          "id": "6",
+          "orderItemId": "14",
+          "reservationId": "6",
+          "quantity": "4.000000",
+          "erpSaleOutItemId": "15"
+        }
+      ],
+      "warehouse": 1
+    },
+    "外租户退回": {
+      "product": 8,
+      "source": 24,
+      "order": "14",
+      "shipment": "6",
+      "lines": [
+        {
+          "id": "7",
+          "orderItemId": "15",
+          "reservationId": "7",
+          "quantity": "2.000000",
+          "erpSaleOutItemId": "16"
+        }
+      ],
+      "warehouse": 3
+    }
+  },
+  "result": "passed",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "m7_case": "returns",
+  "actual_application_ports": [
+    48082,
+    48083
+  ]
+}

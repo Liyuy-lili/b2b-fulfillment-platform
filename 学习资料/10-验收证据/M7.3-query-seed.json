@@ -1,0 +1,252 @@
+{
+  "run_at": "2026-10-20T01:35:18.165440+00:00",
+  "database": "fulfillment_m7_query_20261020_093518",
+  "checks": [
+    {
+      "name": "second actual tenant distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "synthetic scale 10000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "synthetic scale 50000",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "data_origin": "Real HTTP template; explicitly labelled SQL-cloned synthetic benchmark orders/items, not business acceptance.",
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m7_query_20261020_093518"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_query_20261020_093518-1792460118165458100.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "baseline",
+        "-Database",
+        "fulfillment_m7_query_20261020_093518"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_query_20261020_093518-1792460126655043100.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "migrate",
+        "-Database",
+        "fulfillment_m7_query_20261020_093518"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_query_20261020_093518-1792460129322682500.log"
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Action",
+        "validate",
+        "-Database",
+        "fulfillment_m7_query_20261020_093518"
+      ],
+      "exit_code": 0,
+      "log": ".local\\m7-fulfillment_m7_query_20261020_093518-1792460136732958800.log"
+    }
+  ],
+  "second_tenant": 162,
+  "scale_10000": {
+    "orders_per_tenant": 10000,
+    "counts": [
+      [
+        1,
+        "NEW",
+        9001
+      ],
+      [
+        1,
+        "WAIT_STOCK",
+        1000
+      ],
+      [
+        162,
+        "NEW",
+        9000
+      ],
+      [
+        162,
+        "WAIT_STOCK",
+        1000
+      ]
+    ],
+    "baseline_explain": {
+      "query_block": {
+        "select_id": 1,
+        "cost_info": {
+          "query_cost": "100.75"
+        },
+        "ordering_operation": {
+          "using_filesort": false,
+          "table": {
+            "table_name": "ful_order",
+            "access_type": "index",
+            "possible_keys": [
+              "uk_tenant_id",
+              "uk_order_source",
+              "uk_order_no",
+              "ix_order_status",
+              "ix_order_owner"
+            ],
+            "key": "PRIMARY",
+            "used_key_parts": [
+              "id"
+            ],
+            "key_length": "8",
+            "rows_examined_per_scan": 1000,
+            "rows_produced_per_join": 500,
+            "filtered": "2.50",
+            "backward_index_scan": true,
+            "cost_info": {
+              "read_cost": "0.75",
+              "eval_cost": "50.00",
+              "prefix_cost": "100.75",
+              "data_read_per_join": "570K"
+            },
+            "used_columns": [
+              "id",
+              "erp_order_id",
+              "order_no",
+              "customer_id",
+              "owner_user_id",
+              "account_id",
+              "sale_user_id",
+              "status",
+              "allocation_attempted",
+              "allocation_strategy",
+              "strategy_version",
+              "version",
+              "total_price",
+              "discount_percent",
+              "discount_price",
+              "deposit_price",
+              "tenant_id",
+              "creator",
+              "create_time",
+              "updater",
+              "update_time",
+              "deleted"
+            ],
+            "attached_condition": "((`fulfillment_m7_query_20261020_093518`.`ful_order`.`deleted` = 0) and (`fulfillment_m7_query_20261020_093518`.`ful_order`.`tenant_id` = 1) and (`fulfillment_m7_query_20261020_093518`.`ful_order`.`status` = 'WAIT_STOCK'))"
+          }
+        }
+      }
+    }
+  },
+  "scale_50000": {
+    "orders_per_tenant": 50000,
+    "counts": [
+      [
+        1,
+        "NEW",
+        45001
+      ],
+      [
+        1,
+        "WAIT_STOCK",
+        5000
+      ],
+      [
+        162,
+        "NEW",
+        45000
+      ],
+      [
+        162,
+        "WAIT_STOCK",
+        5000
+      ]
+    ],
+    "baseline_explain": {
+      "query_block": {
+        "select_id": 1,
+        "cost_info": {
+          "query_cost": "1657.85"
+        },
+        "ordering_operation": {
+          "using_filesort": false,
+          "table": {
+            "table_name": "ful_order",
+            "access_type": "index",
+            "possible_keys": [
+              "uk_tenant_id",
+              "uk_order_source",
+              "uk_order_no",
+              "ix_order_status",
+              "ix_order_owner"
+            ],
+            "key": "PRIMARY",
+            "used_key_parts": [
+              "id"
+            ],
+            "key_length": "8",
+            "rows_examined_per_scan": 544,
+            "rows_produced_per_join": 4558,
+            "filtered": "2.50",
+            "backward_index_scan": true,
+            "cost_info": {
+              "read_cost": "746.25",
+              "eval_cost": "455.80",
+              "prefix_cost": "1657.85",
+              "data_read_per_join": "5M"
+            },
+            "used_columns": [
+              "id",
+              "erp_order_id",
+              "order_no",
+              "customer_id",
+              "owner_user_id",
+              "account_id",
+              "sale_user_id",
+              "status",
+              "allocation_attempted",
+              "allocation_strategy",
+              "strategy_version",
+              "version",
+              "total_price",
+              "discount_percent",
+              "discount_price",
+              "deposit_price",
+              "tenant_id",
+              "creator",
+              "create_time",
+              "updater",
+              "update_time",
+              "deleted"
+            ],
+            "attached_condition": "((`fulfillment_m7_query_20261020_093518`.`ful_order`.`deleted` = 0) and (`fulfillment_m7_query_20261020_093518`.`ful_order`.`tenant_id` = 1) and (`fulfillment_m7_query_20261020_093518`.`ful_order`.`status` = 'WAIT_STOCK'))"
+          }
+        }
+      }
+    }
+  },
+  "template": {
+    "order": "1",
+    "source": 1,
+    "source_item": 1,
+    "item": 1,
+    "product": 1,
+    "customer": 1
+  },
+  "artifact_sha256": "80dd50401f2149ca636f98944eac7f80b2e0cff588c67e17326fe95215d9b32b",
+  "result": "passed",
+  "owned_stopped": true
+}

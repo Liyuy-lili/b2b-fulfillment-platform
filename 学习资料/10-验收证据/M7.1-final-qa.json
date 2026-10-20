@@ -1,0 +1,1163 @@
+{
+  "run_at": "2026-10-20T01:30:24.743920+00:00",
+  "checks": [
+    {
+      "name": "passed release",
+      "passed": true,
+      "detail": 45
+    },
+    {
+      "name": "passed closeout",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "temporary apps stopped after browser",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package checksum matches tested copy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive SHA matches actual ZIP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all manifest files match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same M6 tested backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code frontend/src/api/erp/fulfillment/jobs.ts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved existing business code frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed baseline lock retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original MIT backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original MIT frontend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source config.example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source Install-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source Release-Environment.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source Start-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested package script equals source Stop-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual production release build log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real production DOM quantities and messages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual JPEG proof 1280x900",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main listeners retained and test ports free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique explicit source list",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists docs/evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists scripts/Build-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists frontend/.env.release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/config.example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Install-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Release-Environment.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Start-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists deploy/release/Stop-Release.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_closeout.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_qa.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source exists tests/m7_release_runtime.ps1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> AGENTS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/面试问答/16-题目总索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/学习资料/19-真实代码导航.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/学习资料/00-完成度与事实边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/学习资料/02-业务与数量全流程.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/学习资料/01-学习路线与每日任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M0-import.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M6-demo-input.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> .local/releases/fulfillment-20261020-092017.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M7.1-demo.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link README.md -> docs/lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M0-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/PROJECT_STATUS.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> 学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> 面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> baseline.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/AI_IMPLEMENTATION_SPEC.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> AI_IMPLEMENTATION_SPEC.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 面试问答/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/00-完成度与事实边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/01-学习路线与每日任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 学习资料/24-关键源码逐段精读.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> 面试问答/16-题目总索引.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/DOC-learning-interview-20261019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M0-基座与库存调用链.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-009-M0-运行环境与基座收敛.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-010-M1-绑定与迁移边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M1-订单接管与并发保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-011-M2-预占与统一库存写入.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M2-预占释放与统一库存保护.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-012-M3-发货取消与物流集成.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M3-部分发货取消与物流闭环.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-013-M4.1-到期任务与系统命令.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.1-自动到期与重复任务.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-014-M4.2-退货与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M4.2-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.2-退货额度与ERP入库.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M4.3-一致性快照与差异核对.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M4.3-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-016-M5-可靠事件与消息恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M5-可靠消息与故障恢复.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M5-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M6-可恢复文件任务与仓库授权.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M6-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/LEARNING_AND_INTERVIEW_GUIDE.md -> lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/decisions/ADR-018-M7-交付与性能证据边界.md -> ../evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/lessons/M7.1-独立交付与固定演示.md -> ../PROJECT_STATUS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/lessons/M7.1-独立交付与固定演示.md -> ../evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/lessons/M7.1-独立交付与固定演示.md -> ../RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UTF8 fences docs/evidence/M7.1-验收报告.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-browser.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-closeout.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-final-qa.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-changes.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> ../RELEASE_RUNBOOK.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> ../lessons/M7.1-独立交付与固定演示.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> ../decisions/ADR-018-M7-交付与性能证据边界.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> ../../.local/releases/fulfillment-20261020-092017.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "link docs/evidence/M7.1-验收报告.md -> M7.1-release-browser.jpg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Node syntax serve.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Node syntax Seed-Demo.cjs",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "M7.1 only; M7.2-M7.4 not executed",
+  "source_count": 21,
+  "result": "passed"
+}

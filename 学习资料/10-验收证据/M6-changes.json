@@ -1,0 +1,210 @@
+{
+  "note": "Explicit M6 source inventory, not Git diff. Historical M4.2 packs remain historical.",
+  "count": 51,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2acc655d2047db213103859ac9c4df38c55f5a65e9dfe16f5b2b53b30c4832e8"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "cc64c0fcfb748532bc6352e1b3001056dc9e13b3c6559e50d2ed6916552df3e1"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "2735f4a1fe129b150c0f6637d2a3075b7533a872bda814b15558ba9eaa50afa4"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "78b84a13c8b4da64e1f8e9da7e3cf5876746973ad853db68cdcb2a706a761045"
+    },
+    {
+      "path": "docs/decisions/ADR-017-M6-持久化文件任务与数据授权.md",
+      "sha256": "fe374cd95e615ab04ee8f4c1eb558cdd2156a3df8a6a68b4f58a0e57b029b5ad"
+    },
+    {
+      "path": "docs/lessons/M6-可恢复文件任务与仓库授权.md",
+      "sha256": "0f56dd08e840849150468eee793244a1993b7c1a5f7b61301a710996c16f7bbf"
+    },
+    {
+      "path": "docs/evidence/M6-验收报告.md",
+      "sha256": "1270e94f0a709269db04bf9f9e1a198d1dd1ea9ae7c806490210e20f18756907"
+    },
+    {
+      "path": "docs/学习资料/README.md",
+      "sha256": "99f8e2431ae2ee21fd39243d7ca2d8af70ca8bfa5c2b12ffff3c40253407726f"
+    },
+    {
+      "path": "docs/面试问答/README.md",
+      "sha256": "256e222fa45c40aab1049ddb5555c6814fbc70e4c8488a6851b94b70bed2bd9d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "sha256": "e83d3f7ba7fc69b4bd1063f0840299c10b255ff13760cbe665f9feb8f7540c90"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "sha256": "9ba22dda9c0eddb97af0b6ea92cdcad79e3c751a9e9659343fd180ad21b8af0c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "sha256": "83edc1b6ecd8eac9dfd6f4b473f5864745ff883b412a07e9b8488d9f7a80fd3d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "sha256": "7efbe95ab64bf574f9eeef5fb8d9fffdc1025fadbc5aaacecf3e75923b28e9e0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "sha256": "5dff4158b9e864bfc4e60dbd0b0de87499559efbe677985fb82fc73f99b8773a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "sha256": "1563ab2b41fe8ebd8216b68f840ee3c6e610534ea12321e0b24fa329ff5ee945"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "sha256": "3ab437ede088d9f99084cf2c5f52b2afd7c1a98368210916b6208e9948621e8c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "sha256": "01966da925e0d4255c5fba6956093863082f0cb4eddfbe00500b8a92e8ebf6c2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "sha256": "e62c7c172eeeefc8a38a7c76a7438f9c96eecfcea2317cc84da8f67f39f007cb"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "sha256": "f97827010ab2b1ee7bed8ffeebe09a3b15cae5eb85d28ecc02d76127c843ca02"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "sha256": "4fec7f9bc9817c6babd627e180a0bac71ef30b4a767fd6c9e2ecfefefdc60896"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "sha256": "c1f6a3e20f9b1ee2ac58e623e7d956ae4a4355a9ec4a19c914498f155df6f73c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "sha256": "063744584bace8f801a8b18c43b11325e887c31253d5b23d4985ce64c42c96cd"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "sha256": "8b86317687ceb0976a6ff29dd0fe0c3d1e324de88700da71f8befd98938b66b6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "sha256": "4c911b63d96b5fdc23f07cea4683261be92bc73e7f1d6cafc75bd9308004a7f2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "sha256": "de84c421da4222d49b548909d134ad80761294f27b23779a9b38eaeca3b3ec72"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "sha256": "5fd49be20d3c33d0bb02cd1a6bf23e175c2aefc625f2ee447a5d961d3f5c5c5d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "c02aabf949a1098cbc2fc863e68b8b479aadc08ea1793bfd1144e34f3dc7c85a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "sha256": "d58a30854a5876c1e8606889e95d1ddb7fe6e7c77c5c674dbe6bc12aa3e83417"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "sha256": "5109d28d266c6e0ea9bd8d1baba3baf6c58c50d4107a4ef5db008abb214588b1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "sha256": "6bf07e1e21bd751f051b2c42fad58e7c6566d4b76d75205a89161238585f3c98"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "sha256": "9d20699ec612f8f01bf138edf43b328713292233b4d4ba35f80f152a09691bab"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "69484db406952ba99bb89968cf6d6a0856d8ef6f03170c9d1295fe830b110593"
+    },
+    {
+      "path": "backend/yudao-server/src/main/resources/application-fulfillment.yaml",
+      "sha256": "8c26fe34ca6a6b3cc11fcb143ebf3e3be5b34024bd8893f3b118c62345c284ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "sha256": "559c784a6c38e0e65167c5e9b0cbb85865ce4499908ede896ff94d1bb19d3222"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "sha256": "5a80ddd20d28f830f0bc2a8948b04f43892de8dea3cecca90e3293b37a06e7f5"
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/jobs.ts",
+      "sha256": "abbf00dd7a99cbb2d58c6225bb2e550d7265ed50a18e4a7faa3588d7a7f00007"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "sha256": "2bef768aea875aa5fde4d0f7d7f873c284d0a7730c179d31110f561c88c4cebc"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "sha256": "65220ef62239e4f4ba3230a87f44cde6dc0b8e80afd382dfc177d6c940710e7a"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "1e51ff9c35e2458076dabc00c83067eeadd6c38385a5d6ff60f4ab25b1933bc6"
+    },
+    {
+      "path": "scripts/Start-Local.ps1",
+      "sha256": "dd207c3a4670173ae9847e7f1ab99e8a2678374bcbee788bd5c5c59ccddbb7d5"
+    },
+    {
+      "path": "tests/m6_acceptance.py",
+      "sha256": "e0816bab64a050678777741b1563ffac2df9c6090dfee4ab017d85e34556c986"
+    },
+    {
+      "path": "tests/m6_constraints.py",
+      "sha256": "cf5b6dfc1e6b16ff6d841c779e62231734d78d57911c1c163f197588ce6e74a8"
+    },
+    {
+      "path": "tests/m6_demo.py",
+      "sha256": "1e420444436e801906c650bf11805a1d171649177971d7b8917e2e29a1324bf2"
+    },
+    {
+      "path": "tests/m6_foundation.py",
+      "sha256": "22362fb73234f0c170a04316b3db25f35371e2009ac6d8f40e0651f51250282b"
+    },
+    {
+      "path": "tests/m6_frontend.ps1",
+      "sha256": "3ab767c79200f8708d7910372d73194e2c3bdbab5b4e73ac265e18584455dcd2"
+    },
+    {
+      "path": "tests/m6_qa.py",
+      "sha256": "3e4a2c942ce82ac6c057c8b5068b50b94d96ee989a56d7126fa755055ac36168"
+    },
+    {
+      "path": "tests/m6_restart.py",
+      "sha256": "af46b3b45424b78e2d3e05ff48d6ed23bd00d4cfc7d88decc64dc5c9efa62214"
+    },
+    {
+      "path": "tests/m6_runtime.ps1",
+      "sha256": "dc0fbdaee40fdf9cb74ab94ea6d0fa89a6c6dfa6f237d11014446e8f88351405"
+    },
+    {
+      "path": "tests/m6_supplement.py",
+      "sha256": "15b270fd9d77c60cebf0f0a0c070070e5cfdd7eef9980df6697ba2ec2e924338"
+    },
+    {
+      "path": "tests/m6_ui_assert.py",
+      "sha256": "f9e0d51f002dce5593dbe90f1dc80a6093ac9d1f1ef83cab7ba7b805aa923b90"
+    },
+    {
+      "path": "tests/m6_upgrade.py",
+      "sha256": "0c612c637aeeae3b923a9639735df93830ce836bac47fa11789fa18e29e33ae8"
+    }
+  ]
+}

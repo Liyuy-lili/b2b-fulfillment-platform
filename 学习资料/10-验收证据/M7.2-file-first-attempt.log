@@ -1,0 +1,21 @@
+PASS passed final-artifact foundation first
+M7 regression file failed
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 121, in <module>
+    else:suite()
+         ~~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 102, in suite
+    module.main()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m6_acceptance.py", line 218, in main
+    api=start('api',port=48082);c=Client(48082).login();f=m.b.Fixture(c,'Core');fx=f.shipment('���뵼��',('1',));E['fixtures']['core']=fx
+                                                                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_return_acceptance.py", line 72, in shipment
+    inc=c.create('stock-in',{'supplierId':self.supplier,'inTime':NOW,'items':[{'productId':p,'warehouseId':self.w,'count':'20','productPrice':'0'}]});c.approve('stock-in',inc)
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m1_acceptance.py", line 31, in create
+    def create(self,kind,body):return self.api('POST','/erp/'+kind+'/create',body)
+                                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m2_acceptance.py", line 18, in api
+    if result.get('code')!=0:raise AssertionError(f'{method} {path}: {result}')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: POST /erp/stock-in/create: {'code': 1030401004, 'msg': '������ⵥʧ�ܣ��������ύ', 'data': None}

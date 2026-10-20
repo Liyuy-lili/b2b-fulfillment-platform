@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "checks": [
+    {
+      "name": "allocated command replays after full dependency restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "released command replays original outcome after restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all main database H R held and reservation deltas consistent",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no commitment without physical stock identity",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all physical balances match ERP delta sums",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "result": "passed"
+}

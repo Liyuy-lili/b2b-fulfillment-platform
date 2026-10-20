@@ -1,0 +1,4 @@
+Shutting down RabbitMQ node fulfillment@localhost running at PID 26284
+Waiting for PID 26284 to terminate
+RabbitMQ node fulfillment@localhost running at PID 26284 successfully shut down
+Killed

@@ -1,0 +1,131 @@
+{
+  "run_at": "2026-10-19T10:13:47.032266+00:00",
+  "note": "Explicit stage inventory, not a Git diff. M4.2 learning pack remains a historical snapshot; only its entry notices were updated.",
+  "count": 31,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "169cf06f53e2cbfbc31e00a8a7b2aaa93460d520cfab67fff3dab53eb3ead644"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "9568edf4777ce253fad9cc31c6cfe1e211517f5cdd5bce0a0bf74a98225d4365"
+    },
+    {
+      "path": "docs/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "6ef9572f256ea1546f8e0d5c9c11ed2216f75e6a3e197d46a8e36f1bbf5a6ddb"
+    },
+    {
+      "path": "docs/LEARNING_AND_INTERVIEW_GUIDE.md",
+      "sha256": "a520fc6f5b57856572c24e5157d76bc7c90993394c371cd2506725ade17e6906"
+    },
+    {
+      "path": "docs/decisions/ADR-015-M4.3-快照核对与差异追溯.md",
+      "sha256": "9b1f300808568868d94f5be4bd555ba422250d2f8aa5cbc57cf214fff0e8bd81"
+    },
+    {
+      "path": "docs/lessons/M4.3-一致性快照与差异核对.md",
+      "sha256": "db903efac446f944467ad6fc9bc5f69c36fb894d5ad0ee07cb8e388fa2066238"
+    },
+    {
+      "path": "docs/evidence/M4.3-验收报告.md",
+      "sha256": "71a31e804ae0661919cfcc073fab5fb4213bef7e8bdbfa24f95d2142d8cfc465"
+    },
+    {
+      "path": "docs/学习资料/README.md",
+      "sha256": "384a2d62fd344228b985208fbfecee530e9cae9fad7634c7fce0e98d28f4ad3e"
+    },
+    {
+      "path": "docs/面试问答/README.md",
+      "sha256": "81f62d033904ae9dba84140ef9a900d4e36c038b4d8fd38bafce95f503414285"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReconcileContracts.java",
+      "sha256": "a016f84e5e53e1e2a0c290dff267333a238b3bbc00a205d0ef5e3802571f8f48"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReconcileController.java",
+      "sha256": "89053a79d39df16ec087cc575b6589c22842f39aea9b6b514ea786a97d31b47e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngine.java",
+      "sha256": "6130c49961ce029b7715780ab9ebeefa840a9ed2cfcd8e607559cdafd1e03b5e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileSnapshotObserver.java",
+      "sha256": "1b7b8babfe4aeb4ccd14cdca82173252e2a39d9994e945ffd1b5bfe2d9b7e9d7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileService.java",
+      "sha256": "dbb7956d9791c9c289b178481d03952ff1f0e9c6b915c2698425579f4b6bb29f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileSnapshotReader.java",
+      "sha256": "a7199dc779bd49316ce6db51cc73588a376bf62d22ba3f656efadcf6d5a362a1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileAdmission.java",
+      "sha256": "f3e3dc15e3c96a34297554ea3d7a027548285b2f2e2734dbc80766796aece7da"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReconcileTestConfiguration.java",
+      "sha256": "c1e408006ca84afb2ea46531782c87a91499ab739d61f933869b442a278ca653"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "796b713914edeff1c1fc865c232d0d25cd163e95f82303ddf9eeb710668e0929"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V5__reconciliation.sql",
+      "sha256": "9ffdfe1e016604f64ff289b21dd7846d0bef5206d195753a7fda8d4eade39666"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngineTest.java",
+      "sha256": "e2552e5d2012ff8f2d65b8f85268c3d45ae4525ce1c44965b5071f2d5c30794a"
+    },
+    {
+      "path": "frontend/src/api/erp/reconciliation/index.ts",
+      "sha256": "4e9cce53262e0ad6f643fc81810b62899d17b96f08006bef400c5b6609b75804"
+    },
+    {
+      "path": "frontend/src/views/erp/reconciliation/index.vue",
+      "sha256": "f6d3d31c6cde85cd576d7cdf597030dc5f1fd6f81241130d3feee2427eb270b2"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "c906815ea80032d275d3d034cd5456206b329f17d634b37dd1cab3c5f6bd991d"
+    },
+    {
+      "path": "tests/m4_reconcile_acceptance.py",
+      "sha256": "88a9f6ab1adfb311b20d661d8040a5fee82e7c248a6b4df0af5f076474c1edf5"
+    },
+    {
+      "path": "tests/m4_reconcile_constraints.py",
+      "sha256": "4de2c92968fe202e2dd0205c1e2d96deffa30adfd44122391076427bf9a85476"
+    },
+    {
+      "path": "tests/m4_reconcile_frontend.ps1",
+      "sha256": "8eefe7ad74e281b17f9355c43e261108af0e2e2f8a475f2cc50001d936cdbb5e"
+    },
+    {
+      "path": "tests/m4_reconcile_qa.py",
+      "sha256": "cdda8750b9bfffe92e8f4746b86852e390d682fc026b2276ab6461105b52382d"
+    },
+    {
+      "path": "tests/m4_reconcile_restart.py",
+      "sha256": "9e8aa34c122b8eaa3049d329111ecdf2c7596d07fd4078aba1f7b95591c5016f"
+    },
+    {
+      "path": "tests/m4_reconcile_ui_assert.py",
+      "sha256": "04a2760810035994981081ca01b551bc1757237f36dc04b5fec498a8742f1f34"
+    },
+    {
+      "path": "tests/m4_reconcile_ui_runtime.py",
+      "sha256": "29f409bcc3bb147b47649576c0d82481ab2ad22b6db802ee60aa0f5043a197dc"
+    },
+    {
+      "path": "tests/m4_reconcile_upgrade.py",
+      "sha256": "d7db31d7d8d5704c2e54a34590da1bd0526d07a902db80daab4e7224bf469ef2"
+    }
+  ]
+}

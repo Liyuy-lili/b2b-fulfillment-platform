@@ -1,0 +1,52 @@
+PASS source bundle is final M6 backend
+PASS test application ports free
+PASS dedicated Redis DB9 starts empty
+PASS all source package hashes verified
+PASS package carries no node_modules target or live config
+PASS preflight capacity for fresh copy and ZIP
+PASS fresh clean-room destination outside source
+PASS copied package byte-identical
+PASS isolated Broker vhost created
+PASS isolated vhost user permissions
+PASS Start-Release.ps1 rejects
+PASS tampered package rejected before processes start
+PASS Install-Release.ps1 exits0
+PASS clean install has full immutable V0-V7
+PASS new business schema initially empty
+PASS Start-Release.ps1 exits0
+PASS self-contained Node demo exits0
+PASS demo completes from package only
+PASS actual multi-warehouse final balances
+PASS gross shipped cancellation return aggregates exact
+PASS shipment signed callback delivered
+PASS repeated file task has one real draft identity
+PASS two imports each localize the bad row
+PASS same-origin messages and current projection complete
+PASS real XLSX and localized error file saved
+PASS private registered files match bytes
+PASS warehouse demo user sees only READ XiAn
+PASS warehouse user cannot access other warehouse
+PASS warehouse user cannot request sales prices
+PASS private storage and local config not served
+PASS app-api proxy reaches signed callback validation
+PASS production SPA deep link and module asset served
+PASS Stop-Release.ps1 exits0
+M7.1 release failed 33 checks
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 121, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 108, in main
+    snap=snapshot();registered=private_files();before=digest(snap)
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 48, in snapshot
+    tables=[r[0] for r in sql("SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME LIKE 'ful\\_%'")]
+                          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 21, in sql
+    with con.cursor() as cur:cur.execute(query,args);return cur.fetchall()
+                             ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\cursors.py", line 157, in execute
+    query = self.mogrify(query, args)
+  File "C:\veighna_studio\Lib\site-packages\pymysql\cursors.py", line 135, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string

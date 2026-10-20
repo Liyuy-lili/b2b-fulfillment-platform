@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "listeners": [
+    {
+      "LocalPort": 48082,
+      "OwningProcess": 19340
+    },
+    {
+      "LocalPort": 48080,
+      "OwningProcess": 6936
+    }
+  ],
+  "database": "fulfillment",
+  "redis_database": 0,
+  "tests": [
+    "m2_acceptance.py",
+    "m2_legacy_inventory.py",
+    "m2_permissions.py"
+  ]
+}

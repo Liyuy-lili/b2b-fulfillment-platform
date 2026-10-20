@@ -1,0 +1,53 @@
+{
+  "run_at": "2026-10-18T15:49:16.218920+00:00",
+  "database": "fulfillment_m3_clean_20261018",
+  "commands": [
+    {
+      "script": "scripts/Initialize-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m3_clean_20261018"
+      ],
+      "exit": 0,
+      "output": "Applied backend/sql/mysql/ruoyi-vue-pro.sql\nApplied deploy/sql/010-erp.sql\nApplied deploy/sql/020-local-baseline.sql\nInitialized fulfillment_m3_clean_20261018. Existing databases were not changed.\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m3_clean_20261018",
+        "-Action",
+        "baseline"
+      ],
+      "exit": 0,
+      "output": "23:49:27.230 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m3_clean_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\n23:49:27.282 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\n23:49:27.335 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table `fulfillment_m3_clean_20261018`.`ful_flyway_schema_history` with baseline ...\n23:49:27.514 [main] INFO org.flywaydb.core.internal.command.DbBaseline -- Successfully baselined schema with version: 0\nFULFILLMENT_MIGRATION_OK fulfillment_m3_clean_20261018 baseline\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m3_clean_20261018",
+        "-Action",
+        "migrate"
+      ],
+      "exit": 0,
+      "output": "23:49:30.154 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m3_clean_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\n23:49:30.210 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\n23:49:30.320 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.081s)\n23:49:30.389 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment_m3_clean_20261018`: 0\n23:49:30.441 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m3_clean_20261018` to version \"1 - fulfillment foundation\"\n23:49:31.270 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m3_clean_20261018` to version \"2 - reservation and stock safety\"\n23:49:31.876 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m3_clean_20261018` to version \"3 - shipment cancel and logistics\"\n23:49:32.481 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 3 migrations to schema `fulfillment_m3_clean_20261018`, now at version v3 (execution time 00:01.913s)\nFULFILLMENT_MIGRATION_OK fulfillment_m3_clean_20261018 migrate\n",
+      "error": ""
+    },
+    {
+      "script": "scripts/Migrate-Database.ps1",
+      "args": [
+        "-Database",
+        "fulfillment_m3_clean_20261018",
+        "-Action",
+        "validate"
+      ],
+      "exit": 0,
+      "output": "23:49:35.298 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m3_clean_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\n23:49:35.343 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\n23:49:35.432 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.070s)\nFULFILLMENT_MIGRATION_OK fulfillment_m3_clean_20261018 validate\n",
+      "error": ""
+    }
+  ],
+  "result": "passed"
+}

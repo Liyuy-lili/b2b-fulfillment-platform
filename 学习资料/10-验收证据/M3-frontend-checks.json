@@ -1,0 +1,36 @@
+{
+  "run_at": "2026-10-19T00:26:12.17548+08:00",
+  "checks": [
+    {
+      "passed": true,
+      "exit": 0,
+      "name": "ESLint selected 8 files"
+    },
+    {
+      "passed": true,
+      "exit": 0,
+      "name": "Stylelint selected 6 Vue files"
+    },
+    {
+      "passed": true,
+      "exit": 0,
+      "name": "Prettier selected 8 files"
+    },
+    {
+      "passed": true,
+      "exit": 0,
+      "name": "Impeccable detector selected 6 Vue files"
+    }
+  ],
+  "targets": [
+    "src/api/erp/fulfillment/index.ts",
+    "src/views/erp/fulfillment/index.vue",
+    "src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+    "src/api/erp/sale/order/index.ts",
+    "src/views/erp/sale/order/index.vue",
+    "src/views/erp/sale/order/components/SaleOrderItemForm.vue",
+    "src/views/erp/sale/order/components/SaleOrderOutEnableList.vue",
+    "src/views/erp/sale/out/SaleOutForm.vue"
+  ],
+  "all_typescript_checked": false
+}

@@ -1,0 +1,7 @@
+00:56:48.652 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+00:56:48.709 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+00:56:48.829 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 8 migrations (execution time 00:00.095s)
+00:56:48.888 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment`: 6
+00:56:48.934 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment` to version "7 - file jobs and warehouse scope"
+00:56:49.481 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema `fulfillment`, now at version v7 (execution time 00:00.501s)
+FULFILLMENT_MIGRATION_OK fulfillment migrate

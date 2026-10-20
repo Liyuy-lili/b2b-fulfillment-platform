@@ -1,0 +1,127 @@
+芋道源码 http://www.iocoder.cn
+Application Version: 1.0.0
+Spring Boot Version: 3.5.15
+
+.__   __.   ______      .______    __    __    _______
+|  \ |  |  /  __  \     |   _  \  |  |  |  |  /  _____|
+|   \|  | |  |  |  |    |  |_)  | |  |  |  | |  |  __
+|  . `  | |  |  |  |    |   _  <  |  |  |  | |  | |_ |
+|  |\   | |  `--'  |    |  |_)  | |  `--'  | |  |__| |
+|__| \__|  \______/     |______/   \______/   \______|
+
+███╗   ██╗ ██████╗     ██████╗ ██╗   ██╗ ██████╗
+████╗  ██║██╔═══██╗    ██╔══██╗██║   ██║██╔════╝
+██╔██╗ ██║██║   ██║    ██████╔╝██║   ██║██║  ███╗
+██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║   ██║
+██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝
+╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝
+
+2026-10-20 00:57:46.926 [background-preinit] [34mINFO [0;39m [36morg.hibernate.validator.internal.util.Version:21[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-20 00:57:47.025 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:53[0;39m - Starting YudaoServerApplication using Java 17.0.17 with PID 25656 (C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\.local\m6-test.jar started by Lenovo in C:\Users\Lenovo\OneDrive\文档\ChatGPT\java后端项目\backend)
+2026-10-20 00:57:47.027 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:658[0;39m - The following 2 profiles are active: "fulfillment", "fulfillment-file-test"
+2026-10-20 00:57:52.189 [main] [34mINFO [0;39m [36mc.g.y.a.MybatisPlusJoinAutoConfiguration:141[0;39m - MPJ SqlSessionFactory bean definition: sqlSessionFactory factoryBeanName: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration factoryMethodName: sqlSessionFactory source: com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(javax.sql.DataSource)
+2026-10-20 00:57:54.182 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 00:57:54.208 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'mzt.log.record-com.mzt.logapi.starter.configuration.LogRecordProperties' of type [com.mzt.logapi.starter.configuration.LogRecordProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 00:57:54.245 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'logRecordPerformanceMonitor' of type [com.mzt.logapi.service.impl.DefaultLogRecordPerformanceMonitor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 00:57:54.333 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 00:57:54.344 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437[0;39m - Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-10-20 00:57:54.347 [main] [31mWARN [0;39m [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429[0;39m - Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [threadPoolTaskExecutorBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-20 00:57:56.266 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:111[0;39m - Tomcat initialized with port 48082 (http)
+2026-10-20 00:57:56.320 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 00:57:56.329 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardService:168[0;39m - Starting service [Tomcat]
+2026-10-20 00:57:56.330 [main] [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine:168[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-20 00:57:56.468 [main] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring embedded WebApplicationContext
+2026-10-20 00:57:56.468 [main] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext:301[0;39m - Root WebApplicationContext: initialization completed in 9380 ms
+2026-10-20 00:57:58.369 [main] [34mINFO [0;39m [36mcom.alibaba.druid.pool.DruidDataSource:865[0;39m - {dataSource-1,master} inited
+2026-10-20 00:57:58.373 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:158[0;39m - dynamic-datasource - add a datasource named [master] success
+2026-10-20 00:57:58.374 [main] [34mINFO [0;39m [36mc.b.dynamic.datasource.DynamicRoutingDataSource:241[0;39m - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2026-10-20 00:58:00.882 [main] [34mINFO [0;39m [36morg.flywaydb.core.FlywayExecutor:41[0;39m - Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m6_20261020_004428?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true (MySQL 8.4)
+2026-10-20 00:58:00.918 [main] [31mWARN [0;39m [36morg.flywaydb.core.internal.database.base.Database:45[0;39m - Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-10-20 00:58:00.984 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbValidate:41[0;39m - Successfully validated 8 migrations (execution time 00:00.050s)
+2026-10-20 00:58:01.015 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Current version of schema `fulfillment_m6_20261020_004428`: 7
+2026-10-20 00:58:01.019 [main] [34mINFO [0;39m [36morg.flywaydb.core.internal.command.DbMigrate:41[0;39m - Schema `fulfillment_m6_20261020_004428` is up to date. No migration necessary.
+2026-10-20 00:58:02.400 [main] [34mINFO [0;39m [36morg.redisson.Version:43[0;39m - Redisson 4.7.0
+2026-10-20 00:58:03.439 [redisson-netty-1-4] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 00:58:03.527 [redisson-netty-1-19] [34mINFO [0;39m [36morg.redisson.connection.ConnectionsHolder:152[0;39m - 24 connections initialized for 127.0.0.1/127.0.0.1:36379
+2026-10-20 00:58:08.605 [main] [34mINFO [0;39m [36mo.s.boot.web.servlet.RegistrationBean:49[0;39m - Filter tokenAuthenticationFilterRegistration was not registered (disabled)
+2026-10-20 00:58:10.694 [main] [34mINFO [0;39m [36mc.a.c.config.AjCaptchaServiceAutoConfiguration:33[0;39m - 自定义配置项：
+AjCaptchaProperties{type=BLOCKPUZZLE, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='芋道源码', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='0', cacheNumber='1000', timingClear='180', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=10, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2026-10-20 00:58:10.710 [main] [34mINFO [0;39m [36mcom.anji.captcha.util.ImageUtils:71[0;39m - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@5b2f8813, ORIGINAL=[Ljava.lang.String;@324a5741, PIC_CLICK=[Ljava.lang.String;@30c716ce]
+2026-10-20 00:58:10.715 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:52[0;39m - supported-captchaCache-service:[redis, local]
+2026-10-20 00:58:10.723 [main] [34mINFO [0;39m [36mc.anji.captcha.service.impl.CaptchaServiceFactory:57[0;39m - supported-captchaTypes-service:[clickWord, default, blockPuzzle, pictureWord]
+2026-10-20 00:58:10.724 [main] [34mINFO [0;39m [36mc.a.c.service.impl.BlockPuzzleCaptchaServiceImpl:80[0;39m - --->>>初始化验证码底图<<<---blockPuzzle
+2026-10-20 00:58:12.556 [main] [34mINFO [0;39m [36mc.i.y.f.quartz.config.YudaoQuartzAutoConfiguration:23[0;39m - [定时任务 - 已禁用][参考 https://doc.iocoder.cn/job/ 开启]
+2026-10-20 00:58:18.092 [main] [34mINFO [0;39m [36mc.i.yudao.framework.dict.core.DictFrameworkUtils:44[0;39m - [init][初始化 DictFrameworkUtils 成功]
+2026-10-20 00:58:18.304 [main] [34mINFO [0;39m [36morg.dromara.common.spring.SpringContextUtil:37[0;39m - ------SpringContextUtil setApplicationContext-------
+2026-10-20 00:58:18.416 [main] [34mINFO [0;39m [36mc.b.m.spring.MybatisPlusApplicationContextAware:43[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49b07ee3
+2026-10-20 00:58:20.191 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:41[0;39m - Fulfillment business datasource isolation verified: READ_COMMITTED
+2026-10-20 00:58:20.225 [main] [34mINFO [0;39m [36mc.i.y.m.f.framework.FulfillmentFlywayConfiguration:45[0;39m - Fulfillment lock wait timeout verified: 3 seconds
+2026-10-20 00:58:20.319 [main] [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol:168[0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-48082"]
+2026-10-20 00:58:20.365 [main] [34mINFO [0;39m [36mo.s.boot.web.embedded.tomcat.TomcatWebServer:243[0;39m - Tomcat started on port 48082 (http) with context path '/'
+2026-10-20 00:58:20.411 [main] [34mINFO [0;39m [36mcn.iocoder.yudao.server.YudaoServerApplication:59[0;39m - Started YudaoServerApplication in 34.821 seconds (process running for 36.016)
+2026-10-20 00:58:20.888 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:168[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-20 00:58:20.889 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+2026-10-20 00:58:20.896 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36morg.springframework.web.servlet.DispatcherServlet:554[0;39m - Completed initialization in 6 ms
+2026-10-20 00:58:21.401 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 00:58:21.440 [pool-8-thread-1] [34mINFO [0;39m [36mc.i.y.f.banner.core.BannerApplicationRunner:23[0;39m - 
+----------------------------------------------------------
+	项目启动成功！
+	接口文档: 	https://doc.iocoder.cn/api-doc/ 
+	开发文档: 	https://doc.iocoder.cn 
+	视频教程: 	https://t.zsxq.com/02Yf6M7Qn 
+----------------------------------------------------------
+[工作流模块 yudao-module-bpm - 已禁用][参考 https://doc.iocoder.cn/bpm/ 开启]
+[支付系统 yudao-module-pay - 已禁用][参考 https://doc.iocoder.cn/pay/build/ 开启]
+[报表模块 yudao-module-report - 已禁用][参考 https://doc.iocoder.cn/report/ 开启]
+[微信公众号 yudao-module-mp - 已禁用][参考 https://doc.iocoder.cn/mp/build/ 开启]
+[商城系统 yudao-module-mall - 已禁用][参考 https://doc.iocoder.cn/mall/build/ 开启]
+[WMS 仓库管理系统 yudao-module-wms - 已禁用][参考 https://doc.iocoder.cn/wms/build/ 开启]
+[CRM 系统 yudao-module-crm - 已禁用][参考 https://doc.iocoder.cn/crm/build/ 开启]
+[MES 系统 yudao-module-mes - 已禁用][参考 https://doc.iocoder.cn/mes/build/ 开启]
+[HRM 人力资源管理系统 yudao-module-hrm - 已禁用][参考 https://doc.iocoder.cn/hrm/build/ 开启]
+[FMS 财务管理系统 yudao-module-fms - 已禁用][参考 https://doc.iocoder.cn/fms/build/ 开启]
+[PMS 项目管理系统 yudao-module-pms - 已禁用][参考 https://doc.iocoder.cn/pms/build/ 开启]
+[OA 协同办公 yudao-module-oa - 已禁用][参考 https://doc.iocoder.cn/oa/build/ 开启]
+[AI 大模型 yudao-module-ai - 已禁用][参考 https://doc.iocoder.cn/ai/build/ 开启]
+[IoT 物联网 yudao-module-iot - 已禁用][参考 https://doc.iocoder.cn/iot/build/ 开启]
+[IM 即时通讯 yudao-module-im - 已禁用][参考 https://doc.iocoder.cn/im/build/ 开启]
+2026-10-20 00:58:22.751 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(1348 ms)]
+2026-10-20 00:58:22.765 [http-nio-127.0.0.1-48082-exec-1] [34mINFO [0;39m [36mo.s.s.a.AnnotationAsyncExecutionInterceptor:254[0;39m - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [fulfillmentFileJobScheduler, fulfillmentMessagePublisherScheduler, fulfillmentMessageConsumerScheduler]
+2026-10-20 00:58:22.775 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/system/auth/login) 参数({"username": "admin", "password": "admin123"})]
+2026-10-20 00:58:22.972 [http-nio-127.0.0.1-48082-exec-2] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/system/auth/login) 耗时(196 ms)]
+2026-10-20 00:58:23.709 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:49[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/upload) 无参数]
+2026-10-20 00:58:23.872 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=2698f8ec-e468-4dba-b7d5-65636776709a lease=1 accepted=true error=null
+2026-10-20 00:58:23.917 [http-nio-127.0.0.1-48082-exec-3] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/upload) 耗时(201 ms)]
+2026-10-20 00:58:23.930 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=8621b9e5-5a4f-4199-85e6-483a1ba4fcf6 lease=1 accepted=true error=null
+2026-10-20 00:58:23.932 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/import) 参数({"fileId": "bc3ee8b6-4878-4d75-8e04-e3abff0fce1b", "sourceSystem": "M6Mixed5e15778b"})]
+2026-10-20 00:58:23.997 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=01188434-be9d-4f58-9cca-80d2db063de9 lease=1 accepted=true error=null
+2026-10-20 00:58:24.057 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=dc7a3c4e-478b-4e6c-8ef2-f211d05a7204 lease=1 accepted=true error=null
+2026-10-20 00:58:24.118 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=326822df-4728-48ab-9908-ab8335c78479 lease=1 accepted=true error=null
+2026-10-20 00:58:24.379 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=c7691821-a4cc-46e5-93c7-bdb639828f1f lease=1 accepted=true error=null
+2026-10-20 00:58:24.427 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=0f9affcc-0e77-494e-bde4-7795e4ef5ca3 lease=1 accepted=true error=null
+2026-10-20 00:58:24.456 [http-nio-127.0.0.1-48082-exec-4] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/import) 耗时(524 ms)]
+2026-10-20 00:58:24.485 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=93971a0a-008e-4fe6-9909-363c7a34cb69 lease=1 accepted=true error=null
+2026-10-20 00:58:24.537 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=6f6925b5-e17d-4601-93c2-a5aad32df68d lease=1 accepted=true error=null
+2026-10-20 00:58:24.583 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=e7687564-65ea-4180-a64a-264be39fd411 lease=1 accepted=true error=null
+2026-10-20 00:58:24.855 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=5730e2ee-315a-48c7-84e6-fe475c169163 lease=1 accepted=true error=null
+2026-10-20 00:58:24.911 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=0ebf4fff-524b-4257-a082-b1a0dde9851b lease=1 accepted=true error=null
+2026-10-20 00:58:24.972 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=7fabd49c-4591-4993-9db4-cf8d766085f1 lease=1 accepted=true error=null
+M6_CONTEXT_CLEAR thread=ful-file-worker-d2668751-79b1-4e7f-8553-3d5b8761c282 tenant=null actor=null
+2026-10-20 00:58:25.055 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=90310d3d-c2cc-42fb-a267-0f6372941e20 lease=1 accepted=true error=null
+2026-10-20 00:58:25.106 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=d7f01ee2-e956-4cd8-9c5f-bbf66cc6b9fb lease=1 accepted=true error=null
+2026-10-20 00:58:25.368 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=0f69466f-0051-486e-acf2-ff2b6d61b027 lease=1 accepted=true error=null
+2026-10-20 00:58:25.411 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=0646f67f-5556-4d5b-b869-be78d58ef8d6 lease=1 accepted=true error=null
+2026-10-20 00:58:25.456 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=c38efc4c-2fa9-47e0-8fca-601957c1f13d lease=1 accepted=true error=null
+2026-10-20 00:58:25.501 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=a992c17a-6f83-4d96-85eb-84bc13bd3cd1 lease=1 accepted=true error=null
+2026-10-20 00:58:25.543 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=35fe8185-487a-4bf9-a2db-28d0556891d8 lease=1 accepted=true error=null
+2026-10-20 00:58:25.800 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=91e02a63-8526-4827-9fb7-b4bfaed70897 lease=1 accepted=true error=null
+2026-10-20 00:58:25.850 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=94c2f464-20d5-48ec-a86a-402415d69e3f lease=1 accepted=true error=null
+2026-10-20 00:58:25.900 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=ddbed9fb-4c5d-4d04-ae49-628642e1e456 lease=1 accepted=true error=null
+2026-10-20 00:58:25.947 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=6053295a-46bb-4525-9550-e5dfd4230c8a lease=1 accepted=true error=null
+2026-10-20 00:58:25.997 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=fe760331-022c-4185-a329-f77d1446bec0 lease=1 accepted=true error=null
+2026-10-20 00:58:26.254 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=8fa6ad27-573e-442a-bf19-fcb100ef6a86 lease=1 accepted=true error=null
+2026-10-20 00:58:26.307 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=b5895312-45f0-4a5f-86f6-6fe76c99a80b lease=1 accepted=true error=null
+2026-10-20 00:58:26.347 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=64eb5ccd-1749-4b4f-ab19-fb16ee31fd0a lease=1 accepted=true error=null
+2026-10-20 00:58:26.400 [ful-outbox-1] [34mINFO [0;39m [36mc.i.y.module.fulfillment.service.FulMessageWorker:32[0;39m - Outbox completion event=77ec1892-bdfc-4676-ae7d-f6fdb8c0c19c lease=1 accepted=true error=null
+2026-10-20 00:58:26.617 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:51[0;39m - [preHandle][开始请求 URL(/admin-api/fulfillment/job/get) 参数({id=23})]
+2026-10-20 00:58:26.642 [http-nio-127.0.0.1-48082-exec-5] [34mINFO [0;39m [36mc.i.y.f.a.core.interceptor.ApiAccessLogInterceptor:70[0;39m - [afterCompletion][完成请求 URL(/admin-api/fulfillment/job/get) 耗时(23 ms)]

@@ -1,0 +1,581 @@
+{
+  "run_at": "2026-10-20T01:56:34.295778+00:00",
+  "api": "http://127.0.0.1:48082/admin-api",
+  "database": "fulfillment_m7_reg_expiry_20261020_095519",
+  "checks": [
+    {
+      "name": "anonymous denied",
+      "passed": true,
+      "detail": {
+        "code": 401,
+        "msg": "账号未登录",
+        "data": null
+      }
+    },
+    {
+      "name": "bind creates order",
+      "passed": true,
+      "detail": {
+        "orderId": "1",
+        "status": "NEW"
+      }
+    },
+    {
+      "name": "same key replay stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "different key same source stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one source one fulfillment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six-place exact quantity snapshot",
+      "passed": true,
+      "detail": {
+        "id": "1",
+        "erpOrderItemId": "1",
+        "productId": "1",
+        "unitId": "1",
+        "price": "12.500000",
+        "taxPercent": "13.000000",
+        "taxPrice": "16.450000",
+        "totalPrice": "126.540000",
+        "orderedQty": "10.123456",
+        "openQty": "10.123456",
+        "reservedQty": "0.000000",
+        "shippedQty": "0.000000",
+        "cancelledQty": "0.000000",
+        "returnedQty": "0.000000"
+      }
+    },
+    {
+      "name": "initial inactive quantities zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actor tenant from server",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ISO offset timestamp",
+      "passed": true,
+      "detail": "2026-10-20T01:56:35.919250Z"
+    },
+    {
+      "name": "decimal string totalPrice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decimal string discountPercent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decimal string discountPrice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decimal string depositPrice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source monetary snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key different request rejected",
+      "passed": true,
+      "detail": {
+        "code": 1080000005,
+        "msg": "IDEMPOTENCY_KEY_CONFLICT: 相同幂等键对应不同请求",
+        "data": null
+      }
+    },
+    {
+      "name": "conflict does not create order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "draft source rejected",
+      "passed": true,
+      "detail": {
+        "code": 1080000001,
+        "msg": "SOURCE_ORDER_NOT_APPROVED: 只允许绑定已审核销售单",
+        "data": null
+      }
+    },
+    {
+      "name": "failed command record rolls back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key succeeds after failed transaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid second line rejects binding",
+      "passed": true,
+      "detail": {
+        "code": 1080000004,
+        "msg": "SOURCE_ORDER_INVALID: 源单编号、明细数量或商业快照不合法",
+        "data": null
+      }
+    },
+    {
+      "name": "header rolled back after item validation failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "first item rolled back after later failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command rolled back after later failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing source concealed",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "overflow id validated",
+      "passed": true,
+      "detail": {
+        "code": 1080000004,
+        "msg": "SOURCE_ORDER_INVALID: 源单编号、明细数量或商业快照不合法",
+        "data": null
+      }
+    },
+    {
+      "name": "missing key rejected",
+      "passed": true,
+      "detail": {
+        "code": 400,
+        "msg": "请求参数不正确:不能为空",
+        "data": null
+      }
+    },
+    {
+      "name": "bad key rejected",
+      "passed": true,
+      "detail": {
+        "code": 400,
+        "msg": "请求参数不正确:需要匹配正则表达式\"[A-Za-z0-9._:-]{1,128}\"",
+        "data": null
+      }
+    },
+    {
+      "name": "source unaudit frozen",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "source edit frozen",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "source delete frozen",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "manual outbound frozen",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "manual return frozen",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "binding and rejected writes leave inventory unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "draft outbound history blocks takeover",
+      "passed": true,
+      "detail": {
+        "code": 1080000002,
+        "msg": "SOURCE_ORDER_ALREADY_USED: 源单已有出库或退货记录，不能接管",
+        "data": null
+      }
+    },
+    {
+      "name": "deleted outbound history blocks takeover",
+      "passed": true,
+      "detail": {
+        "code": 1080000002,
+        "msg": "SOURCE_ORDER_ALREADY_USED: 源单已有出库或退货记录，不能接管",
+        "data": null
+      }
+    },
+    {
+      "name": "cannot move existing outbound onto managed source",
+      "passed": true,
+      "detail": {
+        "code": 1030199000,
+        "msg": "MANAGED_ORDER_FROZEN: 销售单已托管，请通过履约入口操作",
+        "data": null
+      }
+    },
+    {
+      "name": "failed move retains old outbound source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return-only history blocks takeover",
+      "passed": true,
+      "detail": {
+        "code": 1080000002,
+        "msg": "SOURCE_ORDER_ALREADY_USED: 源单已有出库或退货记录，不能接管",
+        "data": null
+      }
+    },
+    {
+      "name": "deleted return-only history blocks takeover",
+      "passed": true,
+      "detail": {
+        "code": 1080000002,
+        "msg": "SOURCE_ORDER_ALREADY_USED: 源单已有出库或退货记录，不能接管",
+        "data": null
+      }
+    },
+    {
+      "name": "eight concurrent bind requests converge",
+      "passed": true,
+      "detail": [
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        },
+        {
+          "orderId": "4",
+          "status": "NEW"
+        }
+      ]
+    },
+    {
+      "name": "concurrent binding inserts one snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six concurrent identical commands converge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one command result persisted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bind versus old outbound race 0",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 1",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 2",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 3",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 4",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 5",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 6",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "bind versus old outbound race 7",
+      "passed": true,
+      "detail": {
+        "bind_code": 1080000002,
+        "out_code": 0
+      }
+    },
+    {
+      "name": "no function permission rejected",
+      "passed": true,
+      "detail": {
+        "code": 403,
+        "msg": "没有该操作权限",
+        "data": null
+      }
+    },
+    {
+      "name": "normal owner can bind own source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal user cannot bind others source",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "normal user cannot read others fulfillment",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "page scope excludes other owners",
+      "passed": true,
+      "detail": {
+        "total": 0,
+        "list": []
+      }
+    },
+    {
+      "name": "owner page scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "administrator can read others",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay rechecks current function permission",
+      "passed": true,
+      "detail": {
+        "code": 403,
+        "msg": "没有该操作权限",
+        "data": null
+      }
+    },
+    {
+      "name": "other tenant cannot bind known ERP id",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "other tenant cannot read known fulfillment id",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "other tenant page empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant can bind own valid source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other tenant sees own exact snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tenant one cannot read tenant two valid order",
+      "passed": true,
+      "detail": {
+        "code": 1080000003,
+        "msg": "ORDER_NOT_ACCESSIBLE: 订单不存在或无权操作",
+        "data": null
+      }
+    },
+    {
+      "name": "token cannot switch tenant header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database quantity invariant rejects corruption",
+      "passed": true,
+      "detail": 3819
+    },
+    {
+      "name": "rollback probe leaves quantity unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "unit": 1,
+    "product": 1,
+    "customer": 1,
+    "account": 1,
+    "warehouse": 1,
+    "source": 1,
+    "fulfillment": "1",
+    "alice": 249,
+    "bob": 250,
+    "tenant": 162,
+    "role": 169
+  },
+  "bind_out_races": [
+    {
+      "source": 9,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 10,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 11,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 12,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 13,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 14,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 15,
+      "bind_code": 1080000002,
+      "out_code": 0
+    },
+    {
+      "source": 16,
+      "bind_code": 1080000002,
+      "out_code": 0
+    }
+  ],
+  "result": "passed"
+}

@@ -1,0 +1,66 @@
+{
+  "run_at": "2026-10-19T03:09:15.789947+00:00",
+  "checks": [
+    {
+      "name": "full dependencies preserve old and new return snapshots",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RETURN_CREATE original persisted response after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RETURN_RECEIVE original persisted response after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RETURN_REJECT original persisted response after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replaying returns leaves all SQL facts and sequences unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all H R reservations and both ledgers agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all received quantities match order returned aggregates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all live applications and receipts respect each original shipment item",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every received return links approved same-tenant ERP document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every receipt item matches positive ERP physical effect once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only received rows have ERP item mappings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main history remains 0 through 4",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "result": "passed"
+}

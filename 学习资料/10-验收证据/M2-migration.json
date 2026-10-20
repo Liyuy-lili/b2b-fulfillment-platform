@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-18",
+  "run_at": "2026-10-18T11:26:44.171409+00:00",
+  "checks": [
+    {
+      "name": "fulfillment_m2_dirty_20261018 baseline expected result",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "fulfillment_m2_dirty_20261018 migrate expected result",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "negative fixture reported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment_m2_dirty_20261018 migrate expected result",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "deleted fixture reported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment_m2_dirty_20261018 migrate expected result",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "duplicates reported with identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dirty migrations do not alter stock schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dirty fixture rows retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment migrate expected result",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "fulfillment validate expected result",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "fulfillment physical facts preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment initial reserved zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment versions 0 1 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment_m1_clean_20261017 migrate expected result",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "fulfillment_m1_clean_20261017 validate expected result",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "fulfillment_m1_clean_20261017 physical facts preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment_m1_clean_20261017 initial reserved zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fulfillment_m1_clean_20261017 versions 0 1 2",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "db": "fulfillment_m2_dirty_20261018",
+      "action": "baseline",
+      "exit": 0,
+      "output": "19:26:46.092 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m2_dirty_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:46.150 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:46.196 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table `fulfillment_m2_dirty_20261018`.`ful_flyway_schema_history` with baseline ...\r\n19:26:46.377 [main] INFO org.flywaydb.core.internal.command.DbBaseline -- Successfully baselined schema with version: 0\r\nFULFILLMENT_MIGRATION_OK fulfillment_m2_dirty_20261018 baseline\r\n"
+    },
+    {
+      "db": "fulfillment_m2_dirty_20261018",
+      "action": "migrate",
+      "exit": 1,
+      "output": "19:26:48.156 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m2_dirty_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:48.210 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:48.304 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.073s)\r\nException in thread \"main\" java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)\r\n\tat org.springframework.boot.loader.launch.PropertiesLauncher.main(PropertiesLauncher.java:580)\r\nCaused by: org.flywaydb.core.api.FlywayException: Error while executing beforeMigrate callback: STOCK_PREFLIGHT_REFUSED: [invalid stock id=1,tenant=1,product=991,warehouse=991]\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:150)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:141)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.lambda$execute$1(DefaultCallbackExecutor.java:128)\r\n\tat org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:126)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.onMigrateOrUndoEvent(DefaultCallbackExecutor.java:82)\r\n\tat org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:90)\r\n\tat org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)\r\n\tat org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)\r\n\tat org.flywaydb.core.Flyway.migrate(Flyway.java:188)\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.FulfillmentMigrationTool.main(FulfillmentMigrationTool.java:29)\r\n\t... 7 more\r\nCaused by: org.flywaydb.core.api.FlywayException: STOCK_PREFLIGHT_REFUSED: [invalid stock id=1,tenant=1,product=991,warehouse=991]\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.StockMigrationPreflight.handle(StockMigrationPreflight.java:29)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:146)\r\n\t... 17 more\r\n"
+    },
+    {
+      "db": "fulfillment_m2_dirty_20261018",
+      "action": "migrate",
+      "exit": 1,
+      "output": "19:26:50.044 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m2_dirty_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:50.087 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:50.169 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.060s)\r\nException in thread \"main\" java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)\r\n\tat org.springframework.boot.loader.launch.PropertiesLauncher.main(PropertiesLauncher.java:580)\r\nCaused by: org.flywaydb.core.api.FlywayException: Error while executing beforeMigrate callback: STOCK_PREFLIGHT_REFUSED: [invalid stock id=1,tenant=1,product=991,warehouse=991]\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:150)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:141)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.lambda$execute$1(DefaultCallbackExecutor.java:128)\r\n\tat org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:126)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.onMigrateOrUndoEvent(DefaultCallbackExecutor.java:82)\r\n\tat org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:90)\r\n\tat org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)\r\n\tat org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)\r\n\tat org.flywaydb.core.Flyway.migrate(Flyway.java:188)\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.FulfillmentMigrationTool.main(FulfillmentMigrationTool.java:29)\r\n\t... 7 more\r\nCaused by: org.flywaydb.core.api.FlywayException: STOCK_PREFLIGHT_REFUSED: [invalid stock id=1,tenant=1,product=991,warehouse=991]\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.StockMigrationPreflight.handle(StockMigrationPreflight.java:29)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:146)\r\n\t... 17 more\r\n"
+    },
+    {
+      "db": "fulfillment_m2_dirty_20261018",
+      "action": "migrate",
+      "exit": 1,
+      "output": "19:26:51.946 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m2_dirty_20261018?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:51.995 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:52.081 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.067s)\r\nException in thread \"main\" java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)\r\n\tat org.springframework.boot.loader.launch.PropertiesLauncher.main(PropertiesLauncher.java:580)\r\nCaused by: org.flywaydb.core.api.FlywayException: Error while executing beforeMigrate callback: STOCK_PREFLIGHT_REFUSED: [duplicate tenant=1,product=991,warehouse=991,rows=2]\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:150)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:141)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.lambda$execute$1(DefaultCallbackExecutor.java:128)\r\n\tat org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.execute(DefaultCallbackExecutor.java:126)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.onMigrateOrUndoEvent(DefaultCallbackExecutor.java:82)\r\n\tat org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:90)\r\n\tat org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)\r\n\tat org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)\r\n\tat org.flywaydb.core.Flyway.migrate(Flyway.java:188)\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.FulfillmentMigrationTool.main(FulfillmentMigrationTool.java:29)\r\n\t... 7 more\r\nCaused by: org.flywaydb.core.api.FlywayException: STOCK_PREFLIGHT_REFUSED: [duplicate tenant=1,product=991,warehouse=991,rows=2]\r\n\tat cn.iocoder.yudao.module.fulfillment.framework.StockMigrationPreflight.handle(StockMigrationPreflight.java:29)\r\n\tat org.flywaydb.core.internal.callback.DefaultCallbackExecutor.handleEvent(DefaultCallbackExecutor.java:146)\r\n\t... 17 more\r\n"
+    },
+    {
+      "db": "fulfillment",
+      "action": "migrate",
+      "exit": 0,
+      "output": "19:26:53.937 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:53.987 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:54.081 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.072s)\r\n19:26:54.137 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment`: 1\r\n19:26:54.165 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment` to version \"2 - reservation and stock safety\"\r\n19:26:54.926 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema `fulfillment`, now at version v2 (execution time 00:00.726s)\r\nFULFILLMENT_MIGRATION_OK fulfillment migrate\r\n"
+    },
+    {
+      "db": "fulfillment",
+      "action": "validate",
+      "exit": 0,
+      "output": "19:26:56.572 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:56.620 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:56.702 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.065s)\r\nFULFILLMENT_MIGRATION_OK fulfillment validate\r\n"
+    },
+    {
+      "db": "fulfillment_m1_clean_20261017",
+      "action": "migrate",
+      "exit": 0,
+      "output": "19:26:58.495 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m1_clean_20261017?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:26:58.540 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:26:58.625 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.065s)\r\n19:26:58.674 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment_m1_clean_20261017`: 1\r\n19:26:58.702 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m1_clean_20261017` to version \"2 - reservation and stock safety\"\r\n19:26:59.466 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema `fulfillment_m1_clean_20261017`, now at version v2 (execution time 00:00.724s)\r\nFULFILLMENT_MIGRATION_OK fulfillment_m1_clean_20261017 migrate\r\n"
+    },
+    {
+      "db": "fulfillment_m1_clean_20261017",
+      "action": "validate",
+      "exit": 0,
+      "output": "19:27:01.141 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m1_clean_20261017?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)\r\n19:27:01.186 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.\r\n19:27:01.279 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.069s)\r\nFULFILLMENT_MIGRATION_OK fulfillment_m1_clean_20261017 validate\r\n"
+    }
+  ],
+  "result": "passed"
+}

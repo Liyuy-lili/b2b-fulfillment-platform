@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "run_at": "2026-10-20T05:50:33.205Z",
+  "url": "http://127.0.0.1:15174/erp/fulfillment",
+  "order_id": "1",
+  "broker_confirmed_count": 5,
+  "processed_count": 5,
+  "visible_quantity_row": "1\n\t\n1\n\t\n10.000000\n\t\n0.000000\n\t\n0.000000\n\t\n4.000000\n\t\n6.000000\n\t\n2.000000",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "screenshot": "docs/evidence/M7-final-release-browser.jpg",
+  "read_model_alignment": "业务版本 4 · 读模型版本 4 · 版本已对齐。此视图用于异步查询，库存分配仍以业务数据库为准。",
+  "login": "normal UI sign-in; Remember me unchecked; no CAPTCHA",
+  "boundary": "actual rendered DOM and browser screenshot; test installation shares host dependency services"
+}

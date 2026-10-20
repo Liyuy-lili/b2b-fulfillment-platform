@@ -1,0 +1,25 @@
+{
+  "run_at": "2026-10-18T23:51:10.4645325+08:00",
+  "listeners": [
+    {
+      "LocalPort": 48083,
+      "OwningProcess": 21720
+    },
+    {
+      "LocalPort": 48082,
+      "OwningProcess": 41400
+    },
+    {
+      "LocalPort": 48080,
+      "OwningProcess": 27644
+    }
+  ],
+  "database": "fulfillment",
+  "redis_database": 0,
+  "fault_profile_port": 48083,
+  "fault_during_erp": false,
+  "tests": [
+    "m3_acceptance.py",
+    "m3_permissions.py"
+  ]
+}

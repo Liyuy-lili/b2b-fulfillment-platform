@@ -1,0 +1,23 @@
+PASS isolated port free 48082
+PASS isolated port free 48083
+PASS setup scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m6_20261020_004428')
+PASS setup scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m6_20261020_004428')
+PASS setup scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m6_20261020_004428')
+PASS setup scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m6_20261020_004428')
+PASS history V0 through V7
+PASS same export key stable
+PASS database pending capacity rejects fourth
+PASS rejected admission leaves no command
+PASS pending job cancelled immediately
+PASS cancel key stable
+PASS cancel reason conflict same key
+PASS same formerly rejected key works after capacity freed
+PASS worker generated private result
+PASS export changed no business facts
+PASS bounded executor actual capacities
+PASS authorized real XLSX download
+PASS actual process exit after claim
+PASS claimed task retained for lease recovery
+PASS reclaimed with higher fencing version
+PASS recovery still changes no business facts
+M6.1 passed 22 checks fulfillment_m6_20261020_004428

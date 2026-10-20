@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-17",
+  "backend": {
+    "command": "mvnw.cmd -B -ntp -pl yudao-server -am package -DskipTests",
+    "exit": 0,
+    "reactor_modules": 22,
+    "tests_skipped_in_package": true
+  },
+  "unit": {
+    "command": "mvnw.cmd -B -ntp -pl yudao-module-fulfillment -am test -Dtest=OrderStatusCalculatorTest -Dsurefire.failIfNoSpecifiedTests=false",
+    "exit": 0,
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frontend": {
+    "command": "pnpm --dir frontend build:fulfillment",
+    "exit": 0,
+    "remaining_warnings": [
+      "upstream large chunks; no whole-repo typecheck claim"
+    ]
+  }
+}

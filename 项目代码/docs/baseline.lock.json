@@ -1,0 +1,69 @@
+{
+  "recorded_at": "2026-10-16",
+  "sources": [
+    {
+      "directory": "backend",
+      "repository": "https://github.com/YunaiV/ruoyi-vue-pro",
+      "branch": "master-jdk17",
+      "commit": "7c397bbfae3e768b26e3ee962c5aa7064e8d7c96",
+      "archive_sha256": "fcfb9b65d3ec4989019fdf1d8212b3248fa01e78ad34c7597acfcb3b03810b1d",
+      "license": "MIT",
+      "license_sha256": "772daf1f82a50025a74e4066050490d875feba62a49cf0ecefa1b4cc824e9a07"
+    },
+    {
+      "directory": "frontend",
+      "repository": "https://github.com/yudaocode/yudao-ui-admin-vue3",
+      "branch": "master",
+      "commit": "0af03a93b6b6300f878e28add69b1c7a9f09ec34",
+      "archive_sha256": "e68d1413c6b7aa77e815cc1ab55da1f27efeaaf8cfdd183c37de152ac9d87a65",
+      "license": "MIT",
+      "license_sha256": "3f101f5e0207524af727e58ca8abf241b754665ee1eb90b45388ff0263d3640d"
+    }
+  ],
+  "tools": [
+    {
+      "name": "maven",
+      "version": "3.9.16",
+      "url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.16/apache-maven-3.9.16-bin.zip",
+      "sha256": "5af3b743dd8b876b5c45da33b676251e5f1687712644abb4ee519ca56e1d89ce"
+    },
+    {
+      "name": "mysql",
+      "version": "8.4.6",
+      "url": "https://cdn.mysql.com/archives/mysql-8.4/mysql-8.4.6-winx64.zip",
+      "sha256": "b6c152f9f3aaa7294eb47db698e47974d37b261bf3cab4f90dc1243bb5ecd204"
+    },
+    {
+      "name": "redis",
+      "version": "7.2.8",
+      "url": "https://github.com/redis-windows/redis-windows/releases/download/7.2.8/Redis-7.2.8-Windows-x64-msys2.zip",
+      "sha256": "aa6d4206a08d1189dd7a57c78201540a53b12350e1ad09ee7caca04120600656"
+    },
+    {
+      "name": "wrapper",
+      "version": "3.3.4",
+      "url": "https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-distribution/3.3.4/maven-wrapper-distribution-3.3.4-only-script.zip",
+      "sha256": "6cb584c2bc907b849a0b931d8266d3ff3214cdd3127115ed4f49fb7176413d36"
+    }
+  ],
+  "environment": {
+    "java": "Eclipse Temurin 17.0.17+10",
+    "node": "24.18.0",
+    "pnpm": "9.15.9",
+    "python": "3.13.8",
+    "powershell": "7.6.5"
+  },
+  "redis_windows_note": "Community MSYS2 build, not official Redis Windows binary; local development only. Compose uses official Linux image.",
+  "images": {
+    "mysql": {
+      "tag": "8.4.6",
+      "digest": "sha256:869218921e61d6c3c89820955d63cca42971f0e3e6c1e2792247bbd944ebc6e9",
+      "runtime_verified": false
+    },
+    "redis": {
+      "tag": "7.2.8",
+      "digest": "sha256:bb1b66279bfacf671eda2cc593258aa1cbc675c532ea243e74033c17f1fb4de2",
+      "runtime_verified": false
+    }
+  }
+}

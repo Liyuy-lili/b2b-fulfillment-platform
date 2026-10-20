@@ -1,0 +1,97 @@
+{
+  "run_at": "2026-10-19T15:15:25.626754+00:00",
+  "database": "fulfillment_m5_20261019_201046",
+  "checks": [
+    {
+      "name": "only passed isolated M5 schema",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "database rejects Outbox same-tenant FK",
+      "passed": true,
+      "detail": {
+        "actual": 1452,
+        "expected": 1452
+      }
+    },
+    {
+      "name": "database rejects Outbox invalid state",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects Outbox malformed JSON",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects Outbox payload version",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects Inbox same-tenant FK",
+      "passed": true,
+      "detail": {
+        "actual": 1452,
+        "expected": 1452
+      }
+    },
+    {
+      "name": "database rejects Inbox invalid state",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects Inbox negative duplicates",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects read-model invalid JSON",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects action empty reason",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "database rejects action invalid intent",
+      "passed": true,
+      "detail": {
+        "actual": 3819,
+        "expected": 3819
+      }
+    },
+    {
+      "name": "all five tables unchanged after probes",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "result": "passed"
+}

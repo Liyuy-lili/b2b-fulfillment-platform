@@ -1,0 +1,143 @@
+{
+  "run_at": "2026-10-19T15:20:13.952245+00:00",
+  "database": "fulfillment_m5_20261019_201046",
+  "checks": [
+    {
+      "name": "passed isolated core and exact artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retained legacy process provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retained final-artifact regression M5-M1-regression.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retained final-artifact regression M5-ERP-regression.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Stop-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "enabled worker application authenticates while Broker down",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "business shipping succeeds while enabled transport offline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Start-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restored Broker drains all genuine Outbox events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confirmed persistent message queued without consumer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Stop-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "command scripts/Start-Messaging.ps1 ()",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "durable queue survives actual Broker restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restart redelivery deduplicated without business mutation",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "commands": [
+    {
+      "script": "scripts/Stop-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-0.log"
+    },
+    {
+      "script": "scripts/Start-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-1.log"
+    },
+    {
+      "script": "scripts/Stop-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-2.log"
+    },
+    {
+      "script": "scripts/Start-Messaging.ps1",
+      "arguments": [],
+      "exit_code": 0,
+      "log": ".local\\m5-command-3.log"
+    }
+  ],
+  "processes": [
+    {
+      "label": "offline-boot",
+      "port": 48082,
+      "pid": 3684,
+      "publisher": true,
+      "consumer": true,
+      "test_options": [
+        "--fulfillment.messages.max-attempts=10"
+      ]
+    },
+    {
+      "label": "durability-consumer",
+      "port": 48082,
+      "pid": 16016,
+      "publisher": false,
+      "consumer": true,
+      "test_options": []
+    }
+  ],
+  "resumed_after_legacy": true,
+  "legacy_execution_evidence": "M5-supplement-initial-2.json",
+  "offline_fixture": {
+    "product": 13,
+    "source": 49,
+    "order": "25",
+    "shipment": "9",
+    "lines": [
+      {
+        "id": "9",
+        "orderItemId": "25",
+        "reservationId": "8",
+        "quantity": "1.000000",
+        "erpSaleOutItemId": "31"
+      }
+    ],
+    "warehouse": 9
+  },
+  "artifact_sha256": "f06298560e6cfccfa6282799a227b3a4e2b63c648f991ef53ecf9114bc0acdf4",
+  "result": "passed",
+  "all_owned_processes_stopped": true
+}

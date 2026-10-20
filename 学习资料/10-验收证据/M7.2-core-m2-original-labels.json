@@ -1,0 +1,747 @@
+{
+  "date": "2026-10-18",
+  "run_at": "2026-10-20T01:48:07.729247+00:00",
+  "checks": [
+    {
+      "name": "split reserve outcome",
+      "passed": true,
+      "detail": {
+        "orderId": "8",
+        "status": "RESERVED",
+        "outcome": "ALLOCATED",
+        "reservations": [
+          {
+            "id": "1",
+            "orderItemId": "8",
+            "productId": "3",
+            "warehouseId": "2",
+            "allocatedQty": "3.123456",
+            "heldQty": "3.123456",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-10-20T02:05:41.589556300Z"
+          },
+          {
+            "id": "2",
+            "orderItemId": "8",
+            "productId": "3",
+            "warehouseId": "3",
+            "allocatedQty": "3.876545",
+            "heldQty": "3.876545",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-10-20T02:05:41.589556300Z"
+          }
+        ]
+      }
+    },
+    {
+      "name": "warehouse input order normalized for idempotency",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warehouse priority determines split",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserve changes no physical inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partial release returns WAIT_STOCK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release preserves physical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release normalized key replay stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "different release request conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "too much release rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate release id rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero release rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reallocation uses only reopened quantity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "disabled candidate rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate candidate rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing/foreign candidate concealed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H R A decimal string view",
+      "passed": true,
+      "detail": {
+        "productId": "3",
+        "warehouseId": "2",
+        "physical": "3.123456",
+        "reserved": "3.123456",
+        "available": "0.000000"
+      }
+    },
+    {
+      "name": "one missing SKU rejects whole plan normally",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no partial commitment survives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same shortage command returns original result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new command can use replenished stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absent stock is zero and not created by allocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate SKU cannot double use balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single first selects lower-priority whole-order warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full release marks reservation inactive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release decimal representation normalized",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "different key cannot release already released stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reallocate after full release succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single first deterministic split fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two JVMs limited-stock race admits exactly three orders",
+      "passed": true,
+      "detail": [
+        {
+          "orderId": "14",
+          "status": "RESERVED",
+          "outcome": "ALLOCATED",
+          "reservations": [
+            {
+              "id": "10",
+              "orderItemId": "16",
+              "productId": "10",
+              "warehouseId": "2",
+              "allocatedQty": "3.000000",
+              "heldQty": "3.000000",
+              "consumedQty": "0.000000",
+              "releasedQty": "0.000000",
+              "expireAt": "2026-10-20T02:06:16.063438300Z"
+            }
+          ]
+        },
+        {
+          "orderId": "15",
+          "status": "WAIT_STOCK",
+          "outcome": "INSUFFICIENT_STOCK",
+          "reservations": []
+        },
+        {
+          "orderId": "16",
+          "status": "RESERVED",
+          "outcome": "ALLOCATED",
+          "reservations": [
+            {
+              "id": "12",
+              "orderItemId": "18",
+              "productId": "10",
+              "warehouseId": "2",
+              "allocatedQty": "3.000000",
+              "heldQty": "3.000000",
+              "consumedQty": "0.000000",
+              "releasedQty": "0.000000",
+              "expireAt": "2026-10-20T02:06:16.146264Z"
+            }
+          ]
+        },
+        {
+          "orderId": "17",
+          "status": "WAIT_STOCK",
+          "outcome": "INSUFFICIENT_STOCK",
+          "reservations": []
+        },
+        {
+          "orderId": "18",
+          "status": "WAIT_STOCK",
+          "outcome": "INSUFFICIENT_STOCK",
+          "reservations": []
+        },
+        {
+          "orderId": "19",
+          "status": "WAIT_STOCK",
+          "outcome": "INSUFFICIENT_STOCK",
+          "reservations": []
+        },
+        {
+          "orderId": "20",
+          "status": "RESERVED",
+          "outcome": "ALLOCATED",
+          "reservations": [
+            {
+              "id": "11",
+              "orderItemId": "22",
+              "productId": "10",
+              "warehouseId": "2",
+              "allocatedQty": "3.000000",
+              "heldQty": "3.000000",
+              "consumedQty": "0.000000",
+              "releasedQty": "0.000000",
+              "expireAt": "2026-10-20T02:06:16.111990400Z"
+            }
+          ]
+        },
+        {
+          "orderId": "21",
+          "status": "WAIT_STOCK",
+          "outcome": "INSUFFICIENT_STOCK",
+          "reservations": []
+        }
+      ]
+    },
+    {
+      "name": "T04 both JVMs return one saved allocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one reserve and one command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "T05 same key different strategy conflicts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "T28 concurrent first insert creates one exact balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "T29 BigDecimal SUM beyond double precision",
+      "passed": true,
+      "detail": "9007199254740992.000002"
+    },
+    {
+      "name": "T29 exact large allocation string",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "T29 maximum DECIMAL24_6 remains exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real lock timeout retries whole transaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual server retry observed after forced lock timeout",
+      "passed": true,
+      "detail": [
+        "2026-10-20 09:51:34.272 [http-nio-127.0.0.1-48083-exec-9] \u001b[31mWARN \u001b[0;39m \u001b[36mc.i.y.m.erp.service.stock.DatabaseCommandRetry:23\u001b[0;39m - Retry entire database command after lock failure, next attempt=2"
+      ]
+    },
+    {
+      "name": "retry has no orphan command or reservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "H cannot fall below R",
+      "passed": true,
+      "detail": "(3819, \"Check constraint 'ck_stock_commitment' is violated.\")"
+    },
+    {
+      "name": "R cannot be negative",
+      "passed": true,
+      "detail": "(3819, \"Check constraint 'ck_stock_commitment' is violated.\")"
+    },
+    {
+      "name": "stock cannot be soft deleted",
+      "passed": true,
+      "detail": "(3819, \"Check constraint 'ck_stock_not_deleted' is violated.\")"
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 3,
+        "warehouse": 2,
+        "H": "3.123456",
+        "R": "3.123456",
+        "held": "3.123456",
+        "ledger": "3.123456"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 3,
+        "warehouse": 3,
+        "H": "6.000001",
+        "R": "3.876545",
+        "held": "3.876545",
+        "ledger": "3.876545"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 4,
+        "warehouse": 2,
+        "H": "3.000000",
+        "R": "3.000000",
+        "held": "3.000000",
+        "ledger": "3.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 5,
+        "warehouse": 2,
+        "H": "10.000000",
+        "R": "5.000000",
+        "held": "5.000000",
+        "ledger": "5.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 7,
+        "warehouse": 2,
+        "H": "5.000000",
+        "R": "0.000000",
+        "held": "0.000000",
+        "ledger": "0.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 8,
+        "warehouse": 2,
+        "H": "3.000000",
+        "R": "0.000000",
+        "held": "0.000000",
+        "ledger": "0.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 8,
+        "warehouse": 3,
+        "H": "10.000000",
+        "R": "7.000000",
+        "held": "7.000000",
+        "ledger": "7.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 9,
+        "warehouse": 2,
+        "H": "3.000000",
+        "R": "3.000000",
+        "held": "3.000000",
+        "ledger": "3.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 9,
+        "warehouse": 3,
+        "H": "4.000000",
+        "R": "4.000000",
+        "held": "4.000000",
+        "ledger": "4.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 10,
+        "warehouse": 2,
+        "H": "10.000000",
+        "R": "9.000000",
+        "held": "9.000000",
+        "ledger": "9.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 11,
+        "warehouse": 2,
+        "H": "4.000000",
+        "R": "4.000000",
+        "held": "4.000000",
+        "ledger": "4.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 12,
+        "warehouse": 2,
+        "H": "0.000002",
+        "R": "0.000000",
+        "held": "0.000000",
+        "ledger": "0.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 13,
+        "warehouse": 2,
+        "H": "9007199254740992.000001",
+        "R": "9007199254740992.000001",
+        "held": "9007199254740992.000001",
+        "ledger": "9007199254740992.000001"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 13,
+        "warehouse": 3,
+        "H": "0.000001",
+        "R": "0.000000",
+        "held": "0.000000",
+        "ledger": "0.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 14,
+        "warehouse": 2,
+        "H": "999999999999999999.999999",
+        "R": "999999999999999999.999999",
+        "held": "999999999999999999.999999",
+        "ledger": "999999999999999999.999999"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stock commitments equal reservations and ledger",
+      "passed": true,
+      "detail": {
+        "product": 15,
+        "warehouse": 2,
+        "H": "1.000000",
+        "R": "1.000000",
+        "held": "1.000000",
+        "ledger": "1.000000"
+      }
+    },
+    {
+      "name": "physical running ledger exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reservation running ledger exact",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "unit": 3,
+    "category": 3,
+    "customer": 3,
+    "supplier": 1,
+    "account": 2,
+    "warehouse_a": 2,
+    "warehouse_b": 3,
+    "products": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "split_order": "8",
+    "split_product": 3,
+    "split_reservation": "1",
+    "hold_order": "22"
+  },
+  "instances": [
+    "http://127.0.0.1:48080",
+    "http://127.0.0.1:48082"
+  ],
+  "forced_retry_evidence": [
+    "2026-10-20 09:51:34.272 [http-nio-127.0.0.1-48083-exec-9] \u001b[31mWARN \u001b[0;39m \u001b[36mc.i.y.m.erp.service.stock.DatabaseCommandRetry:23\u001b[0;39m - Retry entire database command after lock failure, next attempt=2"
+  ],
+  "result": "passed",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "m7_case": "core"
+}

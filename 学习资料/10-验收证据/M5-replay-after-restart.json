@@ -1,0 +1,111 @@
+{
+  "run_at": "2026-10-19T15:25:12.429002+00:00",
+  "checks": [
+    {
+      "name": "browser actions verified first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exactly two saved browser command results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main business audit clean before restart",
+      "passed": true,
+      "detail": {
+        "id": "4",
+        "ruleVersion": "M4.3-v1",
+        "scope": "TENANT",
+        "snapshotAt": "2026-10-19T15:25:12.632413Z",
+        "finishedAt": "2026-10-19T15:25:12.909514Z",
+        "scannedCount": 2550,
+        "differenceCount": 0,
+        "tableCounts": {
+          "erp_stock": 193,
+          "erp_stock_record": 365,
+          "ful_order": 214,
+          "ful_order_item": 224,
+          "ful_reservation": 152,
+          "ful_stock_ledger": 346,
+          "ful_shipment": 28,
+          "ful_shipment_item": 28,
+          "ful_cancellation": 18,
+          "ful_return": 3,
+          "ful_return_item": 3,
+          "erp_sale_order": 339,
+          "erp_sale_order_items": 356,
+          "erp_sale_out": 123,
+          "erp_sale_out_items": 130,
+          "erp_sale_return": 14,
+          "erp_sale_return_items": 14
+        }
+      }
+    },
+    {
+      "name": "complete dependency restart exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQL Redis five message tables exact across restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original REPUBLISH key stable after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original REBUILD key stable after full restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved intent replay no new action or sending attempt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved reconcile key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new observation business facts still clean",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "report": {
+    "id": "4",
+    "ruleVersion": "M4.3-v1",
+    "scope": "TENANT",
+    "snapshotAt": "2026-10-19T15:25:12.632413Z",
+    "finishedAt": "2026-10-19T15:25:12.909514Z",
+    "scannedCount": 2550,
+    "differenceCount": 0,
+    "tableCounts": {
+      "erp_stock": 193,
+      "erp_stock_record": 365,
+      "ful_order": 214,
+      "ful_order_item": 224,
+      "ful_reservation": 152,
+      "ful_stock_ledger": 346,
+      "ful_shipment": 28,
+      "ful_shipment_item": 28,
+      "ful_cancellation": 18,
+      "ful_return": 3,
+      "ful_return_item": 3,
+      "erp_sale_order": 339,
+      "erp_sale_order_items": 356,
+      "erp_sale_out": 123,
+      "erp_sale_out_items": 130,
+      "erp_sale_return": 14,
+      "erp_sale_return_items": 14
+    }
+  },
+  "result": "passed"
+}

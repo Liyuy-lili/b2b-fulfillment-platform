@@ -1,0 +1,36 @@
+{
+  "run_at": "2026-10-20T02:44:18.709775+00:00",
+  "case": "file",
+  "database": "fulfillment_m7_reg_filefoundation_20261020_103859",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "sources": [
+    {
+      "path": "tests\\m6_acceptance.py",
+      "sha256": "e0816bab64a050678777741b1563ffac2df9c6090dfee4ab017d85e34556c986",
+      "string_substitutions": {
+        "M2-acceptance.json": "M7.2-core-m2.json",
+        "M6.1-foundation.json": "M7.2-filefoundation.json",
+        "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+        "M4.2-clean-binding.json": "M7.2-returns-binding.json",
+        ".local/backend-out.log": ".local/m7-core-a-out.log",
+        ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+      }
+    }
+  ],
+  "adaptations": [
+    "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json."
+  ],
+  "results": [
+    {
+      "evidence": "M7.2-file.json",
+      "checks": 104
+    }
+  ],
+  "result": "passed",
+  "all_owned_stopped": true,
+  "metadata_description_correction": {
+    "original": "M7.2-file-original-meta.json",
+    "exception": "M7-evidence-exception.json",
+    "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+  }
+}

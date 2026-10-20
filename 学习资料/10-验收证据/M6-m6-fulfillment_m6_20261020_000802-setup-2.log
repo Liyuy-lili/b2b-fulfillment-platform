@@ -1,0 +1,13 @@
+00:08:21.274 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:mysql://127.0.0.1:33306/fulfillment_m6_20261020_000802?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 8.4)
+00:08:21.321 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+00:08:21.408 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 8 migrations (execution time 00:00.067s)
+00:08:21.476 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema `fulfillment_m6_20261020_000802`: 0
+00:08:21.516 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "1 - fulfillment foundation"
+00:08:22.444 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "2 - reservation and stock safety"
+00:08:23.158 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "3 - shipment cancel and logistics"
+00:08:23.959 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "4 - return receipt"
+00:08:24.394 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "5 - reconciliation"
+00:08:25.205 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "6 - reliable messages"
+00:08:25.685 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema `fulfillment_m6_20261020_000802` to version "7 - file jobs and warehouse scope"
+00:08:26.373 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 7 migrations to schema `fulfillment_m6_20261020_000802`, now at version v7 (execution time 00:04.557s)
+FULFILLMENT_MIGRATION_OK fulfillment_m6_20261020_000802 migrate

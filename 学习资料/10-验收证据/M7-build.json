@@ -1,0 +1,58 @@
+{
+  "run_at": "2026-10-20T01:48:33.447912+00:00",
+  "backend_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "selected_tests": 60,
+  "modules": 22,
+  "suites": [
+    {
+      "name": "OrderStatusCalculatorTest",
+      "tests": 16,
+      "evidence": "M7-junit-OrderStatusCalculatorTest.xml",
+      "sha256": "bc2c5275b324b27046f9d64832d43c9d1bc56d85e950615aaf56ec3d8a427476"
+    },
+    {
+      "name": "AllocationPlannerTest",
+      "tests": 7,
+      "evidence": "M7-junit-AllocationPlannerTest.xml",
+      "sha256": "85d7fb94216f052327498443ead9c9bbeacca8be39d235dd6c34c74b31e63bff"
+    },
+    {
+      "name": "DatabaseCommandRetryTest",
+      "tests": 3,
+      "evidence": "M7-junit-DatabaseCommandRetryTest.xml",
+      "sha256": "c54944b001395c1080ad477b86b87b5dfe7028c933d9af83cd2eeda29004bb5c"
+    },
+    {
+      "name": "LogisticsSignatureTest",
+      "tests": 6,
+      "evidence": "M7-junit-LogisticsSignatureTest.xml",
+      "sha256": "42045cce1b172e4879551216943b0caddf80ea053a0867e28e7f90091214fe5a"
+    },
+    {
+      "name": "FulExpiryScannerTest",
+      "tests": 5,
+      "evidence": "M7-junit-FulExpiryScannerTest.xml",
+      "sha256": "ebd9c3fb26f932ded15ad77f494efd3f84a43008bc89ccb800b78a31ada0a0ef"
+    },
+    {
+      "name": "ReconcileEngineTest",
+      "tests": 7,
+      "evidence": "M7-junit-ReconcileEngineTest.xml",
+      "sha256": "7f2f24b8534ee29a802544671bc9891b7c35e6f6767f9c0a3ec964d0124626c9"
+    },
+    {
+      "name": "FulfillmentEventTest",
+      "tests": 7,
+      "evidence": "M7-junit-FulfillmentEventTest.xml",
+      "sha256": "5e9f18965cbcb137669c7a094f887c5ebb224052bba7bf863901c8b12d508670"
+    },
+    {
+      "name": "ImportCsvTest",
+      "tests": 9,
+      "evidence": "M7-junit-ImportCsvTest.xml",
+      "sha256": "b46ad182691e931c849f9b26e55316f32213a09ca6c6e61e9aa9c8c0ee54fa27"
+    }
+  ],
+  "result": "passed",
+  "scope": "Selected eight fulfillment suites; not all upstream tests."
+}

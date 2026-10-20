@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-10-16T20:37:23.083942",
+  "method": "All master-data and purchase/sale documents created and approved through browser UI; final facts read from MySQL",
+  "product_id": 4,
+  "warehouse_id": 7,
+  "product_barcode": "M0-UI-001",
+  "stock_after_approval": "8.000000",
+  "ledger": [
+    {
+      "delta": "10.000000",
+      "after": "10.000000",
+      "biz_type": 70,
+      "biz_no": "CGRK20261016000005"
+    },
+    {
+      "delta": "-2.000000",
+      "after": "8.000000",
+      "biz_type": 50,
+      "biz_no": "XSCK20261016000007"
+    }
+  ],
+  "status": "passed"
+}

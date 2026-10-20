@@ -1,0 +1,55 @@
+{
+  "run_at": "2026-10-20T09:30:24.5051942+08:00",
+  "listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 5996
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 15173,
+      "OwningProcess": 27872
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 33306,
+      "OwningProcess": 23240
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35672,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35673,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 35674,
+      "OwningProcess": 35972
+    },
+    {
+      "LocalAddress": "::1",
+      "LocalPort": 35675,
+      "OwningProcess": 35952
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 36379,
+      "OwningProcess": 30228
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 48080,
+      "OwningProcess": 940
+    }
+  ],
+  "test_ports_free": true,
+  "main_frontend_status": 200,
+  "java_version": "openjdk version \"17.0.17\" 2025-10-21\r\nOpenJDK Runtime Environment Temurin-17.0.17+10 (build 17.0.17+10)\r\nOpenJDK 64-Bit Server VM Temurin-17.0.17+10 (build 17.0.17+10, mixed mode, sharing)\r\n",
+  "node_version": "v24.18.0",
+  "powershell_version": "7.6.5"
+}

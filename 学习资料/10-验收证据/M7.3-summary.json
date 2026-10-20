@@ -1,0 +1,278 @@
+{
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "query": [
+    {
+      "mode": "before",
+      "concurrency": 4,
+      "samples": 288,
+      "p50_ms": 110.33670000324491,
+      "p95_ms": 158.58049999224022,
+      "p99_ms": 179.95499999960884,
+      "requests_per_second": 35.187926435982035,
+      "errors": 0,
+      "rows_examined": 10003000,
+      "select_count": 576
+    },
+    {
+      "mode": "after",
+      "concurrency": 4,
+      "samples": 288,
+      "p50_ms": 45.445800002198666,
+      "p95_ms": 74.43059999786783,
+      "p99_ms": 101.18480000528507,
+      "requests_per_second": 80.54031139062293,
+      "errors": 0,
+      "rows_examined": 2023200,
+      "select_count": 575
+    },
+    {
+      "mode": "before",
+      "concurrency": 8,
+      "samples": 288,
+      "p50_ms": 111.54769999848213,
+      "p95_ms": 147.56620000116527,
+      "p99_ms": 168.29750000033528,
+      "requests_per_second": 69.94965495048027,
+      "errors": 0,
+      "rows_examined": 10003000,
+      "select_count": 575
+    },
+    {
+      "mode": "after",
+      "concurrency": 8,
+      "samples": 288,
+      "p50_ms": 51.107100007357076,
+      "p95_ms": 76.63789999787696,
+      "p99_ms": 85.080899996683,
+      "requests_per_second": 147.28435269441653,
+      "errors": 0,
+      "rows_examined": 2023200,
+      "select_count": 575
+    }
+  ],
+  "stock": [
+    {
+      "repeat": 1,
+      "concurrency": 1,
+      "samples": 64,
+      "seconds": 5.552882700008922,
+      "requests_per_second": 11.525545101087255,
+      "p50_ms": 84.16859999124426,
+      "p95_ms": 115.43950000486802,
+      "p99_ms": 143.70479999342933,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 0,
+        "Innodb_row_lock_waits": 0
+      }
+    },
+    {
+      "repeat": 1,
+      "concurrency": 4,
+      "samples": 64,
+      "seconds": 1.7244731000100728,
+      "requests_per_second": 37.112785348536995,
+      "p50_ms": 101.24319999886211,
+      "p95_ms": 160.24599999946076,
+      "p99_ms": 191.33210000291,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 983,
+        "Innodb_row_lock_waits": 54
+      }
+    },
+    {
+      "repeat": 1,
+      "concurrency": 8,
+      "samples": 64,
+      "seconds": 1.4702071999927284,
+      "requests_per_second": 43.53127912876263,
+      "p50_ms": 171.919300002628,
+      "p95_ms": 221.06530000746716,
+      "p99_ms": 233.65090000152122,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 5835,
+        "Innodb_row_lock_waits": 63
+      }
+    },
+    {
+      "repeat": 1,
+      "concurrency": 16,
+      "samples": 64,
+      "seconds": 1.5633757000032347,
+      "requests_per_second": 40.93705690824514,
+      "p50_ms": 352.12939999473747,
+      "p95_ms": 440.24979999812786,
+      "p99_ms": 460.9630000049947,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 12775,
+        "Innodb_row_lock_waits": 63
+      }
+    },
+    {
+      "repeat": 2,
+      "concurrency": 1,
+      "samples": 64,
+      "seconds": 4.2989949999901,
+      "requests_per_second": 14.887200380588343,
+      "p50_ms": 61.65250000776723,
+      "p95_ms": 95.4976000066381,
+      "p99_ms": 99.08359999826644,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 0,
+        "Innodb_row_lock_waits": 0
+      }
+    },
+    {
+      "repeat": 2,
+      "concurrency": 4,
+      "samples": 64,
+      "seconds": 1.343976999996812,
+      "requests_per_second": 47.61986254240348,
+      "p50_ms": 81.64299999771174,
+      "p95_ms": 106.41919999034144,
+      "p99_ms": 127.62020000081975,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 925,
+        "Innodb_row_lock_waits": 54
+      }
+    },
+    {
+      "repeat": 2,
+      "concurrency": 8,
+      "samples": 64,
+      "seconds": 1.3460640999983298,
+      "requests_per_second": 47.54602696861124,
+      "p50_ms": 163.46809999959078,
+      "p95_ms": 202.15440000174567,
+      "p99_ms": 218.3913000044413,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 6005,
+        "Innodb_row_lock_waits": 63
+      }
+    },
+    {
+      "repeat": 2,
+      "concurrency": 16,
+      "samples": 64,
+      "seconds": 1.4044355000078212,
+      "requests_per_second": 45.56991047267289,
+      "p50_ms": 311.34639999072533,
+      "p95_ms": 421.41629999969155,
+      "p99_ms": 443.7625999999,
+      "errors": 0,
+      "outcomes": {
+        "ALLOCATED": 32,
+        "INSUFFICIENT_STOCK": 32
+      },
+      "mysql_global_delta": {
+        "Innodb_row_lock_time": 11561,
+        "Innodb_row_lock_waits": 63
+      }
+    }
+  ],
+  "exports": [
+    {
+      "mode": "before",
+      "job_id": "1",
+      "state": {
+        "id": "1",
+        "actorId": "1",
+        "type": "EXPORT",
+        "dataset": "ORDER",
+        "status": "SUCCEEDED",
+        "sourceSystem": "",
+        "totalRows": 45001,
+        "successRows": 45001,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "10149999",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": false,
+        "hasResult": true,
+        "hasErrors": false,
+        "createdAt": "2026-10-20T03:00:32.678522Z",
+        "startedAt": "2026-10-20T03:00:33.716168Z",
+        "completedAt": "2026-10-20T03:03:22.034049Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":null,\"orderStatus\":\"NEW\",\"allOrders\":true}"
+      },
+      "seconds": 170.37189979999675,
+      "bytes": 1977162,
+      "sha256": "7b6b92e0c42b53ec3ff31b79e7eb387aae0399e27ca439f1196fd20409abf7b5",
+      "xlsx_rows_including_headers": 45011
+    },
+    {
+      "mode": "after",
+      "job_id": "2",
+      "state": {
+        "id": "2",
+        "actorId": "1",
+        "type": "EXPORT",
+        "dataset": "ORDER",
+        "status": "SUCCEEDED",
+        "sourceSystem": "",
+        "totalRows": 45001,
+        "successRows": 45001,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "prepared": true,
+        "attempts": 1,
+        "totalAttempts": 1,
+        "sourceCursor": "10149999",
+        "leaseVersion": "1",
+        "lastError": null,
+        "hasInput": false,
+        "hasResult": true,
+        "hasErrors": false,
+        "createdAt": "2026-10-20T03:03:23.056293Z",
+        "startedAt": "2026-10-20T03:03:23.710374Z",
+        "completedAt": "2026-10-20T03:06:09.954166Z",
+        "leaseUntil": null,
+        "scopeJson": "{\"warehouseIds\":[],\"ownerId\":null,\"orderStatus\":\"NEW\",\"allOrders\":true}"
+      },
+      "seconds": 167.21695589998853,
+      "bytes": 1977163,
+      "sha256": "cdd7b00015f3c0bc8118af4739c97c28b32e4b06273d5e6bd616264903053ac8",
+      "xlsx_rows_including_headers": 45011
+    }
+  ],
+  "result": "passed"
+}

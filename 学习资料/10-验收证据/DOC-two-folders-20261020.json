@@ -1,0 +1,117 @@
+{
+  "run_at": "2026-10-20T07:44:40.153231+00:00",
+  "scope": "目录、去重、恢复备份、原始文件摘要、业务源文件保持、脚本静态语法及前端依赖入口；未启动应用、访问业务DB、迁移、重跑业务验收或压测。",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "根目录仅两个主文件夹",
+      "passed": true,
+      "detail": [
+        "学习资料",
+        "项目代码"
+      ]
+    },
+    {
+      "name": "仓库与协作配置保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "75项明确删除且唯一正文存在",
+      "passed": true,
+      "detail": {
+        "duplicate_copies": 12,
+        "obsolete_redirects_and_snapshot": 63
+      }
+    },
+    {
+      "name": "恢复备份SHA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "迁移清单全部保留项存在",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "原始非Markdown证据及其他受保护文件字节保持",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "175份业务源文件与最终M7摘要一致",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "整理前1075份文档脚本备份CRC与原摘要",
+      "passed": true,
+      "detail": {
+        "entries": 1075,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "运行与验收脚本只作资料路径和相对路径计算调整",
+      "passed": true,
+      "detail": {
+        "changed_files": 75,
+        "unexpected_changes": []
+      }
+    },
+    {
+      "name": "全部Python脚本编译语法检查且不执行",
+      "passed": true,
+      "detail": {
+        "files": 85,
+        "errors": []
+      }
+    },
+    {
+      "name": "全部PowerShell脚本仅解析不执行",
+      "passed": true,
+      "detail": {
+        "files": 27,
+        "errors": []
+      }
+    },
+    {
+      "name": "脚本显式引用的学习Markdown路径存在",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "前端依赖重定位记录存在",
+      "passed": true,
+      "detail": 2819
+    },
+    {
+      "name": "Vite命令入口",
+      "passed": true,
+      "detail": {
+        "exit_code": 0,
+        "output": "vite/8.1.4 win32-x64 node-v24.18.0",
+        "error": ""
+      }
+    },
+    {
+      "name": "pnpm命令入口",
+      "passed": true,
+      "detail": {
+        "exit_code": 0,
+        "output": "9.15.9",
+        "error": ""
+      }
+    },
+    {
+      "name": "前端配置和插件可从新目录加载且不启动服务",
+      "passed": true,
+      "detail": {
+        "exit_code": 0,
+        "output": "CONFIG_OK plugins=7",
+        "error": ""
+      }
+    }
+  ]
+}

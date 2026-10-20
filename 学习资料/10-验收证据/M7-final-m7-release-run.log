@@ -1,0 +1,43 @@
+PASS source bundle matches selected verified backend
+PASS test application ports free
+PASS dedicated Redis DB starts empty
+PASS all source package hashes verified
+PASS package carries no node_modules target or live config
+PASS preflight capacity for fresh copy and ZIP
+PASS fresh clean-room destination outside source
+PASS copied package byte-identical
+PASS isolated Broker vhost created
+PASS isolated vhost user permissions
+PASS Start-Release.ps1 rejects
+PASS tampered package rejected before processes start
+PASS Install-Release.ps1 exits0
+PASS clean install has current immutable migrations
+PASS new business schema initially empty
+PASS Start-Release.ps1 exits0
+PASS self-contained Node demo exits0
+PASS demo completes from package only
+PASS actual multi-warehouse final balances
+PASS gross shipped cancellation return aggregates exact
+PASS shipment signed callback delivered
+PASS repeated file task has one real draft identity
+PASS two imports each localize the bad row
+PASS same-origin messages and current projection complete
+PASS real XLSX and localized error file saved
+PASS private registered files match bytes
+PASS warehouse demo user sees only READ XiAn
+PASS warehouse user cannot access other warehouse
+PASS warehouse user cannot request sales prices
+PASS private storage and local config not served
+PASS app-api proxy reaches signed callback validation
+PASS production SPA deep link and module asset served
+PASS Install-Release.ps1 rejects
+PASS existing database refuses reinstall without fact changes
+PASS Stop-Release.ps1 exits0
+PASS Start-Release.ps1 exits0
+PASS normal application restart preserves full fulfillment and business snapshot
+PASS restart preserves every registered private file
+PASS self-contained Node demo exits0
+PASS completed fixed demo rerun only reads saved IDs
+PASS original business key replay after restart immutable
+PASS main 17-table business digest untouched
+M7-final release passed 42 checks

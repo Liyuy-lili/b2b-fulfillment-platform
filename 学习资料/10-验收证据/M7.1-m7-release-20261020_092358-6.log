@@ -1,0 +1,5 @@
+Exception: C:\Users\Lenovo\fulfillment-delivery-tests\release 20261020_092029\bin\Install-Release.ps1:15
+Line |
+  15 |  … if($exists){throw 'Database exists; installation refuses overwrite. U …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Database exists; installation refuses overwrite. Use migration/validate separately.

@@ -1,0 +1,115 @@
+{
+  "run_at": "2026-10-20T00:42:41.997591+00:00",
+  "checks": [
+    {
+      "name": "actual browser actions verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main business facts clean before restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all registered private files match persisted hash before restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full MySQL Redis RabbitMQ EPMD and applications restart exits0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all SQL Redis and six job table snapshots exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "private bytes and hashes exact across restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original import key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original export key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original intent replay creates no tasks identities audit or business writes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized ERROR download survives restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized RESULT download survives restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved business report key stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new observation still clean",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "private_files": [
+    [
+      "23f0ea99-ec75-4216-9486-8d90b134b62b",
+      "23f0ea99-ec75-4216-9486-8d90b134b62b.csv",
+      88,
+      "19427ffea81e8afbc553d8b83ebb3d038547c9a2814d2117dc696b63b10aac68"
+    ],
+    [
+      "8ddcd4f5-38cc-487b-aa8d-01db62a7f48e",
+      "8ddcd4f5-38cc-487b-aa8d-01db62a7f48e.xlsx",
+      4607,
+      "549155f1101cd595da8863c4d148531aee9fc638e4855e32b1b81374aaf23248"
+    ],
+    [
+      "b8451cdf-5971-43fb-b4b8-c1ab372d90ff",
+      "b8451cdf-5971-43fb-b4b8-c1ab372d90ff.csv",
+      261,
+      "ffcfec2fa19d424f49533b15a4574d40dbb774df90622895c117706d66c43f61"
+    ],
+    [
+      "d3ef316f-9585-4cd4-86e0-249abf5640f5",
+      "d3ef316f-9585-4cd4-86e0-249abf5640f5.xlsx",
+      4607,
+      "c3206d97f266987a8e3d148d07fd71dc63e279a6cd30903b01d9ad37c94b18f6"
+    ],
+    [
+      "e0e2b5dd-7179-4966-bd8e-32380675c8f8",
+      "e0e2b5dd-7179-4966-bd8e-32380675c8f8.csv",
+      261,
+      "ffcfec2fa19d424f49533b15a4574d40dbb774df90622895c117706d66c43f61"
+    ],
+    [
+      "f368a328-c505-4aff-a420-e45121aef342",
+      "f368a328-c505-4aff-a420-e45121aef342.csv",
+      88,
+      "19427ffea81e8afbc553d8b83ebb3d038547c9a2814d2117dc696b63b10aac68"
+    ],
+    [
+      "fda3a26d-ee94-4cb9-80cb-143bf10aee65",
+      "fda3a26d-ee94-4cb9-80cb-143bf10aee65.csv",
+      88,
+      "19427ffea81e8afbc553d8b83ebb3d038547c9a2814d2117dc696b63b10aac68"
+    ]
+  ],
+  "result": "passed"
+}

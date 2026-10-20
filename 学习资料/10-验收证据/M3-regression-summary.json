@@ -1,0 +1,30 @@
+{
+  "run_at": "2026-10-18T15:54:17.314798+00:00",
+  "runs": [
+    {
+      "script": "m2_acceptance.py",
+      "result": "passed"
+    },
+    {
+      "script": "m2_legacy_inventory.py",
+      "result": "passed"
+    },
+    {
+      "script": "m2_permissions.py",
+      "result": "passed"
+    },
+    {
+      "script": "m1_acceptance.py",
+      "result": "passed"
+    },
+    {
+      "script": "m1_locking.py",
+      "result": "passed"
+    },
+    {
+      "script": "m0_smoke.py",
+      "result": "passed"
+    }
+  ],
+  "result": "passed"
+}

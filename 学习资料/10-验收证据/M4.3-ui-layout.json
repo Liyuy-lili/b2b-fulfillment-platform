@@ -1,0 +1,44 @@
+{
+  "result": "passed",
+  "rounds": 2,
+  "desktop": {
+    "bodyWidth": 1280,
+    "drawerScroll": 1105,
+    "drawerWidth": 1120,
+    "placeholder": "#606266",
+    "primary": "#2d6fb3",
+    "reviewWidth": 1065,
+    "width": 1280
+  },
+  "mobile": {
+    "bodyWidth": 390,
+    "drawerScroll": 375,
+    "drawerWidth": 390,
+    "enabledButtonBackground": "#2d6fb3",
+    "pagination": [
+      {
+        "overflow": "auto",
+        "scrollWidth": 496,
+        "width": 328
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 448,
+        "width": 335
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 448,
+        "width": 335
+      }
+    ],
+    "placeholder": "#606266",
+    "primary": "#2d6fb3",
+    "reviewWidth": 335,
+    "width": 390
+  },
+  "fixes": [
+    "Anchor scoped color variables on authored drawer content",
+    "Contain shared pagination in local horizontal scrolling wrappers"
+  ]
+}

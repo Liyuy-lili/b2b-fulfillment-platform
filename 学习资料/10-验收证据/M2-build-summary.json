@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "command": "mvnw.cmd -B -ntp -pl yudao-server -am package -Dtest=OrderStatusCalculatorTest,AllocationPlannerTest,DatabaseCommandRetryTest -Dsurefire.failIfNoSpecifiedTests=false",
+  "exit": 0,
+  "modules": 22,
+  "selected_unit_tests": 26,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_upstream_tests_run": false,
+  "frontend_changed": false
+}

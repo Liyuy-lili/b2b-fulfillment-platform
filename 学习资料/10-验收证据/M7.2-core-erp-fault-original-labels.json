@@ -1,0 +1,62 @@
+{
+  "run_at": "2026-10-20T01:54:53.836484+00:00",
+  "checks": [
+    {
+      "name": "ERP approval fault returned failure",
+      "passed": true,
+      "detail": {
+        "code": 500,
+        "msg": "系统异常",
+        "data": null
+      }
+    },
+    {
+      "name": "failure occurred during stock batch inside ERP approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all database business facts rolled back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed command row rolled back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed shipment row absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same key safe to retry on healthy instance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recovered command does not double ship",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "database": "fulfillment_m7_reg_core_20261020_094744",
+  "fault_trace": [
+    "java.lang.IllegalStateException: M3_TEST_FAILURE_DURING_ERP_APPROVAL"
+  ],
+  "ids": {
+    "order": "46",
+    "source": 60,
+    "reservation": "33",
+    "shipment": {
+      "shipmentId": "11",
+      "shipmentNo": "SHP-f37e91c5-ef6c-4303-9195-d65031f2cbed",
+      "erpSaleOutId": "26",
+      "orderStatus": "PARTIALLY_SHIPPED"
+    }
+  },
+  "result": "passed",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "m7_case": "core"
+}

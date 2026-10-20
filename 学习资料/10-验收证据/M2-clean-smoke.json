@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "database": "fulfillment_m2_clean_20261018",
+  "checks": [
+    {
+      "name": "fresh install reserve succeeds",
+      "passed": true
+    },
+    {
+      "name": "fresh install persistent command replay",
+      "passed": true
+    },
+    {
+      "name": "fresh install H R A exact",
+      "passed": true
+    },
+    {
+      "name": "fresh install partial release",
+      "passed": true
+    },
+    {
+      "name": "fresh install reservation and ledger match",
+      "passed": true
+    },
+    {
+      "name": "fresh install all versions recorded",
+      "passed": true
+    }
+  ],
+  "result": "passed"
+}

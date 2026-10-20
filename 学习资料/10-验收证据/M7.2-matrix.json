@@ -1,0 +1,978 @@
+{
+  "run_at": "2026-10-20T05:54:07.625402+00:00",
+  "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+  "result": "passed",
+  "scenarios": [
+    {
+      "id": "T01",
+      "scenario": "空库初始化与二次启动",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-filefoundation.json",
+          "assertions": [
+            "history V0 through V7 [M7 expected V0-V8]"
+          ]
+        },
+        {
+          "file": "M7-final-release.json",
+          "assertions": [
+            "clean install has current immutable migrations",
+            "normal application restart preserves full fulfillment and business snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "scenario": "ERP 基础采购入库与销售出库",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-ERP.json",
+          "assertions": [
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock",
+            "Physical inventory balance",
+            "Ledger sum matches stock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "scenario": "同销售单重复绑定",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-binding.json",
+          "assertions": [
+            "bind creates order",
+            "invalid second line rejects binding",
+            "binding and rejected writes leave inventory unchanged",
+            "eight concurrent bind requests converge",
+            "concurrent binding inserts one snapshot",
+            "bind versus old outbound race 0",
+            "bind versus old outbound race 1",
+            "bind versus old outbound race 2",
+            "bind versus old outbound race 3",
+            "bind versus old outbound race 4",
+            "bind versus old outbound race 5",
+            "bind versus old outbound race 6",
+            "bind versus old outbound race 7",
+            "normal owner can bind own source",
+            "normal user cannot bind others source",
+            "other tenant cannot bind known ERP id",
+            "other tenant can bind own valid source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "scenario": "两实例同 key 同请求并发",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "T04 both JVMs return one saved allocation",
+            "T05 same key different strategy conflicts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "scenario": "同 key 不同参数",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "different release request conflicts",
+            "T05 same key different strategy conflicts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "scenario": "多订单争抢有限库存",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "two JVMs limited-stock race admits exactly three orders"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "scenario": "多商品计划中一个商品不足",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "no partial commitment survives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "scenario": "分仓策略稳定与单仓优先",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "warehouse priority determines split",
+            "single first selects lower-priority whole-order warehouse",
+            "single first deterministic split fallback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "scenario": "部分发货",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "partial shipment updates status",
+            "ship deducts physical exactly once"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "scenario": "ERP 出库审核前后注入异常",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "isolated after-ERP test fault reached",
+            "failure rolls back H R quantities and ERP document",
+            "failure rolls back shipment and command",
+            "same key succeeds after fault rollback"
+          ]
+        },
+        {
+          "file": "M7.2-core-erp-fault.json",
+          "assertions": [
+            "ERP approval fault returned failure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "scenario": "发货与取消并发",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "ship versus cancel has one legal winner",
+            "ship versus cancel has one legal winner",
+            "ship versus cancel has one legal winner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "scenario": "发货与到期释放竞争",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-expiry.json",
+          "assertions": [
+            "command Initialize-Database ('-Database', 'fulfillment_m7_reg_expiry_20261020_095519')",
+            "command Migrate-Database ('-Action', 'baseline', '-Database', 'fulfillment_m7_reg_expiry_20261020_095519')",
+            "command Migrate-Database ('-Action', 'migrate', '-Database', 'fulfillment_m7_reg_expiry_20261020_095519')",
+            "command Migrate-Database ('-Action', 'validate', '-Database', 'fulfillment_m7_reg_expiry_20261020_095519')",
+            "failed expiry leaves no ledger or command",
+            "one completed expiry command after recovery",
+            "partial ship and manual release leave precise held",
+            "ship rechecks clock after stock lock wait",
+            "expired ship creates no ERP out and changes no physical",
+            "pre-deadline shipment wins and stays fulfilled",
+            "consumed rows never enter expiry scan",
+            "cancel versus expiry closes quantity exactly once",
+            "release versus expiry has only legal outcomes",
+            "expiry does not change HTTP ownership or tenant authorization",
+            "natural expiry releases only remaining held",
+            "natural expiry records exact delta and no physical effect",
+            "successful ship replay remains valid after later expiry",
+            "historical expiry command cannot consume new reservation",
+            "no reservation has duplicate expiry ledger effect",
+            "only completed durable expiry commands"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "scenario": "旧出库、调拨、盘亏、采购退货",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-legacy.json",
+          "assertions": [
+            "stock-out reduction rejects unavailable stock",
+            "stock-out failure rolls back all inventory and ledgers",
+            "stock-out failure restores document status",
+            "stock-move reduction rejects unavailable stock",
+            "stock-move failure rolls back all inventory and ledgers",
+            "stock-move failure restores document status",
+            "stock-check reduction rejects unavailable stock",
+            "stock-check failure rolls back all inventory and ledgers",
+            "stock-check failure restores document status",
+            "sale-out reduction rejects unavailable stock",
+            "sale-out failure rolls back all inventory and ledgers",
+            "stock-in reversal rejects unavailable stock",
+            "stock-in failure rolls back all inventory and ledgers",
+            "stock-in failure restores document status",
+            "ordinary out can consume exactly available stock",
+            "purchase-return reduction rejects unavailable stock",
+            "purchase-return failure rolls back all inventory and ledgers",
+            "purchase-return failure restores document status",
+            "purchase-in reversal rejects unavailable stock",
+            "purchase-in failure rolls back all inventory and ledgers",
+            "purchase-in failure restores document status",
+            "purchase return reversal restores physical",
+            "sale-return reversal rejects unavailable stock",
+            "sale-return failure rolls back all inventory and ledgers",
+            "stock-check reversal rejects unavailable stock",
+            "stock-check failure rolls back all inventory and ledgers",
+            "stock-check failure restores document status",
+            "stock-move reversal rejects unavailable stock",
+            "stock-move failure rolls back all inventory and ledgers",
+            "stock-move failure restores document status",
+            "stock-out reduction rejects unavailable stock",
+            "stock-out failure rolls back all inventory and ledgers",
+            "stock-out failure restores document status",
+            "stock-in invalid natural quantity or count delta rejected",
+            "stock-in invalid quantity creates no physical effect",
+            "stock-out invalid natural quantity or count delta rejected",
+            "stock-out invalid quantity creates no physical effect",
+            "stock-move invalid natural quantity or count delta rejected",
+            "stock-move invalid quantity creates no physical effect",
+            "stock-check invalid natural quantity or count delta rejected",
+            "stock-check invalid quantity creates no physical effect",
+            "purchase-return invalid natural quantity or count delta rejected",
+            "purchase-return invalid quantity creates no physical effect",
+            "purchase-in invalid natural quantity or count delta rejected",
+            "purchase-in invalid quantity creates no physical effect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "scenario": "托管源单旧入口编辑、反审核、删除、作废出库",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-binding.json",
+          "assertions": [
+            "source unaudit frozen",
+            "source edit frozen",
+            "source delete frozen",
+            "manual outbound frozen",
+            "manual return frozen",
+            "cannot move existing outbound onto managed source"
+          ]
+        },
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "legacy managed mutation frozen /erp/sale-out/update-status",
+            "legacy managed mutation frozen /erp/sale-out/delete",
+            "legacy managed mutation frozen /erp/sale-order/update-status",
+            "client bypass flag cannot create managed out"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "scenario": "回调重复、乱序与同 ID 不同内容",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "duplicate callback returns original result",
+            "late transit cannot reverse delivered",
+            "callback conflict diagnostic committed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "scenario": "伪签名、过期签名与错误租户集成",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m3.json",
+          "assertions": [
+            "signed anonymous callback uses integration tenant not header",
+            "invalid signature rejected",
+            "old signature rejected",
+            "wrong integration rejected"
+          ]
+        },
+        {
+          "file": "M7.2-core-m3-permissions.json",
+          "assertions": [
+            "signed integration cannot route into body or header tenant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "scenario": "重复退货收货与超量退货申请",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-returns.json",
+          "assertions": [
+            "rejected application cannot be received",
+            "after failed receive command rolled back",
+            "during failed receive command rolled back",
+            "healthy retry after both failures receives exactly once",
+            "same receive key replay stable across JVMs",
+            "new receive key on received return has no new effect",
+            "received return cannot be rejected",
+            "one micro over remaining allowance rejected",
+            "pending plus received cap serialized across JVMs",
+            "receive versus reject admits one terminal transition",
+            "return page limit enforced",
+            "ordinary owner receives own return",
+            "receive no permission",
+            "receive wrong owner",
+            "foreign tenant cannot receive known order",
+            "foreign tenant can receive own goods in original warehouse",
+            "DB rejects received state without receipt links",
+            "all received quantities match order returned aggregates",
+            "every received return links approved same-tenant ERP document",
+            "only received rows have ERP item mappings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "scenario": "Broker 故障时完成业务",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-message.json",
+          "assertions": [
+            "M7 enabled workers boot and shipping commit while transport connection refused",
+            "M7 restoring application connection drains persisted events with exact business facts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "scenario": "发布确认后、标 SENT 前中断",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-message.json",
+          "assertions": [
+            "actual process exits at after-confirm window",
+            "expired publisher lease reclaimed with higher version"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "scenario": "消费提交后、ACK 前中断",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-message.json",
+          "assertions": [
+            "actual process exits after consumer commit before ACK",
+            "Inbox committed before ACK crash",
+            "redelivered ACK crash leaves projection and business facts unchanged"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "scenario": "Outbox/任务租约到期，旧工作者延迟完成",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-message.json",
+          "assertions": [
+            "old publisher cannot overwrite newer lease result"
+          ]
+        },
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "old artifact cannot overwrite new file reference or progress"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "scenario": "导入中断重启、重复文件跨任务提交",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "new task same business rows reuses original drafts",
+            "real exit81 after first row commit",
+            "committed first row skipped after process restart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "scenario": "导入非法数量、无效商品及超限文件",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "10MiB plus one upload rejected",
+            "invalid header has no partial business effect",
+            "invalid UTF8 stops once without business effects"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "scenario": "租户 A 使用租户 B 的订单/任务/文件 ID",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-binding.json",
+          "assertions": [
+            "other tenant cannot bind known ERP id",
+            "other tenant cannot read known fulfillment id",
+            "other tenant page empty",
+            "other tenant can bind own valid source",
+            "other tenant sees own exact snapshot"
+          ]
+        },
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "foreign tenant cannot get known task",
+            "grant cannot cross tenant user identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T25",
+      "scenario": "仓库人员请求其他仓库及价格字段",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "warehouse stock projection has no financial or customer fields",
+            "warehouse detail excludes prices customer and other warehouse items",
+            "unauthorized warehouse explicitly rejected"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T26",
+      "scenario": "任务线程先后处理不同租户",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "one actual reused worker thread clears tenant and actor contexts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T27",
+      "scenario": "提交导出后权限被撤销",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-file.json",
+          "assertions": [
+            "download rechecks revoked warehouse range"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "scenario": "库存行并发首次建立",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "T28 concurrent first insert creates one exact balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T29",
+      "scenario": "数量精度与最大值、不同商品单位",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-core-m2.json",
+          "assertions": [
+            "H R A decimal string view",
+            "release decimal representation normalized",
+            "T29 BigDecimal SUM beyond double precision",
+            "T29 exact large allocation string",
+            "T29 maximum DECIMAL24_6 remains exact"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T30",
+      "scenario": "删除或篡改一条预占汇总演示数据",
+      "passed": true,
+      "proof": [
+        {
+          "file": "M7.2-reconcile.json",
+          "assertions": [
+            "missing stock row found from ledger and reservation union",
+            "missing row is not recreated by audit",
+            "all probes restored exact business rows",
+            "other actor cannot review known difference",
+            "restored permission returns original result",
+            "foreign tenant cannot review known difference",
+            "same key can recover after server bound restored"
+          ]
+        }
+      ]
+    }
+  ],
+  "suite_results": {
+    "core": {
+      "run_at": "2026-10-20T01:47:44.473381+00:00",
+      "case": "core",
+      "database": "fulfillment_m7_reg_core_20261020_094744",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m2_legacy_inventory.py",
+          "sha256": "06efb709cd0d2c45494d638b7a9fca99388275c7e06fd3ade4f1ac6ea7bb8e50",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        },
+        {
+          "path": "tests\\m3_acceptance.py",
+          "sha256": "2ca7233412923571b88ad86b6cd8e77781261be45c3d4698d960514d6bc34dae",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        },
+        {
+          "path": "tests\\m3_permissions.py",
+          "sha256": "d1cd92b8810fa256ffd514cdf1691a2c068b9cec87870f06136216525635bf05",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        },
+        {
+          "path": "tests\\m3_erp_failure.py",
+          "sha256": "8f68b358bc6fef75b04c96607af9867cc183ccbb8212d3e91b6bde21c14b831e",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json.",
+        {
+          "positive_fixture_warehouse_grant": {
+            "user": 253,
+            "warehouse": 2
+          }
+        }
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-core-binding.json",
+          "checks": 68
+        },
+        {
+          "evidence": "M7.2-core-m2.json",
+          "checks": 94
+        },
+        {
+          "evidence": "M7.2-core-legacy.json",
+          "checks": 130
+        },
+        {
+          "evidence": "M7.2-core-m3.json",
+          "checks": 97
+        },
+        {
+          "evidence": "M7.2-core-m3-permissions.json",
+          "checks": 24
+        },
+        {
+          "evidence": "M7.2-core-erp-fault.json",
+          "checks": 7
+        },
+        {
+          "evidence": "M7.2-core-ERP.json",
+          "checks": 110
+        }
+      ],
+      "commands": [
+        {
+          "script": "scripts/Initialize-Database.ps1",
+          "args": [
+            "-Database",
+            "fulfillment_m7_reg_core_20261020_094744"
+          ],
+          "exit_code": 0,
+          "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460864664024600.log"
+        },
+        {
+          "script": "scripts/Migrate-Database.ps1",
+          "args": [
+            "-Action",
+            "baseline",
+            "-Database",
+            "fulfillment_m7_reg_core_20261020_094744"
+          ],
+          "exit_code": 0,
+          "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460873476897400.log"
+        },
+        {
+          "script": "scripts/Migrate-Database.ps1",
+          "args": [
+            "-Action",
+            "migrate",
+            "-Database",
+            "fulfillment_m7_reg_core_20261020_094744"
+          ],
+          "exit_code": 0,
+          "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460876899894100.log"
+        },
+        {
+          "script": "scripts/Migrate-Database.ps1",
+          "args": [
+            "-Action",
+            "validate",
+            "-Database",
+            "fulfillment_m7_reg_core_20261020_094744"
+          ],
+          "exit_code": 0,
+          "log": ".local\\m7-fulfillment_m7_reg_core_20261020_094744-1792460884841341500.log"
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-core-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "expiry": {
+      "run_at": "2026-10-20T01:55:19.928439+00:00",
+      "case": "expiry",
+      "database": "fulfillment_m7_reg_expiry_20261020_095519",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m4_expiry_acceptance.py",
+          "sha256": "94e237269da4497564b00a1cc6d5c2dab103953f284f81754ee1278cce36ba76",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json."
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-expiry.json",
+          "checks": 42
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-expiry-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "returns": {
+      "run_at": "2026-10-20T02:01:36.716816+00:00",
+      "case": "returns",
+      "database": "fulfillment_m7_reg_returns_20261020_100136",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m4_return_acceptance.py",
+          "sha256": "967ca102635ed93741c7112dfb66c0f42bb29d33c6947cf3f0c37a1c19988f4a",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json.",
+        {
+          "positive_fixture_scope": {
+            "user": 253,
+            "warehouse": 1
+          }
+        },
+        "Nested binding output collided with historical M4.2-clean-binding.json; current result copied to M7.2-returns-binding.json; historical raw unavailable, explicitly disclosed."
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-returns.json",
+          "checks": 71
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "evidence_exception": "M7-evidence-exception.json",
+      "metadata_description_correction": {
+        "original": "M7.2-returns-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "reconcile": {
+      "run_at": "2026-10-20T02:06:38.215484+00:00",
+      "case": "reconcile",
+      "database": "fulfillment_m7_reg_reconcile_20261020_100638",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m4_reconcile_acceptance.py",
+          "sha256": "88a9f6ab1adfb311b20d661d8040a5fee82e7c248a6b4df0af5f076474c1edf5",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json."
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-reconcile.json",
+          "checks": 73
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-reconcile-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "message": {
+      "run_at": "2026-10-20T02:24:47.304693+00:00",
+      "case": "message",
+      "database": "fulfillment_m7_reg_message_20261020_102447",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m5_acceptance.py",
+          "sha256": "72e68c0d9352f40bb0acbad853d9e85a363594517132ebd0c3991a0e1da61f55",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            "M4.2-clean-binding.json": "M7.2-returns-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json.",
+        {
+          "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+        },
+        {
+          "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+        },
+        {
+          "transport_outage": "Test application connects to closed port35676; shared Broker stays running."
+        },
+        {
+          "positive_fixture_scope": {
+            "user": 249,
+            "warehouse": 1
+          }
+        }
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-message.json",
+          "checks": 67
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-message-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "filefoundation": {
+      "run_at": "2026-10-20T02:38:59.073299+00:00",
+      "case": "filefoundation",
+      "database": "fulfillment_m7_reg_filefoundation_20261020_103859",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m6_foundation.py",
+          "sha256": "22362fb73234f0c170a04316b3db25f35371e2009ac6d8f40e0651f51250282b",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            "M4.2-clean-binding.json": "M7.2-returns-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json."
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-filefoundation.json",
+          "checks": 22
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-filefoundation-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    },
+    "file": {
+      "run_at": "2026-10-20T02:44:18.709775+00:00",
+      "case": "file",
+      "database": "fulfillment_m7_reg_filefoundation_20261020_103859",
+      "artifact_sha256": "11953f2ebfe77d5c92d3d68860f2848b7588bb9b92d1f0d91b1bbe4755dd5937",
+      "sources": [
+        {
+          "path": "tests\\m6_acceptance.py",
+          "sha256": "e0816bab64a050678777741b1563ffac2df9c6090dfee4ab017d85e34556c986",
+          "string_substitutions": {
+            "M2-acceptance.json": "M7.2-core-m2.json",
+            "M6.1-foundation.json": "M7.2-filefoundation.json",
+            "M4.1-clean-binding.json": "M7.2-expiry-binding.json",
+            "M4.2-clean-binding.json": "M7.2-returns-binding.json",
+            ".local/backend-out.log": ".local/m7-core-a-out.log",
+            ".local/m3-fault-out.log": ".local/m7-core-fault-out.log"
+          }
+        }
+      ],
+      "adaptations": [
+        "Separate M7 schema/Redis DB12/ports; historical primary reports retained; one historical child-report collision is disclosed in M7-evidence-exception.json."
+      ],
+      "results": [
+        {
+          "evidence": "M7.2-file.json",
+          "checks": 104
+        }
+      ],
+      "result": "passed",
+      "all_owned_stopped": true,
+      "metadata_description_correction": {
+        "original": "M7.2-file-original-meta.json",
+        "exception": "M7-evidence-exception.json",
+        "reason": "Initial preservation description was too broad; no business assertions or suite counts changed."
+      }
+    }
+  },
+  "boundary": "T18 uses actual connection-refused port with workers enabled; shared Broker process remains running. Exact process restart is separately covered by final main restart."
+}

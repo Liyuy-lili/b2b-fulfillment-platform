@@ -1,0 +1,700 @@
+{
+  "run_at": "2026-10-18T15:57:15.446113+00:00",
+  "checks": [
+    {
+      "name": "schema.erp_account",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_finance_payment",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_finance_payment_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_finance_receipt",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_finance_receipt_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_product_category",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_product",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_product_unit",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_in",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_in_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_order",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_order_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_return",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_purchase_return_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_supplier",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_customer",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_order",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_order_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_out",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_out_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_return",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_sale_return_items",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_check",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_check_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "M2 reserved precision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "schema.erp_stock",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_in",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_in_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_move",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_move_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_out",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_out_item",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_stock_record",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "schema.erp_warehouse",
+      "passed": true,
+      "detail": {
+        "column_diff": [],
+        "type_errors": []
+      }
+    },
+    {
+      "name": "ERP menu permissions loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ERP dictionaries loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Anonymous ERP request rejected",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Real password login issues token",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Authenticated menu returned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Repeated approval rejected",
+      "passed": true,
+      "detail": 1030102003
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Insufficient stock rejected",
+      "passed": true,
+      "detail": 1030404000
+    },
+    {
+      "name": "Physical inventory balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger number",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "100.123456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "70.003456"
+    },
+    {
+      "name": "Ledger running balance",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Ledger sum matches stock",
+      "passed": true,
+      "detail": "69.003456"
+    },
+    {
+      "name": "Failed approval status rolls back",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "Page endpoint product",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint customer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint supplier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint warehouse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint account",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint purchase-order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint purchase-in",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint purchase-return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint sale-order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint sale-out",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint sale-return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock-record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock-in",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock-out",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock-move",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint stock-check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint finance-payment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page endpoint finance-receipt",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "ids": {
+    "product": 173,
+    "unit": 38,
+    "category": 35,
+    "warehouse": 56,
+    "warehouse2": 57,
+    "customer": 36,
+    "supplier": 20,
+    "account": 29,
+    "purchase_order": 17,
+    "purchase_in": 16,
+    "sale_order": 335,
+    "sale_out": 118,
+    "stock_check": 29,
+    "insufficient_stock_order": 336,
+    "rejected_sale_out": 119
+  },
+  "mysql_version": "8.4.6",
+  "ledger": [
+    {
+      "delta": "100.123456",
+      "after": "100.123456",
+      "biz_type": 70
+    },
+    {
+      "delta": "-30.120000",
+      "after": "70.003456",
+      "biz_type": 50
+    },
+    {
+      "delta": "-1.000000",
+      "after": "69.003456",
+      "biz_type": 42
+    },
+    {
+      "delta": "1.000000",
+      "after": "70.003456",
+      "biz_type": 41
+    },
+    {
+      "delta": "-1.000000",
+      "after": "69.003456",
+      "biz_type": 42
+    }
+  ],
+  "status": "passed"
+}

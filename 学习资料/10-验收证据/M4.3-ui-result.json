@@ -1,0 +1,50 @@
+{
+  "run_at": "2026-10-19T10:07:55.364308+00:00",
+  "database": "fulfillment_m4_reconcile_20261019_175618",
+  "checks": [
+    {
+      "name": "browser created new clean report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one real browser review persisted",
+      "passed": true,
+      "detail": [
+        [
+          2,
+          3,
+          3,
+          1,
+          "浏览器验收：已核实为独立测试库注入，原报告保留，库存事实已在测试恢复。"
+        ]
+      ]
+    },
+    {
+      "name": "browser review acknowledgement saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original expected actual unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical dirty report remains two differences",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all isolated business facts unchanged by browser actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all main business facts unchanged during isolated UI checks",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "result": "passed"
+}

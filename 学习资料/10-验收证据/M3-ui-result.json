@@ -1,0 +1,94 @@
+{
+  "run_at": "2026-10-18T16:27:11.787247+00:00",
+  "checks": [
+    {
+      "name": "browser order is 10 = 4 shipped + 6 cancelled",
+      "passed": true,
+      "detail": [
+        "10.000000",
+        "0.000000",
+        "0.000000",
+        "4.000000",
+        "6.000000",
+        "PARTIALLY_CLOSED"
+      ]
+    },
+    {
+      "name": "browser final physical and reserved stock",
+      "passed": true,
+      "detail": [
+        [
+          50,
+          "2.000000",
+          "0.000000"
+        ],
+        [
+          51,
+          "8.000000",
+          "0.000000"
+        ]
+      ]
+    },
+    {
+      "name": "one browser shipment delivered",
+      "passed": true,
+      "detail": [
+        [
+          21,
+          "SHP-831ad773-93db-443c-b233-fd84a0fce805",
+          115,
+          "DELIVERED"
+        ]
+      ]
+    },
+    {
+      "name": "browser ERP out approved once for four",
+      "passed": true,
+      "detail": [
+        20,
+        "4.000000"
+      ]
+    },
+    {
+      "name": "one physical deduction from browser action",
+      "passed": true,
+      "detail": [
+        [
+          "-4.000000"
+        ]
+      ]
+    },
+    {
+      "name": "browser cancellation facts retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "browser actual HTTP callbacks persisted",
+      "passed": true,
+      "detail": [
+        [
+          "IN_TRANSIT",
+          "RECORDED_IN_TRANSIT"
+        ],
+        [
+          "DELIVERED",
+          "DELIVERED"
+        ]
+      ]
+    }
+  ],
+  "fixture": "M3-ui-fixture.json",
+  "screenshot_desktop": "M3-ui-desktop.jpg",
+  "screenshot_mobile": "M3-ui-mobile.jpg",
+  "desktop_css_viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "mobile_observed_css_viewport": {
+    "width": 355,
+    "height": 767
+  },
+  "browser_viewport_override_restored": true,
+  "result": "passed"
+}

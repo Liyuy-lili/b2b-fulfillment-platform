@@ -1,0 +1,49 @@
+{
+  "run_at": "2026-10-20T01:17:46.737634+00:00",
+  "database": "fulfillment_m7_release_20261020_091746",
+  "redis_database": 9,
+  "vhost": "fulfillment_m7_release_20261020_091746",
+  "release_directory": "C:\\Users\\Lenovo\\.cache\\fulfillment-m0\\m7-clean-room\\release 20261020_091746",
+  "package_directory": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\releases\\fulfillment-20261020-091612",
+  "checks": [
+    {
+      "name": "source bundle is final M6 backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test application ports free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all source package hashes verified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package carries no node_modules target or live config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preflight capacity for fresh copy and ZIP",
+      "passed": true,
+      "detail": {
+        "bytes": 184551770,
+        "files": 392,
+        "free_bytes": 328200830976
+      }
+    },
+    {
+      "name": "fresh clean-room destination outside source",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "commands": [],
+  "boundary": "Fresh application directory and schema on the same Windows host; existing Java/Node/MySQL/Redis/RabbitMQ services reused.",
+  "main_before_digest": "13d5143633f63b322c274d47d54dfc627007e3432434badc7fd559b381928e29",
+  "result": "failed",
+  "error": "fresh clean-room destination outside source: None"
+}

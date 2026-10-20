@@ -1,0 +1,4 @@
+Applied backend/sql/mysql/ruoyi-vue-pro.sql
+Applied deploy/sql/010-erp.sql
+Applied deploy/sql/020-local-baseline.sql
+Initialized fulfillment_m4_reconcile_20261019_175618. Existing databases were not changed.

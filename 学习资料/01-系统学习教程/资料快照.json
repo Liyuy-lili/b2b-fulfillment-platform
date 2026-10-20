@@ -1,0 +1,1850 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "M0-M7 final V8; documentation only; no business tests rerun",
+  "source_files": [
+    {
+      "path": "../学习资料/00-项目总学习手册.md",
+      "sha256": "3f722a53f4ae723d01e0e68d480a768a64fa0af4d512539d38b0312f4e7513d6"
+    },
+    {
+      "path": "../学习资料/09-项目规范与进度/AI_IMPLEMENTATION_SPEC.md",
+      "sha256": "8ec7aa16bc5d2a6d9ace1e1ad2fe25fc494e4d90b2ec5aaa226233e4e2021f11"
+    },
+    {
+      "path": "../学习资料/09-项目规范与进度/PROJECT_STATUS.md",
+      "sha256": "9877a2fca2fcc4125aac23b05f29b2d18b1ca8032fbf07acd58bd24b5d55355f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-clean-smoke.json",
+      "sha256": "04160fbdc5f882b80561972225112ba9e69473b5400901501b8fde4d4e3e46c5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-import.json",
+      "sha256": "8e4d6c767480a381598d32c033e540540354c8e675ef9a36d180eb7cde37a409"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-restart.json",
+      "sha256": "4637d9b255338a67f9ee375de06911ca7f90ad70a84884ee928536348ad85844"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-sequence-repair.json",
+      "sha256": "0929c60df3065b4d8fb892b96906fd8622c6a8042a0587b3ae2f4e7309297415"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-smoke.json",
+      "sha256": "f6fb245036606259f78e854b778495be5e67428d55c059c3875d41d04c4a9c79"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-ui-draft-stock.json",
+      "sha256": "a17bff0d526f4a45f76a995cabc97e3aa05c5b00388231317bbf60e8f4020dc4"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M0-ui-result.json",
+      "sha256": "6f5726b90cb103ab98d9b4a3281205460e76026629a738ffb79310cd2a412036"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-acceptance.json",
+      "sha256": "ddd5a8ba63f1d0c526bcbdc30f2844acd818db87384a939ec7109d10b80c0fd5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-build-summary.json",
+      "sha256": "9d135b926f144bcb12ba21ec6ce689911edddfc3948ebd76fbe74ec025079f51"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-changes.json",
+      "sha256": "90baad54bfd7bc92b63df2686a21c69e7dbde0ccf1d5350c9455d5cd4262637e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-clean-acceptance.json",
+      "sha256": "2fb436ccb93f55247a1bf2562324d65cb749f00240cc9b08f7b82c1250c15ae1"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-final-qa.json",
+      "sha256": "428102f300c2a9b528d5f212343eab7ad9b5317db0f2ade1e767f8c0259006d1"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-locking.json",
+      "sha256": "5439e423b3c118e4c5721bd9a9864c08d9de74f1adf12be84a5ac87fe3f03560"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-migration.json",
+      "sha256": "6cc976a9e9ced6148f900ac1e6a2fc87b0944c5d6bb0d2b4978ece4defb58444"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-runtime.json",
+      "sha256": "dd89d08c08e8e97fe6f82f4d70cf310e8434eacac5f3e4211d4a27beecc7e282"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-ui-fixture.json",
+      "sha256": "75a44a1781b5ab0142d67077e8970e167e27936ec4fac09dce2fb6b1befdb070"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M1-ui-result.json",
+      "sha256": "2b36b2156c4bfa9341da1c32868a8226242ae404cb6bfd6626c25500b0b4cecd"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-acceptance.json",
+      "sha256": "d777cd4dd56fac8156d82d3bdda29318b9f9f3a8b4577449d6927f066e3cbfcf"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-build-summary.json",
+      "sha256": "aa7e2471951134f9c167ca31ca717601bdecaa0be843ecc70f1e1c4be78de7b5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-changes.json",
+      "sha256": "e8c9579c3d9d34d9cccf95eebbd5bb3b50cecdc3033e75bcf5e0de7760cf21cb"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-clean-M1-regression.json",
+      "sha256": "6565eae75c8ac18a2d9290cc5deb4ab7f3f7f3f29b7b6b81303c9fa0b25fd250"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-clean-smoke.json",
+      "sha256": "4ad92ba31271cb4db5aab5c1c882a53380c62f4126d2d7ca7072f93b48f20248"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-ERP-regression.json",
+      "sha256": "9b1bd1f3ed1d43ba4a2d4826f96f110878b979d09af2c5185ad0f71c9d4f04fc"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-final-qa.json",
+      "sha256": "1255de7be011df5db8c0e6116bd539f3e077f5f9951bce50094bc20866220276"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-fresh-install.json",
+      "sha256": "6f94c4fc143973a1de60e8c26c3a8b24800543f0054e64c0c03bde061bcfcde0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-legacy-inventory.json",
+      "sha256": "b298527699a3c67047a223babf7fefbeb29b7d2e3580f9174e2d67f40d983c02"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-M1-locking-regression.json",
+      "sha256": "0ff70b0a6f2988fd9cdc6a04ddf8f88920cb713d53249af77c7b91f305d5324d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-M1-regression.json",
+      "sha256": "8f76809c1777c3fca158440b2563a7c47c6128bfa8f089b608bc8219f5315942"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-migration.json",
+      "sha256": "04ce7dd5d80e80d4713048d9ef9fdfe6467283fc7318cd83851b5978035363f8"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-permissions.json",
+      "sha256": "da525fe19c549a6a2a9099b6eaa8b323485aa6abcf7aae690e30c446d61f5fca"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-replay-after-restart.json",
+      "sha256": "3b9c204f1556b7d3a741d3b4b8c20193e5ab03662f217c81da82e757ca5df342"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-restart.json",
+      "sha256": "e36e9b7f4ea1a7b992427fece292a83c6d1efe227e0627f8f4291685b60e6ab5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-runtime.json",
+      "sha256": "d1b102852a7811f88091852199172744b60f40e8f4891d54ef0fff98b542adf3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-stock-writers.json",
+      "sha256": "f1713ac3d98fd7023bd38cd5d612ba7c935257458e67b443602ad6ed2a81b5b8"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M2-two-instance.json",
+      "sha256": "4fb27e2e687481996f073103c2c2358417c8e22869ff88853516c92bbf39d5ba"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-acceptance.json",
+      "sha256": "cfd0d05b283907f7b336e7149088a0d634e0a41b3703423b2ad35f51303d5f37"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-build-summary.json",
+      "sha256": "63710ee2988e2c43d831a848c833b2587136437aec7ed517e370e8af6c307f59"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-changes.json",
+      "sha256": "f8d10dae65c1cea4e96b2cec3d6b4a38926892a6aed77a1381288e6071433333"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-clean-M1-regression.json",
+      "sha256": "74d010e73d14dcfa556ec6bec80b1a20698a69a1a955013c0f86e1be4180814d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-clean-smoke.json",
+      "sha256": "b0c815b3f6e40897f89fdd4469ee4ea3bca249448a82b6ea3a7d4f8d621f5451"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-erp-approval-failure.json",
+      "sha256": "89060639a298b5dd8b73e89054b4793cefe426f00bc79014bfbe81cef3d688d1"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-erp-failure-instances.json",
+      "sha256": "2713eb58120425bec51a48dd4b887dae18b46eef475c46aaf6bda8851ccda030"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-ERP-regression.json",
+      "sha256": "4bbf190a7cc1ae63a8c7e89d6b4f49b8ce6c2d45fdd4e6c8b98392957025a536"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-final-qa.json",
+      "sha256": "03afde219025e1ed1d8b7f10d68419d8f6af307e143610a9f2c47ddff0cebe23"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-fresh-install.json",
+      "sha256": "50110d201df3b763bfca032e3d021c9d1df79eecaa33fece0a91e11043485ff6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-frontend-checks.json",
+      "sha256": "f3ab228d643f5326423e122bcb5cdd619ec83ec605f54f1d7842e0b158b5e02b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-instances.json",
+      "sha256": "9e5e3ec0dfbeaae2eb8e7ea8790ebf96cd809901ae0ce4570e6629a37c4626d4"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-M1-locking-regression.json",
+      "sha256": "75280fa89148a6db0dceb0795d945c59ea6a70db0983cfc2d9614d6686a8fbaf"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-M1-regression.json",
+      "sha256": "f36d0369447d8872df3f5e576d6f1ee076eb501c63e61f45a51444323f268aca"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-M2-core-regression.json",
+      "sha256": "6edef246de4fdb6bd125697130ba040792dd4dda8f05e3a99345fb55885c850a"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-M2-legacy-regression.json",
+      "sha256": "a63439e33a0d965886c33d467e7baeff24582e7c22f5d56e2adb01f39b5dbc84"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-M2-permissions-regression.json",
+      "sha256": "458ede46997408eeb6396a86aec5e6e7150673c3f2f54af19b5fc9d87ef405e9"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-migration.json",
+      "sha256": "e22095bd6e79c6cc2148dbc9f5e4daccebe89d215f458d8e944fa451d4f6a31e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-permissions.json",
+      "sha256": "fa12f6276fe7d258782b84e4e586897a6851119ab42d08bf87c22151932ed828"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-regression-summary.json",
+      "sha256": "04fa3e9797726ff12c52e0d5fe6de02bc7c70dc2840f3b5041ea59f732281597"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-replay-after-restart.json",
+      "sha256": "495d13162eacfb20eaf85e68c3ebaae6bcb60fd61e0b93c6982cbfc9f1cb0f6c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-restart.json",
+      "sha256": "f54dad7f09917f70cf9b232e8fe3d1e2ad4881dd4ef6eb3eacf3b49b6965fba5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-runtime.json",
+      "sha256": "fb4dad6dd0a6a942012fc0915c19ef3c16e73cab370ebdfb973a45a4e081d5f3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-ui-fixture.json",
+      "sha256": "a3936417dc0f7bbea6bd7c9b10c9e7a8fc9ed37ccd18ab09cfb0744705d89086"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M3-ui-result.json",
+      "sha256": "02772cc6e140f26150b9d304db14abc5d95f4b38abe84de68ad0d62ed2ebefa3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-build.json",
+      "sha256": "4ad51db3174ce2a841245fb5ed6a3a0f045925ddf9e879b238bd6244703fbdef"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-changes.json",
+      "sha256": "72f170c12845465663cca71318849aebba415c5598278504515f7e08c71180a4"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-clean-binding.json",
+      "sha256": "cc55bb6ed73b67ae2a027d3eed86e0307c96048c116e2e7dd98cb86cf3edcbbd"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-expiry-acceptance.json",
+      "sha256": "483aa78b79cb5ddd96e5165031954eda51f53f4b501b8670a52ab9f5e74e147d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-final-qa.json",
+      "sha256": "2516d75e440d15772378790c4b7f480eb9d2d1725ada7e07ddddcb30f52bd343"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-M3-instances.json",
+      "sha256": "e639cdcb8d42a8e822f1e1b5ffff8ef810d6e273db57a8cfe6736e1936b2be9a"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-M3-regression.json",
+      "sha256": "c7f5e3cb9ccc4c46484c4e3cdbc4b2d9e44d937eb72b0f6ac8e904ab2a6e32e0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-main-activation.json",
+      "sha256": "cc6cad610e691b36d2e09a9ea7463761c13a0513c2998a203c2419255d1bb6a4"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-restart.json",
+      "sha256": "5ee7d4c8210a02c9d5ab26ba888b2f4e782577ae1092cec7a009b6d61be526da"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.1-runtime.json",
+      "sha256": "6dffb62381dfc5e5eed1405c003a35d6676f53f9e6cb71bb55712855d26793e6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-build.json",
+      "sha256": "b178d5cc2ffcb7bf8c6f47caea7762dfedb24307139161be09c7619614914b99"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-changes.json",
+      "sha256": "7205ca2cb7ee22abf5d32872fbb58843430e24001b82f2d7e2c21ecefd11d271"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-clean-binding.json",
+      "sha256": "f7b0720a07c457f03332f9d394816d6c9b61316f1039394abb3b57d34225d5ba"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-constraints.json",
+      "sha256": "81f03dac0d566313217278bf0c6d52d0e8e103cbd2e6ab051f2dfb4da792649c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-detector.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-ERP-regression.json",
+      "sha256": "b50b7fffdd3131f959d3524f5a1669f7ecc950a63457cf997464b748ce825691"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-final-api.json",
+      "sha256": "f42e6596bd6bfa089e3bdc0ecefdb7961e8800e2cc9d00b2df9a98e9b11554e5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-final-qa.json",
+      "sha256": "abb2eb3c683920a1c507bbd5f56db4a912003ebe36901aa0e687128ea968324b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-frontend.json",
+      "sha256": "62b7591f99b7e86bb504ccba13fb8ece849195361a482ef80dc62b0f507695d7"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-replay-after-restart.json",
+      "sha256": "02627fd1672b221d5b7c10ee5092b39cfedab312447e0842cc4343f7e55268e5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-restart.json",
+      "sha256": "0d9193348770fd2302b3e44004358483791b5631bd238e6f4414cc2487b7d905"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-return-acceptance.json",
+      "sha256": "7cdc64b392e1b125313ea3e2ad38cc1106a797d10977bd9e1a8d1835fc6e41fd"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-runtime.json",
+      "sha256": "13788f2a6ff2c312eed18eb5e308479b2c9a02256aa6f43d13a66f7fad5d4887"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-ui-fixture.json",
+      "sha256": "0c0998f831a482510aafa4a41f22e2f36a703509103ae17fc1ae90e909e4a29b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-ui-layout.json",
+      "sha256": "2fe63fce263d2a28a968cf777b772f5275936331d74e423a4ac18b434037e7d6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-ui-result.json",
+      "sha256": "51e4f049117421e738533e84e1f5f6240d3ba8a7b22210d590dd4d309705c39e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.2-upgrade.json",
+      "sha256": "70c1e8fed100dc3e7fe42e2884ba94abc24c477c421975ab9af25bc155027f51"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-build.json",
+      "sha256": "c9b4fd97aae9a999e8e0d452bdcbc61a30b8083c73cb3df379b39c46a3888f91"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-changes.json",
+      "sha256": "0de3daf709d2f73593c9025e227968ac75c82407a923276bcecd44a99ffb0c9b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-clean-binding.json",
+      "sha256": "561fae8fac49a92035b1ef779f7908050e1ba57c705864df5156fc868582e973"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-constraints.json",
+      "sha256": "f40013306b024bf2713877128e058170eaa40f244dcdd66106cc072ca881d9fc"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-detector.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-ERP-regression.json",
+      "sha256": "987a3c82ef6be05299f67d8cc3465689960b4fb7045a4d05543ad1110cd8f421"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-final-qa.json",
+      "sha256": "25d1cff79a149fd66f233da60b87aaa3a21c5ab074b20f1b6ce4760f2a83df1e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-frontend.json",
+      "sha256": "003a03ba7d3c42eef6fa8aed57f1b79470dd5c2244c636efc87b4941786256a1"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-initial-contract-failure.json",
+      "sha256": "4ced7e44cedff8b7877586c4019053f0467a3278a852cf82023eab0e2033db00"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-initial-probe-failure.json",
+      "sha256": "6eac24e8883eb2500407086376678e8b2df8f71b231efc5ce935c3c1a4442be8"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-reconcile-acceptance.json",
+      "sha256": "d9ef572849df447ebffe72541336cbaf3312135530ac2c271d8e9bbffacd69b6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-replay-after-restart.json",
+      "sha256": "433c140910dc487e2b26ea00638cc515a9bf19a1bacee4772f4944bca1504d5f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-restart.json",
+      "sha256": "ad345a4b1de5d644c165f6891ff3c5e04a7920c57580594fd3703f58386fb950"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-runtime.json",
+      "sha256": "1bd2178f54df1a8c34665cf2521811bc235e7fa4502f6913e151f43aeed4023b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-ui-layout.json",
+      "sha256": "70b91c4304a101bd9a2bf0b2d818808da2e4257e864012d688951ede6e4984ea"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-ui-result.json",
+      "sha256": "5fa6a31104800d9a92828745f06416d2fb3cb1791241266d6dc109e9e760c54e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M4.3-upgrade.json",
+      "sha256": "9b06bc4a0beb6980cd7a3f06b508eb9a89ce62b5b94e79af8f1fe186d8c9f4cf"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-acceptance.json",
+      "sha256": "32916d42e719f6f39fbecd6311d8d6175b85779ee78b5e5734f83c2798d45307"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-browser-SQL.json",
+      "sha256": "55ae4f0cbac2d9c8fb5390f61989f1f171f7481beae1ff3d1786699f179d045c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-build.json",
+      "sha256": "26b101d7fb6a0ef44f604abe65fba963eebb976e755ae3d0ee0d3a3970403245"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-changes.json",
+      "sha256": "82fc275dd32cd88823de77586637f3dfd6ae3db6d8ddb8eca52b047e676ae15c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-constraints-initial.json",
+      "sha256": "2b20151ce7c24e80c62c6d4b3aeff4a71f52e4016002dbf73d4b0f1709c6b943"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-constraints.json",
+      "sha256": "e3c64322823f342cc44c01059fb7b84728dbefb4741203be2a68be2f7bc43ec5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-dependencies.json",
+      "sha256": "89ca69f5c5871a6d873d64321e1e48b3bbffb72a4753c29564c6d7618f5af838"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-ERP-regression.json",
+      "sha256": "80bff1916454ac20b610aa49069b976566b5c81cbb0fa87e631250a31e3a6e92"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-failed-fulfillment_m5_20261019_200422.json",
+      "sha256": "6e950c20c0c26d55ee091e00e5f18bd3cd5dc82d7a17bff2e3628afd4a5248f7"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-final-qa.json",
+      "sha256": "ef1657189aa1b112d6df1455d378f2266c9c7cc42aedcf004ac106a9785ed42c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-frontend.json",
+      "sha256": "29d7d5067d2ce1ab9370c16ec58a9c9f2c28a2556a13d6d1789dc5aa26d8919f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-M1-regression.json",
+      "sha256": "8209045ce579d27e1416cdb5e9e536cab7fa5f20ee40aa9ff88837482778b1f0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-main-demo.json",
+      "sha256": "9f8ea1acd51c743287ac8a519d469d1b6163d4f015ced6f05f62408bb3eba684"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-replay-after-restart.json",
+      "sha256": "f3e7f3f8201f0cb79b793f58343191f52f39ea0849a0a3ea1efd01c70fba697a"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-restart.json",
+      "sha256": "d59cdf1297b8c8877e7095d22ddd5b46a0ed31c8d71dfed246b68ba9a5a3d9f0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-runtime.json",
+      "sha256": "0053a66d53940039c062da4cf0232e2905220679610144cbc6290cd2982ae1bc"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-supplement-initial-2.json",
+      "sha256": "54e60ece44cc36297259708673ee35afa0c422169e30447e5107d40ba07efa3e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-supplement-initial.json",
+      "sha256": "1182577fc50547fb3ba43d603319c3d59dd1f8fd40368b7ce2a5a6521510ab1c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-supplement-resume-initial.json",
+      "sha256": "546bda7a5e48e7cf21e78dff1d56e6b15808843f196196db280b7557e9837eb9"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-supplement.json",
+      "sha256": "575eb4a44a40554b03e91894668e6d8fa6ca88a52f25378fbf506db98db56139"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-ui-detect.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-ui-layout.json",
+      "sha256": "e1b7a1ce8e78d5e5831f3cd73e4c253ac7c1cc4a72f660606a980294f6049517"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M5-upgrade.json",
+      "sha256": "fe3d81e2c0b1cb471bbdb881e5c2c13e3d3e031c500f2f4fcc3017fce31f30c0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-acceptance.json",
+      "sha256": "bc1f36c9830100a0a41cb82b66c7bc39c42c9b2493dcd287b9e11eea6f6a7482"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-browser-SQL.json",
+      "sha256": "5f9beaf32acfd7c25350c825ad6b39d9f32eccb193823bfa040658581a019def"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-build.json",
+      "sha256": "617712fc73e0e3a2e2bf5c05307e87bafafecd6ad3d53e54acfc2709b0dadb52"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-changes.json",
+      "sha256": "78c90b043555016cb5c07af030a7569ad9dec6a352efdc4a704b0d8e49b76afd"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-constraints.json",
+      "sha256": "375d490c78c6d5d67d726015ab1e91361c8cef9552123b2ff557ee6cd4fc8e73"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-ERP-regression.json",
+      "sha256": "33f84fa49ee7f33a8a3fdbc64bb8f85bc919d0ab2889cd242b6d78cee8919194"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-failed-M6C97ae036f-result.json",
+      "sha256": "f592e32486b9a6b1ea77a82a91afa84734bab5ab520240909676bbdcf07ec464"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-final-qa.json",
+      "sha256": "7e989f1c1183e7cf002dd69cf8a8da26be381fe4a1627a7451ae430698a2c79d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-frontend-initial-failed.json",
+      "sha256": "82f92b3ee2417e7050bdd49336e8013ca405c1947abd38e75c4552e3d6823031"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-frontend.json",
+      "sha256": "26a861503f1de0a21c7edb941e361134a001996c108f7414081a0ba2000fa075"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-M1-regression.json",
+      "sha256": "91fbd553e858048440711fc84ea7256903ba57fb8e72c29fbf0bf2f27cfd0334"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-main-demo.json",
+      "sha256": "43b9b2e3daf5e03310c238c64b6a3531f4f955d4dc48ac25e9b3ef7fcacc5ac3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-replay-after-restart.json",
+      "sha256": "c448a9d874e3c07f6200c4d841e0ae5c69c4be456300a2ed73fc65dcfceb4887"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-restart.json",
+      "sha256": "90ad14f53e388995f8ad60c3d6ca46e6607bc5df39d6a850b13bed46d5b7b6f3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-runtime-initial-actuator-404.json",
+      "sha256": "8792eb714e27b8a78ac2ce07051b9761e11c2a33a13ce3e1bf7b64a1cd1dc203"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-runtime.json",
+      "sha256": "90c666160f715e364b923f9c5719b7542e38ab76f7c074bc1c462acb5585bf00"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-supplement.json",
+      "sha256": "0c4d94ca28f0555ed8609f3f564202223b9663312c887348ef5df1778d8aa0ac"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-ui-detect.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-ui-layout.json",
+      "sha256": "157c3e396c300478b6feb918fc8cd4f06880cc94e39a0bbca3b6a2b02f9e0a34"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-upgrade-guard-before-core.json",
+      "sha256": "0c2ed97f33f9d15cb45c2fe9fde36c603bbcc8a34e62975477519170d70e5f91"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6-upgrade.json",
+      "sha256": "f80bc6f4b257af693d8ad077a8c3bf21298e52c2461a5cb9f53de3e654616a3f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6.1-before-reader-fix-passed.json",
+      "sha256": "17eaa19b1b24d5fff12f5897923c15290ec9f4a393bcb49b9c72b844a3c280c3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6.1-foundation-initial-passed.json",
+      "sha256": "9d909e05e23dda5d332345192c6e6610b74c3742abcb1d594215cac343178c74"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M6.1-foundation.json",
+      "sha256": "2126debb722a37739fc671cf6c9f22c5c8786fe350329ceabe3f3b18a0bf9a48"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-build.json",
+      "sha256": "58d0b110f041218f56d33ef54e87c0d6b84befabdd7f40fc54a1c05b5d7f9465"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-changes.json",
+      "sha256": "1f5648888a90355f95315eed39a65c200b8fa66034685e9d9c21fe0d044a43e8"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-evidence-exception.json",
+      "sha256": "672123500a566392fe7fd95f8a54994128e0604baf0042279aadcc52725798c2"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-browser.json",
+      "sha256": "a7e12ab74d0f151ea86c3da260dd5931a6cf5f955171e792d78c2bcce631ca34"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-closeout.json",
+      "sha256": "264f2209284f1c9a0d9e46e802e0f1a49242ac3833705ccc463be4d742f5187b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-demo.json",
+      "sha256": "05f33d57ec4a99f56f9e7250ef5425fa0d2836e0e006f50a5a861ad6cea5874b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-qa-failed-20261020_135407.json",
+      "sha256": "19bdc0481a6ddbfc0eb53e5d9e8dfe4d5260b6d2b85f9570bbafeb93df60fe56"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-qa.json",
+      "sha256": "3a359e843ed717959e397f9b8667f15516b1a23559dfb0e775f13520ac0d7fab"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-final-release.json",
+      "sha256": "7a19e655fb81677dd1856c440892b58c51ef8dfc227070eab282ed669e46cdee"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-AllocationPlannerTest.xml",
+      "sha256": "85d7fb94216f052327498443ead9c9bbeacca8be39d235dd6c34c74b31e63bff"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-DatabaseCommandRetryTest.xml",
+      "sha256": "c54944b001395c1080ad477b86b87b5dfe7028c933d9af83cd2eeda29004bb5c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-FulExpiryScannerTest.xml",
+      "sha256": "ebd9c3fb26f932ded15ad77f494efd3f84a43008bc89ccb800b78a31ada0a0ef"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-FulfillmentEventTest.xml",
+      "sha256": "5e9f18965cbcb137669c7a094f887c5ebb224052bba7bf863901c8b12d508670"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-ImportCsvTest.xml",
+      "sha256": "b46ad182691e931c849f9b26e55316f32213a09ca6c6e61e9aa9c8c0ee54fa27"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-LogisticsSignatureTest.xml",
+      "sha256": "42045cce1b172e4879551216943b0caddf80ea053a0867e28e7f90091214fe5a"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-OrderStatusCalculatorTest.xml",
+      "sha256": "bc2c5275b324b27046f9d64832d43c9d1bc56d85e950615aaf56ec3d8a427476"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-junit-ReconcileEngineTest.xml",
+      "sha256": "7f2f24b8534ee29a802544671bc9891b7c35e6f6767f9c0a3ec964d0124626c9"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-main-browser.json",
+      "sha256": "d03a221c833b1af26968ebf9ff4f8ad727c81c2eafab47e87ffb4eed48a5fce0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-main-upgrade.json",
+      "sha256": "eaa81cc6dfbbc61c041327c3d3600ed91062a3bf9ad9284a3279a0fde2e410a7"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-replay-after-restart.json",
+      "sha256": "8d0b9c80d43de8117d55d70ca2741784d1857c8018d81c0eef0c5593b996a8ae"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-restart-adapter.json",
+      "sha256": "36f4b0fd4a535b08d0c6462918a1c2eb2d908b764394a8c932903f51383fe38e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-restart.json",
+      "sha256": "498597704d8e534fcc430604f715d76a74e84bed4298bdb6009cc68c4f902098"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-runtime-pipeline.json",
+      "sha256": "1b7de2c1828f7d767fa60c49c2d889d1aceaaa6adfe56c56a698db4b75fafe6f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7-source-diff.json",
+      "sha256": "8b99b8d42dd28a91aeaf71a0e3981824e28e82a7d48a65825722e39b5bc33e0e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-browser.json",
+      "sha256": "948bde53f115e90a2453d6b9c2bba54caed44fe4f8e73041ec94b1448a6a3cbd"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-changes.json",
+      "sha256": "c0b6f23cdc6b61b43a6e779bc7accb9c4924e49c1450dcaca95accb059e16535"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-closeout.json",
+      "sha256": "cb863150f90d1581e00cf31675b92452db614776499afa19256dd921b3bb7ce8"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-demo.json",
+      "sha256": "b3294fcd282717deebbb71beae2d029f4c2e93155a7944a85c92c6e92faa4117"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-failed-20261020_091746.json",
+      "sha256": "4b15592406efcb42f6f82e6ab58ac1c03bb89cc75ea34869cf482861d37d08fe"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-failed-20261020_091826.json",
+      "sha256": "21455817e2728b60afb71ff9f51051de52cac2285c7a9006d6ff9e30866386ad"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-failed-20261020_092029.json",
+      "sha256": "4994bae9d4a93e0df133d852fdc2b93e166cc613d8d3952c92cc03c339c4b952"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-failed-20261020_092259.json",
+      "sha256": "58416d68e11045e05acdaa5e04b6fa75750d9a9c096943bf4369b17d7c99aaaf"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-final-qa.json",
+      "sha256": "b14983c53a3172ed0cfe73f57fa7117a09a5ff992e0097ac28a1272dc823711e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-release.json",
+      "sha256": "ba31b9578bb176066379b7817409d804bc305830675ac49ea85080608fd09d14"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.1-runtime.json",
+      "sha256": "42d3a5a9473df6699a124ea43758d7f6cfe7f5452e123ba341c914100dd7a08f"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-binding-original-labels.json",
+      "sha256": "cc12bb40bed599af3455d706f13871717296a850f3bf60857e7a7d3ff3651780"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-binding.json",
+      "sha256": "2b019decbe011d1308d3886b88bce4e00b209fcd8e82150c0062c891dbd704a3"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-erp-fault-original-labels.json",
+      "sha256": "5c14ac06a124d32a5f290e8a65c67e244429fd8240e05955cd6a12a2c3171fe7"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-erp-fault.json",
+      "sha256": "866ef629766db30ce973dc11f60476ecb8e31c4d37bd5f2d91c7fb6a8f576e8c"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-ERP-original-labels.json",
+      "sha256": "0e134c4d94e4ead97fb2af3fc221eb4ebc0739afaccac2fd7ac238ab99fbe7ff"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-ERP.json",
+      "sha256": "ebf52f78b092d94009745165eec51979448476acbd10615fc0b00b3bf297e30d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-failed-20261020_093955.json",
+      "sha256": "8caa84de256b2095c82e787e2ab136adc6fa9f1d32063521a37f6f90666e8677"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-legacy-original-labels.json",
+      "sha256": "1628782ded388d75e5fc8be65623e4df7b233f262a3700c9dd49649d81b6ffe0"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-legacy.json",
+      "sha256": "c928d1b0262cf35ce3da0db17cf3d83ab95cc982c25485e8cdb06d0b3b7fcefe"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m2-original-labels.json",
+      "sha256": "60a339ac9f7a7b17b0339319d34c53a9151078253209283448370cc638cccc36"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m2.json",
+      "sha256": "6e4bb745fbb98f672dca485a63e9d02b5d3a81ee74cb025681429416fbb736ea"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m3-original-labels.json",
+      "sha256": "61ce26ed51b1a7b92673660494750f0f73e427d6ec4a39b83fbe679df3e94906"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m3-permissions-original-labels.json",
+      "sha256": "55b6b7a0e43e465f19d37b739cc6da03695a9263ede0424e6a2938c254e24c74"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m3-permissions.json",
+      "sha256": "71f49855b78938f6d13433c85953cd882837adee2eb5e053ebc76becd6dc4847"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-m3.json",
+      "sha256": "fc925003d51159e89eb5ec69edbbf70985d09df29177e4716cc7239c36b8f46b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-original-meta.json",
+      "sha256": "694a6506ddb5912def6921cf960376d964fedffb191598d1080fbd19fcd65db5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-core-run.json",
+      "sha256": "637c8e1de08fc2cf8bb153cc7d8d0e244eb9ace718e219009b562c2f7e2dfac6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-expiry-binding.json",
+      "sha256": "bb318195e8f729984284f210a0daaaaf3e568e0f63d65172273832719995679d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-expiry-original-labels.json",
+      "sha256": "54bb3765953aeea456c6c9917a2fddb814094acd509b46386d8e15011c30fdd6"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-expiry-original-meta.json",
+      "sha256": "5f6a0b88a410434dacb591d42ffc9ec453014e96195a8dfd9e37ee40a57d1b6b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-expiry-run.json",
+      "sha256": "0fca1b5d4c24b95086c4bb39dd578e719c66ed9f011bf0292d78f6c5397d0664"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-expiry.json",
+      "sha256": "0b5a257956d32db0d3e564568724713864a646429f31995d4ba9bd4ec64b588d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-file-failed-20261020_104201.json",
+      "sha256": "c42d10b436c3ddb1a047fab1012e8b4436b3cb8b8f8ee81d14f15e777bf7c297"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-file-original-meta.json",
+      "sha256": "56abdce97d28e087da044cd5e099a3e238f680d2ca5f203499bdd83003208bf7"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-file-partial-20261020_104201-m6_acceptance.json",
+      "sha256": "765fac2069445f9f7bc2c27ca193e33ac629c836e0fbae76281fec1d733abf80"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-file-run.json",
+      "sha256": "e31f26931135d73955208ea2cf15a3bcdba42059f2d363b1da16a23cbf627cb1"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-file.json",
+      "sha256": "2c4dd15a681ae04c02b3aa5e1138ee6698dcc0646d368652de7f95e9ce7c5825"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-filefoundation-original-meta.json",
+      "sha256": "0776c4671a5a5e091730bba0b3a59721ac581b1732a38c6bc0001fd2dad3896b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-filefoundation-run.json",
+      "sha256": "520344be07c98569365d0dd6d73d9e739297b168fe18d05c2e8eee263da8a301"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-filefoundation.json",
+      "sha256": "0f31ea0c8207e12c9ded143249ce3a502cd243329b0115a4aed1578774205687"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-matrix.json",
+      "sha256": "eb46bbf574e0caeca9faed5053155884128da6f6eb6b92bd597678d584be73f4"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-message-failed-20261020_101220.json",
+      "sha256": "f139d02abb0d6826aa21d39a0fee343020f3934d68f3a5476446624e63a94dcb"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-message-original-meta.json",
+      "sha256": "8bdb142d2eb01d9c720c1f9b554e2ef5424fad53d17d97578274415fbe5b3cec"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-message-run.json",
+      "sha256": "74260b8e1a8873b187d010f6a2d996a1829a0f40aba5a834d7e397cc65151b1e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-message.json",
+      "sha256": "d7c8f48f3c4c1510ed0b4a92dcca8ebf4fa146c6a659abdc7afe3087044cae5e"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-reconcile-original-meta.json",
+      "sha256": "a034b788027691bf76cb2031da96a051d76e1771d517934bd062c609884afb16"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-reconcile-run.json",
+      "sha256": "39bfbe7fc4fcb2dccba9bc991e2446cefd42d9d8d860259c82f392b67010ee47"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-reconcile.json",
+      "sha256": "11d919dc4e97f034bfe6d9fecdc486b37910e6e78d46107bb0d2cc7d83c6ac80"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-returns-binding.json",
+      "sha256": "7acdeed21b090d051bf6eeea7c030b474d270ae6a7a5cc444903840b36a0077b"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-returns-original-meta.json",
+      "sha256": "5a85c1a777c0d19023b7a37a27e654ca7f1c5c9dea10f7d3c8a639d580637dce"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-returns-run.json",
+      "sha256": "d83ae6295dec5fa4cc4cce8242cdce865f80d43564c4c921208ad50e5494b735"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-returns.json",
+      "sha256": "8ab2dcb49dcf49e947d6116b6073b0cbae51609f4b662cd9fed897e5703384be"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.2-sequence-repair.json",
+      "sha256": "072183c286c1adb887a315ac89721fbc85d419700baf0f44c0b56b0960faf22d"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-query-prepare.json",
+      "sha256": "e4cbfba1be71f5b7d29eeaf4935a07c821af5b8aa6e7c5d5086434dfcc6d7c1a"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-query-seed.json",
+      "sha256": "2d6f43003cb2d1dc8beb0047336cd0e74784e1dbd719d9dddeab5488a25cb6b5"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-query.json",
+      "sha256": "6c4a900201e5a3016d18169dc329318c29094db5dc28958ac6f6981f429f2403"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-stock-prepare.json",
+      "sha256": "5202c1f9891c31a0712d575d6e1d20bea580a68b2196ffe0c2e61ed9680ba7ea"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-stock.json",
+      "sha256": "1696f35070e1c63effc2a1d3a86ab6d1937ec6dfe339a38d650a5db83ad7c694"
+    },
+    {
+      "path": "../学习资料/10-验收证据/M7.3-summary.json",
+      "sha256": "6ea9641b24b4e26be21d63ce24515a0498ebb65881b8368bc5f312caffd45aff"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/ErpStockMapper.java",
+      "sha256": "e20d2ab2a670587b06cb56e46f46bd9d6ff31ceaf10d41603d64391e25bf2102"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/dal/mysql/stock/StockKey.java",
+      "sha256": "af798bdc0844841978896875b2b82b4bc0f92db66eaa1ce9c6b1168cc11326a4"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/product/ErpProductServiceImpl.java",
+      "sha256": "e2fbaa7907513c3a955c97e61d6647127a8e8a54b225cdd0ec218c7ba2f20446"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOrderServiceImpl.java",
+      "sha256": "46925e2696c49357627bb780914a04d96aa9c4add8ceb5d54803b7969bac26ab"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleOutServiceImpl.java",
+      "sha256": "62b2bacaba779f71e9c1262f22579faec84adbc4ef0207caabcc85b706000de6"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/ErpSaleReturnServiceImpl.java",
+      "sha256": "d6d51c24d05ed3183ca7856aae7631bb8bb53d76a8ac35f54884c74967594330"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderGuard.java",
+      "sha256": "567b34938eb0477aafcabfde164af1f7f548048b16b8389da55b7d216ed9869a"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedOrderPolicy.java",
+      "sha256": "f14b3e7326b1df4f18f1f117a71e5e9f0810e06195554fb2caece5fb400243f9"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleOutPort.java",
+      "sha256": "bce5a228c158e20c0487d57e43cbf276f82262238d12b076d7708b9f811a0328"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/sale/managed/ErpManagedSaleReturnPort.java",
+      "sha256": "037b5dc13745934a7e023c4eed2418576c4ec45ce7563c43af848f25c50a6d28"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/DatabaseCommandRetry.java",
+      "sha256": "31b92848a7ef2e9048d5d18bd26cb9aef2fa6655fcc384682f4960212cb2f048"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockRecordServiceImpl.java",
+      "sha256": "54e06468bdc932f534f74853b11c90a3a8f9bc7958555a29f1c60fcb7212348e"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpStockServiceImpl.java",
+      "sha256": "e503cb7aeb795d970c3fab38227f9e3fe3833526bfcb41363d8a9a6744eea77d"
+    },
+    {
+      "path": "backend/yudao-module-erp/src/main/java/cn/iocoder/yudao/module/erp/service/stock/ErpTransactionRetryAspect.java",
+      "sha256": "26551651285179d43ed17282ad0514d2b379cef2957d5dc1b89ba0f6b2d6620c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/AllocationContracts.java",
+      "sha256": "396e9c4e4d9edd40aea243c758575eae370b7c4491556a077a32545e012500ec"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ExecutionContracts.java",
+      "sha256": "530b7a6143ce914ba6eed9f0fd96bfcff9a33061b200ddcddde32e1747edb738"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FileJobContracts.java",
+      "sha256": "e83d3f7ba7fc69b4bd1063f0840299c10b255ff13760cbe665f9feb8f7540c90"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulAllocationController.java",
+      "sha256": "9d20699ec612f8f01bf138edf43b328713292233b4d4ba35f80f152a09691bab"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulExecutionController.java",
+      "sha256": "0b5e1d70345d8f55726fa011afdfc1c668ac199b4dc0375254108ae8df8e329e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulFileJobController.java",
+      "sha256": "9ba22dda9c0eddb97af0b6ea92cdcad79e3c751a9e9659343fd180ad21b8af0c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulLogisticsSimulatorController.java",
+      "sha256": "00a74d5b9744ee44ee274043c718eb19294d591ce8e6ce56342a828c7578d0d3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulMessageController.java",
+      "sha256": "446d19b243f583a806ac117466cf36c8b90cb1cb99ab25dc089ad52fe30b96b3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulOrderController.java",
+      "sha256": "e5c8218351a6a18438330d0f43a048fad00f045df5f6abf556429977f5ca13f6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReconcileController.java",
+      "sha256": "89053a79d39df16ec087cc575b6589c22842f39aea9b6b514ea786a97d31b47e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulReturnController.java",
+      "sha256": "d71c87809147674ccdb610d82e1f7de47d8e49bf1cc89eb7d016a6e89b6f7821"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/FulWarehouseController.java",
+      "sha256": "83edc1b6ecd8eac9dfd6f4b473f5864745ff883b412a07e9b8488d9f7a80fd3d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/MessageContracts.java",
+      "sha256": "8d24d229d2e2434155f4389df50e297b7667fe1a1d809c8eddb8b7acddc81598"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/OrderContracts.java",
+      "sha256": "8019f413c394e285000348cc5e19c7ad442e48c0ed9825337d7f18fe2e9b7593"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReconcileContracts.java",
+      "sha256": "a016f84e5e53e1e2a0c290dff267333a238b3bbc00a205d0ef5e3802571f8f48"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/admin/ReturnContracts.java",
+      "sha256": "a9eeb64c66ecc6828edb32f16f190787a5ca0653cbdfa463653fd01cca55725f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/controller/app/FulLogisticsCallbackController.java",
+      "sha256": "1605dab9def48d6271530d6807aebedf735804e4fc73306ea337a45ba29da860"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCallbackEventMapper.java",
+      "sha256": "050b03fdc9168eec5feb3738a151911e0354ab9219b560bb266da127b1af1b4b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCancellationMapper.java",
+      "sha256": "4882499a2532aa6e391539c0669a7626b5606ceb9f6b98bd1dca548c40eefacc"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulCommandRecordMapper.java",
+      "sha256": "460ebd7878242cd2e1fe83d91dac91a9866944d4549e163d007507d7496ae2a3"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderItemMapper.java",
+      "sha256": "656997786bbfd935f11be45ebb2bc4bafbbdc668d5f53485aadf5447748024e6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulOrderMapper.java",
+      "sha256": "8c2f8b07b751d4b2623cba101bc2a58b931381d2e414b5524e2540f87aee89e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReservationMapper.java",
+      "sha256": "c462c299d760c1ebc07bfa8b4c27f982646f65f526c6a2e2a970b7ec282f2787"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnItemMapper.java",
+      "sha256": "0e81fc4daab647cca2b6f7e88bdd994e2bd4009bdc85616eff45e915a71d94f6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulReturnMapper.java",
+      "sha256": "3d79fbd564805db410aef947903e247c5a7e096ebfd0d96116a016d33d067c82"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentItemMapper.java",
+      "sha256": "f7dc975855a1be679aa243aae0b7b9868e5434d00f63c66a5f0d645cd542d4ba"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulShipmentMapper.java",
+      "sha256": "2fece8e5e2f7baaea08be0c88caa402ed409ba537f91a3ec33eef4c20174741a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/dal/mysql/FulStockLedgerMapper.java",
+      "sha256": "0e01a91b7ebb1ed01c6f68d1e7276d74cf52fd3ea357ae587e08b7515064b728"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlanner.java",
+      "sha256": "142afa6f6d43f876f41796250eb29077d22daf984f208708f715c90fe2a79912"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEvent.java",
+      "sha256": "d0c7f6390a43c7c7f4aa55f3f7bbf3c4e5e9b002ec1f48a3499ebfa6b27be715"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsv.java",
+      "sha256": "3ab437ede088d9f99084cf2c5f52b2afd7c1a98368210916b6208e9948621e8c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderQuantities.java",
+      "sha256": "95795ceb5ca9662c287bf092cfabb95a5a5f45ec5042b5cb6cbad245c04fea3c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatus.java",
+      "sha256": "a634d26a6aeb86045e90b4985f8406345e593493ddff7c558133bc04031bae41"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculator.java",
+      "sha256": "4ad68e78f5f1b2458efc6e980ed77586715d4dd2cd3368a315b10f2cfdee3bfa"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngine.java",
+      "sha256": "6130c49961ce029b7715780ab9ebeefa840a9ed2cfcd8e607559cdafd1e03b5e"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/enums/FulfillmentErrors.java",
+      "sha256": "69484db406952ba99bb89968cf6d6a0856d8ef6f03170c9d1295fe830b110593"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryFaultTestConfiguration.java",
+      "sha256": "a85cacd384a636f4fef6050cd751907550741c969a47bfe2271d6af9193c02af"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpiryProperties.java",
+      "sha256": "572e6777d1b0983a58e2366af14382fe380ef6c2f55f68e3798906e914efc13a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ExpirySchedulingConfiguration.java",
+      "sha256": "405593039d9ddbdbcd0e5c714019cc1dbb7894b46980b4811acbc534e1cf6d64"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobConfiguration.java",
+      "sha256": "5dff4158b9e864bfc4e60dbd0b0de87499559efbe677985fb82fc73f99b8773a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobFaultTestConfiguration.java",
+      "sha256": "1563ab2b41fe8ebd8216b68f840ee3c6e610534ea12321e0b24fa329ff5ee945"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FileJobProperties.java",
+      "sha256": "7efbe95ab64bf574f9eeef5fb8d9fffdc1025fadbc5aaacecf3e75923b28e9e0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScanner.java",
+      "sha256": "6db7e2802640424a1c2550357b3243516077146ae32c8ecffe21f7fdb1b1b80f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentFlywayConfiguration.java",
+      "sha256": "d32b68f9fad1007ca739fad307b7eb0f72c9545ae14c439e4088c51565da23b5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/FulfillmentMigrationTool.java",
+      "sha256": "47a1081102131ac66b567174088c938c4f9e35197a372df2592b9e43d1052c46"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageFaultTestConfiguration.java",
+      "sha256": "d099c29d3208981b9d23ca1a25edb540ec8347f6bbc92de3d1638f8d709f2448"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessageProperties.java",
+      "sha256": "f2e88af3a3b46be71b00960e7c17a6491f1f69a826bf6acf6a8dbe3cd451cd5a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/MessagingConfiguration.java",
+      "sha256": "525744787de954f532eb56bf16bf03b194b5328031537d47171e784b06456a9c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReconcileTestConfiguration.java",
+      "sha256": "c1e408006ca84afb2ea46531782c87a91499ab739d61f933869b442a278ca653"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ReturnFaultTestConfiguration.java",
+      "sha256": "9e51fb184b1b4a3a6f86c3f2b21e95e704aca6faf99fc8629ebf8dcd0570b918"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/ShipmentFaultTestConfiguration.java",
+      "sha256": "a40d21df7cd4ffbb8a3d5d6cb19da3656b8a1b168cd3f643e359f8c25a17f0d5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/framework/StockMigrationPreflight.java",
+      "sha256": "074e06461d4b8079a4aeaa04382fac932aa3130ca9693388ffd4bea35ecccfa0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsProperties.java",
+      "sha256": "60041c32afbacce5b45cda2db3a8f2307013cf3402d3cbbfd55f38af213545ad"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/integration/LogisticsSignature.java",
+      "sha256": "e90191304fe63ca41f0b7b72ae0f7571764f92b0dbd25ce2d3a5291d490c2ff8"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulAllocationService.java",
+      "sha256": "c02aabf949a1098cbc2fc863e68b8b479aadc08ea1793bfd1144e34f3dc7c85a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulCommandService.java",
+      "sha256": "96f0140355ecb9f086646585797fdf14708a234cd6f2dfe60ff8c27039a94b2c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulDraftImport.java",
+      "sha256": "8b86317687ceb0976a6ff29dd0fe0c3d1e324de88700da71f8befd98938b66b6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExecutionService.java",
+      "sha256": "d58a30854a5876c1e8606889e95d1ddb7fe6e7c77c5c674dbe6bc12aa3e83417"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulExpiryService.java",
+      "sha256": "ae42bbb9a967f43e9ff8a86a2f60f52d3de537d2e04ea1fcb4807e5230add6e0"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulFileJobAdmin.java",
+      "sha256": "2a6deec7ebf64a8522a43363e805301471bd11fc88f947cf12b128a0804c8a5d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulfillmentManagedOrderPolicy.java",
+      "sha256": "b26b225a4e0e63058604e8e7302f9dbd0303a756cd62e549312885337964c2d4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobAuthorization.java",
+      "sha256": "c1f6a3e20f9b1ee2ac58e623e7d956ae4a4355a9ec4a19c914498f155df6f73c"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobExport.java",
+      "sha256": "4c911b63d96b5fdc23f07cea4683261be92bc73e7f1d6cafc75bd9308004a7f2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobFault.java",
+      "sha256": "5fd49be20d3c33d0bb02cd1a6bf23e175c2aefc625f2ee447a5d961d3f5c5c5d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobProcessor.java",
+      "sha256": "de84c421da4222d49b548909d134ad80761294f27b23779a9b38eaeca3b3ec72"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulJobStore.java",
+      "sha256": "063744584bace8f801a8b18c43b11325e887c31253d5b23d4985ce64c42c96cd"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulLogisticsService.java",
+      "sha256": "7f271116885f82f73877578232311ce0432af48dc0ca0cb4245c5f125edadcc4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageAdminService.java",
+      "sha256": "9afd1e7be1736601d936d6ecafd7db33d38f3ba79157937b9ddf86f9aacd3f8d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageConsumerService.java",
+      "sha256": "33e272ca8eac1214f5ecf94bfb27974cad9215e8597b6413578b3e1bda736e27"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageFault.java",
+      "sha256": "1f9c514f3ad0cb891da72259e09ba3ffefa7bf49c9b57f64f4c152bb3101c7ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageSnapshots.java",
+      "sha256": "340286f8e11271e5d88f45e23eae6b42214a962208db83c7dea18fcebd82418b"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageStore.java",
+      "sha256": "6589ed2825798d0990414d5500a1e5cdd1d33554a3978e51edf2e556f081ed49"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulMessageWorker.java",
+      "sha256": "cb1f813d098d70225d556d2e682cd0fe76d7e2484f163f94a2cd5b44f376eecb"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOperationAudit.java",
+      "sha256": "e62c7c172eeeefc8a38a7c76a7438f9c96eecfcea2317cc84da8f67f39f007cb"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOrderService.java",
+      "sha256": "d8c251441cbeca31f206f930bd9e6f14e8e80732437d6de5350fd1a7ff061eff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulOutboxService.java",
+      "sha256": "6e4b49194e7fdbe1fe8b6bb06f136021e9e1abb212730ede2f1ac93cc5faabd6"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulPrivateFiles.java",
+      "sha256": "4fec7f9bc9817c6babd627e180a0bac71ef30b4a767fd6c9e2ecfefefdc60896"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulRabbitTransport.java",
+      "sha256": "5a31dc77f49225b65dddde97bdf6969529c1457fc36162602287b044cff5e819"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileService.java",
+      "sha256": "dbb7956d9791c9c289b178481d03952ff1f0e9c6b915c2698425579f4b6bb29f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReconcileSnapshotReader.java",
+      "sha256": "a7199dc779bd49316ce6db51cc73588a376bf62d22ba3f656efadcf6d5a362a1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulReturnService.java",
+      "sha256": "6bf07e1e21bd751f051b2c42fad58e7c6566d4b76d75205a89161238585f3c98"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWarehouseAccess.java",
+      "sha256": "f97827010ab2b1ee7bed8ffeebe09a3b15cae5eb85d28ecc02d76127c843ca02"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/FulWorkbenchService.java",
+      "sha256": "5109d28d266c6e0ea9bd8d1baba3baf6c58c50d4107a4ef5db008abb214588b1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/JobValues.java",
+      "sha256": "01966da925e0d4255c5fba6956093863082f0cb4eddfbe00500b8a92e8ebf6c2"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileAdmission.java",
+      "sha256": "f3e3dc15e3c96a34297554ea3d7a027548285b2f2e2734dbc80766796aece7da"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/java/cn/iocoder/yudao/module/fulfillment/service/ReconcileSnapshotObserver.java",
+      "sha256": "1b7b8babfe4aeb4ccd14cdca82173252e2a39d9994e945ffd1b5bfe2d9b7e9d7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V1__fulfillment_foundation.sql",
+      "sha256": "311840c0db39f7cad01d574f5bcb305b5af45739bc64c3fe2c93af893d00b2e7"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V2__reservation_and_stock_safety.sql",
+      "sha256": "f7c8072862dc47a5add734a251241b05cb82e2629fbee5833b9a3d6bb18bd6ff"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V3__shipment_cancel_and_logistics.sql",
+      "sha256": "c0e574a187c39586bafdb33ba34634e216e057389076506fdd3e0d1afa8b0a8d"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V4__return_receipt.sql",
+      "sha256": "57ebaab47ec633399a518dc8e6fafd5e832c0d87170606663a311be45950fa8f"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V5__reconciliation.sql",
+      "sha256": "9ffdfe1e016604f64ff289b21dd7846d0bef5206d195753a7fda8d4eade39666"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V6__reliable_messages.sql",
+      "sha256": "5904018e931355e766f42346fe2b4b68dec6b9f3416562d37ac3008b775dc5da"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V7__file_jobs_and_warehouse_scope.sql",
+      "sha256": "559c784a6c38e0e65167c5e9b0cbb85865ce4499908ede896ff94d1bb19d3222"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/main/resources/db/fulfillment/V8__order_status_pagination_index.sql",
+      "sha256": "21cf9cc3204e7a1d5a5aacdd27d52a2b62da6dda32a736fa3f049b5e1c4d670a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/AllocationPlannerTest.java",
+      "sha256": "e1e3115977d439c1e3cc1a763654acebc1dec857b90570d96f6260b462f015d4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/DatabaseCommandRetryTest.java",
+      "sha256": "1d964dc7d0002cbe9cb932f0199b9ef23136605ff18783d02d6e05a2bf7a5961"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/FulfillmentEventTest.java",
+      "sha256": "8316a68f5aff07afcb0fc2894dce7823192e8912fd3cea49b72b6de47e6378d1"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ImportCsvTest.java",
+      "sha256": "5a80ddd20d28f830f0bc2a8948b04f43892de8dea3cecca90e3293b37a06e7f5"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/LogisticsSignatureTest.java",
+      "sha256": "f86777cad8a6b891c3e34847abffae9d6a94b696b0a38556fda03f9e6b14b3b4"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/OrderStatusCalculatorTest.java",
+      "sha256": "4f3d9783b525878ef685e488270a9d58816d0c157c86462a488804ad21eb9bd8"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/domain/ReconcileEngineTest.java",
+      "sha256": "e2552e5d2012ff8f2d65b8f85268c3d45ae4525ce1c44965b5071f2d5c30794a"
+    },
+    {
+      "path": "backend/yudao-module-fulfillment/src/test/java/cn/iocoder/yudao/module/fulfillment/framework/FulExpiryScannerTest.java",
+      "sha256": "56fd7c168b1a6bfe6a993d99e7276b13cbec5da5ce6e3c2c9cac8b457083866b"
+    },
+    {
+      "path": "docs/baseline.lock.json",
+      "sha256": "ebd7ccd202ee2338b2f74504c3fc2f723a969609ba16824c67c73eeab1f87637"
+    },
+    {
+      "path": "frontend/src/api/erp/fulfillment/index.ts",
+      "sha256": "376c2c72b85313f90f1b0038bbd1f846e5a8d9126a2da1ad8bc62cf6ab19085d"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentMessages.vue",
+      "sha256": "9f243eb652c06dc46ce5b1d9d61cfbc06ab19c65efd27fb2c6622e1b92af641d"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentReturns.vue",
+      "sha256": "41b0404247109ecbe7116f8b0e469315ef7d6c19f58ade060cce8bd75e7d127f"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/FulfillmentWorkbench.vue",
+      "sha256": "68946c16cead4b753eb3e9258e19658df7491694fead5b6e83d52b52e89b6ca6"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment/index.vue",
+      "sha256": "b9d6e12f343c7517e3732650e35e168d9537e25eae487bacc8bc5f5132b32094"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment-jobs/index.vue",
+      "sha256": "2bef768aea875aa5fde4d0f7d7f873c284d0a7730c179d31110f561c88c4cebc"
+    },
+    {
+      "path": "frontend/src/views/erp/fulfillment-warehouse/index.vue",
+      "sha256": "65220ef62239e4f4ba3230a87f44cde6dc0b8e80afd382dfc177d6c940710e7a"
+    },
+    {
+      "path": "frontend/src/views/erp/reconciliation/index.vue",
+      "sha256": "f6d3d31c6cde85cd576d7cdf597030dc5f1fd6f81241130d3feee2427eb270b2"
+    },
+    {
+      "path": "scripts/Bootstrap-Local.ps1",
+      "sha256": "7b6e06aa3445550cfd92e403d34e2d3959a764c42e9c54da0adf9830d1780695"
+    },
+    {
+      "path": "scripts/Bootstrap-Messaging.ps1",
+      "sha256": "4378630a726434b8bf7cedd18d4dcae50f7cb408df1b191a44735e84479babc0"
+    },
+    {
+      "path": "scripts/Build-Release.ps1",
+      "sha256": "ee0a108edfb37eb594003f175bae59f4fc0c4c82579d91c325a40f8ac4cccfaa"
+    },
+    {
+      "path": "scripts/Build.ps1",
+      "sha256": "6de010a6b1fd1ca97bda4b6b76bb6b6be249cb467eca47ef045cd1146b462ee6"
+    },
+    {
+      "path": "scripts/Initialize-Database.ps1",
+      "sha256": "1333861898f0aaf40ffa312a22a85a0cdff69db1c3f9004cb5fcc4f85ccd7eda"
+    },
+    {
+      "path": "scripts/Messaging-Environment.ps1",
+      "sha256": "5bac1887b9bc38fbe0a55aa68efecd5e3f58db9a9ed8c4520e2693b100064460"
+    },
+    {
+      "path": "scripts/Migrate-Database.ps1",
+      "sha256": "f09c0a7de85270785d256a45323b4390700870fbd7793ca43517d8a71ff2a7c1"
+    },
+    {
+      "path": "scripts/Run-Messaging.ps1",
+      "sha256": "c20b70ee1afa49fcfa93c79df8d0170901255ccc1d56ac7f82a7bb43bc202ce6"
+    },
+    {
+      "path": "scripts/Start-Local.ps1",
+      "sha256": "dd207c3a4670173ae9847e7f1ab99e8a2678374bcbee788bd5c5c59ccddbb7d5"
+    },
+    {
+      "path": "scripts/Start-Messaging.ps1",
+      "sha256": "0cb8a60ec54d7fe82170d4a0ea323b62196226ce0dbc75fa73f01b57a3a5166c"
+    },
+    {
+      "path": "scripts/Stop-Local.ps1",
+      "sha256": "59370d57d2265df95644f03616847a7b3b661664768f6091a9bbf3b92b76a354"
+    },
+    {
+      "path": "scripts/Stop-Messaging.ps1",
+      "sha256": "9df8c05058386e67f7bed2436ee0f416a1b9190dd0f812a5364cc1ee4df1b309"
+    },
+    {
+      "path": "tests/m0_restart.py",
+      "sha256": "da164faa199764dc2e99017755a7b25149be81f1e86b387b65f06d92753ede10"
+    },
+    {
+      "path": "tests/m0_smoke.py",
+      "sha256": "b5a9e2bb3f2fb17f9d6d16d7d658a7457432f54743c857ac34d1681e7079678e"
+    },
+    {
+      "path": "tests/m1_acceptance.py",
+      "sha256": "fd3a7631c7575a4e797e8c62d5f6586625484e9f6fe3f1a987f99cbb4456e7fd"
+    },
+    {
+      "path": "tests/m1_clean_install.ps1",
+      "sha256": "dacca47a52992a70035700ae9170733abed5b497e423564b8dc3693fe3f29c40"
+    },
+    {
+      "path": "tests/m1_locking.py",
+      "sha256": "e2e496724f5b0c5b23d024a139146a95fb0349be5727a54ea12d90c518b56a07"
+    },
+    {
+      "path": "tests/m1_migration.py",
+      "sha256": "b627cfba3462fdc276cbe77086ea9d2410b45a9c00de3f85d78c821f08bc459d"
+    },
+    {
+      "path": "tests/m1_ui_verify.py",
+      "sha256": "fbfc087b99940aa7fbeb25963d2806c7e336e7420ad2aba4355aefc32385a746"
+    },
+    {
+      "path": "tests/m2_acceptance.py",
+      "sha256": "7573455b7ce73a7393ad6adf21689e97f00f14627f155ec44666b264c4d61c2a"
+    },
+    {
+      "path": "tests/m2_clean_smoke.py",
+      "sha256": "cb5440f5c3971d9d0d0ae22894da5c8a9bcd6ef6e7b5c65f285fa93c5464dae9"
+    },
+    {
+      "path": "tests/m2_legacy_inventory.py",
+      "sha256": "8a6d21820dd71a0280b019f2e740c02f005601b5e12713cc18b3473a221c63f3"
+    },
+    {
+      "path": "tests/m2_migration.py",
+      "sha256": "b4564232e02e125bec7dc82f1951eb8919fa8e47c4ee5c2859cbd143da785cc2"
+    },
+    {
+      "path": "tests/m2_permissions.py",
+      "sha256": "5bfcfd0339659364540f03badbf060d06ffb55332300c85b41290b159be02ef4"
+    },
+    {
+      "path": "tests/m2_restart.py",
+      "sha256": "71d3ea32c52a66328774065daf18c68e99839fb0012bfdd511917f29a3c581d3"
+    },
+    {
+      "path": "tests/m2_two_instance.ps1",
+      "sha256": "067042d0e850cca033aefb2115b1e501363244b96dc57fa2b6b61b407080b5e8"
+    },
+    {
+      "path": "tests/m3_acceptance.py",
+      "sha256": "f7e158a336940405ce79ff4fa639ddad4de28ab5fc960adbd571b1f57f5840d5"
+    },
+    {
+      "path": "tests/m3_clean_smoke.py",
+      "sha256": "22bdbfd74332be98433057c3d2644b7413a7d0dfcec066cf9852a20ddba25a6a"
+    },
+    {
+      "path": "tests/m3_erp_failure.py",
+      "sha256": "a433d0c4b4d09f3587f5198900b75becfe4f981feae4f89480db6fac552d7fab"
+    },
+    {
+      "path": "tests/m3_instances.ps1",
+      "sha256": "e5f428d72fece65cacdb6a81b3f0b35a27da9b77386c03e762feda271410099d"
+    },
+    {
+      "path": "tests/m3_migration.py",
+      "sha256": "b43d8997b568e4e18535eafdaef5ff6e85f05f9d6d02e5fa6ad8acd1ba5e3ce4"
+    },
+    {
+      "path": "tests/m3_permissions.py",
+      "sha256": "80dab15dcd531855123514612693c0ae0a02523447401d1c0574ffdf0249a6c6"
+    },
+    {
+      "path": "tests/m3_previous_inventory.py",
+      "sha256": "a197a8b78ff0d8e64fa208861a4b3c7d2efb195ade10dd3ad3f20510fa95ab05"
+    },
+    {
+      "path": "tests/m3_restart.py",
+      "sha256": "6bae136997dbc6e178438aec1a7246bc011b699e4e611b97ea5e8af923c89c23"
+    },
+    {
+      "path": "tests/m3_ui_fixture.py",
+      "sha256": "fc6bb9272314381dabc51be37ff0413d9eeb7c600ac9bde9004803f7bd5ea2f5"
+    },
+    {
+      "path": "tests/m3_ui_result.py",
+      "sha256": "3773b43a4bc9163bbbcd511cb7f4d2899831146053080f658b82aa1dc30403b3"
+    },
+    {
+      "path": "tests/m4_expiry_acceptance.py",
+      "sha256": "e35b477ca8acf512d1e3cfe6a727a65ec7b8f170ac0ba0a1e26dba69ee02fc82"
+    },
+    {
+      "path": "tests/m4_expiry_main.py",
+      "sha256": "9cdb2e4cfabf2b3a958ff3ba98d2f337f226a1827d9ed93b32b6671dd3357e44"
+    },
+    {
+      "path": "tests/m4_expiry_qa.py",
+      "sha256": "c1ce46f5d3ee247a5e510543b095b6280f609853213997a34175b6de322d0d5f"
+    },
+    {
+      "path": "tests/m4_reconcile_acceptance.py",
+      "sha256": "d91931d96ea2ff20473ee6304df100d1767767d7941deec2a4857a431dac51e1"
+    },
+    {
+      "path": "tests/m4_reconcile_constraints.py",
+      "sha256": "592838cdcfe9f6a891349f47af44ae9b783df4351c8ed9fc088f151945ec0c11"
+    },
+    {
+      "path": "tests/m4_reconcile_frontend.ps1",
+      "sha256": "3efa73952f52c929f26db2cee266a04b233fa5eadebe66a81b3734b6f4b85fdf"
+    },
+    {
+      "path": "tests/m4_reconcile_qa.py",
+      "sha256": "2c8fde65bf64301695c9b0d487cfd03d200fa337a5a87c022924920123a610aa"
+    },
+    {
+      "path": "tests/m4_reconcile_restart.py",
+      "sha256": "7f7d48e3cc3e35a16a0efea0fbf1bf6c44bdbb91c1f57f52ddd522eef692482d"
+    },
+    {
+      "path": "tests/m4_reconcile_ui_assert.py",
+      "sha256": "c18c881797ddd19b56cad14d822d2564281c8e7b2a38b893d19fafbb65420d6e"
+    },
+    {
+      "path": "tests/m4_reconcile_ui_runtime.py",
+      "sha256": "b53a5f1fa377224f6c35eb3a2387b1acf17d0e2cf1be6b9db7e323cceb1d21fe"
+    },
+    {
+      "path": "tests/m4_reconcile_upgrade.py",
+      "sha256": "ddb18ab1cf008c6d4b6519b29bfeb9b8c3fc8053eefdcf582d1ca2450646ea01"
+    },
+    {
+      "path": "tests/m4_return_acceptance.py",
+      "sha256": "fd5fabed87a7bf8f2b55d81b849dcc99d8745fba7ac7ce775e32728fb684e6e9"
+    },
+    {
+      "path": "tests/m4_return_constraints.py",
+      "sha256": "fdfd68759d652f771fb4e9d05a9fb32a26c5c8ef39499efb748cb551249b07aa"
+    },
+    {
+      "path": "tests/m4_return_frontend.ps1",
+      "sha256": "6b3179840a67bd85fc9836ea0882e4ff59aa35cb9a74f63c7d4ad63d048ba488"
+    },
+    {
+      "path": "tests/m4_return_qa.py",
+      "sha256": "aeed63e479e9d4ac8c4f206a13f0639de3d1b682c0c04fccf2414d4b4e5d99b2"
+    },
+    {
+      "path": "tests/m4_return_read_checks.py",
+      "sha256": "7f896a96994422a1a1be5a4480af4970d3a7b005a2926526863b2b180359fadd"
+    },
+    {
+      "path": "tests/m4_return_restart.py",
+      "sha256": "4132fe057512c454fb994f4ef714f78d8c95f0ec9a3fe1446f7107179191b460"
+    },
+    {
+      "path": "tests/m4_return_ui_assert.py",
+      "sha256": "059dfc8f2ed9bd17fb8c01671f3c16477c8aa766f9651ab113ef15d51b215e25"
+    },
+    {
+      "path": "tests/m4_return_ui_fixture.py",
+      "sha256": "c598f4c2649e0c9957b7eb813b4787b3f19079e5adc548fd885727173f6b65db"
+    },
+    {
+      "path": "tests/m4_return_upgrade.py",
+      "sha256": "92330ba3ec5cec00a886317d3b34c96ac18072fb6104b88ea3fe2b16f735679e"
+    },
+    {
+      "path": "tests/m5_acceptance.py",
+      "sha256": "10c31f96bb1951d731ee7391d4080d7810b9e02415f9c5e6d70ebc5652706c77"
+    },
+    {
+      "path": "tests/m5_constraints.py",
+      "sha256": "c636aea10f365cc003b7a3b1d72481e14207f360287a3fe58f0f21c53d920d5f"
+    },
+    {
+      "path": "tests/m5_demo.py",
+      "sha256": "02e972768a75b78700fe32a865b1f9d76b31bd263a0ce6b0de6bdd433181844e"
+    },
+    {
+      "path": "tests/m5_frontend.ps1",
+      "sha256": "2c0d2c9822339d804cddf3b5dc9677dae20d21f6c22a78aaa56cb24c743b8e50"
+    },
+    {
+      "path": "tests/m5_qa.py",
+      "sha256": "40aa53f40c749f4e4fa06ca1e9a084ce686c395840a9b1cdc872e54cc93b4ae2"
+    },
+    {
+      "path": "tests/m5_restart.py",
+      "sha256": "81a546a855e97481cd4bb87ca4f51ee7036e9bbf855ba23da53f2ccdcb003623"
+    },
+    {
+      "path": "tests/m5_supplement.py",
+      "sha256": "2d7db720b5c8813d9bb3fdc998810fe7b4807709b827bc3ad2ea3a67aeac70a0"
+    },
+    {
+      "path": "tests/m5_ui_assert.py",
+      "sha256": "5891bd0197a64edc47d31f10779c690f00570a2aae0d6476a553b6a1b52e9977"
+    },
+    {
+      "path": "tests/m5_upgrade.py",
+      "sha256": "858f8564dedd7ac57bbaca096679a10e38963e686097e664366b7b40b2425bd8"
+    },
+    {
+      "path": "tests/m6_acceptance.py",
+      "sha256": "c01b861eb0d34c9048ad003c862053b2fa8830a7bee127f42ba4c6a34952af0f"
+    },
+    {
+      "path": "tests/m6_constraints.py",
+      "sha256": "3a7286b6ed3ece9135830a9b60d9dea93c7d62b3b87fe2d5feb97b75fb939b98"
+    },
+    {
+      "path": "tests/m6_demo.py",
+      "sha256": "9408256e08ee2e672ff355107fe60c640094b753a41b5c35f9007c553742ebb2"
+    },
+    {
+      "path": "tests/m6_foundation.py",
+      "sha256": "4aa317e44a0c32a536c8fbf58bc6c7ea229a449927de3b4452fd62e7b917438d"
+    },
+    {
+      "path": "tests/m6_frontend.ps1",
+      "sha256": "0989cb822d17bc255b9c173fb6d6a6d51a25ec6e9d40292a569ec20563d66304"
+    },
+    {
+      "path": "tests/m6_qa.py",
+      "sha256": "3190307a818bf1fb6c2134ea8429ac6c28283c793ea8543b0a5e0a6e2d5fc8cb"
+    },
+    {
+      "path": "tests/m6_restart.py",
+      "sha256": "248175acb5da2b802747c7f42b30f3563136f80335a08cb31b81410991c25268"
+    },
+    {
+      "path": "tests/m6_runtime.ps1",
+      "sha256": "51a8c77e46de107fdccf243e0ea0ad1a40f65226db77aca9ecbccfd3dbfd24ba"
+    },
+    {
+      "path": "tests/m6_supplement.py",
+      "sha256": "9f989cbb46ca19cc5d2d67e4a17614c148e81b98016e1bb2dcc88fefeba2e09e"
+    },
+    {
+      "path": "tests/m6_ui_assert.py",
+      "sha256": "df2725abf339aeb29e6551988781b6a443973ea8816fbdcbdc2750370092adda"
+    },
+    {
+      "path": "tests/m6_upgrade.py",
+      "sha256": "cbe0e174b5c43eeac3f94d32e5a39b27acec66e4f346e95a687e6c771766cbca"
+    },
+    {
+      "path": "tests/m7_build_evidence.py",
+      "sha256": "96033e8ca3a8a57fc17a0cb0b1d24e35802e1691525d732bae4b33b2d2032a91"
+    },
+    {
+      "path": "tests/m7_evidence_correction.py",
+      "sha256": "406055b133ed74d981760bb0ecd5dfdb7df562af115f6f693736197e4e79c13a"
+    },
+    {
+      "path": "tests/m7_final_qa.py",
+      "sha256": "b7611a70a511b3d0807aae596beb27d1ce252809d88936ca3607854164de6564"
+    },
+    {
+      "path": "tests/m7_finalize_docs.py",
+      "sha256": "21e20f3661109b7678dbc00cfb1bd987be1daf43cf4eb77d5b9cc954bc65996d"
+    },
+    {
+      "path": "tests/m7_main_restart.py",
+      "sha256": "f9722e3e02c272f981efa3efc0c54eb61c4fe9a58c6c4d391bfd6be37516230a"
+    },
+    {
+      "path": "tests/m7_main_upgrade.py",
+      "sha256": "c2dd71eebb36430ba3155b27fe5ea00d19e093518a309898d748f09ec453622e"
+    },
+    {
+      "path": "tests/m7_perf_tools.py",
+      "sha256": "c6695dc7949ee1d8d2cf13bbd890cb7fab1ded8bf2c5e3b1459b6b8cf57692e9"
+    },
+    {
+      "path": "tests/m7_query_benchmark.py",
+      "sha256": "3b09dbd6dc4261df68056d5eebbac57e2e7921d3ead81889f61e33799bd5cbaf"
+    },
+    {
+      "path": "tests/m7_query_prepare.py",
+      "sha256": "e35659570e04d905d83fe7aea63a6919c0718345262a787fbb56801bd7db55a9"
+    },
+    {
+      "path": "tests/m7_query_seed.py",
+      "sha256": "240f4876cb239233064476fd78fdc4e7bb5b69795f0a8c983b4c9e961a041cf7"
+    },
+    {
+      "path": "tests/m7_regression.py",
+      "sha256": "566c605b240b7051f22a32d97931049bcf238a10c7abe38ccedd824834693c73"
+    },
+    {
+      "path": "tests/m7_release.py",
+      "sha256": "da2974b9de319ed386d0092270d5c30b0cf8d7755cdfafb2daff011841ec1fe5"
+    },
+    {
+      "path": "tests/m7_release_closeout.py",
+      "sha256": "92def75f4cf4d79cf10cbef82b135566ed4eb2a031f45000d2484645e7a0539c"
+    },
+    {
+      "path": "tests/m7_release_qa.py",
+      "sha256": "4b6241b8cd29a21ffbb251bf76379d6a29067a84e7e588e8957cc90a4e173921"
+    },
+    {
+      "path": "tests/m7_release_runtime.ps1",
+      "sha256": "9a9385ec66aec6eaa6a94d9ea90fa0fb2aa0ba4f941a523d6b67776b8d9e5f05"
+    },
+    {
+      "path": "tests/m7_reports.py",
+      "sha256": "2c00b5dae1bdafed4cac7c4820018ecac42ebcda4b1296520526e0e004c8cb67"
+    },
+    {
+      "path": "tests/m7_restore_test_sequences.py",
+      "sha256": "fae5d1e940edd8693bd903be1ed10523befe7f48d4e1ccf694621cb6a7132220"
+    },
+    {
+      "path": "tests/m7_run_all.ps1",
+      "sha256": "2ec7a9707d5b6a5bca15ac0ebb657e6a310e54939abdd0ef8bce47bab4100da2"
+    },
+    {
+      "path": "tests/m7_runtime_pipeline.py",
+      "sha256": "c87e4695c69f79fb2e8cc3e8389081e6b452348e4e4fdda3fdd77d0f13642cff"
+    },
+    {
+      "path": "tests/m7_source_diff.py",
+      "sha256": "b45e21609c976a8e624124e0c5b50bc3c2abf40a44e05cc53ce76a8f4acddd3f"
+    },
+    {
+      "path": "tests/m7_stock_benchmark.py",
+      "sha256": "b5694c2eeadcd81421f370e27f7e9dbd0d9f671f85ca9d0dda4930d30507dbad"
+    },
+    {
+      "path": "tests/m7_support.py",
+      "sha256": "323a5859a8068a6d74cc02e38c3f32c26078d6c3999b4ff7479ceab172206566"
+    }
+  ]
+}

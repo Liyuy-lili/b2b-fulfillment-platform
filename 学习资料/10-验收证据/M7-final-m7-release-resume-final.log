@@ -1,0 +1,13 @@
+PASS resumed original unchanged copied release
+PASS Start-Release.ps1 exits0
+PASS Install-Release.ps1 rejects
+PASS existing database refuses reinstall without fact changes
+PASS Stop-Release.ps1 exits0
+PASS Start-Release.ps1 exits0
+PASS normal application restart preserves full fulfillment and business snapshot
+PASS restart preserves every registered private file
+PASS self-contained Node demo exits0
+PASS completed fixed demo rerun only reads saved IDs
+PASS original business key replay after restart immutable
+PASS main 17-table business digest untouched
+M7.1 release passed 45 checks

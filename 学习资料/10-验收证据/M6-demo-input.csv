@@ -1,0 +1,4 @@
+﻿externalOrderNo,customerCode,productCode,quantity,unitPrice
+MAIN_M6_6236388cA,39,M4R93a9ea23MainDemo消息演示,1.000001,2.345678
+MAIN_M6_6236388cB,39,M4R93a9ea23MainDemo消息演示,2,2.345678
+MAIN_M6_6236388cBad,39,M4R93a9ea23MainDemo消息演示,0,2

@@ -1,0 +1,46 @@
+{
+  "run_at": "2026-10-19T15:25:10.849989+00:00",
+  "checks": [
+    {
+      "name": "17 business tables identical across browser message actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two real browser actions with reason actor audit",
+      "passed": true,
+      "detail": [
+        [
+          "REPUBLISH",
+          "M5页面验收：保留发货事件编号重新发布，验证消费去重且不再次出库",
+          "REPUBLISH_QUEUED",
+          1
+        ],
+        [
+          "REBUILD",
+          "M5页面验收：按当前订单事实重建版本4读模型，验证审计及库存保持",
+          "READ_MODEL_REBUILT",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "same immutable event published twice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one Inbox records duplicate redelivery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rebuild current version no fabricated events",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "order_id": "229",
+  "event_id": "3f49f964-e002-4d27-b1ed-b3771b6e1307",
+  "result": "passed"
+}

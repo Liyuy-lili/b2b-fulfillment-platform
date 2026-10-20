@@ -1,0 +1,52 @@
+{
+  "run_at": "2026-10-19T18:08:18.4854867+08:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "eslint",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "eslint",
+        "src/views/erp/reconciliation/index.vue",
+        "src/api/erp/reconciliation/index.ts"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-reconcile-frontend-eslint.log",
+      "passed": true
+    },
+    {
+      "name": "stylelint",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "stylelint",
+        "src/views/erp/reconciliation/index.vue"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-reconcile-frontend-stylelint.log",
+      "passed": true
+    },
+    {
+      "name": "prettier",
+      "exit_code": 0,
+      "arguments": [
+        "exec",
+        "prettier",
+        "--check",
+        "src/views/erp/reconciliation/index.vue",
+        "src/api/erp/reconciliation/index.ts"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-reconcile-frontend-prettier.log",
+      "passed": true
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "arguments": [
+        "run",
+        "build:fulfillment"
+      ],
+      "log": "C:\\Users\\Lenovo\\OneDrive\\文档\\ChatGPT\\java后端项目\\.local\\m4-reconcile-frontend-build.log",
+      "passed": true
+    }
+  ]
+}

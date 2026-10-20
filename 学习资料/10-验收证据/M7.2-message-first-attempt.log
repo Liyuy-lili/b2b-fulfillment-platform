@@ -1,0 +1,68 @@
+PASS test port free 48082
+PASS test port free 48083
+PASS isolated RabbitMQ vhost created
+PASS isolated vhost permission configured
+PASS command scripts/Initialize-Database.ps1 ('-Database', 'fulfillment_m7_reg_message_20261020_101220')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'baseline', '-Database', 'fulfillment_m7_reg_message_20261020_101220')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'migrate', '-Database', 'fulfillment_m7_reg_message_20261020_101220')
+PASS command scripts/Migrate-Database.ps1 ('-Action', 'validate', '-Database', 'fulfillment_m7_reg_message_20261020_101220')
+PASS bound allocate shipment cancel emitted four events
+PASS already received new key emits no duplicate event
+PASS six cross-JVM bind requests one event
+PASS after-Outbox fault rejects shipment
+PASS ERP H R facts and event all roll back
+PASS failed shipment command not retained
+PASS same-key healthy retry exactly one event
+PASS expiry event shares system actor command
+PASS all eight declared business event types exercised
+PASS event bodies and tenant version identity valid
+PASS Broker offline business commits NEW outbox
+PASS unroutable confirmed publication becomes DEAD
+PASS every unroutable delivery is failed not ACKED
+PASS manual republish preserves event identity
+PASS changed reason same key conflicts
+PASS manual broker recovery reaches SENT with total attempts retained
+PASS actual process exits at after-confirm window
+PASS confirm crash leaves IN_FLIGHT without SENT
+PASS expired publisher lease reclaimed with higher version
+PASS own m5claim: barrier
+PASS own m5confirm: barrier
+PASS active lease rejects manual replay
+PASS old publisher cannot overwrite newer lease result
+PASS two actual JVM owners competed for event
+PASS all events processed with one Inbox each
+PASS duplicates observed without duplicate local effects
+PASS out of order events cannot overwrite newer read model
+PASS older versions recorded as processed without applying
+PASS malformed incompatible and forged-tenant messages quarantined
+PASS failed projection is rolled back before persistent retry
+PASS consumer retries bounded and Broker delivery ACKed after durable failure
+PASS manual consume retry response durable
+PASS processed consume retry produces no second effect
+PASS actual process exits after consumer commit before ACK
+PASS Inbox committed before ACK crash
+PASS redelivered ACK crash leaves projection and business facts unchanged
+M7 regression message failed
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 121, in <module>
+    else:suite()
+         ~~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_regression.py", line 102, in suite
+    module.main()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_acceptance.py", line 153, in main
+    permissions(c,f,fx,target,replaykey)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m5_acceptance.py", line 201, in permissions
+    owned=f.shipment('����',('1',),client=owner);E['fixtures']['owner']=owned;ev=event_for(owned['order'],'SHIPMENT_CONFIRMED')[0]
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m4_return_acceptance.py", line 74, in shipment
+    c.approve('sale-order',source);order=c.bind(source)['orderId'];alloc=c.allocate(order,[self.w])['reservations']
+                                                                         ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m2_acceptance.py", line 22, in allocate
+    return self.api('POST','/fulfillment/order/allocate',{'orderId':str(order),'warehouseIds':[str(w) for w in warehouses],'strategy':strategy,'holdSeconds':900},ok=ok,headers={'Idempotency-Key':key or uuid.uuid4().hex})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m2_acceptance.py", line 18, in api
+    if result.get('code')!=0:raise AssertionError(f'{method} {path}: {result}')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: POST /fulfillment/order/allocate: {'code': 1080000075, 'msg': 'WAREHOUSE_SCOPE_DENIED: ����ֿⲻ�ڵ�ǰ��Ȩ��Χ��', 'data': None}

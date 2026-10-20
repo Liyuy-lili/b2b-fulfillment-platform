@@ -1,0 +1,35 @@
+PASS resumed original unchanged copied release
+PASS Start-Release.ps1 exits0
+PASS Stop-Release.ps1 exits0
+M7.1 release failed 36 checks
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 134, in <module>
+    finish(E['demo'],E['main_before_digest'])
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 112, in finish
+    snap=snapshot();registered=private_files();before=digest(snap)
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 48, in snapshot
+    tables=[r[0] for r in sql("SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() AND LEFT(TABLE_NAME,4)='ful_'")]
+                          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\�ĵ�\ChatGPT\java�����Ŀ\tests\m7_release.py", line 20, in sql
+    with pymysql.connect(host='127.0.0.1',port=33306,user='fulfillment',password='fulfillment-dev',database=database or DATABASE,autocommit=True,charset='utf8mb4') as con:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\connections.py", line 372, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\connections.py", line 1022, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\veighna_studio\Lib\site-packages\pymysql\_auth.py", line 245, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "C:\veighna_studio\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\veighna_studio\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.OperationalError: (1044, "Access denied for user 'fulfillment'@'127.0.0.1' to database 'fulfillment_m7_release_20261020_092259'")
