@@ -1,11 +1,12 @@
 param([switch]$Dependencies)
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'Local-Listener.ps1')
 $root = Split-Path $PSScriptRoot -Parent
 $runtime = Join-Path $env:USERPROFILE '.cache/fulfillment-m0'
 $ports = @(15173,48080)
 if ($Dependencies) { $ports += @(36379,33306) }
 foreach ($port in $ports) {
-    $listener = Get-NetTCPConnection -State Listen -LocalPort $port -ErrorAction SilentlyContinue | Select-Object -First 1
+    $listener = Get-LocalListener $port
     if (!$listener) { continue }
     $process = Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)"
     if (!$process.CommandLine -or (!$process.CommandLine.Contains($root) -and !$process.CommandLine.Contains($runtime))) { throw "Port $port belongs to another program; refusing to stop it." }

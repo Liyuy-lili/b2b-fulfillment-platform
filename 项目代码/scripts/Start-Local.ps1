@@ -1,12 +1,13 @@
 param([switch]$DependenciesOnly, [switch]$Observability)
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'Local-Listener.ps1')
 $root = Split-Path $PSScriptRoot -Parent
 $local = Join-Path $root '.local'
 $runtime = Join-Path $env:USERPROFILE '.cache/fulfillment-m0'
 if (!(Test-Path -LiteralPath (Join-Path $runtime 'tools/mysql-8.4.6-winx64/bin/mysqld.exe'))) { throw 'Run Bootstrap-Local.ps1 first.' }
 
 function Start-OwnedProcess($Name, $Port, $Exe, $Arguments, $Directory) {
-    $listener = Get-NetTCPConnection -State Listen -LocalPort $Port -ErrorAction SilentlyContinue | Select-Object -First 1
+    $listener = Get-LocalListener $Port
     if ($listener) {
         $process = Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)"
         if (!$process.CommandLine -or (!$process.CommandLine.Contains($root) -and !$process.CommandLine.Contains($runtime))) {
@@ -22,7 +23,7 @@ function Start-OwnedProcess($Name, $Port, $Exe, $Arguments, $Directory) {
     $deadline = (Get-Date).AddSeconds(55)
     do {
         Start-Sleep -Milliseconds 500
-        $listener = Get-NetTCPConnection -State Listen -LocalPort $Port -ErrorAction SilentlyContinue | Select-Object -First 1
+        $listener = Get-LocalListener $Port
         if ($listener) {
             $listener.OwningProcess | Set-Content (Join-Path $local "$Name.pid")
             Write-Host "$Name listening on $Port"
@@ -64,7 +65,7 @@ $jar = Join-Path $root 'backend/yudao-server/target/yudao-server.jar'
 if (!(Test-Path -LiteralPath $jar)) { throw 'Build backend first (scripts/Build.ps1).' }
 # Run a copy: Windows locks an open jar and otherwise prevents Maven repackage.
 $runtimeJar = Join-Path $local 'backend-run.jar'
-if (!(Get-NetTCPConnection -State Listen -LocalPort 48080 -ErrorAction SilentlyContinue)) {
+if (!(Get-LocalListener 48080)) {
     Copy-Item -LiteralPath $jar -Destination $runtimeJar
 }
 $profile = Join-Path $root 'backend/yudao-server/src/main/resources/application-fulfillment.yaml'

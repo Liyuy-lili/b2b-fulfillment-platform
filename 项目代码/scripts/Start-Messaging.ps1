@@ -1,9 +1,10 @@
 param()
 $ErrorActionPreference='Stop'
+. (Join-Path $PSScriptRoot 'Local-Listener.ps1')
 $projectRoot=Split-Path $PSScriptRoot -Parent
 . (Join-Path $PSScriptRoot 'Messaging-Environment.ps1')
 if(!(Test-Path -LiteralPath (Join-Path $env:ERLANG_HOME 'bin/erl.exe'))){& (Join-Path $PSScriptRoot 'Bootstrap-Messaging.ps1')}
-$listener=Get-NetTCPConnection -State Listen -LocalPort 35672 -ErrorAction SilentlyContinue | Select-Object -First 1
+$listener=Get-LocalListener 35672
 if($listener){
  $process=Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)"
  if(!$process.CommandLine -or !$process.CommandLine.Contains($messagingRuntime,[StringComparison]::OrdinalIgnoreCase)){throw 'AMQP port belongs to another program'}
@@ -33,7 +34,7 @@ $p.Id | Set-Content -LiteralPath (Join-Path $projectRoot '.local/rabbitmq-wrappe
 $deadline=(Get-Date).AddSeconds(55)
 do{
  Start-Sleep -Milliseconds 500
- if(Get-NetTCPConnection -State Listen -LocalPort 35672 -ErrorAction SilentlyContinue){Write-Host 'Project RabbitMQ listening on 35672; management loopback 35673';return}
+ if(Get-LocalListener 35672){Write-Host 'Project RabbitMQ listening on 35672; management loopback 35673';return}
  if($p.HasExited){throw 'RabbitMQ exited; inspect .local/rabbitmq-error.log'}
 }while((Get-Date) -lt $deadline)
 throw 'RabbitMQ startup exceeded 55s; inspect logs and actual listeners before retrying.'
