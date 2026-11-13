@@ -1,4 +1,4 @@
-param([switch]$DependenciesOnly)
+param([switch]$DependenciesOnly, [switch]$Observability)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $local = Join-Path $root '.local'
@@ -68,8 +68,10 @@ if (!(Get-NetTCPConnection -State Listen -LocalPort 48080 -ErrorAction SilentlyC
     Copy-Item -LiteralPath $jar -Destination $runtimeJar
 }
 $profile = Join-Path $root 'backend/yudao-server/src/main/resources/application-fulfillment.yaml'
+$profiles = if ($Observability) { 'fulfillment,fulfillment-observability' } else { 'fulfillment' }
+$management = if ($Observability) { ' --management.endpoints.web.exposure.include=health,info,prometheus' } else { '' }
 Start-OwnedProcess 'backend' 48080 (Get-Command java).Source `
-    ('-Xms256m -Xmx1024m -Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai -jar "'+$runtimeJar+'" --spring.profiles.active=fulfillment --fulfillment.messages.enabled=true --fulfillment.jobs.enabled=true --spring.config.additional-location="file:'+ $profile.Replace('\','/')+'"') (Join-Path $root 'backend')
+    ('-Xms256m -Xmx1024m -Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai -jar "'+$runtimeJar+'" --spring.profiles.active='+$profiles+' --fulfillment.messages.enabled=true --fulfillment.jobs.enabled=true --spring.config.additional-location="file:'+ $profile.Replace('\','/')+'"'+$management) (Join-Path $root 'backend')
 $vite = Join-Path $root 'frontend/node_modules/vite/bin/vite.js'
 Start-OwnedProcess 'frontend' 15173 (Get-Command node).Source ('--max-old-space-size=4096 "'+$vite+'" --mode fulfillment --host 127.0.0.1 --strictPort') (Join-Path $root 'frontend')
 Write-Host 'Open http://127.0.0.1:15173 ; tenant: 芋道源码 ; admin / admin123 (local demo only)'

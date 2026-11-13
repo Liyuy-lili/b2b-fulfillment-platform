@@ -1,0 +1,13 @@
+# The upstream actuator security configuration allows anonymous requests.
+# Keep this opt-in management listener on loopback, separate from the app port.
+management:
+  endpoint:
+    prometheus:
+      access: read-only
+  server:
+    address: 127.0.0.1
+    port: ${FULFILLMENT_MANAGEMENT_PORT:48085}
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus

@@ -1,0 +1,216 @@
+{
+  "started_at": "2026-11-13T17:29:19.553560+00:00",
+  "result": "passed",
+  "checks": [
+    {
+      "name": "V1 to V8 applied",
+      "passed": true,
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "empty job queue sampled",
+      "passed": true,
+      "actual": 0.0,
+      "expected": 0
+    },
+    {
+      "name": "Prometheus unavailable on the application listener",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "allocated with transport unavailable",
+      "passed": true,
+      "actual": "ALLOCATED",
+      "expected": "ALLOCATED"
+    },
+    {
+      "name": "H, R, active reservations and ledger after allocation",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "expected": [
+        6,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "binding and allocation emitted two events",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "all events visible in retry backlog",
+      "passed": true,
+      "actual": 2.0,
+      "expected": 2
+    },
+    {
+      "name": "oldest age agrees with the database UTC clock",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "no fake consumer progress",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "failed sampler preserves the last good backlog",
+      "passed": true,
+      "actual": 2.0,
+      "expected": 2
+    },
+    {
+      "name": "sampler recovers after MySQL unlock",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "durable outbox and inbox converge",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "pending age resets after drain",
+      "passed": true,
+      "actual": 0.0,
+      "expected": 0
+    },
+    {
+      "name": "no dead events",
+      "passed": true,
+      "actual": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "read model reaches latest event version",
+      "passed": true,
+      "actual": [
+        [
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "same command returns the original allocation",
+      "passed": true,
+      "actual": {
+        "orderId": "1",
+        "status": "RESERVED",
+        "outcome": "ALLOCATED",
+        "reservations": [
+          {
+            "id": "1",
+            "orderItemId": "1",
+            "productId": "1",
+            "warehouseId": "1",
+            "allocatedQty": "4.000000",
+            "heldQty": "4.000000",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-11-13T17:45:30.960980600Z"
+          }
+        ]
+      },
+      "expected": {
+        "orderId": "1",
+        "status": "RESERVED",
+        "outcome": "ALLOCATED",
+        "reservations": [
+          {
+            "id": "1",
+            "orderItemId": "1",
+            "productId": "1",
+            "warehouseId": "1",
+            "allocatedQty": "4.000000",
+            "heldQty": "4.000000",
+            "consumedQty": "0.000000",
+            "releasedQty": "0.000000",
+            "expireAt": "2026-11-13T17:45:30.960980600Z"
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay creates no extra event",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "H and R remain correct after recovery and replay",
+      "passed": true,
+      "actual": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "expected": [
+        6,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "schema": "fulfillment_ci_828cc37eb2d1",
+  "jar_sha256": "8887ae8cd5bcaacc87660f4ace4af4c95072b3a484b3c259b03bf91457553516",
+  "transport_fault": "application pointed at a bound, non-listening loopback TCP port",
+  "environment": {
+    "execution": "2026-11-14 local Windows, isolated services and new schema",
+    "java": "17.0.17",
+    "mysql": "8.4.6",
+    "redis": "7.2.8",
+    "rabbitmq": "4.2.5",
+    "fulfillment_unit_tests": {
+      "total": 60,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  }
+}

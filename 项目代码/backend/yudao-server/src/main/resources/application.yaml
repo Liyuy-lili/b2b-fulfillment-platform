@@ -1,3 +1,13 @@
+management:
+  endpoints:
+    access:
+      default: none
+  endpoint:
+    health:
+      access: read-only
+    info:
+      access: read-only
+
 spring:
   application:
     name: yudao-server

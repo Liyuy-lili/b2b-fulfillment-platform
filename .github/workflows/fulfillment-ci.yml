@@ -1,0 +1,116 @@
+name: Fulfillment backend
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    services:
+      mysql:
+        image: mysql:8.4.6
+        env:
+          MYSQL_ROOT_PASSWORD: fulfillment-ci-root-dev
+        ports:
+          - 33316:3306
+        options: >-
+          --health-cmd "mysqladmin ping --protocol=tcp --silent"
+          --health-interval 5s --health-timeout 3s --health-retries 24
+      redis:
+        image: redis:7.2.8
+        ports:
+          - 36389:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s --health-timeout 3s --health-retries 24
+      rabbitmq:
+        image: rabbitmq:4.2.5
+        env:
+          RABBITMQ_DEFAULT_USER: fulfillment_ci
+          RABBITMQ_DEFAULT_PASS: fulfillment-ci-mq-dev
+          RABBITMQ_DEFAULT_VHOST: fulfillment_ci
+        ports:
+          - 35692:5672
+        options: >-
+          --health-cmd "rabbitmq-diagnostics -q check_port_listener 5672"
+          --health-interval 5s --health-timeout 5s --health-retries 24
+    steps:
+      - uses: actions/checkout@v4
+      - name: Locate backend
+        shell: bash
+        run: |
+          if [[ -f backend/pom.xml ]]; then
+            echo 'CODE_ROOT=.' >> "$GITHUB_ENV"
+          elif [[ -f '项目代码/backend/pom.xml' ]]; then
+            echo 'CODE_ROOT=项目代码' >> "$GITHUB_ENV"
+          else
+            exit 1
+          fi
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+          cache-dependency-path: ${{ env.CODE_ROOT }}/backend/**/pom.xml
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and run fulfillment unit tests
+        working-directory: ${{ env.CODE_ROOT }}/backend
+        run: >-
+          mvn -B -ntp -pl yudao-server -am package
+          -Dtest='cn.iocoder.yudao.module.fulfillment.**.*Test'
+          -Dsurefire.failIfNoSpecifiedTests=false
+      - name: Verify test discovery
+        working-directory: ${{ env.CODE_ROOT }}/backend
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from xml.etree.ElementTree import parse
+          reports = Path('yudao-module-fulfillment/target/surefire-reports').glob('TEST-*.xml')
+          total = sum(int(parse(report).getroot().attrib['tests']) for report in reports)
+          print(f'Fulfillment tests executed: {total}')
+          if total < 60:
+              raise SystemExit('Fulfillment test discovery fell below the verified baseline of 60')
+          PY
+      - name: Prepare the isolated MySQL test user
+        env:
+          MYSQL_CONTAINER: ${{ job.services.mysql.id }}
+          MYSQL_PWD: fulfillment-ci-root-dev
+        run: |
+          docker exec -i -e MYSQL_PWD "$MYSQL_CONTAINER" mysql -uroot <<'SQL'
+          CREATE USER 'fulfillment_ci'@'%' IDENTIFIED BY 'fulfillment-ci-mysql-dev';
+          GRANT ALL ON `fulfillment\_ci\_%`.* TO 'fulfillment_ci'@'%';
+          SQL
+          if ! command -v mysql >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y mysql-client
+          fi
+          python -m pip install -r "$CODE_ROOT/tests/requirements.txt"
+      - name: Check outage recovery with real services
+        working-directory: ${{ env.CODE_ROOT }}
+        env:
+          CI_MYSQL_USER: fulfillment_ci
+          CI_MYSQL_PASSWORD: fulfillment-ci-mysql-dev
+          CI_MQ_USER: fulfillment_ci
+          CI_MQ_PASSWORD: fulfillment-ci-mq-dev
+          CI_MQ_VHOST: fulfillment_ci
+        run: >-
+          python tests/fulfillment_recovery_smoke.py
+          --mysql-port 33316 --redis-port 36389 --mq-port 35692
+          --output .local/ci/fulfillment-recovery.json
+      - name: Upload acceptance results
+        if: always() && env.CODE_ROOT != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: fulfillment-backend-results
+          path: |
+            ${{ env.CODE_ROOT }}/backend/yudao-module-fulfillment/target/surefire-reports/TEST-*.xml
+            ${{ env.CODE_ROOT }}/.local/ci/fulfillment-recovery.json
+          if-no-files-found: ignore
