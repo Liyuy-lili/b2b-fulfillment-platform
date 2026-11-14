@@ -1,23 +1,27 @@
-"""Fresh-schema acceptance test. Use dedicated MySQL, Redis and RabbitMQ services."""
+"""Fresh-schema recovery and concurrency checks against real services."""
 
 import argparse
 import hashlib
 import json
 import os
-from pathlib import Path
 import re
 import socket
 import subprocess
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager
 from datetime import datetime, timezone
+from pathlib import Path
+from threading import Barrier
 
 import pymysql
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 JAR = ROOT / "backend/yudao-server/target/yudao-server.jar"
+ERP_AVAILABLE_STOCK_SHORTAGE = 1030404000
+IDEMPOTENCY_KEY_CONFLICT = 1080000005
 
 
 def eventually(description, probe, timeout=45):
@@ -99,17 +103,21 @@ def app(env, logs, phase, mq_port, args):
                     process.wait(timeout=10)
 
 
-def api(session, port, method, path, body=None, params=None, key=None):
+def api_result(session, port, method, path, body=None, params=None, key=None):
     response = session.request(method, f"http://127.0.0.1:{port}/admin-api{path}", json=body, params=params,
                                headers={"Idempotency-Key": key} if key else None, timeout=10)
     response.raise_for_status()
-    payload = response.json()
+    return response.json()
+
+
+def api(session, port, method, path, body=None, params=None, key=None):
+    payload = api_result(session, port, method, path, body, params, key)
     if payload["code"] != 0:
         raise RuntimeError(f"{method} {path}: {payload['code']} {payload.get('msg')}")
     return payload["data"]
 
 
-def prepare_order(session, port):
+def prepare_stock(session, port, label):
     def create(resource, body):
         return api(session, port, "POST", f"/erp/{resource}/create", body)
 
@@ -117,23 +125,46 @@ def prepare_order(session, port):
         api(session, port, "PUT", f"/erp/{resource}/update-status", params={"id": record, "status": 20})
 
     now = datetime.now().isoformat(timespec="seconds")
-    master = {"name": "Recovery smoke", "sort": 1, "status": 0}
+    master = {"name": label, "sort": 1, "status": 0}
     unit = create("product-unit", master)
-    category = create("product-category", {**master, "code": "CI_RECOVERY", "parentId": 0})
+    category = create("product-category", {**master, "code": label, "parentId": 0})
     supplier = create("supplier", master)
     customer = create("customer", master)
-    account = create("account", {**master, "no": "CI_RECOVERY"})
+    account = create("account", {**master, "no": label})
     warehouse = create("warehouse", {**master, "warehousePrice": "0", "truckagePrice": "0"})
-    product = create("product", {**master, "barCode": "CI_RECOVERY", "unitId": unit,
+    product = create("product", {**master, "barCode": label, "unitId": unit,
                                  "categoryId": category, "salePrice": "0"})
     inbound = create("stock-in", {"supplierId": supplier, "inTime": now, "items": [
         {"productId": product, "warehouseId": warehouse, "count": "6", "productPrice": "0"}]})
     approve("stock-in", inbound)
-    source = create("sale-order", {"customerId": customer, "accountId": account, "orderTime": now, "items": [
+    return product, warehouse, customer, account
+
+
+def bind_order(session, port, fixture, key):
+    product, _, customer, account = fixture
+    now = datetime.now().isoformat(timespec="seconds")
+    source = api(session, port, "POST", "/erp/sale-order/create",
+                 {"customerId": customer, "accountId": account, "orderTime": now, "items": [
         {"productId": product, "count": "4", "productPrice": "0", "taxPercent": "0"}]})
-    approve("sale-order", source)
-    order = api(session, port, "POST", "/fulfillment/order/bind", {"erpOrderId": str(source)}, key="ci-bind")
-    return product, warehouse, order["orderId"]
+    api(session, port, "PUT", "/erp/sale-order/update-status", params={"id": source, "status": 20})
+    return api(session, port, "POST", "/fulfillment/order/bind", {"erpOrderId": str(source)}, key=key)["orderId"]
+
+
+def allocation_request(order, warehouse):
+    return {"orderId": order, "warehouseIds": [str(warehouse)], "strategy": "PRIORITY_SPLIT", "holdSeconds": 900}
+
+
+def race(session, first, second):
+    gate = Barrier(2, timeout=5)
+
+    def run_request(request):
+        with requests.Session() as client:
+            client.headers.update(session.headers)
+            gate.wait()
+            return request(client)
+
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        return tuple(pool.map(run_request, (first, second)))
 
 
 def metrics(port):
@@ -156,7 +187,81 @@ def read_state(connection, product, warehouse, order):
     held = fetch(connection, "SELECT COALESCE(SUM(held_qty),0) FROM ful_reservation WHERE order_id=%s", (order,))
     ledger = fetch(connection, "SELECT COALESCE(SUM(held_delta),0) FROM ful_stock_ledger "
                    "WHERE product_id=%s AND warehouse_id=%s", (product, warehouse))
-    return tuple(int(value) for value in (*stock, held[0][0], ledger[0][0]))
+    # Preserve the decimal quantities so fractional corruption cannot be hidden by rounding.
+    return tuple(float(value) for value in (*stock, held[0][0], ledger[0][0]))
+
+
+def check_stock_contention(session, port, conn, check):
+    fixture = prepare_stock(session, port, "CI_ORDERS")
+    product, warehouse, _, _ = fixture
+    first_order = bind_order(session, port, fixture, "ci-orders-bind-first")
+    second_order = bind_order(session, port, fixture, "ci-orders-bind-second")
+
+    def allocate(client, order, key):
+        return api(client, port, "POST", "/fulfillment/order/allocate",
+                   allocation_request(order, warehouse), key=key)
+
+    first, second = race(session,
+                         lambda client: allocate(client, first_order, "ci-orders-first"),
+                         lambda client: allocate(client, second_order, "ci-orders-second"))
+    check("two orders racing for six units yield one reservation and one shortage",
+          sorted((result["outcome"], result["status"]) for result in (first, second)),
+          [("ALLOCATED", "RESERVED"), ("INSUFFICIENT_STOCK", "WAIT_STOCK")])
+    winner, loser = sorted((first, second), key=lambda result: result["outcome"])
+    check("order race commits matching stock, per-order holds and ledger",
+          [read_state(conn, product, warehouse, result["orderId"]) for result in (winner, loser)],
+          [(6, 4, 4, 4), (6, 4, 0, 4)])
+    item_id = winner["reservations"][0]["orderItemId"]
+    canceled = api(session, port, "POST", "/fulfillment/order/cancel", {
+        "orderId": winner["orderId"], "items": [{"id": item_id, "quantity": "4"}], "reason": "CI race cleanup"
+    }, key="ci-orders-cancel")
+    check("cancel releases the winning hold without reducing physical stock",
+          (canceled["orderStatus"], read_state(conn, product, warehouse, winner["orderId"])),
+          ("CANCELLED", (6, 0, 0, 0)))
+
+    fixture = prepare_stock(session, port, "CI_DUPLICATE")
+    product, warehouse, _, _ = fixture
+    order = bind_order(session, port, fixture, "ci-duplicate-bind")
+    key = "ci-duplicate-allocate"
+
+    def duplicate(client):
+        return allocate(client, order, key)
+
+    first, second = race(session, duplicate, duplicate)
+    check("concurrent identical commands replay the same successful response",
+          (first["outcome"], second), ("ALLOCATED", first))
+    altered = {**allocation_request(order, warehouse), "holdSeconds": 901}
+    conflict = api_result(session, port, "POST", "/fulfillment/order/allocate", altered, key=key)
+    check("same key with a different hold duration returns a conflict", conflict["code"], IDEMPOTENCY_KEY_CONFLICT)
+    check("duplicate and conflicting calls leave one command and one reservation event",
+          (fetch(conn, "SELECT COUNT(*) FROM ful_command_record WHERE idempotency_key=%s", (key,))[0][0],
+           fetch(conn, "SELECT COUNT(*) FROM ful_outbox_event WHERE order_id=%s AND event_type='STOCK_RESERVED'",
+                 (order,))[0][0], read_state(conn, product, warehouse, order)),
+          (1, 1, (6, 4, 4, 4)))
+
+    fixture = prepare_stock(session, port, "CI_LEGACY")
+    product, warehouse, customer, _ = fixture
+    order = bind_order(session, port, fixture, "ci-legacy-bind")
+    out = api(session, port, "POST", "/erp/stock-out/create", {
+        "customerId": customer, "outTime": datetime.now().isoformat(timespec="seconds"), "items": [
+            {"productId": product, "warehouseId": warehouse, "count": "4", "productPrice": "0"}]
+    })
+    allocation, stock_out = race(
+        session, lambda client: allocate(client, order, "ci-legacy-allocate"),
+        lambda client: api_result(client, port, "PUT", "/erp/stock-out/update-status",
+                                  params={"id": out, "status": 20}))
+    out_status = api(session, port, "GET", "/erp/stock-out/get", params={"id": out})["status"]
+    stock_records = fetch(conn, "SELECT COUNT(*) FROM erp_stock_record WHERE product_id=%s AND warehouse_id=%s",
+                          (product, warehouse))[0][0]
+    # Either request may win. Verify its committed effects and the losing transaction's lack of side effects.
+    outcomes = {
+        "ALLOCATED": ("RESERVED", ERP_AVAILABLE_STOCK_SHORTAGE, 10, 1, (6, 4, 4, 4)),
+        "INSUFFICIENT_STOCK": ("WAIT_STOCK", 0, 20, 2, (2, 0, 0, 0)),
+    }
+    check("legacy stock-out and reservation serialize and preserve both ledgers",
+          (allocation["status"], stock_out["code"], out_status, stock_records,
+           read_state(conn, product, warehouse, order)),
+          outcomes[allocation["outcome"]])
 
 
 def run(args, logs, report):
@@ -207,9 +312,10 @@ def run(args, logs, report):
             app_endpoint = requests.get(f"http://127.0.0.1:{args.app_port}/actuator/prometheus", timeout=5)
             check("Prometheus unavailable on the application listener",
                   "fulfillment_queue_sample_success" in app_endpoint.text, False)
-            product, warehouse, order = prepare_order(session, args.app_port)
-            request = {"orderId": order, "warehouseIds": [str(warehouse)], "strategy": "PRIORITY_SPLIT",
-                       "holdSeconds": 900}
+            fixture = prepare_stock(session, args.app_port, "CI_RECOVERY")
+            product, warehouse, _, _ = fixture
+            order = bind_order(session, args.app_port, fixture, "ci-bind")
+            request = allocation_request(order, warehouse)
             allocated = api(session, args.app_port, "POST", "/fulfillment/order/allocate", request, key="ci-allocate")
             check("allocated with transport unavailable", allocated["outcome"], "ALLOCATED")
             check("H, R, active reservations and ledger after allocation",
@@ -259,6 +365,7 @@ def run(args, logs, report):
             check("replay creates no extra event", fetch(conn, "SELECT COUNT(*) FROM ful_outbox_event")[0][0], event_count)
             check("H and R remain correct after recovery and replay",
                   read_state(conn, product, warehouse, order), (6, 4, 4, 4))
+            check_stock_contention(session, args.app_port, conn, check)
 
 
 def main():
