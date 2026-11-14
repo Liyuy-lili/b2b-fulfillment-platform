@@ -104,7 +104,7 @@ jobs:
         run: >-
           python tests/fulfillment_recovery_smoke.py
           --mysql-port 33316 --redis-port 36389 --mq-port 35692
-          --output .local/ci/fulfillment-recovery.json
+          --output "${{ runner.temp }}/fulfillment-recovery.json"
       - name: Upload acceptance results
         if: always() && env.CODE_ROOT != ''
         uses: actions/upload-artifact@v4
@@ -112,5 +112,5 @@ jobs:
           name: fulfillment-backend-results
           path: |
             ${{ env.CODE_ROOT }}/backend/yudao-module-fulfillment/target/surefire-reports/TEST-*.xml
-            ${{ env.CODE_ROOT }}/.local/ci/fulfillment-recovery.json
+            ${{ runner.temp }}/fulfillment-recovery.json
           if-no-files-found: ignore
